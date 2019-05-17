@@ -1207,7 +1207,7 @@ button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::
     content: '';
     display: block;
     height: 2px;
-    width: 14px;
+    width: 16px;
     position: absolute;
     top: 50%;
     left: 1em;
