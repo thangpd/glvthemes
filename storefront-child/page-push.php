@@ -7,9 +7,13 @@ chdir($gitpath);
                                         $output = '';
                                         $return = 1;
 //                                        $_str = exec("git checkout {$branch} && git pull", $output, $return);
-                                        $_str = exec("git checkout master && git pull", $output, $return_cp);
+                                        $_str = exec("git checkout master && git pull", $output, $return);
 
 
+
+print_r($output);
+
+print_r($return);
 if (!$return) {
                                             $result = true;
                                             if (empty($output)) {
