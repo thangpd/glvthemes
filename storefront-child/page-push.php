@@ -1,6 +1,8 @@
 <?php    echo 'push';
 $gitpath="/home/glvahost/glvthemes";
+$branch="master";
 
+$repo="glvthemes";
 chdir($gitpath);
                                         $output = '';
                                         $return = 1;
