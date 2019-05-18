@@ -241,8 +241,13 @@ if ( ! class_exists( 'Storefront_WooCommerce' ) ) :
 		 * @since 2.2.0
 		 */
 		public function change_breadcrumb_delimiter( $defaults ) {
+			global $link_back;
+			if(isset($_SERVER['HTTP_REFERER'])) {
+				$url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+				$link_back = "<span><a class='link-back' href='$url'><span><i class='fas fa-chevron-left'></i><span>back</a></span>";
+			}
 			$defaults['delimiter']   = '<span class="breadcrumb-separator"> / </span>';
-			$defaults['wrap_before'] = '<div class="storefront-breadcrumb"><div class="col-full"><nav class="woocommerce-breadcrumb"><span class="back-to"><i class="fas fa-chevron-left"></i><input type="button" value="Back" onclick="history.back(-1)" /></span>';
+			$defaults['wrap_before'] = '<div class="storefront-breadcrumb"><div class="col-full"><nav class="woocommerce-breadcrumb">'.$link_back.'';
 			$defaults['wrap_after']  = '</nav></div></div>';
 			return $defaults;
 		}
