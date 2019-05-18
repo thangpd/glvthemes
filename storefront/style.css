@@ -2230,6 +2230,8 @@ nav button.menu-toggle:focus{
 @media (max-width: 767px){
     .woocommerce-active .col-full .site-branding{
         float: none;
+        margin: 0 auto;
+        width: 65%;
     }
     .site-header .custom-logo-link img{
         margin: 0 auto;
@@ -2239,7 +2241,7 @@ nav button.menu-toggle:focus{
     }
     .storefront-primary-navigation{
         position: fixed;
-        top: 75px;
+        top: 86px;
         width: 100%;
     }
     .storefront-primary-navigation .col-full{
@@ -2297,11 +2299,13 @@ nav button.menu-toggle:focus{
         left: 0;
     }
     .site-header .col-full{
-        display: flex;
+        position: relative;
     }
     .btn-share{
         display: block;
-        margin-left: auto;
+        position: absolute;
+        top: 8px;
+        right: 0;
     }
     .btn-share .fa-share-square{
         font-family: 'Font Awesome 5 Free';
