@@ -1246,11 +1246,11 @@ button.menu-toggle span::before {
     transition: all, ease, .2s
 }
 
-/* button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::before {
+button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::before {
     content: '';
     display: block;
-    height: 2px;
-    width: 16px;
+    height: 3px;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 1em;
@@ -1258,23 +1258,26 @@ button.menu-toggle span::before {
     -webkit-transition: all, ease, .2s;
     transition: all, ease, .2s;
     border-radius: 3px
-} */
-/* 
+}
+
 button.menu-toggle::before {
-    -webkit-transform: translateY(-4px);
-    -ms-transform: translateY(-4px);
-    transform: translateY(-4px)
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px)
 }
 
 button.menu-toggle::after {
-    -webkit-transform: translateY(4px);
-    -ms-transform: translateY(4px);
-    transform: translateY(4px)
-} */
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px)
+}
 nav button.menu-toggle{
     padding: 0;
-    border-color: transparent;
-    font-size: 1.5em;
+    font-size: 0;
+    border: none;
+    width: 24px;
+    height: 20px;
+    background: transparent;
 }
 nav button.menu-toggle:hover{
     border-color: transparent;
@@ -1282,9 +1285,9 @@ nav button.menu-toggle:hover{
 nav button.menu-toggle:focus{
     outline: none;
 }
-.fa-share-square{
+/*.fa-share-square{
     font-family: 'Font Awesome 5 Free';
-}
+} */
 .toggled button.menu-toggle::after, .toggled button.menu-toggle::before {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -2221,7 +2224,99 @@ nav button.menu-toggle:focus{
         margin-right: 0
     }
 }
-
+.btn-share{
+    display: none;
+}
+@media (max-width: 767px){
+    .woocommerce-active .col-full .site-branding{
+        float: none;
+    }
+    .site-header .custom-logo-link img{
+        margin: 0 auto;
+    }
+    .main-navigation{
+        padding-left: 2.617924em;
+    }
+    .storefront-primary-navigation{
+        position: fixed;
+        top: 75px;
+        width: 100%;
+    }
+    .storefront-primary-navigation .col-full{
+        margin: 0;
+    }
+    
+    nav button.menu-toggle{
+        float: none;
+        background: transparent;
+        position: absolute;
+        right: -66px;
+    }
+    nav button.menu-toggle:hover{
+        background: transparent;
+    }
+    nav.toggled button.menu-toggle{
+        right: -24px;
+        background: transparent;
+    }
+    .storefront-primary-navigation{
+        position: fixed;
+        width: 100%;
+    }
+    .main-navigation{
+        height: 100vh;
+        width: 80%;
+        background: #333;
+        position: relative;
+        transition: all,ease,.4s;
+        max-height: 0;
+        left: -80%;
+    }
+    .main-navigation.toggled{
+        max-height: 9999px;
+        left: 0;
+    }
+    .site-header .main-navigation ul li a,
+    .site-header ul.menu li a{
+        color: #fff;
+    }
+    .site-header .main-navigation ul.menu li.current-menu-item > a{
+        color: #96588a;
+    }
+    .layer-mask{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: -100px;
+        z-index: -1;
+        left: -100%;
+        background: rgba(0,0,0,.4);
+        transition: all,ease,.3s;
+    }
+    .toggled .layer-mask{
+        left: 0;
+    }
+    .site-header .col-full{
+        display: flex;
+    }
+    .btn-share{
+        display: block;
+        margin-left: auto;
+    }
+    .btn-share .fa-share-square{
+        font-family: 'Font Awesome 5 Free';
+        font-size: 1.4em;
+        color: #333333;
+    }
+}
+@media (max-width: 568px){
+    .main-navigation{
+        padding-left: 1.41575em;
+    }
+    nav button.menu-toggle{
+        right: -47px;
+    }
+}
 @media (max-width: 66.4989378333em) {
     .col-full {
         margin-left: 2.617924em;
