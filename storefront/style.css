@@ -1328,9 +1328,11 @@ nav button.menu-toggle:focus{
 
 .handheld-navigation, .main-navigation div.menu > ul:not(.nav-menu), .nav-menu {
     overflow: hidden;
-    max-height: 0;
     -webkit-transition: all, ease, .8s;
-    transition: all, ease, .8s
+    transition: all, ease, .3s;
+    position: relative;
+    left: -100%;
+
 }
 
 .handheld-navigation {
@@ -1379,7 +1381,7 @@ nav button.menu-toggle:focus{
 }
 
 .main-navigation.toggled .handheld-navigation, .main-navigation.toggled .menu > ul:not(.nav-menu), .main-navigation.toggled ul[aria-expanded=true] {
-    max-height: 9999px
+    left: 0;
 }
 
 .main-navigation ul {
