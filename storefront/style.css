@@ -55,6 +55,49 @@ audio:not([controls]) {
     height: 0
 }
 
+.woocommerce-breadcrumb .back-to {
+    padding: .6180469716em 10px .6180469716em 12px;
+    position: relative;
+    width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -1px;
+}
+
+.woocommerce-breadcrumb .back-to i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6d6d6d;
+    font-size: 14px;
+}
+
+.woocommerce-breadcrumb .back-to input {
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1.2em;
+    line-height: 1;
+    color: #6d6d6d;
+    font-size: 14px;
+}
+
+.woocommerce-breadcrumb .back-to input:focus {
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.woocommerce-breadcrumb .back-to input:hover {
+    background-color: transparent;
+    color: #6d6d6d;
+    border: 0;
+}
+
 [hidden], template {
     display: none
 }
@@ -2181,3 +2224,4 @@ button.menu-toggle::after {
         padding: 0
     }
 }
+
