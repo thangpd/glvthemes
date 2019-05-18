@@ -1246,7 +1246,7 @@ button.menu-toggle span::before {
     transition: all, ease, .2s
 }
 
-button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::before {
+/* button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::before {
     content: '';
     display: block;
     height: 2px;
@@ -1258,8 +1258,8 @@ button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::
     -webkit-transition: all, ease, .2s;
     transition: all, ease, .2s;
     border-radius: 3px
-}
-
+} */
+/* 
 button.menu-toggle::before {
     -webkit-transform: translateY(-4px);
     -ms-transform: translateY(-4px);
@@ -1270,8 +1270,21 @@ button.menu-toggle::after {
     -webkit-transform: translateY(4px);
     -ms-transform: translateY(4px);
     transform: translateY(4px)
+} */
+nav button.menu-toggle{
+    padding: 0;
+    border-color: transparent;
+    font-size: 1.5em;
 }
-
+nav button.menu-toggle:hover{
+    border-color: transparent;
+}
+nav button.menu-toggle:focus{
+    outline: none;
+}
+.fa-share-square{
+    font-family: 'Font Awesome 5 Free';
+}
 .toggled button.menu-toggle::after, .toggled button.menu-toggle::before {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
