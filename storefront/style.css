@@ -55,6 +55,49 @@ audio:not([controls]) {
     height: 0
 }
 
+.woocommerce-breadcrumb .back-to {
+    padding: .6180469716em 10px .6180469716em 12px;
+    position: relative;
+    width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -1px;
+}
+
+.woocommerce-breadcrumb .back-to i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6d6d6d;
+    font-size: 14px;
+}
+
+.woocommerce-breadcrumb .back-to input {
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1.2em;
+    line-height: 1;
+    color: #6d6d6d;
+    font-size: 14px;
+}
+
+.woocommerce-breadcrumb .back-to input:focus {
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.woocommerce-breadcrumb .back-to input:hover {
+    background-color: transparent;
+    color: #6d6d6d;
+    border: 0;
+}
+
 [hidden], template {
     display: none
 }
@@ -1203,11 +1246,11 @@ button.menu-toggle span::before {
     transition: all, ease, .2s
 }
 
-button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::before {
+/* button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::before {
     content: '';
     display: block;
     height: 2px;
-    width: 14px;
+    width: 16px;
     position: absolute;
     top: 50%;
     left: 1em;
@@ -1215,8 +1258,8 @@ button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::
     -webkit-transition: all, ease, .2s;
     transition: all, ease, .2s;
     border-radius: 3px
-}
-
+} */
+/* 
 button.menu-toggle::before {
     -webkit-transform: translateY(-4px);
     -ms-transform: translateY(-4px);
@@ -1227,8 +1270,21 @@ button.menu-toggle::after {
     -webkit-transform: translateY(4px);
     -ms-transform: translateY(4px);
     transform: translateY(4px)
+} */
+nav button.menu-toggle{
+    padding: 0;
+    border-color: transparent;
+    font-size: 1.5em;
 }
-
+nav button.menu-toggle:hover{
+    border-color: transparent;
+}
+nav button.menu-toggle:focus{
+    outline: none;
+}
+.fa-share-square{
+    font-family: 'Font Awesome 5 Free';
+}
 .toggled button.menu-toggle::after, .toggled button.menu-toggle::before {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -1272,9 +1328,11 @@ button.menu-toggle::after {
 
 .handheld-navigation, .main-navigation div.menu > ul:not(.nav-menu), .nav-menu {
     overflow: hidden;
-    max-height: 0;
     -webkit-transition: all, ease, .8s;
-    transition: all, ease, .8s
+    transition: all, ease, .3s;
+    position: relative;
+    left: -100%;
+
 }
 
 .handheld-navigation {
@@ -1323,7 +1381,7 @@ button.menu-toggle::after {
 }
 
 .main-navigation.toggled .handheld-navigation, .main-navigation.toggled .menu > ul:not(.nav-menu), .main-navigation.toggled ul[aria-expanded=true] {
-    max-height: 9999px
+    left: 0;
 }
 
 .main-navigation ul {
@@ -2181,3 +2239,4 @@ button.menu-toggle::after {
         padding: 0
     }
 }
+

@@ -242,7 +242,7 @@ if ( ! class_exists( 'Storefront_WooCommerce' ) ) :
 		 */
 		public function change_breadcrumb_delimiter( $defaults ) {
 			$defaults['delimiter']   = '<span class="breadcrumb-separator"> / </span>';
-			$defaults['wrap_before'] = '<div class="storefront-breadcrumb"><div class="col-full"><nav class="woocommerce-breadcrumb">';
+			$defaults['wrap_before'] = '<div class="storefront-breadcrumb"><div class="col-full"><nav class="woocommerce-breadcrumb"><span class="back-to"><i class="fas fa-chevron-left"></i><input type="button" value="Back" onclick="history.back(-1)" /></span>';
 			$defaults['wrap_after']  = '</nav></div></div>';
 			return $defaults;
 		}

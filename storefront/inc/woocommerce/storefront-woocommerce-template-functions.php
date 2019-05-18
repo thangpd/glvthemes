@@ -622,12 +622,20 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
 				'priority' => 10,
 				'callback' => 'storefront_handheld_footer_bar_account_link',
 			),
-			'search'     => array(
+			'flaticon-upload' => array(
 				'priority' => 20,
+				'callback' => 'storefront_handheld_footer_bar_upload',
+			),
+			'search'     => array(
+				'priority' => 30,
 				'callback' => 'storefront_handheld_footer_bar_search',
 			),
+			'flaticon-shop' => array(
+				'priority' => 40,
+				'callback' => 'storefront_handheld_footer_bar_shop_link',
+			),
 			'cart'       => array(
-				'priority' => 30,
+				'priority' => 50,
 				'callback' => 'storefront_handheld_footer_bar_cart_link',
 			),
 		);
@@ -670,6 +678,29 @@ if ( ! function_exists( 'storefront_handheld_footer_bar_search' ) ) {
 		storefront_product_search();
 	}
 }
+
+if ( ! function_exists( 'storefront_handheld_footer_bar_shop_link' ) ) {
+	/**
+	 * The account callback function for the handheld footer bar
+	 *
+	 * @since 2.0.0
+	 */
+	function storefront_handheld_footer_bar_shop_link() {
+		echo '<a href="">' . esc_attr__( 'Flaticon Shop', 'storefront' ) . '</a>';
+	}
+}
+
+if ( ! function_exists( 'storefront_handheld_footer_bar_upload' ) ) {
+	/**
+	 * The account callback function for the handheld footer bar
+	 *
+	 * @since 2.0.0
+	 */
+	function storefront_handheld_footer_bar_upload() {
+		echo '<a href="">' . esc_attr__( 'Flaticon Upload', 'storefront' ) . '</a>';
+	}
+}
+
 
 if ( ! function_exists( 'storefront_handheld_footer_bar_cart_link' ) ) {
 	/**
