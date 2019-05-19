@@ -2263,6 +2263,7 @@ nav button.menu-toggle:focus{
     .storefront-primary-navigation{
         position: relative;
         top: -33px;
+        z-index: 0;
     }
     .main-navigation .menu{
         margin-top: 20px;
@@ -2303,6 +2304,7 @@ nav button.menu-toggle:focus{
     }
     .site-header .col-full{
         position: relative;
+        z-index: 1;
     } 
     .btn-share{
         display: block;
