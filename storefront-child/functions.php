@@ -381,7 +381,7 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
 		<?php
 	}
 }
-add_action( 'wp_enqueue_scripts', 'qg_enqueue' );
+add_action( 'wp_enqueue_scripts', 'store_child_enqueue_assets' );
 function store_child_enqueue_assets() {
 	wp_enqueue_script(
 		'store-child',
