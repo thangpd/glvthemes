@@ -622,13 +622,13 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
 				'priority' => 10,
 				'callback' => 'storefront_handheld_footer_bar_account_link',
 			),
-			'flaticon-upload' => array(
+			'flaticon-transfer' => array(
 				'priority' => 20,
-				'callback' => 'storefront_handheld_footer_bar_upload',
+				'callback' => 'storefront_handheld_footer_bar_transfer',
 			),
-			'search'     => array(
+			'flaticon-document'     => array(
 				'priority' => 30,
-				'callback' => 'storefront_handheld_footer_bar_search',
+				'callback' => 'storefront_handheld_footer_bar_document',
 			),
 			'flaticon-shop' => array(
 				'priority' => 40,
@@ -690,14 +690,26 @@ if ( ! function_exists( 'storefront_handheld_footer_bar_shop_link' ) ) {
 	}
 }
 
-if ( ! function_exists( 'storefront_handheld_footer_bar_upload' ) ) {
+
+if ( ! function_exists( 'storefront_handheld_footer_bar_document' ) ) {
 	/**
 	 * The account callback function for the handheld footer bar
 	 *
 	 * @since 2.0.0
 	 */
-	function storefront_handheld_footer_bar_upload() {
-		echo '<a href="">' . esc_attr__( 'Flaticon Upload', 'storefront' ) . '</a>';
+	function storefront_handheld_footer_bar_document() {
+		echo '<a href="">' . esc_attr__( 'Flaticon Document', 'storefront' ) . '</a>';
+	}
+}
+
+if ( ! function_exists( 'storefront_handheld_footer_bar_transfer' ) ) {
+	/**
+	 * The account callback function for the handheld footer bar
+	 *
+	 * @since 2.0.0
+	 */
+	function storefront_handheld_footer_bar_transfer() {
+		echo '<a href="">' . esc_attr__( 'Flaticon Transfer', 'storefront' ) . '</a>';
 	}
 }
 
