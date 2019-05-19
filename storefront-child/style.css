@@ -22,5 +22,8 @@
         display:block;
         padding-bottom:5px;
     }
+    .site-footer{
+        padding: 100px 0;
+    }
 
 }
