@@ -2257,7 +2257,7 @@ nav button.menu-toggle:focus{
     display: none;
 }
 @media (max-width: 767px){
-    /* .woocommerce-active .col-full .site-branding{
+     .woocommerce-active .col-full .site-branding{
         float: none;
         margin: 0 auto;
         width: 65%;
@@ -2268,50 +2268,15 @@ nav button.menu-toggle:focus{
     .main-navigation{
         padding-left: 2.617924em;
     }
-    .storefront-primary-navigation{
-        position: fixed;
-        top: 86px;
-        width: 100%;
-    }
     .storefront-primary-navigation .col-full{
         margin: 0;
     }
-    
-    nav button.menu-toggle{
-        float: none;
-        background: transparent;
-        position: absolute;
-        right: -66px;
-    }
-    nav button.menu-toggle:hover{
-        background: transparent;
-    }
-    nav.toggled button.menu-toggle{
-        right: -24px;
-        background: transparent;
-    }
-    .toggled button.menu-toggle:after,
-    .toggled button.menu-toggle:before,
-    .toggled button.menu-toggle span:before{
-        background: #ffffff;
-    }
     .storefront-primary-navigation{
         position: fixed;
         width: 100%;
     }
-    .main-navigation{
-        height: 100vh;
-        width: 80%;
-        background: #333;
-        position: relative;
-        transition: all,ease,.4s;
-        max-height: 0;
-        left: -80%;
-    }
-    .main-navigation.toggled{
-        max-height: 9999px;
-        left: 0;
-    }
+
+
     .site-header .main-navigation ul li a,
     .site-header ul.menu li a{
         color: #fff;
@@ -2334,7 +2299,7 @@ nav button.menu-toggle:focus{
     }
     .site-header .col-full{
         position: relative;
-    } */
+    } 
     .btn-share{
         display: block;
         position: absolute;
