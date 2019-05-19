@@ -285,7 +285,6 @@ if ( ! class_exists( 'Storefront' ) ) :
 
 			wp_enqueue_style( 'storefront-gutenberg-blocks', get_template_directory_uri() . '/assets/css/base/gutenberg-blocks.css', '', $storefront_version );
 			wp_style_add_data( 'storefront-gutenberg-blocks', 'rtl', 'replace' );
-
 			wp_enqueue_style( 'storefront-icons', get_template_directory_uri() . '/assets/css/base/icons.css', '', $storefront_version );
 			wp_style_add_data( 'storefront-icons', 'rtl', 'replace' );
 
