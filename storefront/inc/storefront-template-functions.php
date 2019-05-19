@@ -180,11 +180,19 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
 	function storefront_site_branding() {
 		?>
 		<div class="site-branding">
-			<?php storefront_site_title_or_logo(); ?>
+			<?php storefront_site_title_or_logo();
+			$user    = \credglv\models\UserModel::getInstance();
+
+			?>
 		</div>
 		<div class="btn-share">
-			<a href="" class="fa-share-square"></a>
+			<a href="javascript:showAndroidShare()" class="fa-share-square"></a>
 		</div>
+        <script>
+            function showAndroidShare() {
+
+                android.showShareNative( "<?php  echo $user->get_url_share_link()?>"  );
+            }</script>
 		<?php
 	}
 }
