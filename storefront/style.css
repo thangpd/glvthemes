@@ -2308,18 +2308,15 @@ nav button.menu-toggle:focus{
     }
     .btn-share .fa-share-square{
         font-family: 'Font Awesome 5 Free';
-        font-size: 1.4em;
+        font-size: 1.6em;
         color: #333333;
     }
 }
-/* @media (max-width: 568px){
-    .main-navigation{
-        padding-left: 1.41575em;
+@media (max-width: 568px){
+    .tss--close .tss-label{
+        right: -80px;
     }
-    nav button.menu-toggle{
-        right: -47px;
-    }
-} */
+}
 @media (max-width: 66.4989378333em) {
     .col-full {
         margin-left: 2.617924em;
@@ -2359,7 +2356,15 @@ nav button.menu-toggle:focus{
         color: #ffffff;
     }
     .tss--close .tss-label{
-        right: -60px;
+        right: -80px;
+    }
+    .tss.tss--open::before{
+        content: '';
+        position: absolute;
+        top: -30px; left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
     }
 }
 

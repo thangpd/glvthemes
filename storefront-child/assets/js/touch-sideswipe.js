@@ -216,7 +216,7 @@
             elMain.classList.remove('tss--close');
             elMain.classList.add('tss--open');
             elBg.classList.remove('tss-bg--close');
-            elBg.classList.add('tss-bg--open');
+            //elBg.classList.add('tss-bg--open');
             elBg.style.zIndex = '999';
             open = true;
         }

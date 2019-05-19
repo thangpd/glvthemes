@@ -258,7 +258,7 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 						moveSpeed: 0.2, //sec
 						opacityBackground: 0.8,
 						shiftForStart: 50, // px
-						windowMaxWidth: 1024, // px
+						windowMaxWidth: 767, // px
 					}
 					var touchSideSwipe = new TouchSideSwipe(config);
 				</script>
