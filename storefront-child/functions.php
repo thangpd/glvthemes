@@ -382,10 +382,19 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'store_child_enqueue_assets' );
+add_action( 'wp_enqueue_style', 'store_child_enqueue_assets' );
 function store_child_enqueue_assets() {
 	wp_enqueue_script(
 		'store-child',
 		get_theme_file_uri( '/assets/js/store-child.js' )
+	);
+	wp_enqueue_script(
+		'touch-sideswipe',
+		get_theme_file_uri( '/assets/js/touch-sideswipe.js' )
+	);
+	wp_enqueue_style(
+		'touch-sideswipe',
+		get_theme_file_uri( '/assets/css/touch-sideswipe.css' )
 	);
 	/*
 	 *

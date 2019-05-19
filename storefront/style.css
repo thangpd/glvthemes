@@ -1359,10 +1359,10 @@ nav button.menu-toggle:focus{
 }
 
 .handheld-navigation, .main-navigation div.menu > ul:not(.nav-menu), .nav-menu {
-    overflow: hidden;
-    max-height: 0;
+    height: 100%;
     -webkit-transition: all, ease, .8s;
-    transition: all, ease, .8s
+    transition: all, ease, .8s;
+    padding-left: 25px;
 }
 
 .handheld-navigation {
@@ -2257,7 +2257,7 @@ nav button.menu-toggle:focus{
     display: none;
 }
 @media (max-width: 767px){
-    .woocommerce-active .col-full .site-branding{
+    /* .woocommerce-active .col-full .site-branding{
         float: none;
         margin: 0 auto;
         width: 65%;
@@ -2334,7 +2334,7 @@ nav button.menu-toggle:focus{
     }
     .site-header .col-full{
         position: relative;
-    }
+    } */
     .btn-share{
         display: block;
         position: absolute;
@@ -2347,14 +2347,14 @@ nav button.menu-toggle:focus{
         color: #333333;
     }
 }
-@media (max-width: 568px){
+/* @media (max-width: 568px){
     .main-navigation{
         padding-left: 1.41575em;
     }
     nav button.menu-toggle{
         right: -47px;
     }
-}
+} */
 @media (max-width: 66.4989378333em) {
     .col-full {
         margin-left: 2.617924em;
@@ -2370,4 +2370,59 @@ nav button.menu-toggle:focus{
         padding: 0
     }
 }
+
+/* test css */
+
+.content {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 20px;
+    color: #444;
+    background: #eee;
+    line-height: 40px;
+}
+
+@media(max-width: 767px) {
+    .touch-side-swipe {
+        background: #333333;
+    }
+    .site-header .handheld-navigation ul.menu li.current-menu-item > a{
+           color: #96588a; 
+    }
+    .main-navigation .handheld-navigation ul li a{
+        color: #ffffff;
+    }
+    .tss--close .tss-label{
+        right: -60px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .touch-side-swipe li {
+        display: block;
+        float: left;
+        padding: 4px;
+        margin-right: 5px;
+        border-radius: 2px;
+        border: 1px solid #fff;
+    }
+}
+
+.touch-side-swipe ul {
+    display: block;
+    overflow-y: overlay;
+    margin: 0;
+    padding: 0;
+    line-height: 30px
+}
+
+.touch-side-swipe a {
+    color: #fff;
+}
+
+* {
+    box-sizing: border-box
+}
+
 

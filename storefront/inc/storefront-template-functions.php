@@ -230,7 +230,7 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 		?>
 		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_html_e( 'Primary Navigation', 'storefront' ); ?>">
 		<div class="layer-mask"></div>
-		<button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false"><span><?php echo esc_attr( apply_filters( 'storefront_menu_toggle_text', __( '', 'storefront' ) ) ); ?></span></button>
+		<button   class="menu-toggle touch-side-swipe" aria-controls="site-navigation" aria-expanded="false"><span><?php echo esc_attr( apply_filters( 'storefront_menu_toggle_text', __( '', 'storefront' ) ) ); ?></span></button>
 			<?php
 			wp_nav_menu(
 				array(
@@ -238,7 +238,9 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 					'container_class' => 'primary-navigation',
 				)
 			);
-
+			?>
+			<div id="touchSideSwipe" class="touch-side-swipe">
+			<?php
 			wp_nav_menu(
 				array(
 					'theme_location'  => 'handheld',
@@ -246,6 +248,28 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 				)
 			);
 			?>
+			</div>
+			    <script type="text/javascript">
+					var config = {
+						elementID: 'touchSideSwipe',
+						elementWidth: 400, //px
+						elementMaxWidth: 0.8, // *100%
+						sideHookWidth: 44, //px
+						moveSpeed: 0.2, //sec
+						opacityBackground: 0.8,
+						shiftForStart: 50, // px
+						windowMaxWidth: 1024, // px
+					}
+					var touchSideSwipe = new TouchSideSwipe(config);
+				</script>
+				<script>
+					// demo open/close on load document
+					setTimeout(function() {touchSideSwipe.tssOpen()}, 2000);
+					setTimeout(function() {touchSideSwipe.tssClose()}, 3500);
+					// demo open/close buttons
+					document.getElementById('callOpen').addEventListener('click', function(){touchSideSwipe.tssOpen()});
+					document.getElementById('callClose').addEventListener('click', function(){touchSideSwipe.tssClose()});
+				</script>
 		</nav><!-- #site-navigation -->
 		<?php
 	}
