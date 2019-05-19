@@ -1359,10 +1359,8 @@ nav button.menu-toggle:focus{
 }
 
 .handheld-navigation, .main-navigation div.menu > ul:not(.nav-menu), .nav-menu {
-    height: 100%;
-    -webkit-transition: all, ease, .8s;
-    transition: all, ease, .8s;
-    padding-left: 25px;
+    -webkit-transition: all, ease, .4s;
+    transition: all, ease, .4s;
 }
 
 .handheld-navigation {
@@ -2257,6 +2255,13 @@ nav button.menu-toggle:focus{
     display: none;
 }
 @media (max-width: 767px){
+    .home.page:not(.page-template-template-homepage) .site-header{
+        margin-bottom: 0;
+    }
+    .storefront-primary-navigation{
+        position: relative;
+        top: -10px;
+    }
      .woocommerce-active .col-full .site-branding{
         float: none;
         margin: 0 auto;
@@ -2267,35 +2272,26 @@ nav button.menu-toggle:focus{
     }
     .main-navigation{
         padding-left: 2.617924em;
+        transition: all, ease, .8s;
     }
     .storefront-primary-navigation .col-full{
         margin: 0;
     }
-    .storefront-primary-navigation{
-        position: fixed;
-        width: 100%;
+    nav button.menu-toggle{
+        float: none;
     }
-
-
-    .site-header .main-navigation ul li a,
-    .site-header ul.menu li a{
-        color: #fff;
+    .main-navigation .handheld-navigation{
+        max-height: 0;
+        overflow: hidden;
+        left: -80%;
+        position: relative;
+    }
+    .main-navigation.toggled .handheld-navigation{
+        left: 0;
+        max-height: 9999px;
     }
     .site-header .main-navigation ul.menu li.current-menu-item > a{
         color: #96588a;
-    }
-    .layer-mask{
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        top: -100px;
-        z-index: -1;
-        left: -100%;
-        background: rgba(0,0,0,.4);
-        transition: all,ease,.3s;
-    }
-    .toggled .layer-mask{
-        left: 0;
     }
     .site-header .col-full{
         position: relative;
@@ -2305,10 +2301,11 @@ nav button.menu-toggle:focus{
         position: absolute;
         top: 8px;
         right: 0;
+        z-index: 9999;
     }
     .btn-share .fa-share-square{
         font-family: 'Font Awesome 5 Free';
-        font-size: 1.6em;
+        font-size: 1.5em;
         color: #333333;
     }
 }
@@ -2326,6 +2323,9 @@ nav button.menu-toggle:focus{
         margin-left: 1.41575em;
         margin-right: 1.41575em;
         padding: 0
+    }
+    .main-navigation{
+        padding-left: 1.41575em;
     }
 }
 
@@ -2347,9 +2347,6 @@ nav button.menu-toggle:focus{
     }
     .site-header .handheld-navigation ul.menu li.current-menu-item > a{
            color: #96588a; 
-    }
-    .main-navigation .handheld-navigation ul li a{
-        color: #ffffff;
     }
     .tss--close .tss-label{
         right: -82px;
