@@ -269,11 +269,13 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 						windowMaxWidth: 767, // px
 					}
 					var touchSideSwipe = new TouchSideSwipe(config);
-				</script>
-				<script>
 					// demo open/close buttons
-					document.getElementById('callOpen').addEventListener('click', function(){touchSideSwipe.tssOpen()});
-					document.getElementById('callClose').addEventListener('click', function(){touchSideSwipe.tssClose()});
+                    if(document.getElementById('callOpen')){
+                        document.getElementById('callOpen').addEventListener('click', function(){touchSideSwipe.tssOpen()});
+                    }
+                    if(document.getElementById('callClose')){
+                        document.getElementById('callClose').addEventListener('click', function(){touchSideSwipe.tssClose()});
+                    }
 				</script>
 		</nav><!-- #site-navigation -->
 		<?php
