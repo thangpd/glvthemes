@@ -55,7 +55,7 @@ audio:not([controls]) {
     height: 0
 }
 
-.woocommerce-breadcrumb .back-to {
+/* .woocommerce-breadcrumb .back-to {
     padding: .6180469716em 10px .6180469716em 12px;
     position: relative;
     width: 60px;
@@ -96,7 +96,36 @@ audio:not([controls]) {
     background-color: transparent;
     color: #6d6d6d;
     border: 0;
+} */
+
+.storefront-breadcrumb .link-back {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    padding: 0em 10px 0 15px;
+    position: relative;
+    color: #6d6d6d;
+    font-size: 14px;
+    text-transform: capitalize;
 }
+
+.storefront-breadcrumb .link-back i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6d6d6d;
+    font-size: 14px;
+}
+
+.storefront-breadcrumb .link-back::before {
+    content: none !important;
+}
+
+.storefront-breadcrumb a.link-back {
+    text-decoration: none;
+}
+
 
 [hidden], template {
     display: none
