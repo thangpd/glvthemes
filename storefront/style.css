@@ -2312,11 +2312,7 @@ nav button.menu-toggle:focus{
         color: #333333;
     }
 }
-@media (max-width: 568px){
-    .tss--close .tss-label{
-        right: -60px;
-    }
-}
+
 @media (max-width: 66.4989378333em) {
     .col-full {
         margin-left: 2.617924em;
@@ -2356,7 +2352,7 @@ nav button.menu-toggle:focus{
         color: #ffffff;
     }
     .tss--close .tss-label{
-        right: -80px;
+        right: -82px;
     }
     .tss.tss--open::before{
         content: '';
@@ -2367,7 +2363,11 @@ nav button.menu-toggle:focus{
         background: rgba(0, 0, 0, .5);
     }
 }
-
+@media (max-width: 568px){
+    .tss--close .tss-label{
+        right: -62px;
+    }
+}
 @media(min-width: 1024px) {
     .touch-side-swipe li {
         display: block;
