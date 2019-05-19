@@ -2314,7 +2314,7 @@ nav button.menu-toggle:focus{
 }
 @media (max-width: 568px){
     .tss--close .tss-label{
-        right: -80px;
+        right: -60px;
     }
 }
 @media (max-width: 66.4989378333em) {
@@ -2362,7 +2362,7 @@ nav button.menu-toggle:focus{
         content: '';
         position: absolute;
         top: -30px; left: 0;
-        width: 100%;
+        width: 1000vw;
         height: 100%;
         background: rgba(0, 0, 0, .5);
     }

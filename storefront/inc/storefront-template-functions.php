@@ -263,9 +263,6 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 					var touchSideSwipe = new TouchSideSwipe(config);
 				</script>
 				<script>
-					// demo open/close on load document
-					setTimeout(function() {touchSideSwipe.tssOpen()}, 2000);
-					setTimeout(function() {touchSideSwipe.tssClose()}, 3500);
 					// demo open/close buttons
 					document.getElementById('callOpen').addEventListener('click', function(){touchSideSwipe.tssOpen()});
 					document.getElementById('callClose').addEventListener('click', function(){touchSideSwipe.tssClose()});
