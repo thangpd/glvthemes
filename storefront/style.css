@@ -2251,6 +2251,8 @@ nav button.menu-toggle:focus{
         margin-right: 0
     }
 }
+
+/* ------ Custom css storefront-primary-navigation ------ */
 .btn-share{
     display: none;
 }
@@ -2260,7 +2262,13 @@ nav button.menu-toggle:focus{
     }
     .storefront-primary-navigation{
         position: relative;
-        top: -10px;
+        top: -30px;
+    }
+    .main-navigation .menu{
+        margin-top: 20px;
+    }
+    .main-navigation ul li a{
+        padding: .5em 0;
     }
      .woocommerce-active .col-full .site-branding{
         float: none;
@@ -2317,7 +2325,6 @@ nav button.menu-toggle:focus{
         padding: 0
     }
 }
-
 @media (max-width: 568px) {
     .col-full {
         margin-left: 1.41575em;
@@ -2327,69 +2334,6 @@ nav button.menu-toggle:focus{
     .main-navigation{
         padding-left: 1.41575em;
     }
-}
-
-/* test css */
-
-.content {
-    max-width: 800px;
-    margin: 10px auto;
-    padding: 20px;
-    font-size: 20px;
-    color: #444;
-    background: #eee;
-    line-height: 40px;
-}
-
-@media(max-width: 767px) {
-    .touch-side-swipe {
-        background: #333333;
-    }
-    .site-header .handheld-navigation ul.menu li.current-menu-item > a{
-           color: #96588a; 
-    }
-    .tss--close .tss-label{
-        right: -82px;
-    }
-    .tss.tss--open::before{
-        content: '';
-        position: absolute;
-        top: -30px; left: 0;
-        width: 1000vw;
-        height: 100%;
-        background: rgba(0, 0, 0, .5);
-    }
-}
-@media (max-width: 568px){
-    .tss--close .tss-label{
-        right: -62px;
-    }
-}
-@media(min-width: 1024px) {
-    .touch-side-swipe li {
-        display: block;
-        float: left;
-        padding: 4px;
-        margin-right: 5px;
-        border-radius: 2px;
-        border: 1px solid #fff;
-    }
-}
-
-.touch-side-swipe ul {
-    display: block;
-    overflow-y: overlay;
-    margin: 0;
-    padding: 0;
-    line-height: 30px
-}
-
-.touch-side-swipe a {
-    color: #fff;
-}
-
-* {
-    box-sizing: border-box
 }
 
 
