@@ -2274,6 +2274,8 @@ nav button.menu-toggle:focus{
         float: none;
         margin: 0 auto;
         width: 65%;
+        position: relative;
+        z-index: 1;
     }
     .site-header .custom-logo-link img{
         margin: 0 auto;
