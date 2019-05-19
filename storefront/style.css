@@ -2261,6 +2261,11 @@ nav button.menu-toggle:focus{
         right: -24px;
         background: transparent;
     }
+    .toggled button.menu-toggle:after,
+    .toggled button.menu-toggle:before,
+    .toggled button.menu-toggle span:before{
+        background: #ffffff;
+    }
     .storefront-primary-navigation{
         position: fixed;
         width: 100%;
