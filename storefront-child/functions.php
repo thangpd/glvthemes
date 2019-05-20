@@ -386,7 +386,11 @@ add_action( 'wp_enqueue_style', 'store_child_enqueue_assets' );
 function store_child_enqueue_assets() {
 	wp_enqueue_script(
 		'store-child',
-		get_theme_file_uri( '/assets/js/store-child.js' )
+		get_theme_file_uri( '/assets/js/store-child.js' ), array(
+		'jquery',
+		'bootstrap',
+		'bootstrap-notify'
+	), true, true
 	);
 
 	wp_enqueue_script(
