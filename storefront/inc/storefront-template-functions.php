@@ -273,7 +273,15 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 				)
 			);
 			?>
+			<div class="wrapper">
+            <div class="test-effect">
+                <a id="test" class="ef">click</a>
+            </div>
+		</div>
         </nav><!-- #site-navigation -->
+		<script>
+          
+		</script>
 		<?php
 	}
 }
