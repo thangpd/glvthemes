@@ -30,5 +30,5 @@
 }
 
 .woocommerce-MyAccount-navigation > ul:first-child {
-    display: block;
+    display: none;
 }
