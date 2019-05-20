@@ -388,10 +388,10 @@ function store_child_enqueue_assets() {
 		'store-child',
 		get_theme_file_uri( '/assets/js/store-child.js' )
 	);
-	
+
 	wp_enqueue_script(
 		'store-temp',
-		get_theme_file_uri( '/assets/js/store-temp.js' )
+		get_theme_file_uri( '/assets/js/store-temp.js' ), array( 'jquery' )
 	);
 
 	wp_enqueue_style( 'store-hide', get_theme_file_uri( '/assets/css/store-child.css' ), [ 'storefront-child-style' ], true, 'all' );
