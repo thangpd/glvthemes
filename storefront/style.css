@@ -2260,9 +2260,6 @@ nav button.menu-toggle:focus{
     .home.page:not(.page-template-template-homepage) .site-header{
         margin-bottom: 0;
     }
-    .storefront-primary-navigation{
-        margin-top: -33px;
-    }
     .main-navigation .menu{
         margin-top: 20px;
     }
@@ -2282,18 +2279,23 @@ nav button.menu-toggle:focus{
     .main-navigation{
         padding-left: 2.617924em;
         transition: all, ease, .8s;
+        position: relative;
     }
     .storefront-primary-navigation .col-full{
         margin: 0;
     }
     nav button.menu-toggle{
         float: none;
+        position: absolute;
+        z-index: 1;
+        top: -33px;
     }
     .main-navigation .handheld-navigation{
         max-height: 0;
         overflow: hidden;
         left: -80%;
         position: relative;
+        z-index: 0;
     }
     .main-navigation.toggled .handheld-navigation{
         left: 0;
