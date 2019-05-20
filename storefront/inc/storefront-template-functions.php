@@ -187,6 +187,7 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
 			$share_link = $user->get_url_share_link();
 			?>
         </div>
+        <?php if(is_user_logged_in()) :?>
         <div class="btn-share">
             <a href="javascript:showAndroidShare()" class="fa-share-square"></a>
         </div>
@@ -203,7 +204,10 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
                     console.log('The android native context does not exist yet');
                 }
             }</script>
-		<?php
+            <?php
+        endif;
+
+
 	}
 }
 
