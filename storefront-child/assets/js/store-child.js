@@ -1,18 +1,8 @@
 
 "use strict"
 ;(function($){
-    console.log('hgcg');
-  var elems = document.getElementsByTagName('a');
-            for (var i = 0; i < elems.length; i++) {
-                elems[i].onclick = function() {
-					this.classList.toggle('add-e');
-				}
-            }
-            // function test(){
-            //     for (var i = 0; i < elems.length; i++){
-                    
-            //     }
-            // }
+    
+
 })(jQuery);
 
 var successClick = function(){
@@ -287,14 +277,3 @@ var successClick = function(){
       icon_type: 'class',
   });
 }
-
-var testef = function(){
-  
-}
-//test
-//  $(document).ready(function() {
-//    $('.ef').on('click', function(){
-//     $(this).addClass('add-e');
-//     console.log('c');
-//   });
-//  });
