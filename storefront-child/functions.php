@@ -376,7 +376,7 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
 	function custom_storefront_credit() {
 		?>
         <div class="site-info">
-            &copy; <?php echo ' 2019 Version 0.1 | Gold Leaf Ventures INC. '; ?>
+            &copy; <?php echo ' 2019 Open Beta 0.1 | Gold Leaf Ventures INC. '; ?>
         </div><!-- .site-info -->
 		<?php
 	}
@@ -388,18 +388,7 @@ function store_child_enqueue_assets() {
 		'store-child',
 		get_theme_file_uri( '/assets/js/store-child.js' )
 	);
-	wp_enqueue_script(
-		'modernizr.custom',
-		get_theme_file_uri( '/assets/js/modernizr.custom.js' )
-	);
-	wp_enqueue_script(
-		'classie',
-		get_theme_file_uri( '/assets/js/classie.js' )
-	);
-	wp_enqueue_style(
-		'classie',
-		get_theme_file_uri( '/assets/css/component.css' )
-	);
+	
 	wp_enqueue_script(
 		'store-temp',
 		get_theme_file_uri( '/assets/js/store-temp.js' )
