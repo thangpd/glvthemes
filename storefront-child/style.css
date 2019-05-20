@@ -29,6 +29,6 @@
 
 }
 
-.woocommerce-MyAccount-navigation ul {
-    display: none;
+.woocommerce-MyAccount-navigation > ul:first-child {
+    display: block;
 }
