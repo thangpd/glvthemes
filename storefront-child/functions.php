@@ -388,8 +388,6 @@ function store_child_enqueue_assets() {
 		'store-child',
 		get_theme_file_uri( '/assets/js/store-child.js' ), array(
 		'jquery',
-		'bootstrap',
-		'bootstrap-notify'
 	), true, true
 	);
 
