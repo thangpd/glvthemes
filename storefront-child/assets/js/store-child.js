@@ -4,7 +4,6 @@
 
         switch (status) {
             case 'success':
-                successClick()
                 break;
         }
     }
