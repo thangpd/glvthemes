@@ -2301,7 +2301,7 @@ nav button.menu-toggle:focus{
     }
     .main-navigation.toggled .handheld-navigation{
         left: 0;
-        max-height: 9999px;
+        max-height: 9998px;
     }
     .site-header .main-navigation ul.menu li.current-menu-item > a{
         color: #96588a;
@@ -2343,6 +2343,8 @@ nav button.menu-toggle:focus{
 body a:focus{
     outline: none;
 }
+
+/* ---------- Anchor effect on click --------- */
 a::after{
     position: absolute;
     content:'';
@@ -2365,11 +2367,11 @@ a.effect-click::after{
 		opacity: 1;
 	}
 	50% {
-		box-shadow: inset 0 0 0 50px rgba(240, 240, 240, 0.4);
+		box-shadow: inset 0 0 0 50px rgba(240, 240, 240, 0.5);
 		opacity: 1;
 	}
 	100% {
-		box-shadow: inset 0 0 0 35px rgba(240, 240, 240, 0.4);
+		box-shadow: inset 0 0 0 35px rgba(240, 240, 240, 0.5);
 		opacity: 0;
 		-webkit-transform: scale3d(1.1, 1.1, 1);
 		transform: scale3d(1.1, 1.1, 1);
