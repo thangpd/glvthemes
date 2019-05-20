@@ -4,6 +4,53 @@ Fong: Đây là file tạm, không phải giải pháp lâu dài. TOM sẽ revie
 
 
 button.woocommerce-Button.button[name="login"] {
-    margin-top: 30px;
+    margin-top: 10px;
 }
+
+
+body h1.entry-title, body .storefront-handheld-footer-bar {
+    display: none;
+}
+
+body.logged-in h1.entry-title body.logged-in .storefront-handheld-footer-bar {
+    display: block;
+}
+
+
+.list_countrycode{
+        width: 16% !important;
+        margin-right: 5px !important;
+}
+
+.phone_login {
+    margin-bottom: 20px;
+}
+
+
+.main-navigation ul li a{
+     font-size: 130%;   
+}
+
+input#myInput{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.qr_code img {
+    width: 100%;
+}
+
+.myCRED-balance.mycred-balance-mycred_default , .widget .myCRED-balance {
+    text-align: left !important;
+}
+
+input.mycred-autofill.form-control.ui-autocomplete-input {
+    width: 100%;
+}
+
+input.form-control {
+    width: 100%;
+}
+
+
 

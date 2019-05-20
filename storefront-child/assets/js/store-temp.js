@@ -3,11 +3,9 @@
 
 //"use strict"
 ;(function ($) {
+    $(document).ready(function(){
+                    
+    });
 
-    // Hide H1 (title) of log in page (if user not log in)
-    if( ! $('body').hasClass('logged-in') ){
-        $('h1.entry-title').hide();
-        alert('x');
-    }
-
+    
 })(jQuery);
