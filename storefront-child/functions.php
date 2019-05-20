@@ -389,6 +389,18 @@ function store_child_enqueue_assets() {
 		get_theme_file_uri( '/assets/js/store-child.js' )
 	);
 	wp_enqueue_script(
+		'modernizr.custom',
+		get_theme_file_uri( '/assets/js/modernizr.custom.js' )
+	);
+	wp_enqueue_script(
+		'classie',
+		get_theme_file_uri( '/assets/js/classie.js' )
+	);
+	wp_enqueue_style(
+		'classie',
+		get_theme_file_uri( '/assets/css/component.css' )
+	);
+	wp_enqueue_script(
 		'store-temp',
 		get_theme_file_uri( '/assets/js/store-temp.js' )
 	);

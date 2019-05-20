@@ -277,3 +277,5 @@ var successClick = function(){
       icon_type: 'class',
   });
 }
+
+//test
