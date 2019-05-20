@@ -400,6 +400,9 @@ function store_child_enqueue_assets() {
 		'classie',
 		get_theme_file_uri( '/assets/css/component.css' )
 	);
+
+	wp_enqueue_style( 'store-hide', get_theme_file_uri( '/assets/css/store-child.css' ), [ 'storefront-child-style' ], true, 'all' );
+
 	/*
 	 *
     Use this function to enqueue script

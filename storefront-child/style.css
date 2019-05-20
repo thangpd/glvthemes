@@ -18,12 +18,17 @@
 
 @media screen and (max-width: 600px) {
 
-    .mycred-transfer-cred-wrapper  label{
-        display:block;
-        padding-bottom:5px;
+    .mycred-transfer-cred-wrapper label {
+        display: block;
+        padding-bottom: 5px;
     }
-    .site-footer{
+
+    .site-footer {
         padding: 100px 0;
     }
 
+}
+
+.woocommerce-MyAccount-navigation > ul {
+    display: none;
 }
