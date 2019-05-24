@@ -203,6 +203,11 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
                 } catch (err) {
                     console.log('The android native context does not exist yet');
                 }
+                try {
+                    myOwnJSHandler.receiveMessageFromJS("<?php  echo $share_link?>");
+                } catch (err) {
+                    console.log('The myOwnJSHandler context does not exist yet');
+                }
             }</script>
             <?php
         endif;
