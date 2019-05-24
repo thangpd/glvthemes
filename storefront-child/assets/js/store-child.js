@@ -2,7 +2,7 @@
 "use strict"
 ;(function($){
     var $loading = $('.lds-default').hide();
-$loading.show();
+
     $(document)
         .ajaxStart(function () {
             $loading.show();
