@@ -375,6 +375,7 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
 
 	function custom_storefront_credit() {
 		?>
+        <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         <div class="site-info">
             &copy; <?php echo ' 2019 Open Beta 0.1 | Gold Leaf Ventures INC. '; ?>
         </div><!-- .site-info -->
