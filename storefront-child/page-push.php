@@ -6,7 +6,7 @@ $repo="glvthemes";
 chdir($gitpath);
                                         $output = '';
                                         $return = 1;
-//                                        $_str = exec("git checkout {$branch} && git pull", $output, $return);
+//           test                             $_str = exec("git checkout {$branch} && git pull", $output, $return);
                                         $_str = exec("git checkout master && git pull origin master", $output, $return);
 
 
