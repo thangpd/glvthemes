@@ -2345,10 +2345,10 @@ body a:focus{
 }
 
 /* ---------- Anchor effect on click --------- */
-a{
+.site a{
     position: relative;
 }
-a::before{
+.site a::before{
     position: absolute;
     content:'';
     top: 0;
@@ -2358,10 +2358,10 @@ a::before{
     opacity: 0;
     display: block !important;
 }
-a::before {
+.site a::before {
     box-shadow: inset 0 0 0 2px rgba(240, 240, 240, 0.1);
 }
-a.effect-click::before{
+.site a.effect-click::before{
     -webkit-animation: anim-effect-marko 0.4s forwards;
 	animation: anim-effect-marko 0.4s forwards;
 }

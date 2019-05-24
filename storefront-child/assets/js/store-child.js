@@ -10,7 +10,7 @@
         .ajaxStop(function () {
             $loading.hide();
         });
-
+        
 })(jQuery);
 
 var successClick = function(){
