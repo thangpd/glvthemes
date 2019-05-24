@@ -2345,6 +2345,9 @@ body a:focus{
 }
 
 /* ---------- Anchor effect on click --------- */
+a{
+    position: relative;
+}
 a::after{
     position: absolute;
     content:'';
