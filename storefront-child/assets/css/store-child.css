@@ -12,7 +12,7 @@ body h1.entry-title, body .storefront-handheld-footer-bar {
     display: none;
 }
 
-body.logged-in h1.entry-title body.logged-in .storefront-handheld-footer-bar {
+body.logged-in h1.entry-title, body.logged-in .storefront-handheld-footer-bar {
     display: block;
 }
 
@@ -54,7 +54,3 @@ input.form-control {
 
 
 
-
-#mycred-partial-payment-woo{
-    display:none;
-}
