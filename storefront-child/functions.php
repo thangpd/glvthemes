@@ -361,7 +361,7 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
 	function custom_storefront_credit() {
 		?>
         <div class="site-info">
-            &copy; <?php echo ' 2019 Open Beta 0.1 | Gold Leaf Ventures INC. '; ?>
+            &copy; <?php echo 'Gold Leaf Ventures Limited'; ?>
         </div><!-- .site-info -->
 		<?php
 	}
