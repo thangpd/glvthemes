@@ -2382,5 +2382,10 @@ body a:focus{
 	}
 }
 
+/* ---- Control icon bottom ---- */
+.storefront-handheld-footer-bar ul li>a::before{
+    opacity: 1;
+}
+
 
 
