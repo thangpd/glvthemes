@@ -7,11 +7,6 @@ button.woocommerce-Button.button[name="login"] {
     margin-top: 10px;
 }
 
-
-body h1.entry-title, body .storefront-handheld-footer-bar {
-    display: none;
-}
-
 h1.entry-title {
     float: left;
     margin-top: 6%;
