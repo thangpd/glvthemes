@@ -18,6 +18,7 @@
                     }, 500);
               }
             }
+            
 })(jQuery);
 
 var successClick = function(){

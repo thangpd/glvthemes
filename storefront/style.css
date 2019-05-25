@@ -2310,9 +2310,10 @@ nav button.menu-toggle:focus{
         position: relative;
     } 
     .btn-share{
+        font-size: xx-large;
         display: block;
         position: absolute;
-        top: 35px;
+        top: 25px;
         right: 0;
         z-index: 9999;
     }
@@ -2380,6 +2381,11 @@ body a:focus{
 		-webkit-transform: scale3d(1.1, 1.1, 1);
 		transform: scale3d(1.1, 1.1, 1);
 	}
+}
+
+/* ---- Control icon bottom ---- */
+.storefront-handheld-footer-bar ul li>a::before{
+    opacity: 1;
 }
 
 
