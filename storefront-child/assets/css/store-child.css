@@ -9,7 +9,12 @@ button.woocommerce-Button.button[name="login"] {
 
 
 body h1.entry-title, body .storefront-handheld-footer-bar {
-    display: none;
+    display: block;
+}
+
+h1.entry-title {
+    float: left;
+    margin-top: 6%;
 }
 
 body.logged-in h1.entry-title, body.logged-in .storefront-handheld-footer-bar {
