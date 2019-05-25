@@ -358,20 +358,34 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
 		remove_action( 'storefront_footer', 'storefront_credit', 20 );
 		add_action( 'storefront_footer', 'custom_storefront_credit', 20 );
 	}
+
 	function custom_storefront_credit() {
 		?>
         <div class="site-info">
+			<p>
+				<?php if ( WP_DEBUG ) {
+					echo 'On Staging Debug';
+				} else {
+					echo 'On Production';
+				} ?>
+            </p>
+
             <p>
-            &copy; <?php echo 'Gold Leaf Ventures Limited'; ?>
-            </p>    
+                &copy; <?php echo 'Gold Leaf Ventures Limited'; ?>
+            </p>
             <p>
-           <a href="http://member.goldleaf-ventures.com">http://member.goldleaf-ventures.com</a>
+                <a href="http://member.goldleaf-ventures.com">http://member.goldleaf-ventures.com</a>
+            </p>
+            <p>
+                <a href="http://webapp1.goldleaf-ventures.com">http://webapp1.goldleaf-ventures.com</a>
+            </p>
+            <p>
+                <a href="http://google.com">http://google.com</a>
             </p>
         </div><!-- .site-info -->
 		<?php
 	}
 }
-
 
 
 if ( ! function_exists( 'glv_always_remember_choice' ) ) {
@@ -394,7 +408,7 @@ function store_child_enqueue_assets() {
 		'store-child',
 		get_theme_file_uri( '/assets/js/store-child.js' ), array(
 		'jquery',
-		), true, true
+	), true, true
 	);
 
 	wp_enqueue_script(
