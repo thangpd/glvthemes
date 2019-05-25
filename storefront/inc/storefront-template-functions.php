@@ -214,6 +214,7 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
 
 
 	}
+	
 }
 
 if ( ! function_exists( 'storefront_site_title_or_logo' ) ) {
@@ -279,20 +280,7 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 			);
 			?>
         </nav><!-- #site-navigation -->
-
-		<!-- Anchor effect on click -->
-		<script>
-            var elems = document.getElementsByTagName('a');
-            for (var i = 0; i < elems.length; i++) {
-                elems[i].onclick = function() {
-					this.classList.add('effect-click');
-					const that = this;
-						setTimeout(function(){
-							that.classList.remove('effect-click');
-							}, 500);
-				}
-            }
-		</script>
+		
 		<?php
 	}
 }

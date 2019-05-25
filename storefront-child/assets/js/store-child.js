@@ -10,7 +10,20 @@
         .ajaxStop(function () {
             $loading.hide();
         });
+
+        // Anchor effect on click
         
+            var elems = document.getElementsByTagName('a');
+            console.log('test');
+            for (var i = 0; i < elems.length; i++) {
+                elems[i].onclick = function() {
+                this.classList.add('effect-click');
+                const that = this;
+                  setTimeout(function(){
+                    that.classList.remove('effect-click');
+                    }, 500);
+              }
+            }
 })(jQuery);
 
 var successClick = function(){
