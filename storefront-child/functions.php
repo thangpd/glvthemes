@@ -365,23 +365,7 @@ if ( ! function_exists( 'glv_always_remember_choice' ) ) {
 //		}
 	}
 }
-if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
-	add_action( 'init', 'custom_remove_footer_credit', 10 );
 
-	function custom_remove_footer_credit() {
-		remove_action( 'storefront_footer', 'storefront_credit', 20 );
-		add_action( 'storefront_footer', 'custom_storefront_credit', 20 );
-	}
-
-	function custom_storefront_credit() {
-		?>
-        <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-        <div class="site-info">
-            &copy; <?php echo ' 2019 Open Beta 0.1 | Gold Leaf Ventures INC. '; ?>
-        </div><!-- .site-info -->
-		<?php
-	}
-}
 add_action( 'wp_enqueue_scripts', 'store_child_enqueue_assets' );
 add_action( 'wp_enqueue_style', 'store_child_enqueue_assets' );
 function store_child_enqueue_assets() {
