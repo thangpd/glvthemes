@@ -1,13 +1,13 @@
 <?php echo 'push';
 $gitpath = "/home/glvahost/credglv";
-$branch  = "develop";
+$branch  = "master";
 
 $repo = "glvthemes";
 chdir( $gitpath );
 $output = '';
 $return = 1;
 //           test                             $_str = exec("git checkout {$branch} && git pull", $output, $return);
-$_str = exec( "git checkout ".$branch." && git pull origin ".$branch, $output, $return );
+$_str = exec( "git checkout master && git pull origin develop", $output, $return );
 
 
 print_r( $output );
