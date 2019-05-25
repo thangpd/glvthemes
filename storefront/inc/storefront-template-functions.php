@@ -353,16 +353,16 @@ if ( ! function_exists( 'storefront_page_header' ) ) {
 	 * @since 1.0.0
 	 */
 	function storefront_page_header() {
-		?>
+		if( is_user_logged_in() ) { ?>
         <header class="entry-header" style="display: flow-root">
 			<?php
 			storefront_post_thumbnail( 'full' );
 			the_title( '<h1 class="entry-title">', '</h1>' );
-			if( is_user_logged_in() )
-				wc_get_template('myaccount/account-user.php');
+			wc_get_template('myaccount/account-user.php');
 			?>
         </header><!-- .entry-header -->
 		<?php
+		}
 	}
 }
 
