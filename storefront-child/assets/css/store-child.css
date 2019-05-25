@@ -8,7 +8,14 @@ button.woocommerce-Button.button[name="login"] {
 }
 
 
+body h1.entry-title, body .storefront-handheld-footer-bar {
+    display: none;
+}
 
+h1.entry-title {
+    float: left;
+    margin-top: 6%;
+}
 
 
 .list_countrycode {

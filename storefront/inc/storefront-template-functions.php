@@ -354,10 +354,12 @@ if ( ! function_exists( 'storefront_page_header' ) ) {
 	 */
 	function storefront_page_header() {
 		?>
-        <header class="entry-header">
+        <header class="entry-header" style="display: flow-root">
 			<?php
 			storefront_post_thumbnail( 'full' );
 			the_title( '<h1 class="entry-title">', '</h1>' );
+			if( is_user_logged_in() )
+				wc_get_template('myaccount/account-user.php');
 			?>
         </header><!-- .entry-header -->
 		<?php
