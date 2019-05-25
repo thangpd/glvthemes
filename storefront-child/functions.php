@@ -361,7 +361,12 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
 	function custom_storefront_credit() {
 		?>
         <div class="site-info">
+            <p>
             &copy; <?php echo 'Gold Leaf Ventures Limited'; ?>
+            </p>    
+            <p>
+           <a href="http://member.goldleaf-ventures.com">http://member.goldleaf-ventures.com</a>
+            </p>
         </div><!-- .site-info -->
 		<?php
 	}
