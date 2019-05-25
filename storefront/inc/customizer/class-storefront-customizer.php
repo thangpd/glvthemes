@@ -48,7 +48,7 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 					'storefront_header_background_color' => '#ffffff',
 					'storefront_header_text_color'       => '#404040',
 					'storefront_header_link_color'       => '#333333',
-					'storefront_footer_background_color' => '#f0f0f0',
+					'storefront_footer_background_color' => '#ffffff',
 					'storefront_footer_heading_color'    => '#333333',
 					'storefront_footer_text_color'       => '#6d6d6d',
 					'storefront_footer_link_color'       => '#333333',
@@ -780,6 +780,7 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 			.site-footer {
 				background-color: ' . $storefront_theme_mods['footer_background_color'] . ';
 				color: ' . $storefront_theme_mods['footer_text_color'] . ';
+				border: 1px solid #f0f0f0;
 			}
 
 			.site-footer a:not(.button) {
@@ -815,6 +816,9 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 				.site-header {
 					border-bottom-color: ' . storefront_adjust_color_brightness( $storefront_theme_mods['header_background_color'], -15 ) . ';
 				}
+			}
+			.hentry .entry-content a:not(.button){
+				text-decoration: none;
 			}';
 
 			return apply_filters( 'storefront_customizer_css', $styles );

@@ -189,7 +189,7 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
         </div>
         <?php if(is_user_logged_in()) :?>
         <div class="btn-share">
-            <a href="javascript:showAndroidShare()" class="fa-share-square"></a>
+            <a href="javascript:showAndroidShare()"><i class="fa fa-share-alt"></i></a>
         </div>
         <script>
             function showAndroidShare() {
