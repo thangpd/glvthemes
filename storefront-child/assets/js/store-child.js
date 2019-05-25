@@ -1,15 +1,9 @@
 
 "use strict"
 ;(function($){
-    var $loading = $('.lds-default').hide();
 
     $(document)
-        .ajaxStart(function () {
-            $loading.show();
-        })
-        .ajaxStop(function () {
-            $loading.hide();
-        });
+
 
         // Anchor effect on click
         
