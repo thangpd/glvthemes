@@ -8,13 +8,7 @@ button.woocommerce-Button.button[name="login"] {
 }
 
 
-body h1.entry-title, body .storefront-handheld-footer-bar {
-    display: none;
-}
 
-body.logged-in h1.entry-title, body.logged-in .storefront-handheld-footer-bar {
-    display: block;
-}
 
 
 .list_countrycode {
@@ -57,3 +51,10 @@ input.form-control {
     display: none;
 }
 
+
+@media screen and( max-width:768px){
+
+    body.logged-in h1.entry-title, body.logged-in .storefront-handheld-footer-bar {
+        display: block;
+    }
+}
