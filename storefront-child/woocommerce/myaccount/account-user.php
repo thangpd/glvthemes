@@ -10,7 +10,7 @@
 	<span class="user-name inline-block">
 		<em class="user-id op-5"><?php echo '#'.$user_id;?></em>
 		<?php 
-			echo ' | '.mb_strtoupper($user_fullname,'UTF-8').'<br>'.strtoupper($current_user->display_name).'<br>';
+			echo ' | '.mb_strtoupper($user_fullname,'UTF-8').'<br>'.strtoupper($current_user->user_login).'<br>';
 		?>
 	</span>
 </div>
