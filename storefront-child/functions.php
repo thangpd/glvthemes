@@ -375,9 +375,23 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
 
 	function custom_storefront_credit() {
 		?>
-        <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         <div class="site-info">
-            &copy; <?php echo ' 2019 Open Beta 0.1 | Gold Leaf Ventures INC. '; ?>
+			<p>
+				<?php if ( WP_DEBUG ) {
+					echo 'On Staging Debug';
+				} else {
+					echo 'On Production';
+				} ?>
+            </p>
+
+            <p>
+                &copy; <?php echo '2018-'.date("Y").' Gold Leaf Ventures Limited<br>'; ?>
+            </p>
+            <p>
+            	<a href="http://member.goldleaf-ventures.com" style="color: #6d6d6d; text-decoration: none">Open Beta Version 0.1&nbsp;</a>
+            	<a href="http://webapp1.goldleaf-ventures.com" style="color: #6d6d6d; text-decoration: none">&nbsp;|&nbsp;T.&nbsp;</a>
+            	<a href="http://google.com" style="color: #6d6d6d; text-decoration: none">|&nbsp;G.</a>
+            </p>
         </div><!-- .site-info -->
 		<?php
 	}
