@@ -352,8 +352,9 @@ if ( ! function_exists( 'storefront_page_header' ) ) {
 	 * @since 1.0.0
 	 */
 	function storefront_page_header() {
+		if( is_user_logged_in() ) {
 		?>
-        <header class="entry-header" style="display: flow-root">
+        <header class="entry-header" style="">
 			<?php
 			storefront_post_thumbnail( 'full' );
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -361,7 +362,8 @@ if ( ! function_exists( 'storefront_page_header' ) ) {
 				wc_get_template('myaccount/account-user.php');
 			?>
         </header><!-- .entry-header -->
-		<?php
+		<?php 
+		}
 	}
 }
 
@@ -373,7 +375,7 @@ if ( ! function_exists( 'storefront_page_content' ) ) {
 	 */
 	function storefront_page_content() {
 		?>
-        <div class="entry-content">
+        <div class="entry-content" style="display: inline-block; width: 100%">
 			<?php the_content(); ?>
 			<?php
 			wp_link_pages(

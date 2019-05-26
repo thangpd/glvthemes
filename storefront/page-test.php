@@ -1,15 +1,6 @@
 <?php get_header(); ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
-<body>
 
 <div class="container">
     <button class="btn btn-success" onclick="successClick()">Success</button>
@@ -26,8 +17,5 @@
 <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type='text/javascript' src="https://cdn.jsdelivr.net/npm/bootstrap-notify@3.1.3/bootstrap-notify.min.js "></script>
 <script type='text/javascript' src='<?php echo get_theme_file_uri() ?>/assets/js/store-child.js?ver=5.2'></script>
-</body>
-</html>
-
 
 <?php get_footer(); ?>

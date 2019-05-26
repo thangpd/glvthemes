@@ -5,12 +5,12 @@
 	 	$user_id = $current_user->ID;
 	 	$user_fullname = get_user_meta($user_id,'user_fullname',true); 
 	 ?>
-	<img src="<?php echo get_user_meta( $user_id,'avatar',true ) ? get_user_meta( $user_id,'avatar',true ) : get_avatar_url($user_id);?>" width="70" height="70" id="user_avatar"/>
+	<img src="<?php echo get_user_meta( $user_id,'avatar',true ) ? get_user_meta( $user_id,'avatar',true ) : get_avatar_url($user_id);?>" width="70" height="70" id="user_avatar" style="display: block; margin:0 auto; "/>
 		</span>
 	<span class="user-name inline-block">
 		<em class="user-id op-5"><?php echo '#'.$user_id;?></em>
 		<?php 
-			echo ' | '.mb_strtoupper($user_fullname,'UTF-8').'<br>'.strtoupper($current_user->user_login).'<br>';
+			echo '<br>'.mb_strtoupper($user_fullname,'UTF-8').'<br>'.strtoupper($current_user->user_login).'<br>';
 		?>
 	</span>
 </div>
