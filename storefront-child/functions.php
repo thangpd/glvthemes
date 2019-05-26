@@ -416,6 +416,16 @@ function store_child_enqueue_assets() {
 		get_theme_file_uri( '/assets/js/store-temp.js' ), array( 'jquery' )
 	);
 
+	wp_enqueue_script(
+		'classie',
+		get_theme_file_uri( '/assets/js/classie.js' ), array( 'jquery' )
+	);
+
+	wp_enqueue_script(
+		'modernizr.custom',
+		get_theme_file_uri( '/assets/js/modernizr.custom.js' ), array( 'jquery' )
+	);
+
 	wp_enqueue_style( 'store-hide', get_theme_file_uri( '/assets/css/store-child.css' ), [ 'storefront-child-style' ], true, 'all' );
 
 	/*

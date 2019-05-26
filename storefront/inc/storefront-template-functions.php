@@ -280,7 +280,6 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 			);
 			?>
         </nav><!-- #site-navigation -->
-		
 		<?php
 	}
 }
