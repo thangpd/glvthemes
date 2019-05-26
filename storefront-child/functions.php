@@ -371,16 +371,12 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
             </p>
 
             <p>
-                &copy; <?php echo 'Gold Leaf Ventures Limited'; ?>
+                &copy; <?php echo '2018-'.date("Y").' Gold Leaf Ventures Limited<br>'; ?>
             </p>
             <p>
-                <a href="http://member.goldleaf-ventures.com">http://member.goldleaf-ventures.com</a>
-            </p>
-            <p>
-                <a href="http://webapp1.goldleaf-ventures.com">http://webapp1.goldleaf-ventures.com</a>
-            </p>
-            <p>
-                <a href="http://google.com">http://google.com</a>
+            	<a href="http://member.goldleaf-ventures.com" style="color: #6d6d6d; text-decoration: none">Open Beta Version 0.1&nbsp;</a>
+            	<a href="http://webapp1.goldleaf-ventures.com" style="color: #6d6d6d; text-decoration: none">&nbsp;|&nbsp;T.&nbsp;</a>
+            	<a href="http://google.com" style="color: #6d6d6d; text-decoration: none">|&nbsp;G.</a>
             </p>
         </div><!-- .site-info -->
 		<?php
