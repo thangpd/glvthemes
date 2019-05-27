@@ -187,8 +187,9 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
 			$share_link = $user->get_url_share_link();
 			?>
         </div>
+        <?php if(is_user_logged_in()) :?>
         <div class="btn-share">
-            <a href="javascript:showAndroidShare()" class="fa-share-square"></a>
+            <a href="javascript:showAndroidShare()"><i class="fa fa-share-alt" style="color:black"></i></a>
         </div>
         <script>
             function showAndroidShare() {
@@ -202,9 +203,18 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
                 } catch (err) {
                     console.log('The android native context does not exist yet');
                 }
+                try {
+                    myOwnJSHandler.receiveMessageFromJS("<?php  echo $share_link?>");
+                } catch (err) {
+                    console.log('The myOwnJSHandler context does not exist yet');
+                }
             }</script>
-		<?php
+            <?php
+        endif;
+
+
 	}
+	
 }
 
 if ( ! function_exists( 'storefront_site_title_or_logo' ) ) {
@@ -342,14 +352,18 @@ if ( ! function_exists( 'storefront_page_header' ) ) {
 	 * @since 1.0.0
 	 */
 	function storefront_page_header() {
+		if( is_user_logged_in() ) {
 		?>
-        <header class="entry-header">
+        <header class="entry-header" style="">
 			<?php
 			storefront_post_thumbnail( 'full' );
 			the_title( '<h1 class="entry-title">', '</h1>' );
+			if( is_user_logged_in() )
+				wc_get_template('myaccount/account-user.php');
 			?>
         </header><!-- .entry-header -->
-		<?php
+		<?php 
+		}
 	}
 }
 
@@ -361,7 +375,7 @@ if ( ! function_exists( 'storefront_page_content' ) ) {
 	 */
 	function storefront_page_content() {
 		?>
-        <div class="entry-content">
+        <div class="entry-content" style="display: inline-block; width: 100%">
 			<?php the_content(); ?>
 			<?php
 			wp_link_pages(

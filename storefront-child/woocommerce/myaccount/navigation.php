@@ -25,7 +25,6 @@ do_action( 'woocommerce_before_account_navigation' );
 
 <nav class="woocommerce-MyAccount-navigation">
 	<div class="large-3 col col-border">
-		<?php wc_get_template('myaccount/account-user.php'); ?>
 	</div><!-- .large-3 -->
 	<ul>
 
