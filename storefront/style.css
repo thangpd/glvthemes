@@ -2258,7 +2258,7 @@ nav button.menu-toggle:focus{
 }
 @media (max-width: 767px){
     .site-header .site-branding a{
-        padding: 10px;
+        padding: 5px;
     }
     .home.page:not(.page-template-template-homepage) .site-header{
         margin-bottom: 0;
@@ -2293,7 +2293,7 @@ nav button.menu-toggle:focus{
         position: absolute;
         float: none;
         z-index: 1;
-        top: -36px;
+        top: -40px;
     }
     .main-navigation .handheld-navigation{
         max-height: 0;
