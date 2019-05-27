@@ -2264,7 +2264,7 @@ nav button.menu-toggle:focus{
         margin-top: 20px;
     }
     .main-navigation ul li a{
-        padding: .5em 0;
+        padding: .3em 0;
     }
      .woocommerce-active .col-full .site-branding{
         float: none;
@@ -2322,6 +2322,13 @@ nav button.menu-toggle:focus{
         font-family: 'Font Awesome 5 Free';
         font-size: 1.5em;
         color: #333333;
+    }
+    .handheld-navigation .dropdown-toggle:focus{
+        outline: none;
+    }
+    .storefront-handheld-footer-bar ul li>a::before{
+        transform: none;
+        background: none;
     }
 }
 
