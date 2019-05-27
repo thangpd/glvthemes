@@ -2352,13 +2352,17 @@ body a:focus{
 }
 
 /* ------ Anchor effect onclick ------ */
+.site-header .site-branding a{
+    max-width: 230px;
+}
 .site a {
 	position: relative;
 }
 
 .site a.cbutton--click,
 .site a:focus {
-	outline: none;
+    outline: none;
+    background: none;
 }
 
 .cbutton__icon {
@@ -2377,11 +2381,12 @@ body a:focus{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	border-radius: 50%;
 	content: '';
-	opacity: 0;
     pointer-events: none;
     display: block !important;
+    z-index: -1;
+    transform: scale(0);
+    background: #f2f2f2;
 }
 
 .cbutton--box {
@@ -2391,43 +2396,34 @@ body a:focus{
 }
 
 .site a::before{
-	box-shadow: inset 0 0 0 2px rgba(111,148,182,0.3);
+	background: #f2f2f2;
 }
 
 .site a.cbutton--click::before {
-	-webkit-animation: anim-effect-marko 0.5s forwards;
-	animation: anim-effect-marko 0.5s forwards;
+	-webkit-animation: anim-effect-marko 0.4s forwards;
+	animation: anim-effect-marko 0.4s forwards;
 }
 
 @-webkit-keyframes anim-effect-marko {
-	0% {
+    0% {
 		opacity: 1;
-	}
-	50% {
-		box-shadow: inset 0 0 0 50px rgba(111,148,182,0.1);
-		opacity: 1;
-	}
+        transform: scale(0);
+    }
 	100% {
-		box-shadow: inset 0 0 0 35px rgba(111,148,182,0.1);
-		opacity: 0;
-		-webkit-transform: scale3d(1.1, 1.1, 1);
-		transform: scale3d(1.1, 1.1, 1);
+		opacity: 1;
+	
+        transform: scale(1);
 	}
 }
 
 @keyframes anim-effect-marko {
 	0% {
 		opacity: 1;
-	}
-	50% {
-		box-shadow: inset 0 0 0 50px rgba(111,148,182,0.1);
-		opacity: 1;
-	}
+        transform: scale(0);
+    }
 	100% {
-		box-shadow: inset 0 0 0 35px rgba(111,148,182,0.1);
-		opacity: 0;
-		-webkit-transform: scale3d(1.1, 1.1, 1);
-		transform: scale3d(1.1, 1.1, 1);
+		opacity: 1;
+	
+        transform: scale(1);
 	}
 }
-

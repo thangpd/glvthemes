@@ -35,6 +35,7 @@
             classie.add( el, 'cbutton--click' );
             onEndAnimation( classie.has( el, 'cbutton--complex' ) ? el.querySelector( '.cbutton__helper' ) : el, function() {
               classie.remove( el, 'cbutton--click' );
+              console.log('test');
             } );
           } );
         } );
