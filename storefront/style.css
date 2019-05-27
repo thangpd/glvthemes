@@ -2293,7 +2293,7 @@ nav button.menu-toggle:focus{
         position: absolute;
         float: none;
         z-index: 1;
-        top: -40px;
+        top: -38px;
     }
     .main-navigation .handheld-navigation{
         max-height: 0;
