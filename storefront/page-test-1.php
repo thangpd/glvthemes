@@ -92,7 +92,7 @@ input:focus {
   list-style: none;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow: none;
 }
 
 .form-login ul li {
