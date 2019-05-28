@@ -24,7 +24,7 @@ echo '<pre>';
 print_r($return);
 echo '</pre>';
 
-$_str = exec( "whoiam", $output, $return );
+$_str = exec( "whoami", $output, $return );
 echo '<pre>';
 print_r($output);
 echo '</pre>';
