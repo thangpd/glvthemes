@@ -2438,6 +2438,29 @@ body a:focus{
 	}
 }
 
+.storefront-handheld-footer-bar ul li>a.cbutton--click::before,
+.storefront-breadcrumb .woocommerce-breadcrumb a.cbutton--click:first-of-type::before{
+    -webkit-animation: control-scale 0.4s forwards;
+    animation: control-scale 0.4s forwards;
+}
+
+@-webkit-keyframes control-scale {
+	0% {
+        transform: scale(1  );
+    }
+	100% {
+        transform: scale(1);
+	}
+}
+
+@keyframes control-scale {
+	0% {
+        transform: scale(1  );
+    }
+	100% {
+        transform: scale(1);
+	}
+}
 /* ---- display nav footer ---- */
 @media (max-width: 767px){
     .storefront-handheld-footer-bar{
