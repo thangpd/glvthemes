@@ -2437,3 +2437,46 @@ body a:focus{
         transform: scale(1);
 	}
 }
+
+.storefront-handheld-footer-bar ul li>a.cbutton--click::before,
+.storefront-breadcrumb .woocommerce-breadcrumb a.cbutton--click:first-of-type::before{
+    -webkit-animation: control-scale 0.4s forwards;
+    animation: control-scale 0.4s forwards;
+}
+
+@-webkit-keyframes control-scale {
+	0% {
+        transform: scale(1  );
+    }
+	100% {
+        transform: scale(1);
+	}
+}
+
+@keyframes control-scale {
+	0% {
+        transform: scale(1  );
+    }
+	100% {
+        transform: scale(1);
+	}
+}
+/* ---- display nav footer ---- */
+@media (max-width: 767px){
+    .storefront-handheld-footer-bar{
+        display: none;
+    }
+    .logged-in .storefront-handheld-footer-bar{
+        display: block;
+    }
+}
+
+/* ----- fix breadcrumb ----- */
+.storefront-breadcrumb .woocommerce-breadcrumb a:first-of-type::before{
+    position: relative;
+    display: inline-block !important;
+    transform: none;
+    width: unset;
+    height: unset;
+    background: none;
+}
