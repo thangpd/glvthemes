@@ -6,8 +6,9 @@ $repo = "glvthemes";
 chdir( $gitpath );
 $output = '';
 $return = 1;
+print_r("git checkout " . $branch . " && git pull origin " . $branch);
 //           test                             $_str = exec("git checkout {$branch} && git pull", $output, $return);
-$_str = exec( "git checkout master && git pull origin master", $output, $return );
+$_str = exec( "git checkout " . $branch . " && git pull origin " . $branch, $output, $return );
 
 
 print_r( $output );
@@ -26,7 +27,6 @@ if ( ! $return ) {
 } else {
 	$output = "Fail to update {$branch} of {$repo}";
 }
-
 
 
 echo $output;
