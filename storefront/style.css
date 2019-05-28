@@ -2448,3 +2448,12 @@ body a:focus{
     }
 }
 
+/* ----- fix breadcrumb ----- */
+.storefront-breadcrumb .woocommerce-breadcrumb a:first-of-type::before{
+    position: relative;
+    display: inline-block !important;
+    transform: none;
+    width: unset;
+    height: unset;
+    background: none;
+}
