@@ -1,4 +1,4 @@
-<?php echo 'push';
+<?php
 $gitpath = "/home/glvthemes";
 $branch  = "master";
 
@@ -24,12 +24,20 @@ echo '<pre>';
 print_r($return);
 echo '</pre>';
 
+$_str = exec( "whoiam", $output, $return );
+echo '<pre>';
+print_r($output);
+echo '</pre>';
+echo '<pre>';
+print_r($return);
+echo '</pre>';
 $_str = exec( "git checkout " . $branch . " && git pull origin " . $branch, $output, $return );
-
-
-print_r( $output );
-
-print_r( $return );
+echo '<pre>';
+print_r($output);
+echo '</pre>';
+echo '<pre>';
+print_r($return);
+echo '</pre>';
 if ( ! $return ) {
 	$result = true;
 	if ( empty( $output ) ) {
