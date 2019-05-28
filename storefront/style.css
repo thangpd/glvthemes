@@ -2437,7 +2437,22 @@ body a:focus{
         transform: scale(1);
 	}
 }
+.storefront-breadcrumb .woocommerce-breadcrumb a.cbutton--click:first-of-type::before{
+    animation: test 0.4s forwards;
+}
 
+
+@keyframes test {
+	0% {
+		opacity: 1;
+        transform: scale(1);
+    }
+	100% {
+		opacity: 1;
+	
+        transform: scale(1);
+	}
+}
 /* ---- display nav footer ---- */
 @media (max-width: 767px){
     .storefront-handheld-footer-bar{
