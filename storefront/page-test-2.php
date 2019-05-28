@@ -15,8 +15,8 @@
 }
 
 @media screen and (max-width: 767px) {
-  .section {
-    padding: 0 36px;
+  .section.section-select {
+    padding: 0;
   }
 }
 
@@ -57,7 +57,7 @@ select {
   display: none;
 }
 
-.section-select {
+.wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -71,6 +71,18 @@ select {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   position: relative;
+  height: 100vh;
+  padding: 0 36px;
+}
+
+@media screen and (min-width: 767px) {
+    .wrapper {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+
+    }
 }
 
 .section-select .close {
@@ -116,6 +128,7 @@ select {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
+
 }
 
 .section-select .clearfix {
@@ -203,6 +216,13 @@ select {
   top: 42.8%;
 }
 
+@media screen and (min-width: 767px) {
+    .dropdown:after {
+        right: 18px;
+        top: 43.5%;
+    }
+}
+
 .dropdown.open:after {
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
@@ -255,6 +275,15 @@ select {
   top: 65px;
   left: 15px;
   right: 15px;
+}
+@media screen and (min-width: 767px) {
+    .dropdown .list {
+        width: 100%;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        right: 0px;
+    }
 }
 
 .dropdown .list:hover .option:not(:hover) {
@@ -333,7 +362,9 @@ a:hover {
     </style>
   </head>
   <body class="index">
-    <div class="section section-select"><div class="select">
+    <div class="section section-select">
+        <div class="wrapper">
+        <div class="select">
       <h1 class="title-select">Select<br/> Your Region</h1><select class="">
 <option value="" data-display-text="Fruits">None</option>
 <option value="apples">Apples</option>
@@ -350,6 +381,7 @@ a:hover {
 <div class="clearfix">
 <button type="submit" class="loginbtn">CONTINUE</button>
 </div>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
