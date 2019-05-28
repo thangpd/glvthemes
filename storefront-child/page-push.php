@@ -1,5 +1,5 @@
 <?php
-$gitpath = "/home/glvthemes";
+$gitpath = "/home/apache/glvthemes";
 $branch  = "master";
 
 $repo = "glvthemes";
