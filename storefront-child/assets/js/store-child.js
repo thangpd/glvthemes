@@ -39,8 +39,7 @@
           } );
         } );
 
-      })();
-            
+      })();            
 })(jQuery);
 
 var successClick = function(){
