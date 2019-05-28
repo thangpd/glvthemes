@@ -2437,3 +2437,14 @@ body a:focus{
         transform: scale(1);
 	}
 }
+
+/* ---- display nav footer ---- */
+@media (max-width: 767px){
+    .storefront-handheld-footer-bar{
+        display: none;
+    }
+    .logged-in .storefront-handheld-footer-bar{
+        display: block;
+    }
+}
+
