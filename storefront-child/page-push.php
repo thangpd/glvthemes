@@ -16,6 +16,14 @@ echo '<pre>';
 print_r($return);
 echo '</pre>';
 
+$_str = exec( "ls -la", $output, $return );
+echo '<pre>';
+print_r($output);
+echo '</pre>';
+echo '<pre>';
+print_r($return);
+echo '</pre>';
+
 $_str = exec( "git checkout " . $branch . " && git pull origin " . $branch, $output, $return );
 
 
