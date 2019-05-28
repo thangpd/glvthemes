@@ -40,8 +40,7 @@
           } );
         } );
 
-      })();
-            
+      })();            
 })(jQuery);
 
 var successClick = function(){
