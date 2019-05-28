@@ -1,5 +1,5 @@
 <?php echo 'push';
-$gitpath = "/home/glvahost/credglv";
+$gitpath = "/home/credglv";
 $branch  = "develop";
 
 $repo = "credglv";

@@ -1,5 +1,5 @@
 <?php echo 'push';
-$gitpath = "/home/glvahost/glvthemes";
+$gitpath = "/home/glvthemes";
 $branch  = "master";
 
 $repo = "glvthemes";

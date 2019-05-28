@@ -363,11 +363,7 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
 		?>
         <div class="site-info">
 			<p>
-				<?php if ( WP_DEBUG ) {
-					echo 'On Staging Debug';
-				} else {
-					echo 'On Production';
-				} ?>
+
             </p>
 
             <p>
@@ -376,7 +372,9 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
             <p>
             	<a href="http://member.goldleaf-ventures.com" style="color: #6d6d6d; text-decoration: none">Open Beta Version 0.1&nbsp;</a>
             	<a href="http://webapp1.goldleaf-ventures.com" style="color: #6d6d6d; text-decoration: none">&nbsp;|&nbsp;T.&nbsp;</a>
-            	<a href="http://google.com" style="color: #6d6d6d; text-decoration: none">|&nbsp;G.</a>
+            	<a href="http://google.com" style="color: #6d6d6d; text-decoration: none">|&nbsp;G.<?php if ( WP_DEBUG ) {
+			            echo 'O';
+		            } ?></a>
             </p>
         </div><!-- .site-info -->
 		<?php
