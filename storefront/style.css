@@ -2257,6 +2257,9 @@ nav button.menu-toggle:focus{
     display: none;
 }
 @media (max-width: 767px){
+    .site-header .site-branding a{
+        padding: 5px;
+    }
     .home.page:not(.page-template-template-homepage) .site-header{
         margin-bottom: 0;
     }
@@ -2264,7 +2267,7 @@ nav button.menu-toggle:focus{
         margin-top: 20px;
     }
     .main-navigation ul li a{
-        padding: .5em 0;
+        padding: .3em 0;
     }
      .woocommerce-active .col-full .site-branding{
         float: none;
@@ -2290,7 +2293,7 @@ nav button.menu-toggle:focus{
         position: absolute;
         float: none;
         z-index: 1;
-        top: -33px;
+        top: -38px;
     }
     .main-navigation .handheld-navigation{
         max-height: 0;
@@ -2314,7 +2317,7 @@ nav button.menu-toggle:focus{
         font-size: xx-large;
         display: block;
         position: absolute;
-        top: 25px;
+        top: 30px;
         right: 0;
         z-index: 9999;
     }
@@ -2322,6 +2325,13 @@ nav button.menu-toggle:focus{
         font-family: 'Font Awesome 5 Free';
         font-size: 1.5em;
         color: #333333;
+    }
+    .handheld-navigation .dropdown-toggle:focus{
+        outline: none;
+    }
+    .storefront-handheld-footer-bar ul li>a::before{
+        transform: none;
+        background: none;
     }
 }
 
@@ -2352,13 +2362,17 @@ body a:focus{
 }
 
 /* ------ Anchor effect onclick ------ */
+.site-header .site-branding a{
+    max-width: 230px;
+}
 .site a {
 	position: relative;
 }
 
 .site a.cbutton--click,
 .site a:focus {
-	outline: none;
+    outline: none;
+    background: none;
 }
 
 .cbutton__icon {
@@ -2377,11 +2391,12 @@ body a:focus{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	border-radius: 50%;
 	content: '';
-	opacity: 0;
     pointer-events: none;
     display: block !important;
+    z-index: -1;
+    transform: scale(0);
+    background: #f2f2f2;
 }
 
 .cbutton--box {
@@ -2391,43 +2406,34 @@ body a:focus{
 }
 
 .site a::before{
-	box-shadow: inset 0 0 0 2px rgba(111,148,182,0.3);
+	background: #f2f2f2;
 }
 
 .site a.cbutton--click::before {
-	-webkit-animation: anim-effect-marko 0.5s forwards;
-	animation: anim-effect-marko 0.5s forwards;
+	-webkit-animation: anim-effect-marko 0.4s forwards;
+	animation: anim-effect-marko 0.4s forwards;
 }
 
 @-webkit-keyframes anim-effect-marko {
-	0% {
+    0% {
 		opacity: 1;
-	}
-	50% {
-		box-shadow: inset 0 0 0 50px rgba(111,148,182,0.1);
-		opacity: 1;
-	}
+        transform: scale(0);
+    }
 	100% {
-		box-shadow: inset 0 0 0 35px rgba(111,148,182,0.1);
-		opacity: 0;
-		-webkit-transform: scale3d(1.1, 1.1, 1);
-		transform: scale3d(1.1, 1.1, 1);
+		opacity: 1;
+	
+        transform: scale(1);
 	}
 }
 
 @keyframes anim-effect-marko {
 	0% {
 		opacity: 1;
-	}
-	50% {
-		box-shadow: inset 0 0 0 50px rgba(111,148,182,0.1);
-		opacity: 1;
-	}
+        transform: scale(0);
+    }
 	100% {
-		box-shadow: inset 0 0 0 35px rgba(111,148,182,0.1);
-		opacity: 0;
-		-webkit-transform: scale3d(1.1, 1.1, 1);
-		transform: scale3d(1.1, 1.1, 1);
+		opacity: 1;
+	
+        transform: scale(1);
 	}
 }
-
