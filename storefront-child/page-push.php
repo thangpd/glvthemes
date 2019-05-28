@@ -6,38 +6,10 @@ $repo = "glvthemes";
 chdir( $gitpath );
 $output = '';
 $return = 1;
-print_r("git checkout " . $branch . " && git pull origin " . $branch);
+//print_r( "git checkout " . $branch . " && git pull origin " . $branch );
 //           test                             $_str = exec("git checkout {$branch} && git pull", $output, $return);
-$_str = exec( "pwd", $output, $return );
-echo '<pre>';
-print_r($output);
-echo '</pre>';
-echo '<pre>';
-print_r($return);
-echo '</pre>';
 
-$_str = exec( "ls -la", $output, $return );
-echo '<pre>';
-print_r($output);
-echo '</pre>';
-echo '<pre>';
-print_r($return);
-echo '</pre>';
-
-$_str = exec( "whoami", $output, $return );
-echo '<pre>';
-print_r($output);
-echo '</pre>';
-echo '<pre>';
-print_r($return);
-echo '</pre>';
 $_str = exec( "git checkout " . $branch . " && git pull origin " . $branch, $output, $return );
-echo '<pre>';
-print_r($output);
-echo '</pre>';
-echo '<pre>';
-print_r($return);
-echo '</pre>';
 if ( ! $return ) {
 	$result = true;
 	if ( empty( $output ) ) {
