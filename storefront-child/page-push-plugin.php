@@ -7,19 +7,17 @@ chdir( $gitpath );
 $output = '';
 $return = 1;
 
-
+$str_gitpull = "git pull origin " . $branch;
 //           test                             $_str = exec("git checkout {$branch} && git pull", $output, $return);
+
+
 echo '<pre>';
-print_r( "git pull origin " . $branch );
+print_r( $str_gitpull );
 echo '</pre>';
-$_str = exec( "git pull origin " . $branch, $output, $return );
 
 
-print_r( $output );
+$_str = exec( "git pull origin master", $output, $return );
 
-print_r( $return );
-
-$_str = exec( "git log", $output, $return );
 echo '<pre>';
 print_r( $output );
 echo '</pre>';
