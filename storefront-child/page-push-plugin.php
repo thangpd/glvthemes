@@ -11,9 +11,16 @@ $return = 1;
 
 //           test                             $_str = exec("git checkout {$branch} && git pull", $output, $return);
 echo '<pre>';
-print_r( " git pull origin " . $branch );
+print_r( "git pull origin " . $branch );
 echo '</pre>';
 $_str = exec( "git pull origin " . $branch, $output, $return );
+
+
+print_r( $output );
+
+print_r( $return );
+
+$_str = exec( "git log", $output, $return );
 
 
 print_r( $output );
