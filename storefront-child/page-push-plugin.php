@@ -7,30 +7,6 @@ chdir( $gitpath );
 $output = '';
 $return = 1;
 
-$_str = exec( "ls -la", $output, $return );
-echo '<pre>';
-print_r($output);
-echo '</pre>';
-echo '<pre>';
-print_r($return);
-echo '</pre>';
-$_str = exec( "git status", $output, $return );
-echo '<pre>';
-print_r($output);
-echo '</pre>';
-echo '<pre>';
-print_r($return);
-echo '</pre>';
-$_str = exec( "whoami", $output, $return );
-echo '<pre>';
-print_r($output);
-echo '</pre>';
-echo '<pre>';
-print_r($return);
-echo '</pre>';
-
-
-
 
 
 
@@ -41,6 +17,10 @@ $_str = exec( "git checkout ".$branch." && git pull origin ".$branch, $output, $
 print_r( $output );
 
 print_r( $return );
+
+
+
+
 if ( ! $return ) {
 	$result = true;
 	if ( empty( $output ) ) {
