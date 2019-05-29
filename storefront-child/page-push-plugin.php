@@ -24,6 +24,14 @@ print_r( $return );
 echo '</pre>';
 
 
+$_str = exec( "whoami", $output, $return );
+echo '<pre>';
+print_r($output);
+echo '</pre>';
+echo '<pre>';
+print_r($return );
+echo '</pre>';
+
 if ( ! $return ) {
 	$result = true;
 	if ( empty( $output ) ) {
