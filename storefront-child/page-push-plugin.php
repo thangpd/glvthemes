@@ -8,7 +8,6 @@ $output = '';
 $return = 1;
 
 
-
 //           test                             $_str = exec("git checkout {$branch} && git pull", $output, $return);
 echo '<pre>';
 print_r( "git pull origin " . $branch );
@@ -21,11 +20,13 @@ print_r( $output );
 print_r( $return );
 
 $_str = exec( "git log", $output, $return );
-
-
+echo '<pre>';
 print_r( $output );
+echo '</pre>';
 
+echo '<pre>';
 print_r( $return );
+echo '</pre>';
 
 
 if ( ! $return ) {
