@@ -12,7 +12,7 @@
 
 input {
   width: 100%;
-  height: 55px;
+  height: 53px;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   border: 0;
@@ -164,8 +164,15 @@ input:focus {
           border-radius: 25px;
   text-align: center;
   font-size: 15px;
-  color: #1D1103;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  color: #72440a;
   border: 0;
+  background-image: linear-gradient(to left, #e0c65a, #e0c65a 15%, #f8e884 50%, #e0c65a 87%, #e0c65a);
+
 }
 
 .form-login .loginbtn:focus {
@@ -333,7 +340,7 @@ input:focus {
       </div></div>
 </form>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       $(document ).ready(function() {
       var $click = $('.form-login ul li');

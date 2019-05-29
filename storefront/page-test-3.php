@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
     <style>
         .section {
             background-size: cover;
@@ -38,7 +39,12 @@
           border-radius: 25px;
   text-align: center;
   font-size: 15px;
-  color: #1D1103;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  color: #72440a;
   border: 0;
   background-image: linear-gradient(to left, #e0c65a, #e0c65a 15%, #f8e884 50%, #e0c65a 87%, #e0c65a);
 
@@ -83,9 +89,9 @@
     top: -172%;
 } */
 
-select {
+/* select {
   display: none;
-}
+} */
 
 .wrapper {
   display: -webkit-box;
@@ -380,154 +386,179 @@ select {
   background: #f6f6f6;
 }
 
-body {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  color: #666;
-  font-family: 'Montserrat', sans-serif;
+.section .select2-container {
+    width: 100% !important;
+    height: 55px;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px 0 rgba(113, 73, 12, 0.31);
+    background-color: #ffffff;
+}
+.section .select2-container.select2-container--open {
+    z-index: -2;
+}
+.section .select2-container .select2-selection--single {
+    height: 55px;
+    border: 0;
 }
 
-.container {
-  margin: 40px auto 0;
-  max-width: 120px;
+.section .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 55px;
+    height: 55px;
 }
 
-.by {
-  bottom: 12px;
-  color: #aaa;
-  font-size: 12px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
+.section .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-56%);
 }
 
-a {
-  color: #aaa;
-  text-decoration: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+.select-wrapper .select2-container--open:not(.select2) {
+    width: -webkit-calc(100% - 30px) !important;
+    width: calc(100% - 30px) !important;
+    position: absolute;
+    top: 65px !important;
+    left: 15px !important;
+    right: 15px !important;
 }
 
-a:hover {
-  color: #666;
+
+.select2-container--open .select2-dropdown.select2-dropdown--below {
+    width: -webkit-calc(100% - 16px) !important;
+    width: calc(100% - 16px) !important;
+    height: 460px;
+    left: 8px !important;
+    right: 8px !important;
+    z-index: 9;
 }
+
+.select-wrapper .select2-dropdown {
+    border: 0;
+}
+
+.select-wrapper .select2-search--dropdown:before {
+    content: 'Your Region';
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.06;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1d1103;
+}
+
+.select-wrapper .select2-search--dropdown:after {
+    content: "\f002";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+        position: absolute;
+    top: 90px;
+    right: 40px;
+}
+
+.select-wrapper .select2-search--dropdown {
+    padding: 4px 22px;
+}
+
+.select2-container--open .select2-dropdown.select2-dropdown--below:before {
+    content: '\f00d';
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.select-wrapper .select2-hidden-accessible {
+    height: 55px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 100% !important;
+}
+
+.select-wrapper .select2-container--default .select2-search--dropdown .select2-search__field {
+    height: 55px;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px 0 rgba(113, 73, 12, 0.31);
+    background-color: #ffffff;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    padding: 15px;
+}
+
+.select-wrapper .select2-results__option {
+    padding: 17px 37px;
+    border-bottom: solid 1px #707070;
+    font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1d1103;
+}
+
+.select-wrapper .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color:#be8a4a;
+}
+
+
+
+
 
     </style>
   </head>
-  <body class="index">
+  <body class="select-wrapper">
     <div class="section section-select">
         <div class="wrapper">
-        <div class="select">
-      <h1 class="title-select">Select<br/> Your Region</h1><select class="">
-<option value="" data-display-text="Fruits">None</option>
-<option value="apples">Apples</option>
-<option value="bananas">Bananas</option>
-<option value="oranges">Oranges</option>
-<option value="apples">Apples</option>
-<option value="bananas">Bananas</option>
-<option value="oranges">Oranges</option>
-<option value="apples">Apples</option>
-<option value="bananas">Bananas</option>
-<option value="oranges">Oranges</option>
-</select>
-</div>
-<div class="clearfix">
-<button type="submit" class="loginbtn">CONTINUE</button>
-</div>
+            <div class="select">
+                <h1 class="title-select">Select<br/> Your Region</h1>
+                    <select class="js-select2">
+                        <option>Select A</option>
+                        <option>Select B</option>
+                        <option>Select C</option>
+                        <option>Select D</option>
+                        <option>Select A</option>
+                        <option>Select B</option>
+                        <option>Select C</option>
+                        <option>Select D</option>
+                        <option>Select A</option>
+                        <option>Select B</option>
+                        <option>Select C</option>
+                        <option>Select D</option>
+                        <option>Select A</option>
+                        <option>Select B</option>
+                        <option>Select C</option>
+                        <option>Select D</option>
+                    </select>
+            </div>
+            <div class="clearfix">
+                <button type="submit" class="loginbtn">CONTINUE</button>
+            </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-     function create_custom_dropdowns() {
-    $('select').each(function(i, select) {
-      if (!$(this).next().hasClass('dropdown')) {
-        $(this).after('<div class="dropdown ' + ($(this).attr('class') || '') + '" tabindex="0"><span class="current"></span><div class="list"><h2 class="title-select-modal">Your Region<span class="close"></span></h2><ul></ul></div></div>');
-        var dropdown = $(this).next();
-        var options = $(select).find('option');
-        var selected = $(this).find('option:selected');
-        dropdown.find('.current').html(selected.data('display-text') || selected.text());
-        options.each(function(j, o) {
-          var display = $(o).data('display-text') || '';
-          dropdown.find('ul').append('<li class="option ' + ($(o).is(':selected') ? 'selected' : '') + '" data-value="' + $(o).val() + '" data-display-text="' + display + '">' + $(o).text() + '</li>');
-        });
-      }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
+    <script id="rendered-js">
+    $(document).ready(function() {
+        $(".js-select2").select2();
     });
-  }
-  
-  // Event listeners
-  
-  // Open/close
-  $(document).on('click', '.dropdown', function(event) {
-    $('.dropdown').not($(this)).removeClass('open');
-    $(this).toggleClass('open');
-    if ($(this).hasClass('open')) {
-      $('.title-select').addClass('open')
-      $(this).find('.option').attr('tabindex', 0);
-      $(this).find('.selected').focus();
-    } else {
-      $(this).find('.option').removeAttr('tabindex');
-      $(this).focus();
-    }
-  });
-  // Close when clicking outside
-  $(document).on('click', function(event) {
-    if ($(event.target).closest('.dropdown').length === 0) {
-      $('.dropdown').removeClass('open');
-      $('.title-select').removeClass('open');
-      $('.dropdown .option').removeAttr('tabindex');
-    }
-    event.stopPropagation();
-  });
-  // Option click
-  $(document).on('click', '.dropdown .option', function(event) {
-    $(this).closest('.list').find('.selected').removeClass('selected');
-    $(this).addClass('selected');
-    var text = $(this).data('display-text') || $(this).text();
-    $(this).closest('.dropdown').find('.current').text(text);
-    $(this).closest('.dropdown').prev('select').val($(this).data('value')).trigger('change');
-  });
-  
-  // Keyboard events
-  $(document).on('keydown', '.dropdown', function(event) {
-    var focused_option = $($(this).find('.list .option:focus')[0] || $(this).find('.list .option.selected')[0]);
-    // Space or Enter
-    if (event.keyCode == 32 || event.keyCode == 13) {
-      if ($(this).hasClass('open')) {
-        focused_option.trigger('click');
-      } else {
-        $(this).trigger('click');
-      }
-      return false;
-      // Down
-    } else if (event.keyCode == 40) {
-      if (!$(this).hasClass('open')) {
-        $(this).trigger('click');
-      } else {
-        focused_option.next().focus();
-      }
-      return false;
-      // Up
-    } else if (event.keyCode == 38) {
-      if (!$(this).hasClass('open')) {
-        $(this).trigger('click');
-      } else {
-        var focused_option = $($(this).find('.list .option:focus')[0] || $(this).find('.list .option.selected')[0]);
-        focused_option.prev().focus();
-      }
-      return false;
-    // Esc
-    } else if (event.keyCode == 27) {
-      if ($(this).hasClass('open')) {
-        $(this).trigger('click');
-      }
-      return false;
-    }
-  });
-  
-  $(document).ready(function() {
-    create_custom_dropdowns();
-  });
     </script>
   </body>
 </html>
