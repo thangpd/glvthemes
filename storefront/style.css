@@ -2480,3 +2480,8 @@ body a:focus{
     height: unset;
     background: none;
 }
+
+/* ----- Update icon image menu-item header ----- */
+.menu-item img._before{
+    width: 1em;
+}
