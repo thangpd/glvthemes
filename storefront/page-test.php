@@ -319,5 +319,372 @@ button:focus {
 <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type='text/javascript' src="https://cdn.jsdelivr.net/npm/bootstrap-notify@3.1.3/bootstrap-notify.min.js "></script>
 <script type='text/javascript' src='<?php echo get_theme_file_uri() ?>/assets/js/store-child.js?ver=5.2'></script>
+<script>
 
+    var successClick = function (title, message, url, target) {
+        if (title === '') {
+            title = 'Success';
+        }
+        if (message === '') {
+            message = 'Default Message';
+        }
+        if (url === '') {
+
+        }
+        if (target === '') {
+            target = '_blank';
+        }
+
+        $.notify({
+            // options
+            title: '<strong>' + title + '</strong>',
+            message: "<br>" + message,
+            icon: 'glyphicon glyphicon-ok',
+            url: url,
+            target: target,
+        }, {
+            // settings
+            element: 'body',
+            //position: null,
+            type: "success",
+            //allow_dismiss: true,
+            //newest_on_top: false,
+            showProgressbar: false,
+            placement: {
+                from: "top",
+                align: "right"
+            },
+            offset: 20,
+            spacing: 10,
+            z_index: 1031,
+            delay: 3300,
+            timer: 1000,
+            url_target: '_blank',
+            mouse_over: null,
+            animate: {
+                enter: 'animated fadeInDown',
+                exit: 'animated fadeOutRight'
+            },
+            onShow: null,
+            onShown: null,
+            onClose: null,
+            onClosed: null,
+            icon_type: 'class',
+        });
+    }
+
+    var infoClick = function (title, message, url, target) {
+        if (title === '') {
+            title = 'Info';
+        }
+        if (message === '') {
+            message = 'Default Message';
+        }
+        if (url === '') {
+
+        }
+        if (target === '') {
+            target = '_blank';
+        }
+
+        $.notify({
+            // options
+            title: '<strong>' + title + '</strong>',
+            message: "<br>" + message,
+            icon: 'glyphicon glyphicon-ok',
+            url: url,
+            target: target,
+        }, {
+            // settings
+            element: 'body',
+            position: null,
+            type: "info",
+            allow_dismiss: true,
+            newest_on_top: false,
+            showProgressbar: false,
+            placement: {
+                from: "top",
+                align: "right"
+            },
+            offset: 20,
+            spacing: 10,
+            z_index: 1031,
+            delay: 3300,
+            timer: 1000,
+            url_target: '_blank',
+            mouse_over: null,
+            animate: {
+                enter: 'animated bounceInDown',
+                exit: 'animated bounceOutUp'
+            },
+            onShow: null,
+            onShown: null,
+            onClose: null,
+            onClosed: null,
+            icon_type: 'class',
+        });
+    }
+
+    var warningClick = function (title, message, url, target) {
+        if (title === '') {
+            title = 'Warning';
+        }
+        if (message === '') {
+            message = 'Default Message';
+        }
+        if (url === '') {
+
+        }
+        if (target === '') {
+            target = '_blank';
+        }
+
+        $.notify({
+            // options
+            title: '<strong>' + title + '</strong>',
+            message: "<br>" + message,
+            icon: 'glyphicon glyphicon-ok',
+            url: url,
+            target: target,
+        }, {
+            // settings
+            element: 'body',
+            position: null,
+            type: "warning",
+            allow_dismiss: true,
+            newest_on_top: false,
+            showProgressbar: false,
+            placement: {
+                from: "top",
+                align: "right"
+            },
+            offset: 20,
+            spacing: 10,
+            z_index: 1031,
+            delay: 3300,
+            timer: 1000,
+            url_target: '_blank',
+            mouse_over: null,
+            animate: {
+                enter: 'animated bounceIn',
+                exit: 'animated bounceOut'
+            },
+            onShow: null,
+            onShown: null,
+            onClose: null,
+            onClosed: null,
+            icon_type: 'class',
+        });
+    }
+
+    var dangerClick = function (title, message, url, target) {
+        if (title === '') {
+            title = 'Danger';
+        }
+        if (message === '') {
+            message = 'Default Message';
+        }
+        if (url === '') {
+
+        }
+        if (target === '') {
+            target = '_blank';
+        }
+
+        $.notify({
+            // options
+            title: '<strong>' + title + '</strong>',
+            message: "<br>" + message,
+            icon: 'glyphicon glyphicon-ok',
+            url: url,
+            target: target,
+        }, {
+            // settings
+            element: 'body',
+            position: null,
+            type: "danger",
+            allow_dismiss: true,
+            newest_on_top: false,
+            showProgressbar: false,
+            placement: {
+                from: "top",
+                align: "right"
+            },
+            offset: 20,
+            spacing: 10,
+            z_index: 1031,
+            delay: 3300,
+            timer: 1000,
+            url_target: '_blank',
+            mouse_over: null,
+            animate: {
+                enter: 'animated flipInY',
+                exit: 'animated flipOutX'
+            },
+            onShow: null,
+            onShown: null,
+            onClose: null,
+            onClosed: null,
+            icon_type: 'class',
+        });
+    }
+
+    var primaryClick = function (title, message, url, target) {
+        if (title === '') {
+            title = 'Primary';
+        }
+        if (message === '') {
+            message = 'Default Message';
+        }
+        if (url === '') {
+
+        }
+        if (target === '') {
+            target = '_blank';
+        }
+
+        $.notify({
+            // options
+            title: '<strong>' + title + '</strong>',
+            message: "<br>" + message,
+            icon: 'glyphicon glyphicon-ok',
+            url: url,
+            target: target,
+        }, {
+            // settings
+            element: 'body',
+            position: null,
+            type: "success",
+            allow_dismiss: true,
+            newest_on_top: false,
+            showProgressbar: false,
+            placement: {
+                from: "top",
+                align: "right"
+            },
+            offset: 20,
+            spacing: 10,
+            z_index: 1031,
+            delay: 3300,
+            timer: 1000,
+            url_target: '_blank',
+            mouse_over: null,
+            animate: {
+                enter: 'animated lightSpeedIn',
+                exit: 'animated lightSpeedOut'
+            },
+            onShow: null,
+            onShown: null,
+            onClose: null,
+            onClosed: null,
+            icon_type: 'class',
+        });
+    }
+
+    var defaultClick = function (title, message, url, target) {
+        if (title === '') {
+            title = 'Default';
+        }
+        if (message === '') {
+            message = 'Default Message';
+        }
+        if (url === '') {
+
+        }
+        if (target === '') {
+            target = '_blank';
+        }
+
+        $.notify({
+            // options
+            title: '<strong>' + title + '</strong>',
+            message: "<br>" + message,
+            icon: 'glyphicon glyphicon-ok',
+            url: url,
+            target: target,
+        }, {
+            // settings
+            element: 'body',
+            position: null,
+            type: "warning",
+            allow_dismiss: true,
+            newest_on_top: false,
+            showProgressbar: false,
+            placement: {
+                from: "top",
+                align: "right"
+            },
+            offset: 20,
+            spacing: 10,
+            z_index: 1031,
+            delay: 3300,
+            timer: 1000,
+            url_target: '_blank',
+            mouse_over: null,
+            animate: {
+                enter: 'animated rollIn',
+                exit: 'animated rollOut'
+            },
+            onShow: null,
+            onShown: null,
+            onClose: null,
+            onClosed: null,
+            icon_type: 'class',
+        });
+    }
+
+    var linkClick = function (title, message, url, target) {
+        if (title === '') {
+            title = 'Link';
+        }
+        if (message === '') {
+            message = 'Default Message';
+        }
+        if (url === '') {
+
+        }
+        if (target === '') {
+            target = '_blank';
+        }
+
+        $.notify({
+            // options
+            title: '<strong>' + title + '</strong>',
+            message: "<br>" + message,
+            icon: 'glyphicon glyphicon-ok',
+            url: url,
+            target: target,
+        }, {
+            // settings
+            element: 'body',
+            position: null,
+            type: "danger",
+            allow_dismiss: true,
+            newest_on_top: false,
+            showProgressbar: false,
+            placement: {
+                from: "top",
+                align: "right"
+            },
+            offset: 20,
+            spacing: 10,
+            z_index: 1031,
+            delay: 3300,
+            timer: 1000,
+            url_target: '_blank',
+            mouse_over: null,
+            animate: {
+                enter: 'animated zoomInDown',
+                exit: 'animated zoomOutUp'
+            },
+            onShow: null,
+            onShown: null,
+            onClose: null,
+            onClosed: null,
+            icon_type: 'class',
+        });
+    }
+
+
+</script>
 <?php get_footer(); ?>
