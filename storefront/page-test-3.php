@@ -419,6 +419,7 @@
     top: 65px !important;
     left: 15px !important;
     right: 15px !important;
+    z-index: -1;
 }
 
 
