@@ -2259,6 +2259,9 @@ nav button.menu-toggle:focus{
     .site-header .site-branding a{
         padding: 5px;
     }
+    .site-header.fixed {
+        top:0;
+    }
     .home.page:not(.page-template-template-homepage) .site-header{
         margin-bottom: 0;
     }
