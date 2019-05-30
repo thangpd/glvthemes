@@ -2486,3 +2486,19 @@ body a:focus{
     width: 1em;
 }
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] { font-size: 16px; }
+
+
+/* ----- test sticky header ---- */
+    @media (max-width: 767px){
+        .home.logged-in.page:not(.page-template-template-homepage) .site-header{
+            position: fixed;
+            width: 100%;
+            box-shadow: -0.2px 3px 16px #f4f4f4;
+        }
+        .main-navigation .handheld-navigation{
+            height: 340px;
+            overflow: auto;
+            left: -100%;
+            background: #fff;
+        }
+    }

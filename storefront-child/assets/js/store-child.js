@@ -41,4 +41,11 @@
       //   } );
 
       // })();            
+    $(document).ready(function(){
+        var height_header = $('.site-header').height() + 50;
+        $('.logged-in .site-content').css('padding-top', height_header);
+        console.log('test');
+    });
+
+
 })(jQuery);
