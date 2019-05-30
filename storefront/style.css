@@ -2488,3 +2488,23 @@ body a:focus{
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] { font-size: 16px; }
 
 
+/* ----- test sticky header ---- */
+    @media (max-width: 767px){
+        .site .screen-reader-text{
+            display: none;
+        }
+        .storefront-breadcrumb + .site-content{
+            padding-top: 0 !important;
+        }
+        .logged-in .site-header{
+            position: fixed;
+            width: 100%;
+            box-shadow: 0 0 6px rgba(0,0,0,.3);
+        }
+        .main-navigation .handheld-navigation{
+            height: calc(100vh - 160px);
+            overflow: auto;
+            left: -100%;
+            background: #fff;
+        }
+    }
