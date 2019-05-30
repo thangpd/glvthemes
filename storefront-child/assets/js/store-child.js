@@ -45,9 +45,10 @@
         var height_header = $('.site-header').height() + 70;
         if($('body').find('storefront-breadcrumb')){
             $('.logged-in .storefront-breadcrumb').css('padding-top', height_header);
-        } else
+        }
+        if($('.home').find('site-content')){
             $('.logged-in .site-content').css('padding-top', height_header);
-        console.log('test');
+        }
     });
 
 
