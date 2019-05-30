@@ -49,6 +49,9 @@
         if($('.home').find('site-content')){
             $('.logged-in .site-content').css('padding-top', height_header);
         }
+        $(window).scroll(function(){
+            $('.logged-in .site-header').css('top', '0');
+        });
     });
 
 
