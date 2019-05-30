@@ -498,8 +498,7 @@ body {
 
 .site-header {
     background-color: #2c2d33;
-    padding-top: 1.618em;
-    padding-bottom: 1.618em;
+    padding: 1rem 0;
     color: #9aa0a7;
     background-position: center center;
     position: relative;
@@ -2293,7 +2292,7 @@ nav button.menu-toggle:focus{
         position: absolute;
         float: none;
         z-index: 1;
-        top: -28px;
+        top: -37px;
     }
     .main-navigation .handheld-navigation{
         max-height: 0;
@@ -2317,7 +2316,7 @@ nav button.menu-toggle:focus{
         /* font-size: xx-large; */
         display: block;
         position: absolute;
-        top: 5px;
+        top: 16px;
         right: 0;
         z-index: 9999;
     }
