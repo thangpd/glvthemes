@@ -353,3 +353,8 @@ button:focus {
         width: 100%;
     }
 }
+
+.btn-default .ld-ext-right>.ld{
+    top: 35%;
+    left: 62%;
+}
