@@ -180,3 +180,15 @@ form p label input + span {
 .login a:focus, .login button:focus, .login input:focus, .login textarea:focus {
     outline: 0;
 }
+
+#customer_login h2 {
+  font-family: Muli;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
