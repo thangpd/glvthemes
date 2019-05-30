@@ -7,30 +7,7 @@ chdir( $gitpath );
 $output = '';
 $return = 1;
 
-$str_gitpull = "git checkout " . $branch . " && git pull origin " . $branch;
-//           test                             $_str = exec("git checkout {$branch} && git pull", $output, $return);
-
-echo '<pre>';
-print_r($str_gitpull);
-echo '</pre>';
-$_str = exec( $str_gitpull, $output, $return );
-
-echo '<pre>';
-print_r( $output );
-echo '</pre>';
-
-echo '<pre>';
-print_r( $return );
-echo '</pre>';
-
-
-$_str = exec( "whoami", $output, $return );
-echo '<pre>';
-print_r($output);
-echo '</pre>';
-echo '<pre>';
-print_r($return );
-echo '</pre>';
+$_str = exec( "git checkout " . $branch . " && git pull origin " . $branch." && git push origin ".$branch, $output, $return );
 
 if ( ! $return ) {
 	$result = true;
