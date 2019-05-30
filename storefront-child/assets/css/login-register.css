@@ -23,9 +23,14 @@ input:focus {
     box-shadow: 0;
 }
 
+.site-info {
+    text-align: center;
+}
+
 
 form label[for="login-with-phone"] {
     display: block;
+    margin-bottom: 20px;
 }
 
 form input[type=checkbox], form.login input[type=radio] {
