@@ -117,7 +117,24 @@ input:focus {
 }
 
 .form-login ul li:last-child {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+}
+
+.block-bottom {
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.block-bottom:after{
+  content: '';
+    position: absolute;
+    width: 130px;
+    height: 5px;
+    border-radius: 4px;
+    background-color: #8e8e93;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .form-login ul li input[type=radio] {
