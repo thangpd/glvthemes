@@ -2490,13 +2490,16 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 /* ----- test sticky header ---- */
     @media (max-width: 767px){
+        .site .screen-reader-text{
+            display: none;
+        }
         .logged-in .site-header{
             position: fixed;
             width: 100%;
             box-shadow: -0.2px 3px 16px #f4f4f4;
         }
         .main-navigation .handheld-navigation{
-            height: 340px;
+            height: 360px;
             overflow: auto;
             left: -100%;
             background: #fff;
