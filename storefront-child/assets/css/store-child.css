@@ -67,7 +67,8 @@ input.form-control {
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: 0.25rem;
-    width: 33.333%
+    width: 33.333%;
+    left: 0;
 }
 
 .alert-heading {
