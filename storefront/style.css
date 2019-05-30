@@ -2521,3 +2521,8 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
             background: #fff;
         }
     }
+
+    .btn-default.ld-ext-right>.ld{
+        top: 35%;
+        left: 62%;
+    }
