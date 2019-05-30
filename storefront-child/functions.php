@@ -362,7 +362,7 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
 	function custom_storefront_credit() {
 		?>
         <div class="site-info">
-			<p>
+            <p>
 				<?php if ( WP_DEBUG ) {
 					$type = '';
 				} else {
@@ -371,12 +371,14 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
             </p>
 
             <p>
-                &copy; <?php echo '2018-'.date("Y").' Gold Leaf Ventures Limited<br>'; ?>
+                &copy; <?php echo '2018-' . date( "Y" ) . ' Gold Leaf Ventures Limited<br>'; ?>
             </p>
-            <p>
-            	<a href="http://member.goldleaf-ventures.com" style="color: #6d6d6d; text-decoration: none">Open Beta Version 0.1&nbsp;</a>
-            	<a href="http://webapp1.goldleaf-ventures.com" style="color: #6d6d6d; text-decoration: none">&nbsp;|&nbsp;T.&nbsp;</a>
-            	<a href="http://google.com" style="color: #6d6d6d; text-decoration: none">|&nbsp;G.<?php echo $type ?></a>
+            <p class="footer_link">
+                <a href="http://member.goldleaf-ventures.com">Open Beta
+                    Version 0.1&nbsp;</a>
+                <a href="http://webapp1.goldleaf-ventures.com">&nbsp;|&nbsp;T.&nbsp;</a>
+                <a href="http://google.com"
+                >|&nbsp;G.<?php echo $type ?></a>
             </p>
         </div><!-- .site-info -->
 		<?php
@@ -400,12 +402,7 @@ if ( ! function_exists( 'glv_always_remember_choice' ) ) {
 add_action( 'wp_enqueue_scripts', 'store_child_enqueue_assets' );
 add_action( 'wp_enqueue_style', 'store_child_enqueue_assets' );
 function store_child_enqueue_assets() {
-	wp_enqueue_script(
-		'store-child',
-		get_theme_file_uri( '/assets/js/store-child.js' ), array(
-		'jquery',
-	), true, true
-	);
+
 
 	wp_enqueue_script(
 		'store-temp',
@@ -422,8 +419,21 @@ function store_child_enqueue_assets() {
 		get_theme_file_uri( '/assets/js/modernizr.custom.js' ), array( 'jquery' )
 	);
 
-	wp_enqueue_style( 'store-hide', get_theme_file_uri( '/assets/css/store-child.css' ), [ 'storefront-child-style' ], true, 'all' );
+	wp_enqueue_script(
+		'store-child',
+		get_theme_file_uri( '/assets/js/store-child.js' ), array(
+		'jquery',
+		'modernizr.custom',
+	), true, true
+	);
+	wp_enqueue_style( 'store-hide', get_theme_file_uri( '/assets/css/store-child.css' ), [
+		'storefront-child-style',
+	], true, 'all' );
 
+	if ( credglv_get_woo_myaccount() && ! is_user_logged_in() ) {
+		wp_enqueue_style( 'login-register', get_theme_file_uri( '/assets/css/login-register.css' ), [
+		], true, false );
+	}
 	/*
 	 *
     Use this function to enqueue script
