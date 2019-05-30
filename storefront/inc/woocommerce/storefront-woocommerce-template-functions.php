@@ -15,8 +15,8 @@ if ( ! function_exists( 'storefront_before_content' ) ) {
 	 */
 	function storefront_before_content() {
 		?>
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
+        <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
 		<?php
 	}
 }
@@ -31,8 +31,8 @@ if ( ! function_exists( 'storefront_after_content' ) ) {
 	 */
 	function storefront_after_content() {
 		?>
-			</main><!-- #main -->
-		</div><!-- #primary -->
+        </main><!-- #main -->
+        </div><!-- #primary -->
 
 		<?php
 		do_action( 'storefront_sidebar' );
@@ -45,6 +45,7 @@ if ( ! function_exists( 'storefront_cart_link_fragment' ) ) {
 	 * Ensure cart contents update when products are added to the cart via AJAX
 	 *
 	 * @param  array $fragments Fragments to refresh via AJAX.
+	 *
 	 * @return array            Fragments to refresh via AJAX
 	 */
 	function storefront_cart_link_fragment( $fragments ) {
@@ -72,10 +73,12 @@ if ( ! function_exists( 'storefront_cart_link' ) ) {
 	 */
 	function storefront_cart_link() {
 		?>
-			<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'storefront' ); ?>">
-				<?php /* translators: %d: number of items in cart */ ?>
-				<?php echo wp_kses_post( WC()->cart->get_cart_subtotal() ); ?> <span class="count"><?php echo wp_kses_data( sprintf( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'storefront' ), WC()->cart->get_cart_contents_count() ) ); ?></span>
-			</a>
+        <a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>"
+           title="<?php esc_attr_e( 'View your shopping cart', 'storefront' ); ?>">
+			<?php /* translators: %d: number of items in cart */ ?>
+			<?php echo wp_kses_post( WC()->cart->get_cart_subtotal() ); ?> <span
+                    class="count"><?php echo wp_kses_data( sprintf( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'storefront' ), WC()->cart->get_cart_contents_count() ) ); ?></span>
+        </a>
 		<?php
 	}
 }
@@ -91,9 +94,9 @@ if ( ! function_exists( 'storefront_product_search' ) ) {
 	function storefront_product_search() {
 		if ( storefront_is_woocommerce_activated() ) {
 			?>
-			<div class="site-search">
+            <div class="site-search">
 				<?php the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
-			</div>
+            </div>
 			<?php
 		}
 	}
@@ -115,14 +118,14 @@ if ( ! function_exists( 'storefront_header_cart' ) ) {
 				$class = '';
 			}
 			?>
-		<ul id="site-header-cart" class="site-header-cart menu">
-			<li class="<?php echo esc_attr( $class ); ?>">
-				<?php storefront_cart_link(); ?>
-			</li>
-			<li>
-				<?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>
-			</li>
-		</ul>
+            <ul id="site-header-cart" class="site-header-cart menu">
+                <li class="<?php echo esc_attr( $class ); ?>">
+					<?php storefront_cart_link(); ?>
+                </li>
+                <li>
+					<?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>
+                </li>
+            </ul>
 			<?php
 		}
 	}
@@ -139,7 +142,7 @@ if ( ! function_exists( 'storefront_upsell_display' ) ) {
 	 */
 	function storefront_upsell_display() {
 		$columns = apply_filters( 'storefront_upsells_columns', 3 );
-		woocommerce_upsell_display( -1, $columns );
+		woocommerce_upsell_display( - 1, $columns );
 	}
 }
 
@@ -246,7 +249,9 @@ if ( ! function_exists( 'storefront_product_categories' ) ) {
 	 * Hooked into the `homepage` action in the homepage template
 	 *
 	 * @since  1.0.0
+	 *
 	 * @param array $args the product section args.
+	 *
 	 * @return void
 	 */
 	function storefront_product_categories( $args ) {
@@ -298,7 +303,9 @@ if ( ! function_exists( 'storefront_recent_products' ) ) {
 	 * Hooked into the `homepage` action in the homepage template
 	 *
 	 * @since  1.0.0
+	 *
 	 * @param array $args the product section args.
+	 *
 	 * @return void
 	 */
 	function storefront_recent_products( $args ) {
@@ -350,7 +357,9 @@ if ( ! function_exists( 'storefront_featured_products' ) ) {
 	 * Hooked into the `homepage` action in the homepage template
 	 *
 	 * @since  1.0.0
+	 *
 	 * @param array $args the product section args.
+	 *
 	 * @return void
 	 */
 	function storefront_featured_products( $args ) {
@@ -404,7 +413,9 @@ if ( ! function_exists( 'storefront_popular_products' ) ) {
 	 * Hooked into the `homepage` action in the homepage template
 	 *
 	 * @since  1.0.0
+	 *
 	 * @param array $args the product section args.
+	 *
 	 * @return void
 	 */
 	function storefront_popular_products( $args ) {
@@ -456,6 +467,7 @@ if ( ! function_exists( 'storefront_on_sale_products' ) ) {
 	 * Hooked into the `homepage` action in the homepage template
 	 *
 	 * @param array $args the product section args.
+	 *
 	 * @since  1.0.0
 	 * @return void
 	 */
@@ -510,7 +522,9 @@ if ( ! function_exists( 'storefront_best_selling_products' ) ) {
 	 * Hooked into the `homepage` action in the homepage template
 	 *
 	 * @since 2.0.0
+	 *
 	 * @param array $args the product section args.
+	 *
 	 * @return void
 	 */
 	function storefront_best_selling_products( $args ) {
@@ -563,9 +577,11 @@ if ( ! function_exists( 'storefront_promoted_products' ) ) {
 	 * If neither exist, it can fallback to show recently added products.
 	 *
 	 * @since  1.5.1
+	 *
 	 * @param integer $per_page total products to display.
 	 * @param integer $columns columns to arrange products in to.
 	 * @param boolean $recent_fallback Should the function display recent products as a fallback when there are no featured or on-sale products?.
+	 *
 	 * @uses  storefront_is_woocommerce_activated()
 	 * @uses  wc_get_featured_product_ids()
 	 * @uses  wc_get_product_ids_on_sale()
@@ -616,10 +632,10 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
 	 *
 	 * @since 2.0.0
 	 */
-	if( is_user_logged_in()){
+	if ( is_user_logged_in() ) {
 		function storefront_handheld_footer_bar() {
 			$links = array(
-				'my-account' => array(
+				'my-account'        => array(
 					'priority' => 10,
 					'callback' => 'storefront_handheld_footer_bar_account_link',
 				),
@@ -627,43 +643,43 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
 					'priority' => 20,
 					'callback' => 'storefront_handheld_footer_bar_transfer',
 				),
-				'flaticon-document'     => array(
+				'flaticon-document' => array(
 					'priority' => 30,
 					'callback' => 'storefront_handheld_footer_bar_document',
 				),
-				'flaticon-shop' => array(
+				'flaticon-shop'     => array(
 					'priority' => 40,
 					'callback' => 'storefront_handheld_footer_bar_shop_link',
 				),
-				'cart'       => array(
+				'cart'              => array(
 					'priority' => 50,
 					'callback' => 'storefront_handheld_footer_bar_cart_link',
 				),
 			);
 
-			if ( wc_get_page_id( 'myaccount' ) === -1 ) {
+			if ( wc_get_page_id( 'myaccount' ) === - 1 ) {
 				unset( $links['my-account'] );
 			}
 
-			if ( wc_get_page_id( 'cart' ) === -1 ) {
+			if ( wc_get_page_id( 'cart' ) === - 1 ) {
 				unset( $links['cart'] );
 			}
 
 			$links = apply_filters( 'storefront_handheld_footer_bar_links', $links );
 			?>
-			<div class="storefront-handheld-footer-bar">
-				<ul class="columns-<?php echo count( $links ); ?>">
+            <div class="storefront-handheld-footer-bar">
+                <ul class="columns-<?php echo count( $links ); ?>">
 					<?php foreach ( $links as $key => $link ) : ?>
-						<li class="<?php echo esc_attr( $key ); ?>">
+                        <li class="<?php echo esc_attr( $key ); ?>">
 							<?php
 							if ( $link['callback'] ) {
 								call_user_func( $link['callback'], $key, $link );
 							}
 							?>
-						</li>
+                        </li>
 					<?php endforeach; ?>
-				</ul>
-			</div>
+                </ul>
+            </div>
 			<?php
 		}
 	}
@@ -688,7 +704,7 @@ if ( ! function_exists( 'storefront_handheld_footer_bar_shop_link' ) ) {
 	 * @since 2.0.0
 	 */
 	function storefront_handheld_footer_bar_shop_link() {
-		echo '<a href="">' . esc_attr__( 'Flaticon Shop', 'storefront' ) . '</a>';
+		echo '<a href="' . home_url() . '/shop">' . esc_attr__( 'Flaticon Shop', 'storefront' ) . '</a>';
 	}
 }
 
@@ -700,7 +716,7 @@ if ( ! function_exists( 'storefront_handheld_footer_bar_document' ) ) {
 	 * @since 2.0.0
 	 */
 	function storefront_handheld_footer_bar_document() {
-		echo '<a href="">' . esc_attr__( 'Flaticon Document', 'storefront' ) . '</a>';
+		echo '<a href="' . home_url() . '/profile">' . esc_attr__( 'Flaticon Document', 'storefront' ) . '</a>';
 	}
 }
 
@@ -711,7 +727,7 @@ if ( ! function_exists( 'storefront_handheld_footer_bar_transfer' ) ) {
 	 * @since 2.0.0
 	 */
 	function storefront_handheld_footer_bar_transfer() {
-		echo '<a href="">' . esc_attr__( 'Flaticon Transfer', 'storefront' ) . '</a>';
+		echo '<a href="' . home_url() . '/transfer">' . esc_attr__( 'Flaticon Transfer', 'storefront' ) . '</a>';
 	}
 }
 
@@ -724,9 +740,10 @@ if ( ! function_exists( 'storefront_handheld_footer_bar_cart_link' ) ) {
 	 */
 	function storefront_handheld_footer_bar_cart_link() {
 		?>
-			<a class="footer-cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'storefront' ); ?>">
-				<span class="count"><?php echo wp_kses_data( WC()->cart->get_cart_contents_count() ); ?></span>
-			</a>
+        <a class="footer-cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>"
+           title="<?php esc_attr_e( 'View your shopping cart', 'storefront' ); ?>">
+            <span class="count"><?php echo wp_kses_data( WC()->cart->get_cart_contents_count() ); ?></span>
+        </a>
 		<?php
 	}
 }
@@ -766,21 +783,21 @@ if ( ! function_exists( 'storefront_single_product_pagination' ) ) {
 		}
 
 		?>
-		<nav class="storefront-product-pagination" aria-label="<?php esc_attr_e( 'More products', 'storefront' ); ?>">
+        <nav class="storefront-product-pagination" aria-label="<?php esc_attr_e( 'More products', 'storefront' ); ?>">
 			<?php if ( $previous_product ) : ?>
-				<a href="<?php echo esc_url( $previous_product->get_permalink() ); ?>" rel="prev">
+                <a href="<?php echo esc_url( $previous_product->get_permalink() ); ?>" rel="prev">
 					<?php echo wp_kses_post( $previous_product->get_image() ); ?>
-					<span class="storefront-product-pagination__title"><?php echo wp_kses_post( $previous_product->get_name() ); ?></span>
-				</a>
+                    <span class="storefront-product-pagination__title"><?php echo wp_kses_post( $previous_product->get_name() ); ?></span>
+                </a>
 			<?php endif; ?>
 
 			<?php if ( $next_product ) : ?>
-				<a href="<?php echo esc_url( $next_product->get_permalink() ); ?>" rel="next">
+                <a href="<?php echo esc_url( $next_product->get_permalink() ); ?>" rel="next">
 					<?php echo wp_kses_post( $next_product->get_image() ); ?>
-					<span class="storefront-product-pagination__title"><?php echo wp_kses_post( $next_product->get_name() ); ?></span>
-				</a>
+                    <span class="storefront-product-pagination__title"><?php echo wp_kses_post( $next_product->get_name() ); ?></span>
+                </a>
 			<?php endif; ?>
-		</nav><!-- .storefront-product-pagination -->
+        </nav><!-- .storefront-product-pagination -->
 		<?php
 	}
 }
@@ -812,21 +829,22 @@ if ( ! function_exists( 'storefront_sticky_single_add_to_cart' ) ) {
 
 		wp_enqueue_script( 'storefront-sticky-add-to-cart' );
 		?>
-			<section class="storefront-sticky-add-to-cart">
-				<div class="col-full">
-					<div class="storefront-sticky-add-to-cart__content">
-						<?php echo wp_kses_post( woocommerce_get_product_thumbnail() ); ?>
-						<div class="storefront-sticky-add-to-cart__content-product-info">
-							<span class="storefront-sticky-add-to-cart__content-title"><?php esc_attr_e( 'You\'re viewing:', 'storefront' ); ?> <strong><?php the_title(); ?></strong></span>
-							<span class="storefront-sticky-add-to-cart__content-price"><?php echo wp_kses_post( $product->get_price_html() ); ?></span>
-							<?php echo wp_kses_post( wc_get_rating_html( $product->get_average_rating() ) ); ?>
-						</div>
-						<a href="<?php echo esc_url( $product->add_to_cart_url() ); ?>" class="storefront-sticky-add-to-cart__content-button button alt">
-							<?php echo esc_attr( $product->add_to_cart_text() ); ?>
-						</a>
-					</div>
-				</div>
-			</section><!-- .storefront-sticky-add-to-cart -->
+        <section class="storefront-sticky-add-to-cart">
+            <div class="col-full">
+                <div class="storefront-sticky-add-to-cart__content">
+					<?php echo wp_kses_post( woocommerce_get_product_thumbnail() ); ?>
+                    <div class="storefront-sticky-add-to-cart__content-product-info">
+                        <span class="storefront-sticky-add-to-cart__content-title"><?php esc_attr_e( 'You\'re viewing:', 'storefront' ); ?> <strong><?php the_title(); ?></strong></span>
+                        <span class="storefront-sticky-add-to-cart__content-price"><?php echo wp_kses_post( $product->get_price_html() ); ?></span>
+						<?php echo wp_kses_post( wc_get_rating_html( $product->get_average_rating() ) ); ?>
+                    </div>
+                    <a href="<?php echo esc_url( $product->add_to_cart_url() ); ?>"
+                       class="storefront-sticky-add-to-cart__content-button button alt">
+						<?php echo esc_attr( $product->add_to_cart_text() ); ?>
+                    </a>
+                </div>
+            </div>
+        </section><!-- .storefront-sticky-add-to-cart -->
 		<?php
 	}
 }
@@ -926,9 +944,9 @@ if ( ! function_exists( 'storefront_woocommerce_brands_single' ) ) {
 		}
 
 		?>
-		<div class="storefront-wc-brands-single-product">
+        <div class="storefront-wc-brands-single-product">
 			<?php echo wp_kses_post( $brand ); ?>
-		</div>
+        </div>
 		<?php
 	}
 }

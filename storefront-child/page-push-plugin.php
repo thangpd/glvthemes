@@ -6,13 +6,32 @@ $repo = "credglv";
 chdir( $gitpath );
 $output = '';
 $return = 1;
+
+$str_gitpull = "git checkout " . $branch . " && git pull origin " . $branch;
 //           test                             $_str = exec("git checkout {$branch} && git pull", $output, $return);
-$_str = exec( "git checkout ".$branch." && git pull origin ".$branch, $output, $return );
 
+echo '<pre>';
+print_r($str_gitpull);
+echo '</pre>';
+$_str = exec( $str_gitpull, $output, $return );
 
+echo '<pre>';
 print_r( $output );
+echo '</pre>';
 
+echo '<pre>';
 print_r( $return );
+echo '</pre>';
+
+
+$_str = exec( "whoami", $output, $return );
+echo '<pre>';
+print_r($output);
+echo '</pre>';
+echo '<pre>';
+print_r($return );
+echo '</pre>';
+
 if ( ! $return ) {
 	$result = true;
 	if ( empty( $output ) ) {
@@ -26,7 +45,6 @@ if ( ! $return ) {
 } else {
 	$output = "Fail to update {$branch} of {$repo}";
 }
-
 
 
 echo $output;
