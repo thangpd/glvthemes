@@ -2293,7 +2293,7 @@ nav button.menu-toggle:focus{
         position: absolute;
         float: none;
         z-index: 1;
-        top: -38px;
+        top: -28px;
     }
     .main-navigation .handheld-navigation{
         max-height: 0;
@@ -2314,10 +2314,10 @@ nav button.menu-toggle:focus{
         position: relative;
     } 
     .btn-share{
-        font-size: xx-large;
+        /* font-size: xx-large; */
         display: block;
         position: absolute;
-        top: 30px;
+        top: 5px;
         right: 0;
         z-index: 9999;
     }
@@ -2369,6 +2369,11 @@ body a:focus{
 	position: relative;
 }
 
+.site a.flaticon-network {
+    font-weight: 900;
+    color: #333;
+}
+
 .site a.cbutton--click,
 .site a:focus {
     outline: none;
@@ -2385,7 +2390,7 @@ body a:focus{
 	pointer-events: none;
 }
 
-.site a::before {
+/* .site a::before {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -2397,7 +2402,7 @@ body a:focus{
     z-index: -1;
     transform: scale(0);
     background: #f2f2f2;
-}
+} */
 
 .cbutton--box {
 	width: 24px;
@@ -2405,9 +2410,9 @@ body a:focus{
 	border: 4px solid rgb(22, 35, 47);
 }
 
-.site a::before{
+/* .site a::before{
 	background: #f2f2f2;
-}
+} */
 
 .site a.cbutton--click::before {
 	-webkit-animation: anim-effect-marko 0.4s forwards;
