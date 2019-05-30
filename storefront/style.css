@@ -2490,7 +2490,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 /* ----- test sticky header ---- */
     @media (max-width: 767px){
-        .home.logged-in.page:not(.page-template-template-homepage) .site-header{
+        .logged-in .site-header{
             position: fixed;
             width: 100%;
             box-shadow: -0.2px 3px 16px #f4f4f4;
