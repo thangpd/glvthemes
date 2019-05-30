@@ -568,6 +568,12 @@ body {
     outline: 0
 }
 
+@media screen and (max-width: 767px){
+    .site-content {
+        padding-top: 100px;
+    }
+}
+
 .page-template-template-homepage:not(.has-post-thumbnail) .site-main {
     padding-top: 4.235801032em
 }
