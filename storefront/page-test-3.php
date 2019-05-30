@@ -111,6 +111,18 @@
   padding: 0 36px 0;
 }
 
+.wrapper:after {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 5px;
+    border-radius: 4px;
+    background-color: #8e8e93;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 @media screen and (min-width: 767px) {
     .wrapper {
         max-width: 500px;
@@ -392,6 +404,7 @@
     border-radius: 4px;
     box-shadow: 0 3px 10px 0 rgba(113, 73, 12, 0.31);
     background-color: #ffffff;
+    z-index: 1100;
 }
 .section .select2-container.select2-container--open {
     z-index: -2;
@@ -409,31 +422,49 @@
 .section .select2-container--default .select2-selection--single .select2-selection__arrow {
     top: 50%;
     right: 10px;
+    pointer-events: none;
     transform: translateY(-56%);
 }
 
-.select-wrapper .select2-container--open:not(.select2) {
+
+.select-wrapper .select2-container--open {
     width: -webkit-calc(100% - 30px) !important;
     width: calc(100% - 30px) !important;
     position: absolute;
-    top: 65px !important;
+    top: 45px !important;
     left: 15px !important;
     right: 15px !important;
-    z-index: -1;
 }
-
 
 .select2-container--open .select2-dropdown.select2-dropdown--below {
-    width: -webkit-calc(100% - 16px) !important;
-    width: calc(100% - 16px) !important;
+    width: 100% !important;
     height: 460px;
-    left: 8px !important;
-    right: 8px !important;
-    z-index: 9;
+    left: 0px !important;
+    right: 0px !important;
 }
-
+.select-wrapper .wrapper .select2-container--open .select2-dropdown--below {
+    width: auto !important;
+    position: absolute;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    height: auto;
+   
+}
+/* .selection,
+.dropdown-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+} */
 .select-wrapper .select2-dropdown {
     border: 0;
+}
+
+body {
+    margin: 0;
 }
 
 .select-wrapper .select2-search--dropdown:before {
@@ -467,7 +498,21 @@
     padding: 4px 22px;
 }
 
-.select2-container--open .select2-dropdown.select2-dropdown--below:before {
+.section-select .button-close {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    z-index: 1100;
+    font-size: 20px;
+    color: #be8a4a;
+    visibility: hidden;
+}
+
+.section-select .select2-container--open + .button-close {
+    visibility: visible;
+}
+
+.section-select .button-close:before {
     content: '\f00d';
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
@@ -482,14 +527,15 @@
     top: 10px;
 }
 
-.select-wrapper .select2-hidden-accessible {
+/* .select-wrapper .select2-hidden-accessible {
     height: 55px !important;
     margin: -1px !important;
     overflow: hidden !important;
     padding: 0 !important;
     position: absolute !important;
-    width: 100% !important;
-}
+    width: calc(100% - 30px) !important;
+    left: 0;
+} */
 
 .select-wrapper .select2-container--default .select2-search--dropdown .select2-search__field {
     height: 55px;
@@ -498,8 +544,11 @@
     background-color: #ffffff;
     border: 0;
     margin-top: 10px;
-    margin-bottom: 35px;
     padding: 15px;
+}
+
+.select2-results {
+    padding-top: 75px;
 }
 
 .select-wrapper .select2-results__option {
@@ -517,6 +566,7 @@
 
 .select-wrapper .select2-container--default .select2-results__option--highlighted[aria-selected] {
     background-color:#be8a4a;
+    border-color: #be8a4a;
 }
 
 
@@ -530,7 +580,7 @@
         <div class="wrapper">
             <div class="select">
                 <h1 class="title-select">Select<br/> Your Region</h1>
-                    <select class="js-select2">
+                    <select class="js-select2" id="type">
                         <option>Select A</option>
                         <option>Select B</option>
                         <option>Select C</option>
@@ -548,6 +598,7 @@
                         <option>Select C</option>
                         <option>Select D</option>
                     </select>
+                <div class="button-close"></div>
             </div>
             <div class="clearfix">
                 <button type="submit" class="loginbtn">CONTINUE</button>
@@ -558,7 +609,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
     <script id="rendered-js">
     $(document).ready(function() {
-        $(".js-select2").select2();
+        $(".js-select2").select2({
+        });
+        $(document).on('click', '.section-select .button-close', function (e) {
+            console.log('aaa');  
+            $(".js-select2").select2("close");
+        });
     });
     </script>
   </body>
