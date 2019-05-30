@@ -43,7 +43,7 @@
       // })();            
     $(document).ready(function(){
         var height_header = $('.site-header').height() + 70;
-        if($('body').hasClass('storefront-breadcrumb')){
+        if($('body').find('storefront-breadcrumb')){
             $('.logged-in .storefront-breadcrumb').css('padding-top', height_header);
         } else
             $('.logged-in .site-content').css('padding-top', height_header);
