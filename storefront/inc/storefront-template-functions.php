@@ -552,15 +552,11 @@ if ( ! function_exists( 'storefront_post_taxonomy' ) ) {
         <aside class="entry-taxonomy">
 			<?php if ( $categories_list ) : ?>
                 <div class="cat-links">
-					<?php echo esc_html( _n( 'Categories:', count( get_the_category() ), 'storefront' ) ); ?><?php echo wp_kses_post( $categories_list ); ?>
+					<?php echo wp_kses_post( $categories_list ); ?>
                 </div>
 			<?php endif; ?>
 
-			<?php if ( $tags_list ) : ?>
-                <div class="tags-links">
-					<?php echo esc_html( _n( 'Tag:', 'Tags:', count( get_the_tags() ), 'storefront' ) ); ?><?php echo wp_kses_post( $tags_list ); ?>
-                </div>
-			<?php endif; ?>
+			
         </aside>
 
 		<?php
