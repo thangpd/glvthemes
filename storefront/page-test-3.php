@@ -598,7 +598,7 @@ body {
                         <option>Select C</option>
                         <option>Select D</option>
                     </select>
-                <div class="button-close"></div>
+                <div class="button-close"><i class="fas fa-times"></i></div>
             </div>
             <div class="clearfix">
                 <button type="submit" class="loginbtn">CONTINUE</button>
