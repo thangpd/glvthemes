@@ -12,6 +12,9 @@ h1.entry-title {
     margin-top: 6%;
 }
 
+.posted-on  + h1.entry-title{
+    float: none;
+}
 
 .list_countrycode {
     width: 16% !important;
