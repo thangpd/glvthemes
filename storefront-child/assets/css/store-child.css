@@ -361,3 +361,7 @@ button:focus {
     top: 35%;
     left: 62%;
 }
+
+.woocommerce-cart-form table.cart tr:first-child td.product-remove{
+    margin-top: 25px;
+}
