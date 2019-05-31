@@ -55,6 +55,11 @@
 .section .loginbtn:focus {
   border: 0;
   outline: 0;
+}
+
+.section .loginbtn:focus,
+.section .loginbtn:active,
+.section .loginbtn:hover {
   background-image: none;
   background-color: #be8a4a;
   color: #fff;
@@ -191,7 +196,6 @@
   display: flex;
   margin-bottom: 40px;
   position: relative;
-    z-index: -2;
 }
 
 .dropdown {
