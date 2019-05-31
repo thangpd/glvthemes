@@ -2535,4 +2535,8 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     margin-bottom: 12px;
 }
 
+.footer_link a{
+    font-size: 14px;
+}
+
 
