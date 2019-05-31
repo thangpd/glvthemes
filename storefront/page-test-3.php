@@ -46,6 +46,8 @@
   letter-spacing: 0.3px;
   color: #72440a;
   border: 0;
+  -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   background-image: linear-gradient(to left, #e0c65a, #e0c65a 15%, #f8e884 50%, #e0c65a 87%, #e0c65a);
 
 }
@@ -53,6 +55,9 @@
 .section .loginbtn:focus {
   border: 0;
   outline: 0;
+  background-image: none;
+  background-color: #be8a4a;
+  color: #fff;
 }
 
 .section .title-select {
