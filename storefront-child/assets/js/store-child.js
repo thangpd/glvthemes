@@ -53,6 +53,17 @@
     //         $('.logged-in .site-header').css('top', '0');
     //     });
     // });
+   // })();            
+   $(document).ready(function(){
+        var height_header = $('.site-header').height() + 80;
+        if($('body').find('storefront-breadcrumb')){
+            $('.logged-in .storefront-breadcrumb').css('padding-top', height_header);
+        }
+        if($('.home').find('site-content')){
+            $('.logged-in .site-content').css('padding-top', height_header);
+        }
+    
+    });
 
     $(window).scroll(function(){
         if($(this).scrollTop()>= 80){           
