@@ -46,6 +46,9 @@
   letter-spacing: 0.3px;
   color: #72440a;
   border: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   background-image: linear-gradient(to left, #e0c65a, #e0c65a 15%, #f8e884 50%, #e0c65a 87%, #e0c65a);
 
 }
@@ -53,6 +56,14 @@
 .section .loginbtn:focus {
   border: 0;
   outline: 0;
+}
+
+.section .loginbtn:focus,
+.section .loginbtn:active,
+.section .loginbtn:hover {
+  background-image: none;
+  background-color: #be8a4a;
+  color: #fff;
 }
 
 .section .title-select {
@@ -186,7 +197,6 @@
   display: flex;
   margin-bottom: 40px;
   position: relative;
-    z-index: -2;
 }
 
 .dropdown {
@@ -481,7 +491,7 @@ body {
 
 .select-wrapper .select2-search--dropdown:after {
     content: "\f002";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
@@ -492,6 +502,7 @@ body {
         position: absolute;
     top: 90px;
     right: 40px;
+    color: #be8a4a;
 }
 
 .select-wrapper .select2-search--dropdown {
@@ -500,8 +511,8 @@ body {
 
 .section-select .button-close {
     position: absolute;
-    right: 20px;
-    top: 50px;
+    right: 25px;
+    top: 55px;
     z-index: 1100;
     font-size: 20px;
     color: #be8a4a;
@@ -512,7 +523,7 @@ body {
     visibility: visible;
 }
 
-.section-select .button-close:before {
+/* .section-select .button-close:before {
     content: '\f00d';
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
@@ -525,7 +536,7 @@ body {
     position: absolute;
     right: 10px;
     top: 10px;
-}
+} */
 
 /* .select-wrapper .select2-hidden-accessible {
     height: 55px !important;
@@ -539,9 +550,12 @@ body {
 
 .select-wrapper .select2-container--default .select2-search--dropdown .select2-search__field {
     height: 55px;
+    -webkit-appearance: none;
     border-radius: 4px;
     box-shadow: 0 3px 10px 0 rgba(113, 73, 12, 0.31);
-    background-color: #ffffff;
+    -webkit-box-shadow:0 3px 10px 0 rgba(113, 73, 12, 0.31);
+    -moz--box-shadow: 0 3px 10px 0 rgba(113, 73, 12, 0.31);
+    background-color: #fff;
     border: 0;
     margin-top: 10px;
     padding: 15px;
@@ -598,7 +612,7 @@ body {
                         <option>Select C</option>
                         <option>Select D</option>
                     </select>
-                <div class="button-close"></div>
+                <div class="button-close"><i class="fas fa-times"></i></div>
             </div>
             <div class="clearfix">
                 <button type="submit" class="loginbtn">CONTINUE</button>
@@ -611,10 +625,9 @@ body {
     $(document).ready(function() {
         $(".js-select2").select2({
         });
-        $(document).on('click', '.section-select .button-close', function (e) {
-            console.log('aaa');  
-            $(".js-select2").select2("close");
-        });
+        // $('.section-select .button-close').on('click', function () {
+        //   $(".js-select2").select2("close");
+        // });
     });
     </script>
   </body>

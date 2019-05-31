@@ -12,6 +12,9 @@ h1.entry-title {
     margin-top: 6%;
 }
 
+.posted-on  + h1.entry-title{
+    float: none;
+}
 
 .list_countrycode {
     width: 16% !important;
@@ -357,4 +360,11 @@ button:focus {
 .btn-default .ld-ext-right>.ld{
     top: 35%;
     left: 62%;
+}
+
+.woocommerce-cart-form table.cart tr:first-child td.product-remove{
+    margin-top: 25px;
+}
+.woocommerce .woocommerce-MyAccount-content h2{
+    font-weight: 300;
 }
