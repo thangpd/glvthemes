@@ -24,7 +24,7 @@ if ( ! function_exists( 'glv_add_class_to_body' ) ) {
 				}
 			}
 			// add class cho trang myaccount
-			$classes[] = 'theme-o-day';
+			$classes[] = 'display-avatar';
 
 
 		}
