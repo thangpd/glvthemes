@@ -23,6 +23,10 @@ if ( ! function_exists( 'glv_add_class_to_body' ) ) {
 					unset ( $classes[ $index ] );
 				}
 			}
+			// add class cho trang myaccount
+			$classes[] = 'theme-o-day';
+
+
 		}
 
 		return $classes;
