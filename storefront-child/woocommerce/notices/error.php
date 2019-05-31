@@ -26,10 +26,9 @@ if ( ! $messages ) {
 ?>
 <ul class="alert alert-danger" role="alert" style="margin: 0">
 	<?php foreach ( $messages as $message ) : ?>
-		<li>
-			<?php
-				echo wc_kses_notice( $message );
-			?>
-		</li>
+		<?php
+			echo wc_kses_notice( $message );
+		?>
+		<br>
 	<?php endforeach; ?>
 </ul>
