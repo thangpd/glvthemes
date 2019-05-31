@@ -569,7 +569,7 @@ body {
 }
 
 @media screen and (max-width: 767px){
-    .site-content {
+    .logged-in .site-content {
         padding-top: 120px;
     }
 }
