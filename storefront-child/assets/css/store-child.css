@@ -373,7 +373,7 @@ button:focus {
     display: none;
 }
 
-.display-avatar .account-user,
+.dashboard-class .account-user,
 .woocommerce-profile .account-user,
 .woocommerce-payment .account-user,
 .woocommerce-edit-account .account-user{
