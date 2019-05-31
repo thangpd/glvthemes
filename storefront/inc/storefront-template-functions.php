@@ -551,7 +551,9 @@ if ( ! function_exists( 'storefront_post_taxonomy' ) ) {
 
         <aside class="entry-taxonomy">
 			<?php if ( $categories_list ) : ?>
-                
+                <div class="cat-links">
+					<?php echo wp_kses_post( $categories_list ); ?>
+                </div>
 			<?php endif; ?>
 
 			<?php if ( $tags_list ) : ?>
