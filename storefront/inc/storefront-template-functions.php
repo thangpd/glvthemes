@@ -492,29 +492,29 @@ if ( ! function_exists( 'storefront_post_meta' ) ) {
 		$posted_on = '
 			<span class="posted-on">' .
 		             /* translators: %s: post date */
-		             sprintf( __( 'Posted on %s', 'storefront' ), $output_time_string ) .
+		             sprintf( __( '%s', 'storefront' ), $output_time_string ) .
 		             '</span>';
 
 		// Author.
-		$author = sprintf(
-			'<span class="post-author">%1$s <a href="%2$s" class="url fn" rel="author">%3$s</a></span>',
-			__( 'by', 'storefront' ),
-			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-			esc_html( get_the_author() )
-		);
+		// $author = sprintf(
+		// 	'<span class="post-author">%1$s <a href="%2$s" class="url fn" rel="author">%3$s</a></span>',
+		// 	__( 'by', 'storefront' ),
+		// 	esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+		// 	esc_html( get_the_author() )
+		// );
 
 		// Comments.
-		$comments = '';
+		// $comments = '';
 
-		if ( ! post_password_required() && ( comments_open() || 0 !== intval( get_comments_number() ) ) ) {
-			$comments_number = get_comments_number_text( __( 'Leave a comment', 'storefront' ), __( '1 Comment', 'storefront' ), __( '% Comments', 'storefront' ) );
+		// if ( ! post_password_required() && ( comments_open() || 0 !== intval( get_comments_number() ) ) ) {
+		// 	$comments_number = get_comments_number_text( __( 'Leave a comment', 'storefront' ), __( '1 Comment', 'storefront' ), __( '% Comments', 'storefront' ) );
 
-			$comments = sprintf(
-				'<span class="post-comments">&mdash; <a href="%1$s">%2$s</a></span>',
-				esc_url( get_comments_link() ),
-				$comments_number
-			);
-		}
+		// 	$comments = sprintf(
+		// 		'<span class="post-comments">&mdash; <a href="%1$s">%2$s</a></span>',
+		// 		esc_url( get_comments_link() ),
+		// 		$comments_number
+		// 	);
+		// }
 
 		echo wp_kses(
 			sprintf( '%1$s %2$s %3$s', $posted_on, $author, $comments ), array(
@@ -552,7 +552,7 @@ if ( ! function_exists( 'storefront_post_taxonomy' ) ) {
         <aside class="entry-taxonomy">
 			<?php if ( $categories_list ) : ?>
                 <div class="cat-links">
-					<?php echo esc_html( _n( 'Category:', 'Categories:', count( get_the_category() ), 'storefront' ) ); ?><?php echo wp_kses_post( $categories_list ); ?>
+					<?php echo wp_kses_post( $categories_list ); ?>
                 </div>
 			<?php endif; ?>
 

@@ -53,6 +53,7 @@
     //         $('.logged-in .site-header').css('top', '0');
     //     });
     // });
+   // })();            
 
     $(window).scroll(function(){
         if($(this).scrollTop()>= 80){           
