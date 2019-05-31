@@ -481,7 +481,7 @@ body {
 
 .select-wrapper .select2-search--dropdown:after {
     content: "\f002";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
@@ -492,6 +492,7 @@ body {
         position: absolute;
     top: 90px;
     right: 40px;
+    color: #be8a4a;
 }
 
 .select-wrapper .select2-search--dropdown {
@@ -500,8 +501,8 @@ body {
 
 .section-select .button-close {
     position: absolute;
-    right: 20px;
-    top: 50px;
+    right: 25px;
+    top: 55px;
     z-index: 1100;
     font-size: 20px;
     color: #be8a4a;
