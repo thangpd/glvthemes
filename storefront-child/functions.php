@@ -23,8 +23,14 @@ if ( ! function_exists( 'glv_add_class_to_body' ) ) {
 					unset ( $classes[ $index ] );
 				}
 			}
-			// add class cho trang myaccount
-			$classes[] = 'theme-o-day';
+			global $wp;
+			$request = explode( '/', $wp->request );
+			// If NOT in My account dashboard page
+			if( ( end($request) == '' && is_account_page() ) ){
+				// add class only dashboard
+				$classes[] = 'dashboard-class';
+
+			}
 
 
 		}
