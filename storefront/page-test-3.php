@@ -550,11 +550,12 @@ body {
 
 .select-wrapper .select2-container--default .select2-search--dropdown .select2-search__field {
     height: 55px;
+    -webkit-appearance: none;
     border-radius: 4px;
     box-shadow: 0 3px 10px 0 rgba(113, 73, 12, 0.31);
     -webkit-box-shadow:0 3px 10px 0 rgba(113, 73, 12, 0.31);
     -moz--box-shadow: 0 3px 10px 0 rgba(113, 73, 12, 0.31);
-    background-color: #ffffff;
+    background-color: #fff;
     border: 0;
     margin-top: 10px;
     padding: 15px;
@@ -624,10 +625,9 @@ body {
     $(document).ready(function() {
         $(".js-select2").select2({
         });
-        $(document).on('click', '.section-select .button-close', function (e) {
-            console.log('aaa');  
-            $(".js-select2").select2("close");
-        });
+        // $('.section-select .button-close').on('click', function () {
+        //   $(".js-select2").select2("close");
+        // });
     });
     </script>
   </body>
