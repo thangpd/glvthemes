@@ -47,6 +47,7 @@
   color: #72440a;
   border: 0;
   -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
   background-image: linear-gradient(to left, #e0c65a, #e0c65a 15%, #f8e884 50%, #e0c65a 87%, #e0c65a);
 
@@ -551,6 +552,8 @@ body {
     height: 55px;
     border-radius: 4px;
     box-shadow: 0 3px 10px 0 rgba(113, 73, 12, 0.31);
+    -webkit-box-shadow:0 3px 10px 0 rgba(113, 73, 12, 0.31);
+    -moz--box-shadow: 0 3px 10px 0 rgba(113, 73, 12, 0.31);
     background-color: #ffffff;
     border: 0;
     margin-top: 10px;
