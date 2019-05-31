@@ -2502,30 +2502,37 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 
 /* ----- test sticky header ---- */
-    @media (max-width: 767px){
-        .site .screen-reader-text{
-            display: none;
-        }
-        .storefront-breadcrumb + .site-content{
-            padding-top: 0 !important;
-        }
-        .logged-in .site-header{
-            position: fixed;
-            width: 100%;
-            box-shadow: 0 0 6px rgba(0,0,0,.3);
-        }
-        .main-navigation .handheld-navigation{
-            height: calc(100vh - 160px);
-            overflow: auto;
-            left: -100%;
-            background: #fff;
-        }
-        .site-header + .storefront-breadcrumb{
-            padding-top: 120px;
-        }
+@media (max-width: 767px){
+    .site .screen-reader-text{
+        display: none;
     }
+    .storefront-breadcrumb + .site-content{
+        padding-top: 0 !important;
+    }
+    .logged-in .site-header{
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 0 6px rgba(0,0,0,.3);
+    }
+    .main-navigation .handheld-navigation{
+        height: calc(100vh - 160px);
+        overflow: auto;
+        left: -100%;
+        background: #fff;
+    }
+    .site-header + .storefront-breadcrumb{
+        padding-top: 120px;
+    }
+}
 
-    .btn-default.ld-ext-right>.ld{
-        top: 35%;
-        left: 62%;
-    }
+.btn-default.ld-ext-right>.ld{
+    top: 35%;
+    left: 62%;
+}
+
+.lost_reset_password >p{
+    color: #D9A666;
+    margin-bottom: 12px;
+}
+
+
