@@ -365,3 +365,6 @@ button:focus {
 .woocommerce-cart-form table.cart tr:first-child td.product-remove{
     margin-top: 25px;
 }
+.woocommerce .woocommerce-MyAccount-content h2{
+    font-weight: 300;
+}
