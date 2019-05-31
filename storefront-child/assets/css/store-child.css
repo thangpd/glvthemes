@@ -368,3 +368,14 @@ button:focus {
 .woocommerce .woocommerce-MyAccount-content h2{
     font-weight: 300;
 }
+
+.account-user{
+    display: none;
+}
+
+.display-avatar .account-user,
+.woocommerce-profile .account-user,
+.woocommerce-payment .account-user,
+.woocommerce-edit-account .account-user{
+    display: block;
+} 
