@@ -2520,7 +2520,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
             left: -100%;
             background: #fff;
         }
-        .site-header .storefront-breadcrumb{
+        .site-header + .storefront-breadcrumb{
             padding-top: 120px;
         }
     }
