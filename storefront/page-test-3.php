@@ -624,10 +624,12 @@ body {
     <script id="rendered-js">
     $(document).ready(function() {
         $(".js-select2").select2({
+          // closeOnSelect: false,
+          // allowClear: true,
         });
-        // $('.section-select .button-close').on('click', function () {
-        //   $(".js-select2").select2("close");
-        // });
+        $('.section-select .button-close').on('click', function () {
+          $('.js-select2').select2('close');
+        });
     });
     </script>
   </body>
