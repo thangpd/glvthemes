@@ -716,7 +716,7 @@ if ( ! function_exists( 'storefront_handheld_footer_bar_document' ) ) {
 	 * @since 2.0.0
 	 */
 	function storefront_handheld_footer_bar_document() {
-		echo '<a href="' . home_url() . '/category/news/">' . esc_attr__( 'Flaticon Document', 'storefront' ) . '</a>';
+		echo '<a href="' . home_url() . '/news/">' . esc_attr__( 'Flaticon Document', 'storefront' ) . '</a>';
 	}
 }
 
