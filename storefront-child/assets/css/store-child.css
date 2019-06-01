@@ -379,3 +379,6 @@ button:focus {
 .woocommerce-edit-account .account-user{
     display: block;
 } 
+.form-row .select2-container--classic .select2-selection--single .select2-selection__rendered{
+    color: #444 !important;
+}
