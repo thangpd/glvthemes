@@ -368,3 +368,17 @@ button:focus {
 .woocommerce .woocommerce-MyAccount-content h2{
     font-weight: 300;
 }
+
+.account-user{
+    display: none;
+}
+
+.dashboard-class .account-user,
+.woocommerce-profile .account-user,
+.woocommerce-payment .account-user,
+.woocommerce-edit-account .account-user{
+    display: block;
+} 
+.form-row .select2-container--classic .select2-selection--single .select2-selection__rendered{
+    color: #444 !important;
+}
