@@ -429,6 +429,12 @@
     height: 55px;
 }
 
+.section .select2-container--default .select2-selection--single .select2-selection__rendered:hover,
+.section .select2-container--default .select2-selection--single .select2-selection__rendered:active,
+.section .select2-container--default .select2-selection--single .select2-selection__rendered:focus {
+  border:1px solid #be8a4a;
+}
+
 .section .select2-container--default .select2-selection--single .select2-selection__arrow {
     top: 50%;
     right: 10px;
