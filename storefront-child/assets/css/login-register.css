@@ -83,6 +83,8 @@ form a {
 form p.lost_password {
     text-align: center;
     color: white;
+    width: 50px;
+    margin: 0 auto;
 }
 
 
