@@ -85,7 +85,7 @@ form p.lost_password {
     color: white;
 }
 
-.login-register form p.lost_password {
+form.woocommerce-form-register p.lost_password {
     width: 50px;
     margin: 0 auto;
 }
