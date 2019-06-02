@@ -38,6 +38,7 @@
   -webkit-border-radius: 25px;
           border-radius: 25px;
   text-align: center;
+  font-family: Muli;
   font-size: 15px;
   font-weight: bold;
   font-style: normal;
@@ -68,12 +69,25 @@
 
 .section .title-select {
   font-size: 32px;
+  font-family: Muli;
   color: #fff;
   line-height: 1.25;
   padding-top: 60px;
   padding-bottom: 30px;
   position: relative;
   z-index: -1;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+  font-family: Muli;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #909090;
 }
 
 /* .section .title-select.open {
@@ -490,6 +504,7 @@ body {
 .select-wrapper .select2-search--dropdown:before {
     content: 'Your Region';
     font-size: 18px;
+    font-family: Muli;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
@@ -586,6 +601,7 @@ body {
   letter-spacing: normal;
   text-align: left;
   color: #1d1103;
+  font-family: Muli;
 }
 
 .select-wrapper .select2-container--default .select2-results__option--highlighted[aria-selected] {
