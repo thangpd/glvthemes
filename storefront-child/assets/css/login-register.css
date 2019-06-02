@@ -114,12 +114,12 @@ form.woocommerce-form-register p.lost_password {
     margin: 0 auto;
 }
 
-form.woocommerce-form-login form p.lost_password a {
+form.woocommerce-form-login p.lost_password a {
     width: 170px;
     margin: 0 auto;
 }
 
-form.woocommerce-form-login form p.lost_password a + a {
+form.woocommerce-form-login p.lost_password a + a {
     width: 80px;
     margin: 0 auto;
 }
