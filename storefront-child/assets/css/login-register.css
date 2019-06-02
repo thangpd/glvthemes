@@ -93,7 +93,6 @@ form p.lost_password {
     font-stretch: normal;
     line-height: 1.2;
     letter-spacing: 0.3px;
-    text-align: left;
     color: #1d1103;
 }
 
@@ -105,10 +104,11 @@ form p.lost_password a {
   font-stretch: normal;
   line-height: 1.19;
   letter-spacing: normal;
-  text-align: left;
   color: #d9a666;
 }
-
+form span, form label, h2 {
+    font-family: Muli;
+}
 form.woocommerce-form-register p.lost_password {
     width: 50px;
     margin: 0 auto;
