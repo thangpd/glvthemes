@@ -631,6 +631,8 @@ body {
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'>
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
     <script id="rendered-js">
     $(document).ready(function() {
@@ -641,8 +643,10 @@ body {
         });
 
         $('.js-select2').on('select2:open', function() {
-          $('.select2-search input').prop('focus', 2);
-      });
+          $('.select2-search input').prop('focus', -1);
+          $("#select option[value='0']").remove();
+          $('.select2-dropdown').hide().slideDown("slow", "easeInOutQuint");
+            });
     });
     </script>
   </body>
