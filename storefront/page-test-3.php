@@ -635,16 +635,12 @@ body {
     <script id="rendered-js">
     $(document).ready(function() {
         $(".js-select2").select2({
-          // closeOnSelect: false,
+          closeOnSelect: false,
           // allowClear: true,
         });
         $('.section-select .button-close').on('click', function () {
           $('.js-select2').select2('close');
         });
-
-        $(".js-select2").on('select2:open', function () {
-          $('.select2-search input').prop('focus', 0);
-      });
     });
     </script>
   </body>
