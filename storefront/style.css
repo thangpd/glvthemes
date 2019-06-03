@@ -2380,6 +2380,7 @@ body a:focus{
 .site a.flaticon-network {
     font-weight: 900;
     color: #333;
+    padding: 4px;
 }
 
 .site a.cbutton--click,
