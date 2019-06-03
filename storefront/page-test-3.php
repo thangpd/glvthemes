@@ -435,6 +435,7 @@
 
 .select-wrapper .select2-container--default .select2-search--dropdown .select2-search__field:focus {
   border:1px solid #be8a4a;
+  outline: none;
 }
 
 .section .select2-container--default .select2-selection--single .select2-selection__arrow {
