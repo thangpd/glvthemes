@@ -632,7 +632,6 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
 	 *
 	 * @since 2.0.0
 	 */
-	function storefront_handheld_footer_bar( $link ) {
 
 		if ( is_user_logged_in() ) {
 			function storefront_handheld_footer_bar() {
@@ -684,7 +683,6 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
                 </div>
 				<?php
 			}
-		}
 	}
 }
 
