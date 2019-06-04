@@ -242,3 +242,15 @@ form p label input + span {
   text-align: left;
   color: #ffffff;
 }
+
+
+ /*login*/
+.woocommerce-form.woocommerce-form-login .field-icon {
+    float: right;
+    position: relative;
+    z-index: 2;
+    color: black !important;
+    top: -40px;
+    right: 7px;
+    font-size: 23px;
+}
