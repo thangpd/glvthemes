@@ -49,6 +49,12 @@ body {
     background-image: url('assets/images/common/background.jpg');
 }
 
+body.login-register {
+    background-image: url('assets/images/common/background.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block
 }
