@@ -896,6 +896,7 @@ body {
       $(".js-select2").select2({
         placeholder: "Select a country",
         templateResult: formatCountry,
+        templateSelection: formatCountry,
         data: isoCountries
       });
       $('.section-select .button-close').on('click', function () {
