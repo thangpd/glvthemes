@@ -395,7 +395,7 @@ p img.update_img_ava[src^="https"]{
     position: relative;
     padding-left: 30px;
 }
-.myCRED-balance.mycred-balance-mycred_default, .widget .myCRED-balance::before{
+.myCRED-balance.mycred-balance-mycred_default::before, .widget .myCRED-balance::before{
     position: absolute;
     content: '';
     background-image: url(../../images/gold.png);
