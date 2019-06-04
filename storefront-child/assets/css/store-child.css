@@ -386,8 +386,8 @@ button:focus {
     margin-left: 0;
 }
 p img.update_img_ava{
-    display: none;
+    display: block;
 }
 p img.update_img_ava[src="unknown"]{
-    display: block;
+    display: none;
 }
