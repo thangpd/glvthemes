@@ -393,21 +393,19 @@ p img.update_img_ava[src^="https"]{
 }
 .myCRED-balance.mycred-balance-mycred_default, .widget .myCRED-balance{
     position: relative;
-    padding-left: 80px;
-    padding-top: 25px;
-}
-.myCRED-balance.mycred-balance-mycred_point{
-    padding-top: 20px;
+    padding-left: 65px;
+    padding-top: 15px;
 }
 .myCRED-balance.mycred-balance-mycred_default::before, 
 .widget .myCRED-balance::before{
     position: absolute;
     content: '';
     background-image: url(../../images/gold.png);
+    background-size: cover;
     top: 0;
     left: 0;
-    width: 64px;
-    height: 64px;
+    width: 50px;
+    height: 50px;
 }
 .myCRED-balance.mycred-balance-mycred_point::before{
     background-image: url(../../images/wallet.png);
