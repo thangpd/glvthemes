@@ -1,6 +1,6 @@
 <?php
 /**
- * My Account navigation
+ * Account navigation
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/myaccount/navigation.php.
  *

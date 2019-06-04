@@ -38,7 +38,21 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
+}
+
+.section {
+    background-size: cover;
+    height: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('assets/images/common/background.jpg');
+}
+
+body.login-register {
+    background-image: url('assets/images/common/background.jpg');
+    background-size: cover;
+    height: 100%;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
@@ -2380,6 +2394,7 @@ body a:focus{
 .site a.flaticon-network {
     font-weight: 900;
     color: #333;
+    padding: 4px;
 }
 
 .site a.cbutton--click,
