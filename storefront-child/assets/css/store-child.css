@@ -385,3 +385,9 @@ button:focus {
 .btn-share [class^="flaticon-"]:before{
     margin-left: 0;
 }
+p img.update_img_ava{
+    display: none;
+}
+p img.update_img_ava[src]{
+    display: block;
+}
