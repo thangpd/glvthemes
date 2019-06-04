@@ -65,6 +65,7 @@
         } else {
           input.attr("type", "password");
         }
+        input.focus();
       });
    }         
 
