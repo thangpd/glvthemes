@@ -253,4 +253,5 @@ form p label input + span {
     top: -40px;
     right: 7px;
     font-size: 23px;
+    opacity: .5
 }
