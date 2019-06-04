@@ -406,3 +406,7 @@ p img.update_img_ava[src^="https"]{
     width: 64px;
     height: 64px;
 }
+.myCRED-balance.mycred-balance-mycred_point::before{
+    background-image: url(../../images/wallet.png);
+
+}
