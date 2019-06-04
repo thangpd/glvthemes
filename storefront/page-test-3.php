@@ -62,7 +62,6 @@
   padding-top: 60px;
   padding-bottom: 30px;
   position: relative;
-  z-index: -1;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered{
