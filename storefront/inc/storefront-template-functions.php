@@ -188,8 +188,12 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
 			?>
         </div>
         <?php if(is_user_logged_in()) :?>
-        <div class="btn-share">
-            <a href="javascript:showAndroidShare()" class="flaticon-network"></i></a>
+        <div class="btn-share dropdown">
+            <a href="javascript:void(0)" class="js-btn-share"><i class="flaticon-network"></i></a>
+             <div id="myDropdown" class="dropdown-content">
+			    <a href="#">Member share</a>
+			    <a href="#">Customer share</a>
+			  </div>
         </div>
         <script>
             function showAndroidShare() {
