@@ -9,10 +9,6 @@ input {
     margin-bottom: 20px;
 }
 
-.hentry,.site-main {
-    margin-bottom: 0 !important;
-}
-
 input:focus {
     outline: 0;
     -webkit-box-shadow: 0;
@@ -254,37 +250,40 @@ form p label input + span {
     position: relative;
     z-index: 2;
     color: black !important;
-    top: -38px;
+    top: -33px;
     right: 7px;
     font-size: 23px;
     opacity: .5
 }
 
+.hentry {
+    margin-bottom: 0 !important;
+}
+
 @media (max-width: 767px) {
-    body.login-register.home {
+    body.login-register {
         background-size: 100% 100%;
         height: 100vh;
         background-position: 100% 100%;
-        overflow: hidden;
     }
 
-    .login-register form label[for="login-with-phone"] {
+    form label[for="login-with-phone"] {
         margin-bottom: 0;
     }
 
-    .login-register .woocommerce-form-login.login > p.form-row.form-row-wide {
+    .woocommerce-form-login.login > p.form-row.form-row-wide {
         margin-bottom: 0;
     }
 
-    .login-register .site-footer {
+    .site-footer {
         padding: 0;
     }
 
-    .login-register .site-footer .site-info {
+    .site-footer .site-info {
         padding: 0;
     }
 
-    .login-register .site-footer .site-info > p {
+    .site-footer .site-info > p {
         margin-bottom: 0;
     }
 }
