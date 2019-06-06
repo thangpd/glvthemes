@@ -632,8 +632,10 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
 	 *
 	 * @since 2.0.0
 	 */
-	if ( is_user_logged_in() ) {
-		function storefront_handheld_footer_bar() {
+
+	function storefront_handheld_footer_bar() {
+		if ( is_user_logged_in() ) {
+
 			$links = array(
 				'my-account'        => array(
 					'priority' => 10,
