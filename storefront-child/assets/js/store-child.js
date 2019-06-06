@@ -75,7 +75,7 @@
      });
 
      $(document).on('click', function(e) {
-       if ($(e.target)[0] != $btnShare[0]) {
+       if (!$('.btn-share').find(e.target).length) {
          if (!$('#myDropdown').is(':hidden')) {
            $btnShare.click();
          }  
