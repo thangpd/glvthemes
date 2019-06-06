@@ -68,7 +68,20 @@
         input.focus();
       });
    }         
+   const $btnShare = $('.js-btn-share');
+   if ($btnShare.length) {
+     $btnShare.on('click', function() {
+       $('#myDropdown').toggle('show');
+     });
 
+     $(document).on('click', function(e) {
+       if ($(e.target)[0] != $btnShare[0]) {
+         if (!$('#myDropdown').is(':hidden')) {
+           $btnShare.click();
+         }  
+       }
+     });
+   }
     $(window).scroll(function(){
         if($(this).scrollTop()>= 80){           
             $('.site-header').addClass('fixed');
