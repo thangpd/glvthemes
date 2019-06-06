@@ -118,7 +118,7 @@
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   position: relative;
-  height: calc(100vh - 60px);
+  height: 100vh;
   padding: 0 36px 0;
 }
 
