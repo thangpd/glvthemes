@@ -17,7 +17,9 @@ if ( ! $return ) {
 	$result = true;
 	if ( empty( $output ) ) {
 		$output = "Success update {$branch} of {$repo}" . $_str;
+		print_r("rsync -avz ".$gitpath." ". $destination ." --exclude .git/ --exclude .gitignore");
 		$_str = exec( "rsync -avz ".$gitpath." ". $destination ." --exclude .git/ --exclude .gitignore", $output, $return );
+
 		echo '<pre>';
 		print_r( $output );
 		echo '</pre>';
