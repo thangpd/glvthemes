@@ -256,6 +256,10 @@ form p label input + span {
     opacity: .5
 }
 
+.hentry {
+    margin-bottom: 0 !important;
+}
+
 @media (max-width: 767px) {
     body.login-register {
         background-size: 100% 100%;
