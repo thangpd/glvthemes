@@ -260,7 +260,6 @@ form p label input + span {
         background-size: 100% 100%;
         height: 100vh;
         background-position: 100% 100%;
-        overflow: hidden;
     }
 
     form label[for="login-with-phone"] {
