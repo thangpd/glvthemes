@@ -645,7 +645,7 @@ body {
 .site-footer {
     background-color: #f3f3f3;
     color: #3b3c3f;
-    padding: 1.618em 0 3.706325903em
+    padding: 0 0 10px;
 }
 
 .site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6 {
