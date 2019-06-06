@@ -1,4 +1,3 @@
-
 input {
     width: 100%;
     height: 53px;
@@ -254,4 +253,33 @@ form p label input + span {
     right: 7px;
     font-size: 23px;
     opacity: .5
+}
+
+@media (max-width: 767px) {
+    body.login-register {
+        background-size: 100% 100%;
+        height: 100vh;
+        background-position: 100% 100%;
+        overflow: hidden;
+    }
+
+    form label[for="login-with-phone"] {
+        margin-bottom: 0;
+    }
+
+    .woocommerce-form-login.login > p.form-row.form-row-wide {
+        margin-bottom: 0;
+    }
+
+    .site-footer {
+        padding: 0;
+    }
+
+    .site-footer .site-info {
+        padding: 0;
+    }
+
+    .site-footer .site-info > p {
+        margin-bottom: 0;
+    }
 }
