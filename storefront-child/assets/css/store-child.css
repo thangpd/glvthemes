@@ -445,3 +445,10 @@ p img.update_img_ava[src^="https"]{
 .category-announcements .alpha.entry-title{
     margin-top: 0.5em;
 }
+.account-user{
+    margin-bottom: 10px;
+}
+.site-footer .footer_link a{
+    color: #ccc;
+    text-decoration: none;
+}
