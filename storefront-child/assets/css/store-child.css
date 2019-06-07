@@ -448,7 +448,7 @@ p img.update_img_ava[src^="https"]{
 .account-user{
     margin-bottom: 10px;
 }
-.site-footer .footer_link a{
+.site-footer .footer_link a:not(.button){
     color: #ccc;
     text-decoration: none;
 }
