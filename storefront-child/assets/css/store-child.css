@@ -440,4 +440,15 @@ p img.update_img_ava[src^="https"]{
 .dropdown-content a:hover {background-color: #ddd}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}      
+.show {display:block;}   
+
+.category-announcements .alpha.entry-title{
+    margin-top: 0.5em;
+}
+.account-user{
+    margin-bottom: 10px;
+}
+.site-footer .footer_link a:not(.button){
+    color: #ccc;
+    text-decoration: none;
+}

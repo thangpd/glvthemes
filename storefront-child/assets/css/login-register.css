@@ -1,9 +1,10 @@
 input {
     width: 100%;
-    height: 53px;
+    height: 43px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
     border: 0;
+    line-height: 43px !important;
     color: #1D1103;
     margin-bottom: 20px;
 }
@@ -13,7 +14,9 @@ input:focus {
     -webkit-box-shadow: 0;
     box-shadow: 0;
 }
-
+.site-main {
+    margin-bottom: 0 !important;
+}
 .site-info {
     text-align: center;
 }
@@ -249,10 +252,14 @@ form p label input + span {
     position: relative;
     z-index: 2;
     color: black !important;
-    top: -38px;
+    top: -33px;
     right: 7px;
     font-size: 23px;
     opacity: .5
+}
+
+.hentry {
+    margin-bottom: 0 !important;
 }
 
 @media (max-width: 767px) {
@@ -260,7 +267,6 @@ form p label input + span {
         background-size: 100% 100%;
         height: 100vh;
         background-position: 100% 100%;
-        overflow: hidden;
     }
 
     form label[for="login-with-phone"] {

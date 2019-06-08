@@ -44,7 +44,6 @@ body {
 .section {
     background-size: cover;
     height: 100%;
-    height: 100vh;
     position: relative;
     background-image: url('assets/images/common/background.jpg');
 }
@@ -645,7 +644,7 @@ body {
 .site-footer {
     background-color: #f3f3f3;
     color: #3b3c3f;
-    padding: 1.618em 0 3.706325903em
+    padding: 0 0 10px;
 }
 
 .site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6 {
@@ -2496,6 +2495,7 @@ body a:focus{
     }
     .logged-in .storefront-handheld-footer-bar{
         display: block;
+        padding-bottom: 10px;
     }
 }
 
@@ -2537,6 +2537,10 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     }
     .logged-in .site-header + .storefront-breadcrumb{
         padding-top: 120px;
+    }
+    .site-content .post .entry-content a:not(.button),
+    .site-content .page .entry-content a:not(.button){
+        text-decoration: underline;
     }
 }
 

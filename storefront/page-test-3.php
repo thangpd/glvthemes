@@ -111,9 +111,9 @@
   display: flex;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
+  /* -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-between; */
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -195,7 +195,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   position: relative;
 }
 
