@@ -14,7 +14,9 @@ input:focus {
     -webkit-box-shadow: 0;
     box-shadow: 0;
 }
-
+.site-main {
+    margin-bottom: 0 !important;
+}
 .site-info {
     text-align: center;
 }
