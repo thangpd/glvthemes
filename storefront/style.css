@@ -2495,6 +2495,7 @@ body a:focus{
     }
     .logged-in .storefront-handheld-footer-bar{
         display: block;
+        padding-bottom: 10px;
     }
 }
 
