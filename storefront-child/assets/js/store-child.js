@@ -98,21 +98,24 @@
     $(document).ready(function(){
       var labelRadio = $('.login-register .form-row label');
 
-      function setHeightLogin() {
+      function setHeightLogin(timer) {
         if($(window).width() < 767) {
-          var heightLogin = $('.login-register #page').height();
-          $('body.login-register.home').css('height', heightLogin);
+          setTimeout(function(){
+            var heightLogin = $('.login-register #page').height();
+            alert(heightLogin);
+            $('body.login-register.home').css('height', heightLogin);
+          }, timer);
         }
       }
 
-      setHeightLogin();
+      setHeightLogin(0);
     
 
       labelRadio.off('click').on('click', function() {
-        setHeightLogin();
+        setHeightLogin(1000);
       });
 
-    }); leminhtai1129
+    });
 
     
 
