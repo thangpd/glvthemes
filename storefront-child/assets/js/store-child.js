@@ -96,22 +96,31 @@
     
 
     $(document).ready(function(){
-      var labelRadio = $('.login-register .form-row label');
+      var labelRadio_1 = $('.login-register .form-row .login-with-phone');
+      var labelRadio_2 = $('.login-register .form-row .login-with-user');
 
-      function setHeightLogin(timer) {
+      function setHeightLogin(label) {
+        
         if($(window).width() < 767) {
-          setTimeout(function(){
-            var heightLogin = $('.login-register #page').height();
-            $('body.login-register.home').css('height', heightLogin);
-          }, timer);
+          if(lable === 2) {
+            setTimeout(function(){
+              var heightLogin = $('.login-register #page').height();
+              $('body.login-register.home').css('height', heightLogin);
+            }, 500);
+          } else {
+            var heightScreen = $(window).height();
+            $('body.login-register.home').css('height', heightScreen);
+          }
+          
         }
       }
+      
+      labelRadio_1.off('click').on('click', function() {
+        setHeightLogin(1);
+      });
 
-      setHeightLogin(0);
-    
-
-      labelRadio.off('click').on('click', function() {
-        setHeightLogin(500);
+      labelRadio_2.off('click').on('click', function() {
+        setHeightLogin(2);
       });
 
     });
