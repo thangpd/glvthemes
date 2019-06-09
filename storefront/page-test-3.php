@@ -19,6 +19,9 @@
     height: 100vh;
     max-height: 700px;
     overflow: hidden;
+    background-size: 100% 100%;
+    position: relative;
+    background-image: url('assets/images/common/background.jpg');
   }
 }
 
