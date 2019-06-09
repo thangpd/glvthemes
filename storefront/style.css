@@ -979,11 +979,14 @@ table tbody h2 a {
     font-size: .875em
 }
 
-.hentry .entry-header .byline a, .hentry .entry-header .post-author a, .hentry .entry-header .post-comments a, .hentry .entry-header .posted-on a {
+.hentry .entry-header .byline a, .hentry .entry-header .post-author a, .hentry .entry-header .post-comments a{
     font-weight: 600;
     text-decoration: underline
 }
-
+.hentry .entry-header .posted-on a {
+    font-weight: 600;
+    text-decoration: none;
+}
 .hentry .entry-header .byline a:hover, .hentry .entry-header .post-author a:hover, .hentry .entry-header .post-comments a:hover, .hentry .entry-header .posted-on a:hover {
     text-decoration: none
 }
@@ -1014,9 +1017,11 @@ table tbody h2 a {
 .cat-links a, .tags-links a {
     color: #727272;
     font-weight: 600;
-    text-decoration: underline
+    text-decoration: none;
 }
-
+.storefront-breadcrumb .woocommerce-breadcrumb a{
+    text-decoration: none;
+}
 .byline, .updated:not(.published) {
     display: none
 }
