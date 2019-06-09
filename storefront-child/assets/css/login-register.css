@@ -268,6 +268,7 @@ form p label input + span {
         height: 100vh;
         background-position: 100% 100%;
         background-repeat: no-repeat;
+        max-height: 700px;
     }
 
     body.login-register.home .site-header {
