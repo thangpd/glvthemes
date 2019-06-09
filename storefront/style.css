@@ -991,7 +991,8 @@ table tbody h2 a {
     text-decoration: none
 }
 
-.hentry .entry-content a:not(.button) {
+.page .hentry .entry-content a:not(.button),
+.post .hentry .entry-content a:not(.button) {
     text-decoration: underline
 }
 
