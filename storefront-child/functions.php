@@ -383,13 +383,13 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
             <p>
                 &copy; <?php echo '2018-' . date( "Y" ) . ' Gold Leaf Ventures Limited<br>'; ?>
             </p>
-            <p class="footer_link">
+            <!-- <p class="footer_link">
                 <a href="http://member.goldleaf-ventures.com">Open Beta
                     Version 0.1&nbsp;</a>
-                <!-- <a href="http://webapp1.goldleaf-ventures.com">&nbsp;|&nbsp;T.&nbsp;</a>
+                	<a href="http://webapp1.goldleaf-ventures.com">&nbsp;|&nbsp;T.&nbsp;</a>
                 <a href="http://google.com"
                 >|&nbsp;G.<?php echo $type ?></a> -->
-            </p>
+            </p> -->
         </div><!-- .site-info -->
 		<?php
 	}
