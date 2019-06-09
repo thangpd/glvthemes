@@ -20,7 +20,9 @@ h1.entry-title {
     width: 16% !important;
     margin-right: 5px !important;
 }
-
+.myaccount-login-page .form-row-wide:first-child {
+    margin-bottom: 0;
+}
 .phone_login {
     margin-bottom: 20px;
     padding-bottom: 65px;
