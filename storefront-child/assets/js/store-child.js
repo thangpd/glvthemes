@@ -102,13 +102,13 @@
       function setHeightLogin(label) {
         
         if($(window).width() < 767) {
+          var heightScreen = $(window).height();
           if(label === 2) {
             setTimeout(function(){
               var heightLogin = $('.login-register #page').height();
               $('body.login-register.home').css('height', heightLogin);
             }, 500);
           } else {
-            var heightScreen = $(window).height();
             $('body.login-register.home').css('height', heightScreen);
           }
           
