@@ -99,7 +99,7 @@ form p.lost_password a {
     line-height: 1.19;
     letter-spacing: normal;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 form span, form label, h2 {
     font-family: Muli;
