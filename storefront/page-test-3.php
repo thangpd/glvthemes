@@ -15,7 +15,6 @@
   .section.section-select {
     padding: 0;
     overflow: hidden;
-    height: 100vh;
   }
 }
 
