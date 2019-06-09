@@ -188,11 +188,18 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
 			?>
         </div>
         <?php if(is_user_logged_in()) :?>
+        	<?php 
+        	$current_user = wp_get_current_user(); 
+        	$query = '';
+        	if (isset($current_user->user_login)) {
+        		$query = '?ru='.$current_user->user_login;
+        	}
+        	?>
         <div class="btn-share dropdown">
             <a href="javascript:void(0)" class="js-btn-share"><i class="flaticon-network"></i></a>
              <div id="myDropdown" class="dropdown-content">
 			    <a href="javascript:showAndroidShare()">Member share</a>
-			    <a href="<?= site_url('investment') ?>">Customer share</a>
+			    <a href="<?= site_url('investment-opportunity') . $query ?>">Customer share</a>
 			  </div>
         </div>
         <script>
