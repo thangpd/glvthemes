@@ -267,7 +267,6 @@ form p label input + span {
         background-size: cover;
         height: 100vh;
         background-position: 100% 100%;
-        overflow: hidden;
     }
 
     body.login-register.home .site-header {
