@@ -14,6 +14,9 @@
 @media screen and (max-width: 767px) {
   .section.section-select {
     padding: 0;
+  }
+  .select-wrapper {
+    height: 100vh;
     max-height: 700px;
   }
 }
@@ -119,7 +122,7 @@
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   position: relative;
-  height: 100vh;
+  height: 100%;
   padding: 0 36px 0;
   max-height: 700px;
 }
