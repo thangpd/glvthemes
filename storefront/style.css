@@ -2556,7 +2556,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 }
 
 .lost_reset_password >p{
-    color: #D9A666;
+    color: #fff;
     margin-bottom: 12px;
 }
 
