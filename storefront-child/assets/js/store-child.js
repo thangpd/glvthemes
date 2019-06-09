@@ -93,20 +93,31 @@
 
     var labelRadio = $('.login-register .form-row label');
 
-    function setHeightLogin() {
-      if($(window).width < 767) {
+    // function setHeightLogin() {
+    //   if($(window).width() < 767) {
+    //     var heightLogin = $(window).height();
+    //     alert(heightLogin);
+    //     $('body.login-register.home').css('height', heightLogin);
+    //   }
+    // }
+
+    $(document).ready(function(){
+      if($(window).width() < 767) {
+        console.log('anad');
         var heightLogin = $(window).height();
         alert(heightLogin);
         $('body.login-register.home').css('height', heightLogin);
       }
-    }
+    });
 
-    setHeightLogin();
     
 
-    labelRadio.off('click').on('click', function() {
-      setHeightLogin();
-    });
+    // setHeightLogin();
+    
+
+    // labelRadio.off('click').on('click', function() {
+    //   setHeightLogin();
+    // });
 
 
 })(jQuery);
