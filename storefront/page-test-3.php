@@ -906,7 +906,7 @@ body {
         templateResult: formatCountry,
         templateSelection: formatCountry,
         data: isoCountries,
-        maximumSelectionLength: 7
+        maximumSelectionSize: 7
       });
       $('.section-select .button-close').on('click', function () {
         $('.js-select2').select2('close');
