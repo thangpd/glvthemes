@@ -280,11 +280,11 @@ form p label input + span {
     }
 
     .login-register form p label input + span:before {
-        top: -6px;
+        top: 5px;
     }
 
     .login-register form p label input[type=radio]:checked + span:after {
-        top: 2px;
+        top: 3px;
     }
 
     .login-register form label[for="login-with-phone"] {

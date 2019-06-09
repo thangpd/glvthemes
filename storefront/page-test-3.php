@@ -14,6 +14,7 @@
 @media screen and (max-width: 767px) {
   .section.section-select {
     padding: 0;
+    max-height: 700px;
   }
 }
 
