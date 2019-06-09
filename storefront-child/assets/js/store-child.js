@@ -102,7 +102,6 @@
         if($(window).width() < 767) {
           setTimeout(function(){
             var heightLogin = $('.login-register #page').height();
-            alert(heightLogin);
             $('body.login-register.home').css('height', heightLogin);
           }, timer);
         }
@@ -112,7 +111,7 @@
     
 
       labelRadio.off('click').on('click', function() {
-        setHeightLogin(1000);
+        setHeightLogin(500);
       });
 
     });
