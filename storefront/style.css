@@ -2538,6 +2538,10 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     .logged-in .site-header + .storefront-breadcrumb{
         padding-top: 120px;
     }
+    .site-content .post .entry-content a:not(.button),
+    .site-content .page .entry-content a:not(.button){
+        text-decoration: underline;
+    }
 }
 
 .btn-default.ld-ext-right>.ld{

@@ -191,8 +191,8 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
         <div class="btn-share dropdown">
             <a href="javascript:void(0)" class="js-btn-share"><i class="flaticon-network"></i></a>
              <div id="myDropdown" class="dropdown-content">
-			    <a href="#">Member share</a>
-			    <a href="#">Customer share</a>
+			    <a href="javascript:showAndroidShare()">Member share</a>
+			    <a href="<?= site_url('investment') ?>">Customer share</a>
 			  </div>
         </div>
         <script>
