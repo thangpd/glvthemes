@@ -461,7 +461,7 @@
 
 .select2-container--open .select2-dropdown.select2-dropdown--below {
     width: 100% !important;
-    height: 460px;
+    height: 415px;
     left: 0px !important;
     right: 0px !important;
 }
