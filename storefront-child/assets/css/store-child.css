@@ -455,3 +455,14 @@ p img.update_img_ava[src^="https"]{
     color: #ccc;
     text-decoration: none;
 }
+.site-main .woocommerce-products-header{
+    float: left;
+}
+.site-main .storefront-sorting{
+    float: right;
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+.site-main .storefront-sorting .woocommerce-ordering{
+    margin-bottom: 10px;
+}
