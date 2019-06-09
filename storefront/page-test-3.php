@@ -120,7 +120,7 @@
   padding: 0 36px 0;
 }
 
-/* .wrapper:after {
+.wrapper:after {
     content: '';
     position: absolute;
     width: 130px;
@@ -130,7 +130,7 @@
     bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
-} */
+}
 
 @media screen and (min-width: 767px) {
     .wrapper {
@@ -194,7 +194,11 @@
   display: -ms-flexbox;
   display: flex; */
   padding-bottom: 40px;
-  position: relative;
+  position: absolute;
+  left: 36px;
+  right: 36px;
+  width: calc(100% - 72px);
+  bottom: 0;
 }
 
 .dropdown {
