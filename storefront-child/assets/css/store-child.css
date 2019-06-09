@@ -466,3 +466,6 @@ p img.update_img_ava[src^="https"]{
 .site-main .storefront-sorting .woocommerce-ordering{
     margin-bottom: 10px;
 }
+.site-main .storefront-sorting .woocommerce-result-count{
+    text-align: right;
+}
