@@ -43,7 +43,7 @@ body {
 
 .section {
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     position: relative;
     background-image: url('assets/images/common/background.jpg');
 }
@@ -2537,10 +2537,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     }
     .logged-in .site-header + .storefront-breadcrumb{
         padding-top: 120px;
-    }
-    .site-content .post .entry-content a:not(.button),
-    .site-content .page .entry-content a:not(.button){
-        text-decoration: underline;
     }
 }
 
