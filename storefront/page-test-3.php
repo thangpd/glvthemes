@@ -914,7 +914,7 @@ body {
       $('.js-select2').on('select2:open', function() {
           $('.select2-search input').prop('focus', -1);
           $("#select option[value='0']").remove();
-          $('.select2-dropdown').hide().fruitZoom("slow", "easeInOutQuint");
+          $('.select2-dropdown').hide().slideDown("slow", "easeInOutQuint");
       });
 
 
