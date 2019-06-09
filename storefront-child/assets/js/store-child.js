@@ -114,6 +114,8 @@
           
         }
       }
+
+      setHeightLogin(1);
       
       labelRadio_1.off('click').on('click', function() {
         setHeightLogin(1);
