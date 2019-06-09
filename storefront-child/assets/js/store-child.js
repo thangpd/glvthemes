@@ -91,5 +91,45 @@
         }
     });
 
+    
+
+    
+
+    $(document).ready(function(){
+      var labelRadio_1 = $('.login-register .form-row label[for="login-with-phone"]');
+      var labelRadio_2 = $('.login-register .form-row label[for="login-with-user"]');
+
+      // function setHeightLogin(label) {
+        
+      //   if($(window).width() < 767) {
+      //     var heightScreen = $(window).height();
+      //     if(label === 2) {
+      //       setTimeout(function(){
+      //         var heightLogin = $('.login-register #page').height();
+      //         $('body.login-register.home').css('height', heightLogin);
+      //       }, 500);
+      //     } else {
+      //       $('body.login-register.home').css('height', heightScreen);
+      //     }
+          
+      //   }
+      // }
+
+      // setHeightLogin(1);
+      
+      // labelRadio_1.off('click').on('click', function() {
+      //   setHeightLogin(1);
+      // });
+
+      // labelRadio_2.off('click').on('click', function() {
+      //   setHeightLogin(2);
+      // });
+
+    });
+
+    
+
+    
+
 
 })(jQuery);

@@ -14,6 +14,8 @@
 @media screen and (max-width: 767px) {
   .section.section-select {
     padding: 0;
+    overflow: hidden;
+    height: 100%;
   }
 }
 
@@ -105,20 +107,22 @@
 } */
 
 .wrapper {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   display: flex;
   -webkit-box-pack: justify;
-  /* -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; */
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  position: relative;
-  height: 100vh;
+          flex-wrap: wrap; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 95%;
   padding: 0 36px 0;
 }
 
@@ -183,20 +187,24 @@
 .section-select .select {
   display: inline-block;
   width: 100%;
-  -webkit-box-align: end;
+  /* -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
-          align-items: flex-end;
+          align-items: flex-end; */
 
 }
 
 .section-select .clearfix {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; */
   padding-bottom: 40px;
-  position: relative;
+  position: absolute;
+  left: 36px;
+  right: 36px;
+  width: calc(100% - 72px);
+  bottom: 0;
 }
 
 .dropdown {
@@ -400,6 +408,10 @@
   background-color: #f6f6f6 !important;
 }
 
+.select2-container--default .select2-results>.select2-results__options {
+  max-height: 310px;
+}
+
 .dropdown .option.selected {
   font-weight: 600;
 }
@@ -459,7 +471,7 @@
 
 .select2-container--open .select2-dropdown.select2-dropdown--below {
     width: 100% !important;
-    height: 460px;
+    height: 475px;
     left: 0px !important;
     right: 0px !important;
 }
@@ -574,7 +586,7 @@ body {
 }
 
 .select2-results {
-    padding-top: 75px;
+    padding-top: 30px;
 }
 
 .select-wrapper .select2-results__option {
@@ -897,7 +909,8 @@ body {
         placeholder: "Select a country",
         templateResult: formatCountry,
         templateSelection: formatCountry,
-        data: isoCountries
+        data: isoCountries,
+        maximumSelectionSize: 7
       });
       $('.section-select .button-close').on('click', function () {
         $('.js-select2').select2('close');
@@ -908,6 +921,13 @@ body {
           $("#select option[value='0']").remove();
           $('.select2-dropdown').hide().slideDown("slow", "easeInOutQuint");
       });
+
+
+      if($( window ).width() < 767) {
+        var heightMobile = $( window ).height();
+        $('.select-wrapper').css('height', heightMobile);
+      }
+
     });
     </script>
   </body>
