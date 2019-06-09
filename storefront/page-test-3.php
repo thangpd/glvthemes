@@ -14,6 +14,7 @@
 @media screen and (max-width: 767px) {
   .section.section-select {
     padding: 0;
+    overflow: hidden;
   }
 }
 
@@ -198,9 +199,9 @@
   padding-bottom: 40px;
   position: absolute;
   bottom: 0;
-  left: 15px;
-  right: 15px;
-  width: calc(100% - 30px);
+  left: 18px;
+  right: 18px;
+  width: calc(100% - 36px);
 }
 
 .dropdown {
