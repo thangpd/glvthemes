@@ -266,9 +266,14 @@ form p label input + span {
     body.login-register.home {
         background-size: 100% 100%;
         height: 100vh;
-        background-position: 100% 100%;
+        background-position: center center;
         overflow: hidden;
-        max-height: 700px;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .login-register #page {
+        height: 100vh;
     }
 
     body.login-register.home .site-header {
