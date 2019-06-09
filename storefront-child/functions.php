@@ -389,7 +389,7 @@ if ( ! function_exists( 'custom_remove_footer_credit' ) ) {
                 	<a href="http://webapp1.goldleaf-ventures.com">&nbsp;|&nbsp;T.&nbsp;</a>
                 <a href="http://google.com"
                 >|&nbsp;G.<?php echo $type ?></a> -->
-            </p> -->
+            </p>
         </div><!-- .site-info -->
 		<?php
 	}
