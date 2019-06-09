@@ -196,10 +196,11 @@
 }
 
 .section-select .clearfix {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; */
+  display: none;
   padding-bottom: 40px;
   position: relative;
 }
