@@ -14,6 +14,8 @@
 @media screen and (max-width: 767px) {
   .section.section-select {
     padding: 0;
+    overflow: hidden;
+    height: 100vh;
   }
 }
 
@@ -122,7 +124,7 @@
   padding: 0 36px 0;
 }
 
-/* .wrapper:after {
+.wrapper:after {
     content: '';
     position: absolute;
     width: 130px;
@@ -132,7 +134,7 @@
     bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
-} */
+}
 
 @media screen and (min-width: 767px) {
     .wrapper {
