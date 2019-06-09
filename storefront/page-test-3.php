@@ -14,7 +14,6 @@
 @media screen and (max-width: 767px) {
   .section.section-select {
     padding: 0;
-    overflow: hidden;
   }
 }
 
@@ -106,11 +105,11 @@
 } */
 
 .wrapper {
-  /* display: -webkit-box;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  display: flex; */
+  display: flex;
   -webkit-box-pack: justify;
   /* -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -121,6 +120,7 @@
   position: relative;
   height: 100vh;
   padding: 0 36px 0;
+  max-height: 700px;
 }
 
 .wrapper:after {
@@ -184,24 +184,20 @@
 .section-select .select {
   display: inline-block;
   width: 100%;
-  /* -webkit-box-align: end;
+  -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
-          align-items: flex-end; */
+          align-items: flex-end;
 
 }
 
 .section-select .clearfix {
-  /* display: -webkit-box;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; */
+  display: flex;
   padding-bottom: 40px;
-  position: absolute;
-  bottom: 0;
-  left: 18px;
-  right: 18px;
-  width: calc(100% - 36px);
+  position: relative;
 }
 
 .dropdown {
