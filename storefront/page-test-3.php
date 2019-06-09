@@ -18,6 +18,7 @@
   .select-wrapper {
     height: 100vh;
     max-height: 700px;
+    overflow: hidden;
   }
 }
 
@@ -124,7 +125,6 @@
   position: relative;
   height: 100%;
   padding: 0 36px 0;
-  max-height: 700px;
 }
 
 .wrapper:after {
