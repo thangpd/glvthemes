@@ -916,6 +916,13 @@ body {
           $("#select option[value='0']").remove();
           $('.select2-dropdown').hide().slideDown("slow", "easeInOutQuint");
       });
+
+
+      if($( window ).width() < 767) {
+        var heightMobile = $( window ).height();
+        alert(heightMobile);
+        $('.select-wrapper').css('height', heightMobile);
+      }
     });
     </script>
   </body>
