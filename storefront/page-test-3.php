@@ -582,7 +582,7 @@ body {
 }
 
 .select2-results {
-    padding-top: 75px;
+    padding-top: 30px;
 }
 
 .select-wrapper .select2-results__option {
@@ -922,7 +922,7 @@ body {
         var heightMobile = $( window ).height();
         $('.select-wrapper').css('height', heightMobile);
       }
-      
+
     });
     </script>
   </body>
