@@ -92,13 +92,14 @@ form p.lost_password {
 
 form p.lost_password a {
     font-family: Muli;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.19;
-  letter-spacing: normal;
-  color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    color: #fff;
+    text-decoration: none;
 }
 form span, form label, h2 {
     font-family: Muli;
