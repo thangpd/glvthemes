@@ -408,6 +408,10 @@
   background-color: #f6f6f6 !important;
 }
 
+.select2-container--default .select2-results>.select2-results__options {
+  max-height: 310px;
+}
+
 .dropdown .option.selected {
   font-weight: 600;
 }
