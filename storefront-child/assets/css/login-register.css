@@ -268,6 +268,23 @@ form p label input + span {
         height: 100vh;
         background-position: 100% 100%;
         overflow: hidden;
+        max-height: 700px;
+    }
+
+    body.login-register.home .site-header {
+        margin-bottom: 0;
+    }
+
+    .login-register #customer_login h2 {
+        margin-bottom: 5px;
+    }
+
+    .login-register form p label input + span:before {
+        top: -6px;
+    }
+
+    .login-register form p label input[type=radio]:checked + span:after {
+        top: 2px;
     }
 
     .login-register form label[for="login-with-phone"] {
