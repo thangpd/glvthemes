@@ -96,8 +96,8 @@
     
 
     $(document).ready(function(){
-      var labelRadio_1 = $('.login-register .form-row .login-with-phone');
-      var labelRadio_2 = $('.login-register .form-row .login-with-user');
+      var labelRadio_1 = $('.login-register .form-row label[for="login-with-phone"]');
+      var labelRadio_2 = $('.login-register .form-row label[for="login-with-user"]');
 
       function setHeightLogin(label) {
         
