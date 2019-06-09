@@ -100,7 +100,7 @@
 
       function setHeightLogin() {
         if($(window).width() < 767) {
-          var heightLogin = $(window).height();
+          var heightLogin = $('.login-register #page').height();
           $('body.login-register.home').css('height', heightLogin);
         }
       }
