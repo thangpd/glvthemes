@@ -358,6 +358,9 @@ button:focus {
     .alert {
         width: 100%;
     }
+    .alert a{
+        display: inline-block;
+    }
 }
 
 .btn-default .ld-ext-right>.ld{
