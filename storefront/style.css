@@ -671,7 +671,10 @@ body {
 }
 
 .site-info {
-    padding: 2.617924em 0
+    padding: 2.617924em 0;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
 }
 
 .site-info span[role=separator] {
