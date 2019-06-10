@@ -90,11 +90,12 @@
             $('.site-header').removeClass('fixed');
         }
     });
-    $('form a').on('click', function(e){
+    $('form a').on('click', function(){
       $(this).addClass('effect-onclick');
       setTimeout(function(){
-        $(this).removeClass('effect-onclick');
-      }, 500);
+        $('form a').removeClass('effect-onclick');
+        console.log('test');
+      }, 100);
     });
 
     
