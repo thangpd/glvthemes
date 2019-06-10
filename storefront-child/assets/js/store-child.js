@@ -92,7 +92,9 @@
     });
     $('form a').on('click', function(e){
       $(this).addClass('effect-onclick');
-      $(this).removeClass('effect-onclick');
+      setTimeout(function(){
+        $(this).removeClass('effect-onclick');
+      }, 500);
     });
 
     
