@@ -289,7 +289,7 @@ form p label input + span {
         margin: 10px auto;
     }
 
-    .login-register #customer_login form .form-row label span {
+    .login-register #customer_login form.woocommerce-form-register .form-row label span {
         display: none;
     }
 
