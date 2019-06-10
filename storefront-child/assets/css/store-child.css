@@ -480,7 +480,7 @@ p img.update_img_ava[src^="https"]{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #adadad;
+    background: rgba(175, 175, 175, 0.5);
     z-index: -1;
     -webkit-animation: myclick 0.3s; /* Safari 4.0 - 8.0 */
     animation: myclick 0.3s;
