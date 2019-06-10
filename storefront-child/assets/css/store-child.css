@@ -489,14 +489,3 @@ form a{
     animation: myclick 0.3s;
     border-radius: 3px;
 }
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes myclick {
-    0% {transform: scale(0);}
-    100% {transform: scale(1);}
-  }
-  
-  /* Standard syntax */
-  @keyframes myclick {
-    0% {transform: scale(0);}
-    100% {transform: scale(1);}
-  }
