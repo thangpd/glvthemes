@@ -289,6 +289,10 @@ form p label input + span {
         margin: 10px auto;
     }
 
+    .login-register #customer_login form .form-row label span {
+        display: none;
+    }
+
     .login-register #customer_login form button {
         margin-top: 15px;
     }
