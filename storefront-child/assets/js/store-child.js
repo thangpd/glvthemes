@@ -92,6 +92,7 @@
     });
     $('form a').on('click', function(e){
       $(this).addClass('effect-onclick');
+      $(this).removeClass('effect-onclick');
     });
 
     
