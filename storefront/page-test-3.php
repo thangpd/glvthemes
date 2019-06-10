@@ -535,11 +535,14 @@ body {
 }
 
 .section-select .button-close {
-    position: absolute;
+  position: absolute;
     right: 25px;
     top: 55px;
     z-index: 1100;
+    width: 20px;
     font-size: 20px;
+    height: 20px;
+    text-align: right;
     color: #be8a4a;
     visibility: hidden;
 }
