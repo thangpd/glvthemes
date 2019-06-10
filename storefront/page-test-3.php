@@ -48,13 +48,13 @@
   outline: 0;
 }
 
-.section .loginbtn:focus,
+/* .section .loginbtn:focus,
 .section .loginbtn:active,
 .section .loginbtn:hover {
   background-image: none;
   background-color: #be8a4a;
   color: #fff;
-}
+} */
 
 .section .title-select {
   font-size: 32px;
