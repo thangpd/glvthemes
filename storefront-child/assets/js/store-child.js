@@ -90,6 +90,9 @@
             $('.site-header').removeClass('fixed');
         }
     });
+    $('form a').on('click', function(e){
+      $(this).addClass('effect-onclick');
+    });
 
     
 
