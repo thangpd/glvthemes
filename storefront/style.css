@@ -2558,8 +2558,8 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 }
 
 .btn-default.ld-ext-right>.ld{
-    top: 35%;
-    left: 62%;
+    top: 50%;
+    left: 66%;
 }
 
 .lost_reset_password >p{
