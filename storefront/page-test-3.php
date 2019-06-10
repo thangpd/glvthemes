@@ -494,6 +494,7 @@
 } */
 .select-wrapper .select2-dropdown {
     border: 0;
+    
 }
 
 body {
