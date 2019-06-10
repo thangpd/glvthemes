@@ -122,7 +122,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 95%;
+    height: 85%;
   padding: 0 36px 0;
 }
 
@@ -652,6 +652,7 @@ body {
     $(document).ready(function() {
         var isoCountries = [
           { id: 'VN', text: 'Viet Nam'},
+          { id: 'MY', text: 'Malaysia'},
           { id: 'AF', text: 'Afghanistan'},
           { id: 'AX', text: 'Aland Islands'},
           { id: 'AL', text: 'Albania'},
@@ -783,7 +784,6 @@ body {
           { id: 'MK', text: 'Macedonia'},
           { id: 'MG', text: 'Madagascar'},
           { id: 'MW', text: 'Malawi'},
-          { id: 'MY', text: 'Malaysia'},
           { id: 'MV', text: 'Maldives'},
           { id: 'ML', text: 'Mali'},
           { id: 'MT', text: 'Malta'},
