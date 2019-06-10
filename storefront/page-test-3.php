@@ -591,6 +591,7 @@ body {
 
 .select2-results {
     padding-top: 30px;
+    scroll-behavior: smooth;
 }
 
 .select-wrapper .select2-results__option {
