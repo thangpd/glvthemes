@@ -473,6 +473,9 @@ p img.update_img_ava[src^="https"]{
 .site-main .storefront-sorting .woocommerce-result-count{
     text-align: right;
 }
+form a{
+    padding: 3px 0;
+}
 .effect-onclick::before{
     position: absolute;
     content: '';
