@@ -484,6 +484,7 @@ p img.update_img_ava[src^="https"]{
     z-index: -1;
     -webkit-animation: myclick 0.2s; /* Safari 4.0 - 8.0 */
     animation: myclick 0.3s;
+    border-radius: 3px;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes myclick {
@@ -494,5 +495,5 @@ p img.update_img_ava[src^="https"]{
   /* Standard syntax */
   @keyframes myclick {
     0% {transform: scale(0);}
-    100% {transform: scale(1);}
+    100% {transform: scale(1.2);}
   }
