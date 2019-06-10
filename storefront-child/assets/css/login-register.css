@@ -325,6 +325,7 @@ form p label input + span {
         margin-bottom: 0;
         opacity: 0.7;
         font-size: 15px;
+        padding-top: 5px;
     }
 
     .login-register .select2-container .select2-selection--single {
