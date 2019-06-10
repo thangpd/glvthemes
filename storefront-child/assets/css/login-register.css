@@ -286,7 +286,11 @@ form p label input + span {
     }
 
     .login-register #customer_login form p{
-        margin: 10px 0;
+        margin: 10px auto;
+    }
+
+    .login-register #customer_login form button {
+        margin-top: 15px;
     }
 
     .login-register form p label input + span:before {
