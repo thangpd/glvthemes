@@ -943,11 +943,11 @@ body {
       var btnClose = $('.select-wrapper .button-close');
 
       btnOpen.on('click', function() {
-        dropdownRegion.fadeIn();
+        dropdownRegion.fadeIn(300);
       });
 
       btnClose.on('click', function() {
-        dropdownRegion.fadeOut();
+        dropdownRegion.fadeOut(300);
       });
 
     });
