@@ -206,6 +206,7 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
         </div>
         <script>
             function showAndroidShare(link) {
+            	console.log(`share link: ${link}`);
                 try {
                     webkit.messageHandlers.callbackHandler.postMessage(link);
                 } catch (err) {
