@@ -194,28 +194,30 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
         	if (isset($current_user->user_login)) {
         		$query = '?ru='.$current_user->user_login;
         	}
+
+        	$share_link_custom = site_url('investment-opportunity') . $query;
         	?>
         <div class="btn-share dropdown">
             <a href="javascript:void(0)" class="js-btn-share"><i class="flaticon-network"></i></a>
              <div id="myDropdown" class="dropdown-content">
-			    <a href="javascript:showAndroidShare()">Member share</a>
-			    <a href="<?= site_url('investment-opportunity') . $query ?>">Customer share</a>
+			    <a href="javascript:showAndroidShare("<?= $share_link ?>")">Member share</a>
+			    <a href="javascript:showAndroidShare("<?= $share_link_custom ?>")">Customer share</a>
 			  </div>
         </div>
         <script>
-            function showAndroidShare() {
+            function showAndroidShare(link) {
                 try {
-                    webkit.messageHandlers.callbackHandler.postMessage("<?php  echo $share_link ?>");
+                    webkit.messageHandlers.callbackHandler.postMessage(link);
                 } catch (err) {
                     console.log('The native context does not exist yet');
                 }
                 try {
-                    android.showShareNative("<?php  echo $share_link?>")
+                    android.showShareNative(link)
                 } catch (err) {
                     console.log('The android native context does not exist yet');
                 }
                 try {
-                    myOwnJSHandler.receiveMessageFromJS("<?php  echo $share_link?>");
+                    myOwnJSHandler.receiveMessageFromJS(link);
                 } catch (err) {
                     console.log('The myOwnJSHandler context does not exist yet');
                 }
