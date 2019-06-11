@@ -198,14 +198,14 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
         	$share_link_custom = site_url('investment-opportunity') . $query;
         	?>
         <div class="btn-share dropdown">
-            <a href="javascript:void(0)" class="js-btn-share"><i class="flaticon-network"></i></a>
+            <a href="javascript:void(0)" class="js-btn-share"><i class="flaticon-network"></i>XXX</a>
              <div id="myDropdown" class="dropdown-content">
-			    <a href="javascript:showAndroidShare('<?= $share_link ?>')">Member share</a>
-			    <a href="javascript:showAndroidShare('<?= $share_link_custom ?>')">Customer share</a>
+			    <a href="javascript:showCustomAndroidShare('<?= $share_link ?>')">Member share</a>
+			    <a href="javascript:showCustomAndroidShare('<?= $share_link_custom ?>')">Customer share</a>
 			  </div>
         </div>
         <script>
-            function showAndroidShare(link) {
+            function showCustomAndroidShare(link) {
             	console.log(`share link: ${link}`);
                 try {
                     webkit.messageHandlers.callbackHandler.postMessage(link);
