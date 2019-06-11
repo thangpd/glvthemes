@@ -613,6 +613,11 @@ body {
     border-color: #be8a4a;
 }
 
+@media (max-width: 768px) {
+  .select-wrapper .select2-container--open {
+    display: none;
+  }
+}
 
 
 
@@ -932,6 +937,18 @@ body {
         var heightMobile = $( window ).height();
         $('.select-wrapper').css('height', heightMobile);
       }
+
+      var dropdownRegion = $('.select-wrapper .select2-container--open');
+      var btnOpen = $('.select-wrapper .select2-selection select2-selection--single');
+      var btnClose = $('.select-wrapper .button-close');
+
+      btnOpen.on('click', function() {
+        dropdownRegion.fadeOut();
+      });
+
+      btnClose.on('click', function() {
+        dropdownRegion.fadeIn();
+      });
 
     });
     </script>
