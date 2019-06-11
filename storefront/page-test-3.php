@@ -938,8 +938,8 @@ body {
         $('.select-wrapper').css('height', heightMobile);
       }
 
-      var dropdownRegion = $('.select-wrapper .select2-container--open');
-      var btnOpen = $('.select-wrapper .select2-selection select2-selection--single');
+      var dropdownRegion = $('.select-wrapper .select2-container--below');
+      var btnOpen = $('.select-wrapper #select2-type-container');
       var btnClose = $('.select-wrapper .button-close');
 
       btnOpen.on('click', function() {
