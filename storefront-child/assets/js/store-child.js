@@ -94,6 +94,13 @@
             $('.site-header').removeClass('fixed');
         }
     });
+    $('form a').on('click', function(){
+      $(this).addClass('effect-onclick');
+      setTimeout(function(){
+        $('form a').removeClass('effect-onclick');
+        console.log('test');
+      }, 100);
+    });
 
     
 

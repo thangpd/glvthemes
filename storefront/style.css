@@ -671,7 +671,10 @@ body {
 }
 
 .site-info {
-    padding: 2.617924em 0
+    padding: 2.617924em 0;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
 }
 
 .site-info span[role=separator] {
@@ -979,16 +982,20 @@ table tbody h2 a {
     font-size: .875em
 }
 
-.hentry .entry-header .byline a, .hentry .entry-header .post-author a, .hentry .entry-header .post-comments a, .hentry .entry-header .posted-on a {
+.hentry .entry-header .byline a, .hentry .entry-header .post-author a, .hentry .entry-header .post-comments a{
     font-weight: 600;
     text-decoration: underline
 }
-
+.hentry .entry-header .posted-on a {
+    font-weight: 600;
+    text-decoration: none;
+}
 .hentry .entry-header .byline a:hover, .hentry .entry-header .post-author a:hover, .hentry .entry-header .post-comments a:hover, .hentry .entry-header .posted-on a:hover {
     text-decoration: none
 }
 
-.hentry .entry-content a:not(.button) {
+.page .hentry .entry-content a:not(.button),
+.post.hentry .entry-content a:not(.button) {
     text-decoration: underline
 }
 
@@ -1014,9 +1021,11 @@ table tbody h2 a {
 .cat-links a, .tags-links a {
     color: #727272;
     font-weight: 600;
-    text-decoration: underline
+    text-decoration: none;
 }
-
+.storefront-breadcrumb .woocommerce-breadcrumb a{
+    text-decoration: none;
+}
 .byline, .updated:not(.published) {
     display: none
 }
@@ -1132,6 +1141,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-appearance: none;
     box-sizing: border-box;
     font-weight: 400;
+    text-transform: lowercase;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .125)
 }
 
@@ -2551,12 +2561,12 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 }
 
 .btn-default.ld-ext-right>.ld{
-    top: 35%;
-    left: 62%;
+    top: 50%;
+    left: 66%;
 }
 
 .lost_reset_password >p{
-    color: #D9A666;
+    color: #fff;
     margin-bottom: 12px;
 }
 

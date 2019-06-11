@@ -92,13 +92,14 @@ form p.lost_password {
 
 form p.lost_password a {
     font-family: Muli;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.19;
-  letter-spacing: normal;
-  color: #d9a666;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    color: #fff;
+    text-decoration: none !important;
 }
 form span, form label, h2 {
     font-family: Muli;
@@ -281,7 +282,19 @@ form p label input + span {
     }
 
     .login-register #customer_login h2 {
-        margin-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+    .login-register #customer_login form p{
+        margin: 10px auto;
+    }
+
+    .login-register #customer_login form.woocommerce-form-register .form-row label span {
+        display: none;
+    }
+
+    .login-register #customer_login form button {
+        margin-top: 15px;
     }
 
     .login-register form p label input + span:before {
@@ -310,5 +323,12 @@ form p label input + span {
 
     .login-register .site-footer .site-info > p {
         margin-bottom: 0;
+        opacity: 0.7;
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+    .login-register .select2-container .select2-selection--single {
+        height: 43px;
     }
 }

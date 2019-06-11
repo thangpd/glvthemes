@@ -48,13 +48,13 @@
   outline: 0;
 }
 
-.section .loginbtn:focus,
+/* .section .loginbtn:focus,
 .section .loginbtn:active,
 .section .loginbtn:hover {
   background-image: none;
   background-color: #be8a4a;
   color: #fff;
-}
+} */
 
 .section .title-select {
   font-size: 32px;
@@ -122,11 +122,11 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 95%;
+    height: 85%;
   padding: 0 36px 0;
 }
 
-.wrapper:after {
+/* .wrapper:after {
     content: '';
     position: absolute;
     width: 130px;
@@ -136,7 +136,7 @@
     bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
-}
+} */
 
 @media screen and (min-width: 767px) {
     .wrapper {
@@ -494,6 +494,7 @@
 } */
 .select-wrapper .select2-dropdown {
     border: 0;
+    
 }
 
 body {
@@ -534,11 +535,14 @@ body {
 }
 
 .section-select .button-close {
-    position: absolute;
+  position: absolute;
     right: 25px;
     top: 55px;
     z-index: 1100;
+    width: 20px;
     font-size: 20px;
+    height: 20px;
+    text-align: right;
     color: #be8a4a;
     visibility: hidden;
 }
@@ -587,6 +591,7 @@ body {
 
 .select2-results {
     padding-top: 30px;
+    scroll-behavior: smooth;
 }
 
 .select-wrapper .select2-results__option {
@@ -652,6 +657,7 @@ body {
     $(document).ready(function() {
         var isoCountries = [
           { id: 'VN', text: 'Viet Nam'},
+          { id: 'MY', text: 'Malaysia'},
           { id: 'AF', text: 'Afghanistan'},
           { id: 'AX', text: 'Aland Islands'},
           { id: 'AL', text: 'Albania'},
@@ -783,7 +789,6 @@ body {
           { id: 'MK', text: 'Macedonia'},
           { id: 'MG', text: 'Madagascar'},
           { id: 'MW', text: 'Malawi'},
-          { id: 'MY', text: 'Malaysia'},
           { id: 'MV', text: 'Maldives'},
           { id: 'ML', text: 'Mali'},
           { id: 'MT', text: 'Malta'},
@@ -919,7 +924,7 @@ body {
       $('.js-select2').on('select2:open', function() {
           $('.select2-search input').prop('focus', -1);
           $("#select option[value='0']").remove();
-          $('.select2-dropdown').hide().slideDown("slow", "easeInOutQuint");
+          $('.select2-dropdown').hide().slideDown("fast", "easeInOutQuint");
       });
 
 

@@ -344,7 +344,7 @@ input:focus {
       </div></li>
 <li class="">
 <input type="radio" id="s-option" name="selector">
-<label for="s-option">With username/ email</label>
+<label for="s-option">With username/email</label>
 <div class="check"><div class="inside"></div></div>
       <div class="block-input-login"><input type="text" placeholder="" name="" required class='input-email'>
 <input type="password" placeholder="" name="" required class='input-pass'>
