@@ -73,7 +73,11 @@
      $btnShare.on('click', function() {
        $('#myDropdown').toggle('show');
      });
-
+      $('#myDropdown a').on('click', function() {
+          setTimeout(() => {
+            $('#myDropdown').hide( "slide", { direction: "up" }, "slow" );     
+          }, 300);
+      });
      $(document).on('click', function(e) {
        if (!$('.btn-share').find(e.target).length) {
          if (!$('#myDropdown').is(':hidden')) {
