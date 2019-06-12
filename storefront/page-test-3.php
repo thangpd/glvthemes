@@ -408,6 +408,10 @@
   background-color: #f6f6f6 !important;
 }
 
+.select2-results__options {
+    -webkit-overflow-scrolling: touch;
+}
+
 .select2-container--default .select2-results>.select2-results__options {
   max-height: 310px;
   overflow-y: auto;
