@@ -930,13 +930,13 @@ body {
       });
       $('.section-select .button-close').on('click', function () {
         $('.js-select2').select2('close');
-        $('.select2-dropdown').hide().slideUp("slow");
+        $('.select2-dropdown').slideUp("slow").delay(1.0).hide();
       });
 
       $('.js-select2').on('select2:open', function() {
           $('.select2-search input').prop('focus', -1);
           $("#select option[value='0']").remove();
-          $('.select2-dropdown').hide().slideDown("slow").delay(1.5);
+          $('.select2-dropdown').hide().slideDown("slow").delay(1.0);
       });
 
 
