@@ -410,6 +410,7 @@
 
 .select2-container--default .select2-results>.select2-results__options {
   max-height: 310px;
+  scroll-behavior: smooth;
 }
 
 .dropdown .option.selected {
@@ -935,7 +936,6 @@ body {
 
       if($( window ).width() < 767) {
         var heightMobile = $( window ).height();
-        alert(heightMobile);
         $('.select-wrapper').css('height', heightMobile);
       }
 
