@@ -494,3 +494,29 @@ form a{
     animation: myclick 0.3s;
     border-radius: 3px;
 }
+
+/* test */
+
+.ptr--icon{
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    background-image: url(../../images/spining.gif);
+    background-size: contain;
+}
+
+body .ptr--ptr{
+    box-shadow: none;
+}
+
+body .added_to_cart.loading::after,
+body .button.loading::after,
+body button.loading::after, 
+body input[type=button].loading::after, 
+body input[type=reset].loading::after, 
+body input[type=submit].loading::after{
+    content: '';
+    animation: none;
+    background-image: url(../../images/spining.gif);
+    background-size: contain;
+}
