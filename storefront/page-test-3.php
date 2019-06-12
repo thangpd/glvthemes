@@ -929,7 +929,7 @@ body {
         maximumSelectionSize: 7
       });
       $('.section-select .button-close').on('click', function () {
-        $('.select2-dropdown').slideUp("slow").hide().delay(1.0);
+        $('.select2-dropdown').slideUp("slow").delay(1.0).hide();
         $('.js-select2').select2('close');
       });
 
