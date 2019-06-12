@@ -498,8 +498,9 @@ form a{
 /* test */
 
 .ptr--icon{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin: 0 auto;
     background-image: url(../../images/spining.gif);
+    background-size: contain;
 }
