@@ -265,8 +265,9 @@ form p label input + span {
 
 @media (max-width: 767px) {
     body.login-register.home {
-        background-size: 100% 100%;
+        background-size: cover;
         height: 100vh;
+        position: fixed;
         background-position: center center;
         overflow: hidden;
         background-repeat: no-repeat;
