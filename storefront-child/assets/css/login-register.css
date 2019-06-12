@@ -268,7 +268,6 @@ form p label input + span {
         background-size: cover;
         height: 100vh;
         position: fixed;
-        background-position: center center;
         overflow: hidden;
         background-repeat: no-repeat;
         width: 100%;
