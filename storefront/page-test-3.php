@@ -542,13 +542,13 @@ body {
 
 .section-select .button-close {
   position: absolute;
-    right: 25px;
-    top: 55px;
+    right: 20px;
+    top: 60px;
     z-index: 1100;
-    width: 20px;
+    width: 30px;
     font-size: 20px;
-    height: 20px;
-    text-align: right;
+    height: 30px;
+    text-align: center;
     color: #be8a4a;
     visibility: hidden;
 }
