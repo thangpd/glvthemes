@@ -501,8 +501,10 @@ form a{
     width: 20px;
     height: 20px;
     margin: 0 auto;
-    background-image: url(../../images/spining.gif);
-    background-size: contain;
+}
+
+.ptr--content .ld-ext-right>.ld{
+    margin: auto;
 }
 
 body .ptr--ptr{
