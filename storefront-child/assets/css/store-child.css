@@ -517,6 +517,6 @@ body input[type=reset].loading::after,
 body input[type=submit].loading::after{
     content: '';
     animation: none;
-    background-image: url(../../images/spining.gif);
+    background-image: url(../../images/received_650426065472620.gif);
     background-size: contain;
 }
