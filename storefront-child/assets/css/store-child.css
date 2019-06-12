@@ -505,6 +505,10 @@ form a{
     background-size: contain;
 }
 
+body .ptr--ptr{
+    box-shadow: none;
+}
+
 body .added_to_cart.loading::after,
 body .button.loading::after,
 body button.loading::after, 

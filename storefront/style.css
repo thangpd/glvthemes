@@ -2547,7 +2547,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     .logged-in .site-header{
         position: fixed;
         width: 100%;
-        box-shadow: 0 0 6px rgba(0,0,0,.3);
+        box-shadow: 0 6px 5px rgba(0, 0, 0, 0.09);
     }
     .main-navigation .handheld-navigation{
         height: calc(100vh - 160px);
