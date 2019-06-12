@@ -935,6 +935,7 @@ body {
 
       if($( window ).width() < 767) {
         var heightMobile = $( window ).height();
+        alter(heightMobile);
         $('.select-wrapper').css('height', heightMobile);
       }
 
