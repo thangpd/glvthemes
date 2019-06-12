@@ -55,6 +55,8 @@ body {
     background-position: initial;
     background-repeat: no-repeat;
     position: relative;
+    /* position: fixed; */
+    width: 100%;
     background-image: url('assets/images/common/background.jpg');
   }
 
