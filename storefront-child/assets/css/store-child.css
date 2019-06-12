@@ -505,12 +505,12 @@ form a{
     background-size: contain;
 }
 
-.added_to_cart.loading::after,
-.button.loading::after,
-button.loading::after, 
-input[type=button].loading::after, 
-input[type=reset].loading::after, 
-input[type=submit].loading::after{
+body .added_to_cart.loading::after,
+body .button.loading::after,
+body button.loading::after, 
+body input[type=button].loading::after, 
+body input[type=reset].loading::after, 
+body input[type=submit].loading::after{
     content: '';
     animation: none;
     background-image: url(../../images/spining.gif);
