@@ -51,9 +51,10 @@ body {
 .select-wrapper {
     height: 100vh;
     overflow: hidden;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: initial;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
     /* position: fixed; */
     width: 100%;
