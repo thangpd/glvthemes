@@ -512,12 +512,12 @@ body .ptr--ptr{
     align-items: center;
 }
 
-body .ld-ext-right.running{
+body .ptr--ptr .ld-ext-right.running{
     margin: 0 auto;
     width: 35px;
     height: 35px;
 }
-body .ld-ext-right.running >.ld{
+body .ptr--ptr .ld-ext-right.running >.ld{
     margin: 0 auto;
     top: 0;
     left: 0;
