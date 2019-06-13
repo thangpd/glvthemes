@@ -2633,3 +2633,16 @@ body input[type="reset"]:focus,
 body input[type="submit"]:focus{
     outline-color: #F4E27E;
 }
+
+body table.shop_table_responsive tr td{
+    background: #3a4d68;
+}
+body table.cart td.product-remove, 
+body table.cart td.actions{
+    border-top-color: #0E1621;
+}
+body table tbody tr:nth-child(2n) td, 
+body fieldset, 
+body fieldset legend{
+    background-color: #3a4d68;
+}
