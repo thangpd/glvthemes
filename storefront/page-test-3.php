@@ -944,7 +944,7 @@ body {
       $('.js-select2').on('select2:open', function() {
           $('.select2-search input').prop('focus', -1);
           $("#select option[value='0']").remove();
-          $('.select2-dropdown').fadeIn(500);
+          $('.select2-dropdown').fadeIn(2000);
       });
 
 
@@ -958,7 +958,7 @@ body {
       var btnClose = $('.select-wrapper .button-close');
 
       btnOpen.on('click', function() {
-        dropdownRegion.fadeIn(500);
+        dropdownRegion.fadeIn(2000);
       });
 
       btnClose.on('click', function() {
