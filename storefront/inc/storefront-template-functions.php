@@ -208,7 +208,7 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
             function showCustomAndroidShare(link) {
             	console.log(`share link: ${link}`);
             	let json = {
-                  ShareNative: link
+                  "ShareNative": link
                 };
                 try {
                     android.showShareNative(json)
