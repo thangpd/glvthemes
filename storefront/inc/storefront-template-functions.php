@@ -218,11 +218,6 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
                 }
 
                 try {
-                    android.showShareNative(json)
-                } catch (err) {
-                    console.log('The android native context does not exist yet');
-                }
-                try {
                     myOwnJSHandler.receiveMessageFromJS(json);
                 } catch (err) {
                     console.log('The myOwnJSHandler context does not exist yet');
