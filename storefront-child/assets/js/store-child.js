@@ -135,12 +135,50 @@
       // labelRadio_2.off('click').on('click', function() {
       //   setHeightLogin(2);
       // });
-      // 
+      //
+      function select2_search ($el, term) {
+        $el.select2('open');
+
+        // Get the search box within the dropdown or the selection
+        // Dropdown = single, Selection = multiple
+        var $search = $el.data('select2').dropdown.$search || $el.data('select2').selection.$search;
+        // This is undocumented and may change in the future
+
+        $search.val(term);
+        $search.trigger('input');
+        setTimeout(function() { $('.select2-results__option').trigger("mouseup"); }, 500);
+
+      }
       const $formRegister = $('.woocommerce-form-register');
-       if ($formRegister.length > 0) {
+      // handle qrcode callback register
+      if ($formRegister.length > 0) {
          $formRegister.parent().prepend('<span id="js-response"></span><a href="javascript:void(0);" class="js-btn-qrcode btn-qrcode"><i class="fa fa-qrcode" aria-hidden="true"></i></a>');
+
+         // auto fill
+         const urlParams = new URLSearchParams(window.location.search);
+         let ref = '';
+         if (urlParams.has('username')) {
+           ref = urlParams.get('username');
+         } else if (urlParams.has('ref')) {
+           ref = urlParams.get('ref');
+         }
+
+         if (ref.length) {
+           setTimeout(function () {
+             function select2_search ($el, term) {
+               $el.select2('open');
+               var $search = $el.data('select2').dropdown.$search || $el.data('select2').selection.$search;
+               $search.val(term);
+               $search.trigger('keyup');
+             }
+               var $select = $("#input_referral");
+               select2_search($select, 'glvadmin1');
+           }, 500);
+
+         }
        }
 
+       // show qr code
        $(document).on('click', '.js-btn-qrcode', function () {
          let json = {"QRCode": "Register"};
          try {
