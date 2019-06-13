@@ -135,7 +135,37 @@
       // labelRadio_2.off('click').on('click', function() {
       //   setHeightLogin(2);
       // });
+      // 
+      const $formRegister = $('.woocommerce-form-register');
+       if ($formRegister.length > 0) {
+         $formRegister.parent().prepend('<span id="js-response"></span><a href="javascript:void(0);" class="js-btn-qrcode"><i class="fa fa-qrcode" aria-hidden="true"></i></a>');
+       }
 
+       $(document).on('click', '.js-btn-qrcode', function () {
+         let json = {"QRCode": "Register"};
+         try {
+           let text = webkit.messageHandlers.callbackHandler.postMessage(json);
+           $('#js-response').html(text.toString());
+
+         } catch (err) {
+           console.log(err);
+           console.log('The native context does not exist yet');
+         }
+         try {
+           let text = android.showShareNative(json);
+           $('#js-response').html(text.toString());
+         } catch (err) {
+           console.log(err);
+           console.log('The android native context does not exist yet');
+         }
+         try {
+           let text = myOwnJSHandler.receiveMessageFromJS(json);
+           $('#js-response').html(text.toString());
+         } catch (err) {
+           console.log(err);
+           console.log('The myOwnJSHandler context does not exist yet');
+         }
+       });
     });
 
     
