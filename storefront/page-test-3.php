@@ -623,6 +623,11 @@ body {
     border-color: #be8a4a;
 }
 
+.select-wrapper .select2-container--default .sselect2-results__option:focus {
+  background-color: #efcca3;
+  box-shadow: 0 3px 10px 0 rgba(113, 73, 12, 0.7);
+}
+
 @media (max-width: 768px) {
   .select-wrapper .select2-container--open > .select2-dropdown {
     display: none;
