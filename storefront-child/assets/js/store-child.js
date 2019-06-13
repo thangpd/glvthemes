@@ -143,8 +143,17 @@
 
        $(document).on('click', '.js-btn-qrcode', function () {
          let json = {"QRCode": "Register"};
+
          try {
-           let text = android.show(json);
+           let text = android.showQRCode("Register");
+           $('#js-response').html(text.toString());
+         } catch (err) {
+           console.log(err);
+           console.log('The android native context does not exist yet');
+         }
+
+         try {
+           let text = android.showQRCodeRegister();
            $('#js-response').html(text.toString());
          } catch (err) {
            console.log(err);
