@@ -2607,6 +2607,13 @@ body button.menu-toggle span:before{
     background-color: #ffffff;
 }
 
+body .main-navigation ul li a:hover, 
+body .main-navigation ul li:hover > a, 
+body .site-title a:hover, 
+body .site-header ul.menu li.current-menu-item > a{
+    color: #F4E27E;
+}
+
 .site .js-btn-share{
     color: #ffffff;
 }
