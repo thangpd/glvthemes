@@ -473,10 +473,13 @@
     top: 45px !important;
     left: 15px !important;
     right: 15px !important;
-    transform: scale(1, 1);
 }
 
-.section .select2-container:not(.select2-container--below) {
+.select-wrapper .select2-container--open .select2-dropdown.select2-dropdown--below {
+  transform: scale(1, 1);
+}
+
+.section .select2-dropdown.select2-dropdown--below {
   transform: scale(0, 0);
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
