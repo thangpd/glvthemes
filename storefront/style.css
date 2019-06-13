@@ -2560,7 +2560,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
         height: calc(100vh - 160px);
         overflow: auto;
         left: -100%;
-        background: #fff;
+        background: #5E6367;
     }
     .logged-in .site-header + .storefront-breadcrumb{
         padding-top: 120px;
@@ -2594,3 +2594,12 @@ button.menu-toggle:hover{
     background: #5E6367 !important;
 }
 
+body .main-navigation ul li a, 
+body .site-title a, ul.menu li a, 
+body.site-branding h1 a, 
+body .site-footer .storefront-handheld-footer-bar a:not(.button), 
+body button.menu-toggle, 
+body button.menu-toggle:hover, 
+body .handheld-navigation .dropdown-toggle{
+    color: #ffffff;
+}
