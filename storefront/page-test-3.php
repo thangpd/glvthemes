@@ -483,9 +483,9 @@
 .section .select2-dropdown.select2-dropdown--below,
 .section .select2-container.select2-container--default:not(.select2) {
   transform: scale(0, 0);
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
 }
 
 .select2-container--open .select2-dropdown.select2-dropdown--below {
