@@ -138,33 +138,22 @@
       // 
       const $formRegister = $('.woocommerce-form-register');
        if ($formRegister.length > 0) {
-         $formRegister.parent().prepend('<span id="js-response"></span><a href="javascript:void(0);" class="js-btn-qrcode">11<i class="fa fa-qrcode" aria-hidden="true"></i></a>');
+         $formRegister.parent().prepend('<span id="js-response"></span><a href="javascript:void(0);" class="js-btn-qrcode btn-qrcode"><i class="fa fa-qrcode" aria-hidden="true"></i></a>');
        }
 
        $(document).on('click', '.js-btn-qrcode', function () {
          let json = {"QRCode": "Register"};
-
          try {
-           let text = android.showQRCode("Register");
-           $('#js-response').html(text.toString());
+           webkit.messageHandlers.callbackHandler.postMessage(json);
          } catch (err) {
-           console.log(err);
-           console.log('The android native context does not exist yet');
+           console.log('The native context does not exist yet');
          }
 
          try {
-           let text = android.showQRCodeRegister();
-           $('#js-response').html(text.toString());
+           myOwnJSHandler.receiveMessageFromJS(json);
          } catch (err) {
-           console.log(err);
-           console.log('The android native context does not exist yet');
+           console.log('The myOwnJSHandler context does not exist yet');
          }
        });
     });
-
-    
-
-    
-
-
 })(jQuery);

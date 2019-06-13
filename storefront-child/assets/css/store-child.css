@@ -536,3 +536,10 @@ body input[type=submit].loading::after{
     background-image: url(../../images/spining.gif);
     background-size: contain;
 }
+
+/*QR CODE BUTTON*/
+.btn-qrcode {
+    float: right;
+    font-size: 35px;
+    top: 40px;
+}
