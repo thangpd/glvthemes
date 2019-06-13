@@ -129,7 +129,7 @@ audio:not([controls]) {
     width: 60px;
     padding: 0em 10px 0 15px;
     position: relative;
-    color: #6d6d6d;
+    color: #ffffff;
     font-size: 14px;
     text-transform: capitalize;
 }
@@ -139,7 +139,7 @@ audio:not([controls]) {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    color: #6d6d6d;
+    color: #ffffff;
     font-size: 14px;
 }
 
@@ -655,8 +655,9 @@ body {
 
 body .site-footer {
     background-color: #0e1621;
-    color: #3b3c3f;
+    color: #c7c6c6;
     padding: 0 0 10px;
+    border: none;
 }
 
 .site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6 {
@@ -1026,8 +1027,12 @@ table tbody h2 a {
     font-weight: 600;
     text-decoration: none;
 }
-.storefront-breadcrumb .woocommerce-breadcrumb a{
+body .storefront-breadcrumb .woocommerce-breadcrumb a{
     text-decoration: none;
+    color: #ffffff;
+}
+.woocommerce-breadcrumb .breadcrumb-separator::after{
+    opacity: 1;
 }
 .byline, .updated:not(.published) {
     display: none
@@ -2576,4 +2581,16 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     font-size: 14px;
 }
 
+.site-header, 
+.secondary-navigation ul ul, 
+.main-navigation ul.menu > 
+li.menu-item-has-children:after, 
+.secondary-navigation ul.menu ul, 
+.storefront-handheld-footer-bar, 
+.storefront-handheld-footer-bar ul li > a, 
+.storefront-handheld-footer-bar ul li.search .site-search, 
+button.menu-toggle, 
+button.menu-toggle:hover{
+    background: #0E1621;
+}
 
