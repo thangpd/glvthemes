@@ -314,7 +314,7 @@ body {
     word-wrap: break-word
 }
 
-body, button, input, textarea {
+html body, button, input, textarea {
     color: #43454b;
     font-family: "Source Sans Pro", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     line-height: 1.618;
@@ -328,11 +328,11 @@ select {
     max-width: 100%
 }
 
-h1, h2, h3, h4, h5, h6 {
+body h1,body h2,body h3,body h4,body h5,body h6 {
     clear: both;
     font-weight: 300;
     margin: 0 0 .5407911001em;
-    color: #131315
+    color: #ffffff;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -509,7 +509,7 @@ a:focus, button:focus, input:focus, textarea:focus {
 }
 
 body {
-    background-color: #fff;
+    background-color: #0E1621;
     overflow-x: hidden
 }
 
@@ -653,8 +653,8 @@ body {
     opacity: 1
 }
 
-.site-footer {
-    background-color: #f3f3f3;
+body .site-footer {
+    background-color: #0e1621;
     color: #3b3c3f;
     padding: 0 0 10px;
 }
@@ -998,7 +998,8 @@ table tbody h2 a {
 
 .page .hentry .entry-content a:not(.button),
 .post.hentry .entry-content a:not(.button) {
-    text-decoration: underline
+    text-decoration: underline;
+    color: #F4E27E;
 }
 
 .hentry .entry-content a:not(.button):hover {
