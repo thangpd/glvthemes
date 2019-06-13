@@ -2650,3 +2650,6 @@ body fieldset legend,
 body table tbody td{
     background-color: #2f4058;
 }
+body a{
+    color: #F4E27E;
+}
