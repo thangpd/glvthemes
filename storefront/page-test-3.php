@@ -473,6 +473,7 @@
     top: 45px !important;
     left: 15px !important;
     right: 15px !important;
+    transform: scale(1, 1);
 }
 
 .select-wrapper .select2-container--open .select2-dropdown.select2-dropdown--below {
@@ -636,9 +637,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  .select-wrapper .select2-container--open > .select2-dropdown {
+  /* .select-wrapper .select2-container--open > .select2-dropdown {
     display: none;
-  }
+  } */
 }
 
 
