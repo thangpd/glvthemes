@@ -954,7 +954,7 @@ body {
       // }
 
       var dropdownRegion = $('.select-wrapper .select2-container--open > .select2-dropdown');
-      var btnOpen = $('.select-wrapper label.select2-selection__rendered');
+      var btnOpen = $('.select-wrapper .select2-selection__rendered');
       var btnClose = $('.select-wrapper .button-close');
 
       btnOpen.on('click', function() {
