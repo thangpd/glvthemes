@@ -2560,7 +2560,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
         height: calc(100vh - 160px);
         overflow: auto;
         left: -100%;
-        background: #5E6367;
+        background: #0E1621;
     }
     .logged-in .site-header + .storefront-breadcrumb{
         padding-top: 120px;
