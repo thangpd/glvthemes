@@ -553,6 +553,10 @@ body {
     visibility: hidden;
 }
 
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 20px;
+}
+
 .section-select .select2-container--open + .button-close {
     visibility: visible;
 }
