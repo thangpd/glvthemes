@@ -144,10 +144,17 @@
        $(document).on('click', '.js-btn-qrcode', function () {
          let json = {"QRCode": "Register"};
          try {
+           webkit.messageHandlers.callbackHandler.postMessage(json);
+         } catch (err) {
+           console.log('The native context does not exist yet');
+         }
+
+         try {
            android.showShareNative(json)
          } catch (err) {
            console.log('The android native context does not exist yet');
          }
+         
          try {
            myOwnJSHandler.receiveMessageFromJS(json);
          } catch (err) {
