@@ -2647,7 +2647,15 @@ body table.cart td.actions{
 body table tbody tr:nth-child(2n) td, 
 body fieldset, 
 body fieldset legend,
-body table tbody td{
+body table tbody td,
+body table th,
+body table td,
+body #order_review,
+body table,
+body table.woocommerce-checkout-review-order-table .product-name,
+body #payment .payment_methods > li:not(.woocommerce-notice),
+body #payment .payment_methods > li .payment_box, 
+body #payment .place-order{
     background-color: #2f4058;
 }
 body a{
