@@ -958,11 +958,11 @@ body {
       var btnClose = $('.select-wrapper .button-close');
 
       btnOpen.on('click', function() {
-        dropdownRegion.fadeIn(500);
+        dropdownRegion.fadeIn(200);
       });
 
       btnClose.on('click', function() {
-        dropdownRegion.fadeOut(500);
+        dropdownRegion.fadeOut(300);
       });
 
     });
