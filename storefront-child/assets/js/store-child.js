@@ -145,15 +145,7 @@
          let json = {"QRCode": "Register"};
 
          try {
-           let text = android.showQRCode("Register");
-           $('#js-response').html(text.toString());
-         } catch (err) {
-           console.log(err);
-           console.log('The android native context does not exist yet');
-         }
-
-         try {
-           let text = android.showQRCodeRegister();
+           let text = android.showShareNative(json);
            $('#js-response').html(text.toString());
          } catch (err) {
            console.log(err);
