@@ -2658,6 +2658,13 @@ body #payment .payment_methods > li .payment_box,
 body #payment .place-order{
     background-color: #2f4058;
 }
+
 body a{
     color: #F4E27E;
 }
+
+body table.cart td.product-remove a.remove{
+    top: -42px;
+    right: -18px;
+}
+
