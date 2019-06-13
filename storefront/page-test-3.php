@@ -937,14 +937,14 @@ body {
         data: isoCountries,
         maximumSelectionSize: 7
       });
-      $('.section-select .button-close').on('click', function () {
-        $('.js-select2').select2('close');
-      });
+      // $('.section-select .button-close').on('click', function () {
+      //   $('.js-select2').select2('close');
+      // });
 
       $('.js-select2').on('select2:open', function() {
           $('.select2-search input').prop('focus', -1);
           $("#select option[value='0']").remove();
-          $('.select2-dropdown').show("fade", 500);
+          // $('.select2-dropdown').show("fade", 500);
       });
 
 
@@ -958,11 +958,11 @@ body {
       var btnClose = $('.select-wrapper .button-close');
 
       btnOpen.on('click', function() {
-        dropdownRegion.fadeIn(300);
+        dropdownRegion.fadeIn(500);
       });
 
       btnClose.on('click', function() {
-        dropdownRegion.fadeOut(300);
+        dropdownRegion.fadeOut(500);
       });
 
     });
