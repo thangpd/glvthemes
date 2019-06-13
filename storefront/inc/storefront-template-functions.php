@@ -207,18 +207,18 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
         <script>
             function showCustomAndroidShare(link) {
             	console.log(`share link: ${link}`);
+                  let json = {
+                    "ShareNative": link
+                  };
+
                 try {
-                    webkit.messageHandlers.callbackHandler.postMessage(link);
+                    webkit.messageHandlers.callbackHandler.postMessage(json);
                 } catch (err) {
                     console.log('The native context does not exist yet');
                 }
+
                 try {
-                    android.showShareNative(link)
-                } catch (err) {
-                    console.log('The android native context does not exist yet');
-                }
-                try {
-                    myOwnJSHandler.receiveMessageFromJS(link);
+                    myOwnJSHandler.receiveMessageFromJS(json);
                 } catch (err) {
                     console.log('The myOwnJSHandler context does not exist yet');
                 }

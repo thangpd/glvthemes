@@ -498,7 +498,7 @@ a {
 }
 
 a:focus, button:focus, input:focus, textarea:focus {
-    outline: 2px solid #96588a
+    outline: 2px solid #F4E27E;
 }
 
 .storefront-cute * {
@@ -2357,7 +2357,7 @@ nav button.menu-toggle:focus{
         max-height: 9998px;
     }
     .site-header .main-navigation ul.menu li.current-menu-item > a{
-        color: #96588a;
+        color: #F4E27E;
     }
     .site-header .col-full{
         position: relative;
@@ -2411,9 +2411,6 @@ body a:focus{
 }
 
 /* ------ Anchor effect onclick ------ */
-.site-header .site-branding a{
-    max-width: 230px;
-}
 .site a {
 	position: relative;
 }
@@ -2524,6 +2521,7 @@ body a:focus{
     .logged-in .storefront-handheld-footer-bar{
         display: block;
         padding-bottom: 10px;
+        border: none;
     }
 }
 
@@ -2561,7 +2559,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
         height: calc(100vh - 160px);
         overflow: auto;
         left: -100%;
-        background: #fff;
+        background: #0E1621;
     }
     .logged-in .site-header + .storefront-breadcrumb{
         padding-top: 120px;
@@ -2592,6 +2590,82 @@ li.menu-item-has-children:after,
 .storefront-handheld-footer-bar ul li.search .site-search, 
 button.menu-toggle, 
 button.menu-toggle:hover{
-    background: #0E1621;
+    background: #0E1621 !important;
+}
+
+body .main-navigation ul li a, 
+body .site-title a, ul.menu li a, 
+body.site-branding h1 a, 
+body .site-footer .storefront-handheld-footer-bar a:not(.button), 
+body button.menu-toggle, 
+body button.menu-toggle:hover, 
+body .handheld-navigation .dropdown-toggle{
+    color: #ffffff;
+    border: none;
+}
+
+body button.menu-toggle:after, 
+body button.menu-toggle:before, 
+body button.menu-toggle span:before{
+    background-color: #ffffff;
+}
+
+body .main-navigation ul li a:hover, 
+body .main-navigation ul li:hover > a, 
+body .site-title a:hover, 
+body .site-header ul.menu li.current-menu-item > a{
+    color: #F4E27E;
+}
+
+.site .js-btn-share{
+    color: #ffffff;
+}
+
+body .storefront-handheld-footer-bar ul li.cart .count{
+    background-color: #ffffff;
+    color: #000;
+    border-color: #ffffff;
+    font-weight: bold;
+}
+
+body a:focus, 
+body .button:focus, 
+body .button.alt:focus, 
+body button:focus, 
+body input[type="button"]:focus, 
+body input[type="reset"]:focus, 
+body input[type="submit"]:focus{
+    outline-color: #F4E27E;
+}
+
+body table.shop_table_responsive tr td{
+    background: #2f4058;
+}
+body table.cart td.product-remove, 
+body table.cart td.actions{
+    border-top-color: #0E1621;
+}
+body table tbody tr:nth-child(2n) td, 
+body fieldset, 
+body fieldset legend,
+body table tbody td,
+body table th,
+body table td,
+body #order_review,
+body table,
+body table.woocommerce-checkout-review-order-table .product-name,
+body #payment .payment_methods > li:not(.woocommerce-notice),
+body #payment .payment_methods > li .payment_box, 
+body #payment .place-order{
+    background-color: #2f4058;
+}
+
+body a{
+    color: #F4E27E;
+}
+
+body table.cart td.product-remove a.remove{
+    top: -42px;
+    right: -18px;
 }
 
