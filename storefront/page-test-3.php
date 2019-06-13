@@ -943,10 +943,10 @@ body {
       });
 
 
-      if($( window ).width() < 767) {
-        var heightMobile = $( window ).height();
-        $('.select-wrapper').css('height', heightMobile);
-      }
+      // if($( window ).width() < 767) {
+      //   var heightMobile = $( window ).height();
+      //   $('.select-wrapper').css('height', heightMobile);
+      // }
 
       var dropdownRegion = $('.select-wrapper .select2-container--open > .select2-dropdown');
       var btnOpen = $('.select-wrapper label.select2-selection__rendered');
