@@ -605,9 +605,9 @@ body {
 }
 
 .select-wrapper .select2-results__option {
-    padding: 17px 37px;
-    border-bottom: solid 1px #707070;
-    font-size: 16px;
+  padding: 17px 37px;
+  border-bottom: solid 1px solid 1px rgba(112, 112, 112, 0.2);
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
