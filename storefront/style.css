@@ -2591,7 +2591,7 @@ li.menu-item-has-children:after,
 .storefront-handheld-footer-bar ul li.search .site-search, 
 button.menu-toggle, 
 button.menu-toggle:hover{
-    background: #5E6367 !important;
+    background: #0E1621 !important;
 }
 
 body .main-navigation ul li a, 
@@ -2602,4 +2602,20 @@ body button.menu-toggle,
 body button.menu-toggle:hover, 
 body .handheld-navigation .dropdown-toggle{
     color: #ffffff;
+}
+
+body button.menu-toggle:after, 
+body button.menu-toggle:before, 
+body button.menu-toggle span:before{
+    background-color: #ffffff;
+}
+
+.site .js-btn-share{
+    color: #ffffff;
+}
+
+body .storefront-handheld-footer-bar ul li.cart .count{
+    background-color: #F4E27E;
+    color: #000;
+    border-color: #F4E27E
 }
