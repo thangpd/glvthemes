@@ -477,7 +477,7 @@
 
 .select-wrapper .select2-container--open .select2-dropdown.select2-dropdown--below,
 .select-wrapper .select2-container.select2-container--default.select2-container--open:not(.select2) {
-  transform: scale(1, 1);
+  transform: scale(1.2, 1.2);
 }
 
 .select-wrapper .select2-dropdown.select2-dropdown--below,
