@@ -2624,6 +2624,7 @@ body .storefront-handheld-footer-bar ul li.cart .count{
     background-color: #ffffff;
     color: #000;
     border-color: #ffffff;
+    font-weight: bold;
 }
 
 body a:focus, 
