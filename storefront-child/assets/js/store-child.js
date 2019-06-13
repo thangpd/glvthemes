@@ -152,7 +152,7 @@
            console.log('The native context does not exist yet');
          }
          try {
-           let text = android.showShareNative(json);
+           let text = android.showQRCode("Register");
            $('#js-response').html(text.toString());
          } catch (err) {
            console.log(err);
