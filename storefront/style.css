@@ -2410,9 +2410,6 @@ body a:focus{
 }
 
 /* ------ Anchor effect onclick ------ */
-.site-header .site-branding a{
-    max-width: 230px;
-}
 .site a {
 	position: relative;
 }
