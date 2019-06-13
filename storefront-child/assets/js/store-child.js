@@ -144,26 +144,11 @@
        $(document).on('click', '.js-btn-qrcode', function () {
          let json = {"QRCode": "Register"};
          try {
-           let text = webkit.messageHandlers.callbackHandler.postMessage(json);
-           $('#js-response').html(text.toString());
-
-         } catch (err) {
-           console.log(err);
-           console.log('The native context does not exist yet');
-         }
-         try {
            let text = android.showQRCode("Register");
            $('#js-response').html(text.toString());
          } catch (err) {
            console.log(err);
            console.log('The android native context does not exist yet');
-         }
-         try {
-           let text = myOwnJSHandler.receiveMessageFromJS(json);
-           $('#js-response').html(text.toString());
-         } catch (err) {
-           console.log(err);
-           console.log('The myOwnJSHandler context does not exist yet');
          }
        });
     });
