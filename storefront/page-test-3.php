@@ -952,9 +952,11 @@ body {
       //   var heightMobile = $( window ).height();
       //   $('.select-wrapper').css('height', heightMobile);
       // }
-
+      $('body').on('click', function(e) {
+        console.log(e.target);
+      });
       var dropdownRegion = $('.select-wrapper .select2-container--open > .select2-dropdown');
-      var btnOpen = $('.select-wrapper .select2-selection__rendered');
+      var btnOpen = $('.select-wrapper .select2-selection select2-selection--single');
       var btnClose = $('.select-wrapper .button-close');
 
       btnOpen.on('click', function() {
