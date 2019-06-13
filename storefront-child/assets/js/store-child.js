@@ -144,7 +144,7 @@
        $(document).on('click', '.js-btn-qrcode', function () {
          let json = {"QRCode": "Register"};
          try {
-           let text = android.showQRCode("Register");
+           let text = android.show(json);
            $('#js-response').html(text.toString());
          } catch (err) {
            console.log(err);
