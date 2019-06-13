@@ -2635,7 +2635,7 @@ body input[type="submit"]:focus{
 }
 
 body table.shop_table_responsive tr td{
-    background: #3a4d68;
+    background: #2f4058;
 }
 body table.cart td.product-remove, 
 body table.cart td.actions{
@@ -2644,5 +2644,5 @@ body table.cart td.actions{
 body table tbody tr:nth-child(2n) td, 
 body fieldset, 
 body fieldset legend{
-    background-color: #3a4d68;
+    background-color: #2f4058;
 }
