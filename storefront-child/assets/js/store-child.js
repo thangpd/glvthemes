@@ -138,7 +138,7 @@
       // 
       const $formRegister = $('.woocommerce-form-register');
        if ($formRegister.length > 0) {
-         $formRegister.parent().prepend('<span id="js-response"></span><a href="javascript:void(0);" class="js-btn-qrcode"><i class="fa fa-qrcode" aria-hidden="true"></i></a>');
+         $formRegister.parent().prepend('<span id="js-response"></span><a href="javascript:void(0);" class="js-btn-qrcode">11<i class="fa fa-qrcode" aria-hidden="true"></i></a>');
        }
 
        $(document).on('click', '.js-btn-qrcode', function () {
