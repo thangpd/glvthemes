@@ -473,10 +473,10 @@
     top: 45px !important;
     left: 15px !important;
     right: 15px !important;
-    transform: scale(1, 1);
 }
 
-.select-wrapper .select2-container--open .select2-dropdown.select2-dropdown--below {
+.select-wrapper .select2-container--open .select2-dropdown.select2-dropdown--below,
+.section .select2-container.select2-container--default.select2-container--open:not(.select2) {
   transform: scale(1, 1);
 }
 
