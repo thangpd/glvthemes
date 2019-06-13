@@ -15,7 +15,7 @@
   .section.section-select {
     padding: 0;
     overflow: hidden;
-    height: 100%;
+    height: 100vh;
   }
 }
 
@@ -122,7 +122,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 85%;
+    height: 100%;
   padding: 0 36px 0;
 }
 
@@ -204,7 +204,7 @@
   left: 36px;
   right: 36px;
   width: calc(100% - 72px);
-  bottom: 0;
+  bottom: 40px;
 }
 
 .dropdown {
@@ -408,8 +408,14 @@
   background-color: #f6f6f6 !important;
 }
 
+.select2-results__options {
+    -webkit-overflow-scrolling: touch;
+}
+
 .select2-container--default .select2-results>.select2-results__options {
   max-height: 310px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 .dropdown .option.selected {
@@ -536,15 +542,19 @@ body {
 
 .section-select .button-close {
   position: absolute;
-    right: 25px;
-    top: 55px;
+    right: 20px;
+    top: 60px;
     z-index: 1100;
-    width: 20px;
+    width: 30px;
     font-size: 20px;
-    height: 20px;
-    text-align: right;
+    height: 30px;
+    text-align: center;
     color: #be8a4a;
     visibility: hidden;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 20px;
 }
 
 .section-select .select2-container--open + .button-close {
@@ -613,6 +623,11 @@ body {
     border-color: #be8a4a;
 }
 
+@media (max-width: 768px) {
+  .select-wrapper .select2-container--open > .select2-dropdown {
+    display: none;
+  }
+}
 
 
 
@@ -924,14 +939,26 @@ body {
       $('.js-select2').on('select2:open', function() {
           $('.select2-search input').prop('focus', -1);
           $("#select option[value='0']").remove();
-          $('.select2-dropdown').hide().slideDown("fast", "easeInOutQuint");
+          $('.select2-dropdown').show("fade", 500);
       });
 
 
-      if($( window ).width() < 767) {
-        var heightMobile = $( window ).height();
-        $('.select-wrapper').css('height', heightMobile);
-      }
+      // if($( window ).width() < 767) {
+      //   var heightMobile = $( window ).height();
+      //   $('.select-wrapper').css('height', heightMobile);
+      // }
+
+      var dropdownRegion = $('.select-wrapper .select2-container--open > .select2-dropdown');
+      var btnOpen = $('.select-wrapper label.select2-selection__rendered');
+      var btnClose = $('.select-wrapper .button-close');
+
+      btnOpen.on('click', function() {
+        dropdownRegion.fadeIn(300);
+      });
+
+      btnClose.on('click', function() {
+        dropdownRegion.fadeOut(300);
+      });
 
     });
     </script>
