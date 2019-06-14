@@ -2643,6 +2643,10 @@ body table.shop_table_responsive tr td{
     background: #2f4058;
 }
 
+body table.shop_table_responsive tr td.product-thumbnail{
+    display: none;
+}
+
 body table.cart td.product-remove, 
 body table.cart td.actions{
     border-top-color: #2f4058;
@@ -2653,7 +2657,7 @@ body table.cart td.actions .coupon{
 }
 
 body table.cart td.actions{
-    padding: 0 .875em 35px;
+    padding: 0 .875em 20px;
     border-top: 0;
 }
 
