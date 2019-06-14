@@ -126,11 +126,11 @@ audio:not([controls]) {
 .storefront-breadcrumb .link-back {
     display: inline-block;
     vertical-align: top;
-    width: 60px;
+    width: 70px;
     padding: 0em 10px 0 15px;
     position: relative;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 19px;
     text-transform: capitalize;
 }
 
@@ -2696,5 +2696,14 @@ body a{
 body table.cart td.product-remove a.remove{
     top: -16px;
     right: -18px;
+}
+
+p,
+a,
+body .woocommerce-breadcrumb{
+    font-size: 19px;
+}
+.site-info p{
+    font-size: 16px;
 }
 
