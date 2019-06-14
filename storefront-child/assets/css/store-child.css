@@ -458,6 +458,10 @@ p img.update_img_ava[src^="https"]{
     margin-left: -2px;
 }
 
+.alpha.entry-title a{
+    font-size: 33px;
+}
+
 .account-user{
     margin-bottom: 10px;
 }
