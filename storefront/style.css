@@ -2701,7 +2701,10 @@ body table.cart td.product-remove a.remove{
 p,
 a,
 body .woocommerce-breadcrumb,
-body .widget .myCRED-balance{
+body .widget .myCRED-balance,
+body ul.products li.product .woocommerce-loop-product__title, 
+body ul.products li.product h2, 
+body ul.products li.product h3{
     font-size: 19px;
 }
 
