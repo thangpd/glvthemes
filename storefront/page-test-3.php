@@ -979,6 +979,24 @@ body {
 
       $('.select2').select2({}).focus(function () { $(this).select2('open'); });
 
+      $(".select2").select2({
+        placeholder: "Select a country",
+        templateResult: formatCountry,
+        templateSelection: formatCountry,
+        data: isoCountries,
+        maximumSelectionSize: 7,
+      });
+
+      $('.section-select .button-close').on('click', function () {
+        $('.select2').select2('close');
+      });
+
+      $('.select2').on('open', function() {
+          $('.select2-search input').prop('focus', -1);
+          $("#select option[value='0']").remove();
+          // $('.select2-dropdown').show("fade").delay();
+      });
+
     });
     </script>
   </body>
