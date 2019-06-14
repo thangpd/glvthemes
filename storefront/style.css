@@ -2649,8 +2649,18 @@ body table.cart td.actions{
     border-top-color: #2f4058;
 }
 
+body table.cart td.actions .coupon{
+    border-bottom: 0;
+}
+
 body table.cart td.actions{
-    padding: 0 .875em .5407911001em;
+    padding: 0 .875em 35px;
+    border-top: 0;
+}
+
+body table.cart td.actions .coupon{
+    padding-bottom: 0;
+    margin-bottom: 8px;
 }
 
 .woocommerce .woocommerce-cart-form{
@@ -2681,7 +2691,7 @@ body a{
 }
 
 body table.cart td.product-remove a.remove{
-    top: -42px;
+    top: -16px;
     right: -18px;
 }
 

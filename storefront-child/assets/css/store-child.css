@@ -372,7 +372,7 @@ button:focus {
 }
 
 .woocommerce-cart-form table.cart tr:first-child td.product-remove{
-    margin-top: 25px;
+    margin-top: 0;
 }
 .woocommerce .woocommerce-MyAccount-content h2{
     font-weight: 300;
