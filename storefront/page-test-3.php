@@ -976,13 +976,16 @@ body {
         dropdownRegion.fadeOut(300);
       });
 
-      // $('.select2').select2({}).focus(function () { $(this).select2('open'); });
-
-      $('.select2').focus(function(){
-        $('.js-select2').select2('open');
+      $('.select2').select2({}).focus(function () { 
+        $(this).select2('open');
+        $(".js-select2").select2({
+          placeholder: "Select a country",
+          templateResult: formatCountry,
+          templateSelection: formatCountry,
+          data: isoCountries,
+          maximumSelectionSize: 7,
+        });
       });
-
-
     });
     </script>
   </body>
