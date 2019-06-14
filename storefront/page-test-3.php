@@ -976,8 +976,8 @@ body {
         dropdownRegion.fadeOut(300);
       });
 
-      $('.select2-selection.select2-selection--single').focus(function() {
-        $('span.select2.select2-container.select2-container--default.select2-container--below').trigger('click');
+      $('.select span').on('click focus', function() {
+        dropdownRegion.fadeIn(300);
       });
 
     });
