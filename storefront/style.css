@@ -130,7 +130,7 @@ audio:not([controls]) {
     padding: 0em 10px 0 15px;
     position: relative;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: capitalize;
 }
 
@@ -139,7 +139,7 @@ audio:not([controls]) {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    color: #ffffff;
+    color: #c0bcbc;
     font-size: 14px;
 }
 
@@ -999,7 +999,6 @@ table tbody h2 a {
 
 .page .hentry .entry-content a:not(.button),
 .post.hentry .entry-content a:not(.button) {
-    text-decoration: underline;
     color: #F4E27E;
 }
 
@@ -1029,7 +1028,8 @@ table tbody h2 a {
 }
 body .storefront-breadcrumb .woocommerce-breadcrumb a{
     text-decoration: none;
-    color: #ffffff;
+    color: #c0bcbc;
+    font-size: 16px;
 }
 .woocommerce-breadcrumb .breadcrumb-separator::after{
     opacity: 1;
@@ -1694,7 +1694,7 @@ nav button.menu-toggle:focus{
 }
 
 .widget-area .widget {
-    font-size: .875em
+    font-size: 19px;
 }
 
 .widget-area .widget h1.widget-title {
@@ -2538,7 +2538,10 @@ body a:focus{
 .menu-item img._before{
     width: 1em;
 }
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] { font-size: 16px; }
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] { 
+    font-size: 16px; 
+    border-radius: 0;
+}
 
 
 /* ----- test sticky header ---- */
@@ -2579,7 +2582,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     font-size: 14px;
 }
 
-.site-header, 
+.logged-in .site-header, 
 .secondary-navigation ul ul, 
 .main-navigation ul.menu > 
 li.menu-item-has-children:after, 
@@ -2641,13 +2644,35 @@ body table.shop_table_responsive tr td{
     background: #2f4058;
 }
 
+body table.shop_table_responsive tr td.product-thumbnail{
+    display: none;
+}
+
 body table.cart td.product-remove, 
 body table.cart td.actions{
-    border-top-color: #0E1621;
+    border-top-color: #2f4058;
+}
+
+body table.cart td.actions .coupon{
+    border-bottom: 0;
 }
 
 body table.cart td.actions{
-    padding: 0 .875em .5407911001em;
+    padding: 0 .875em 20px;
+    border-top: 0;
+}
+
+body table.cart td.actions .coupon{
+    padding-bottom: 0;
+    margin-bottom: 8px;
+}
+
+.woocommerce .woocommerce-cart-form{
+    margin-top: 25px;
+}
+
+.woocommerce .woocommerce-cart-form .shop_table{
+    margin-bottom: 30px;
 }
 
 body table tbody tr:nth-child(2n) td, 
@@ -2670,7 +2695,25 @@ body a{
 }
 
 body table.cart td.product-remove a.remove{
-    top: -42px;
+    top: -16px;
     right: -18px;
 }
+
+p,
+a,
+body .widget .myCRED-balance,
+body ul.products li.product .woocommerce-loop-product__title, 
+body ul.products li.product h2, 
+body ul.products li.product h3{
+    font-size: 19px;
+}
+
+.site-info p,
+body .woocommerce-breadcrumb{
+    font-size: 16px;
+}
+body .woocommerce-breadcrumb{
+    color: #c0bcbc;
+}
+
 

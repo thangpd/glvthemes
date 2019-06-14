@@ -50,6 +50,7 @@ input#myInput {
 
 input.mycred-autofill.form-control.ui-autocomplete-input {
     width: 100%;
+    border-radius: 0;
 }
 
 input.form-control {
@@ -371,7 +372,7 @@ button:focus {
 }
 
 .woocommerce-cart-form table.cart tr:first-child td.product-remove{
-    margin-top: 25px;
+    margin-top: 0;
 }
 .woocommerce .woocommerce-MyAccount-content h2{
     font-weight: 300;
@@ -455,6 +456,10 @@ p img.update_img_ava[src^="https"]{
     margin-top: 0.5em;
     font-size: 33px;
     margin-left: -2px;
+}
+
+.alpha.entry-title a{
+    font-size: 33px;
 }
 
 .account-user{
