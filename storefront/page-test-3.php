@@ -466,13 +466,26 @@
 }
 
 
-.select-wrapper .select2-container--open {
+.select-wrapper .select2-container--open:not(.select2-container--below) {
     width: -webkit-calc(100% - 30px) !important;
     width: calc(100% - 30px) !important;
     position: absolute;
     top: 45px !important;
     left: 15px !important;
     right: 15px !important;
+}
+
+.select-wrapper .select2-container--open .select2-dropdown.select2-dropdown--below,
+.select-wrapper .select2-container.select2-container--default.select2-container--open:not(.select2) {
+  transform: scale(1, 1);
+}
+
+.select-wrapper .select2-dropdown.select2-dropdown--below,
+.select-wrapper.select2-container.select2-container--default:not(.select2) {
+  transform: scale(0, 0);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
 }
 
 .select2-container--open .select2-dropdown.select2-dropdown--below {
@@ -605,9 +618,9 @@ body {
 }
 
 .select-wrapper .select2-results__option {
-  padding: 17px 37px;
-  border-bottom: solid 1px solid 1px rgba(112, 112, 112, 0.2);
-  font-size: 16px;
+    padding: 17px 37px;
+    border-bottom: solid 1px #707070;
+    font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -623,15 +636,10 @@ body {
     border-color: #be8a4a;
 }
 
-.select-wrapper .select2-container--default .sselect2-results__option:focus {
-  background-color: #efcca3;
-  box-shadow: 0 3px 10px 0 rgba(113, 73, 12, 0.7);
-}
-
 @media (max-width: 768px) {
-  .select-wrapper .select2-container--open > .select2-dropdown {
+  /* .select-wrapper .select2-container--open > .select2-dropdown {
     display: none;
-  }
+  } */
 }
 
 
@@ -935,16 +943,16 @@ body {
         templateResult: formatCountry,
         templateSelection: formatCountry,
         data: isoCountries,
-        maximumSelectionSize: 7
+        maximumSelectionSize: 7,
       });
-      // $('.section-select .button-close').on('click', function () {
-      //   $('.js-select2').select2('close');
-      // });
+      $('.section-select .button-close').on('click', function () {
+        $('.js-select2').select2('close');
+      });
 
       $('.js-select2').on('select2:open', function() {
           $('.select2-search input').prop('focus', -1);
           $("#select option[value='0']").remove();
-          $('.select2-dropdown').fadeIn(2000);
+          // $('.select2-dropdown').show("fade").delay();
       });
 
 
@@ -956,16 +964,16 @@ body {
         console.log(e.target);
       });
       var dropdownRegion = $('.select-wrapper .select2-container--open > .select2-dropdown');
-      var btnOpen = $('.select-wrapper .select2-selection select2-selection--single');
+      var btnOpen = $('.select-wrapper label.select2-selection__rendered');
       var btnClose = $('.select-wrapper .button-close');
 
-      btnOpen.on('click', function() {
-        dropdownRegion.fadeIn(200);
-      });
+      // btnOpen.on('click', function() {
+      //   dropdownRegion.fadeIn(300);
+      // });
 
-      btnClose.on('click', function() {
-        dropdownRegion.fadeOut(300);
-      });
+      // btnClose.on('click', function() {
+      //   dropdownRegion.fadeOut(300);
+      // });
 
     });
     </script>
