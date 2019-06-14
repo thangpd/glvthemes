@@ -976,13 +976,7 @@ body {
         dropdownRegion.fadeOut(300);
       });
 
-      $('.wrapper .select span').on('click focus', function(e) {
-        setTimeout(function(){
-          var sltWrap = $('span.select2.select2-container.select2-container--default.select2-container--below');
-          if(sltWrap.hasClass('.select2-container--focus')) {
-            $('body.select-wrapper').click();
-          }
-        }, 100);
+      $('select').select2({}).focus(function () { $(this).select2('focus'); });
       });
 
     });
