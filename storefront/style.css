@@ -139,7 +139,7 @@ audio:not([controls]) {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    color: #ffffff;
+    color: #c0bcbc;
     font-size: 14px;
 }
 
@@ -1028,7 +1028,7 @@ table tbody h2 a {
 }
 body .storefront-breadcrumb .woocommerce-breadcrumb a{
     text-decoration: none;
-    color: #ffffff;
+    color: #c0bcbc;
     font-size: 16px;
 }
 .woocommerce-breadcrumb .breadcrumb-separator::after{
@@ -2711,6 +2711,9 @@ body ul.products li.product h3{
 .site-info p,
 body .woocommerce-breadcrumb{
     font-size: 16px;
+}
+body .woocommerce-breadcrumb{
+    color: #c0bcbc;
 }
 
 
