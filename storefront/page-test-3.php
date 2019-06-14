@@ -939,6 +939,7 @@ body {
         );
         return $country;
       };
+
       $(".js-select2").select2({
         placeholder: "Select a country",
         templateResult: formatCountry,
@@ -975,6 +976,9 @@ body {
       btnClose.on('click', function() {
         dropdownRegion.fadeOut(300);
       });
+
+      $('.select2').select2({}).focus(function () { $(this).select2('open'); });
+
     });
     </script>
   </body>
