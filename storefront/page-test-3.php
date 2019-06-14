@@ -977,8 +977,6 @@ body {
       });
 
       $('select').select2({}).focus(function () { $(this).select2('focus'); });
-      });
-
     });
     </script>
   </body>
