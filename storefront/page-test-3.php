@@ -980,7 +980,7 @@ body {
         setTimeout(function(){
           var sltWrap = $('span.select2.select2-container.select2-container--default.select2-container--below');
           if(sltWrap.hasClass('.select2-container--focus')) {
-            $('.select2-selection.select2-selection--single').focus();
+            $('body.select-wrapper').click();
           }
         }, 100);
       });
