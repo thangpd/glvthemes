@@ -976,7 +976,9 @@ body {
         dropdownRegion.fadeOut(300);
       });
 
-      $('select').select2({}).focus(function () { $(this).select2('focus'); });
+      $('.select2').select2({}).focus(function () { $(this).select2('open'); });
+
+
     });
     </script>
   </body>
