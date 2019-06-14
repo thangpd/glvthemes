@@ -999,7 +999,6 @@ table tbody h2 a {
 
 .page .hentry .entry-content a:not(.button),
 .post.hentry .entry-content a:not(.button) {
-    text-decoration: underline;
     color: #F4E27E;
 }
 
