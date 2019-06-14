@@ -967,10 +967,6 @@ body {
         dropdownRegion.fadeOut(300);
       });
 
-      btnOpen.focus(function() {
-        $(this).trigger('click');
-      });
-
     });
     </script>
   </body>
