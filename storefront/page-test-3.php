@@ -979,7 +979,7 @@ body {
       $('.wrapper .select span').on('click focus', function(e) {
         setTimeout(function(){
           var sltWrap = $('span.select2.select2-container.select2-container--default.select2-container--below');
-          if(sltWrap.addClass('.select2-container--focus')) {
+          if(sltWrap.hasClass('.select2-container--focus')) {
             $('.select2-selection.select2-selection--single').focus();
           }
         }, 100);
