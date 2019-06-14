@@ -975,10 +975,6 @@ body {
       btnClose.on('click', function() {
         dropdownRegion.fadeOut(300);
       });
-
-      $('.select2').focus(function () { 
-        $(this).select2('open');
-      });
     });
     </script>
   </body>
