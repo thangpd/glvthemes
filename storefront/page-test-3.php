@@ -977,6 +977,7 @@ body {
       });
 
       if($('.select2-container--default').hasClass('select2-container--focus')) {
+        console.log('abdas');
         $('.select2-selection.select2-selection--single').focus();
       }
 
