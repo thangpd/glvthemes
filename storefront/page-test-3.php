@@ -976,7 +976,7 @@ body {
         dropdownRegion.fadeOut(300);
       });
 
-      $('.select2').select2({}).focus(function () { 
+      $('.select2').focus(function () { 
         $(this).select2('open');
         $(".js-select2").select2({
           placeholder: "Select a country",
