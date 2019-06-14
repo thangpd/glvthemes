@@ -976,9 +976,9 @@ body {
         dropdownRegion.fadeOut(300);
       });
 
-      $('.select .selection').on('click focus', function(e) {
+      if($('.select2-container--default').hasClass('select2-container--focus')) {
         $('.select2-selection.select2-selection--single').focus();
-      });
+      }
 
     });
     </script>
