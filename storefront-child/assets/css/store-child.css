@@ -50,6 +50,7 @@ input#myInput {
 
 input.mycred-autofill.form-control.ui-autocomplete-input {
     width: 100%;
+    border-radius: none;
 }
 
 input.form-control {
