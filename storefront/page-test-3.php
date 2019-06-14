@@ -962,7 +962,7 @@ body {
       //   $('.select-wrapper').css('height', heightMobile);
       // }
       $('body').on('click', function(e) {
-        console.log(e.target);
+        console.log(e);
       });
       var dropdownRegion = $('.select-wrapper .select2-container--open > .select2-dropdown');
       var btnOpen = $('.select-wrapper label.select2-selection__rendered');
