@@ -2709,8 +2709,7 @@ body ul.products li.product h3{
 }
 
 .site-info p,
-body .woocommerce-breadcrumb,
-{
+body .woocommerce-breadcrumb{
     font-size: 16px;
 }
 
