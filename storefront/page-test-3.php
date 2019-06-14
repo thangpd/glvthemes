@@ -976,7 +976,7 @@ body {
         dropdownRegion.fadeOut(300);
       });
 
-      $('.select .select2-selection__rendered').on('click focus', function(e) {
+      $('.select .selection').on('click focus', function(e) {
         $('.select2-selection.select2-selection--single').focus();
       });
 
