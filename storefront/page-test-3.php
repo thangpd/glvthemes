@@ -977,7 +977,7 @@ body {
       });
 
       $('.select2').focus(function () { 
-        $(this).select2('open');
+        $('.js-select2').select2('open');
       });
     });
     </script>
