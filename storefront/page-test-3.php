@@ -976,8 +976,9 @@ body {
         dropdownRegion.fadeOut(300);
       });
 
-      $('.select span').on('click focus', function() {
-        dropdownRegion.fadeIn(300);
+      $('.select span').on('click focus', function(e) {
+        console.log('e ', e);
+        console.log('e.target ', e.target);
       });
 
     });
