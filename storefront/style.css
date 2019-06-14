@@ -2579,7 +2579,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     font-size: 14px;
 }
 
-.site-header, 
+.logged-in .site-header, 
 .secondary-navigation ul ul, 
 .main-navigation ul.menu > 
 li.menu-item-has-children:after, 
