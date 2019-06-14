@@ -1693,7 +1693,7 @@ nav button.menu-toggle:focus{
 }
 
 .widget-area .widget {
-    font-size: .875em
+    font-size: 19px;
 }
 
 .widget-area .widget h1.widget-title {
@@ -2700,10 +2700,13 @@ body table.cart td.product-remove a.remove{
 
 p,
 a,
-body .woocommerce-breadcrumb{
+body .woocommerce-breadcrumb,
+body .widget .myCRED-balance{
     font-size: 19px;
 }
+
 .site-info p{
     font-size: 16px;
 }
+
 
