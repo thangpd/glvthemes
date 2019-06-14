@@ -630,7 +630,7 @@ body {
 
 @media (max-width: 768px) {
   .select-wrapper .select2-container--open > .select2-dropdown {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -965,6 +965,10 @@ body {
 
       btnClose.on('click', function() {
         dropdownRegion.fadeOut(300);
+      });
+
+      btnOpen.focus(function() {
+        $(this).trigger('click');
       });
 
     });
