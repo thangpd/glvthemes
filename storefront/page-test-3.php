@@ -977,7 +977,7 @@ body {
       });
 
       $('.select2-selection.select2-selection--single').focus(function() {
-        $(this).trigger('click');
+        btnOpen.trigger('click');
       });
 
     });
