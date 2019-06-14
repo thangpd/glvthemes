@@ -976,15 +976,13 @@ body {
         dropdownRegion.fadeOut(300);
       });
 
-      $.when($('span.select2.select2-container.select2-container--default.select2-container--below').hasClass('select2-container--focus'))).done(function() {
-        $('.select2-selection.select2-selection--single').focus();
-      });
+    });
 
-      if($('span.select2.select2-container.select2-container--default.select2-container--below').hasClass('select2-container--focus')) {
-        console.log('abdas');
+    $(document).on('DOMNodeInserted', function(e) {
+      if ( $('span.select2.select2-container.select2-container--default.select2-container--below').hasClass('select2-container--focus') ) {
         $('.select2-selection.select2-selection--single').focus();
+
       }
-
     });
     </script>
   </body>
