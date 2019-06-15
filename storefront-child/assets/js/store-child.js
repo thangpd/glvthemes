@@ -187,7 +187,7 @@
          return  new URLSearchParams(window.location.search);
        }
        // show qr code
-       function showScanQR(typeScan) {
+       window.showScanQR = function (typeScan) {
            // Register or Transfer
            let json = {"QRCode": typeScan};
            try {
