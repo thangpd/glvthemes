@@ -361,8 +361,9 @@ button:focus {
     .alert {
         width: 100%;
         padding: 20px;
+        border-radius: 0;
     }
-    .alert a{
+    .alert a.button{
         padding: 8px;
         background: #333333;
         color: #ffffff;

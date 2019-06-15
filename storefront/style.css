@@ -2716,4 +2716,6 @@ body .woocommerce-breadcrumb{
     color: #c0bcbc;
 }
 
-
+.woocommerce-notices-wrapper .alert-success a{
+    display: inline-block;
+}
