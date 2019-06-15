@@ -544,7 +544,13 @@ body input[type=submit].loading::after{
 
 /*QR CODE BUTTON*/
 .btn-qrcode {
-    float: right;
     font-size: 35px;
+}
+
+.btn-qrcode--register {
     top: 40px;
+    float: right;
+}
+
+.btn-qrcode--transfer {
 }
