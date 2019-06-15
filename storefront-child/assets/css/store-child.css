@@ -360,9 +360,15 @@ button:focus {
 @media screen and (max-width: 768px) {
     .alert {
         width: 100%;
+        padding: 20px;
     }
     .alert a{
-        display: inline-block;
+        padding: 8px;
+        background: #333333;
+        color: #ffffff;
+        display: block;
+        width: 120px;
+        margin: 0 auto 10px;
     }
 }
 
