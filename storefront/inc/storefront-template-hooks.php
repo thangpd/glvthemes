@@ -89,3 +89,6 @@ add_action( 'storefront_page_after', 'storefront_display_comments', 10 );
  */
 add_action( 'storefront_homepage', 'storefront_homepage_header', 10 );
 add_action( 'storefront_homepage', 'storefront_page_content', 20 );
+
+
+add_action( 'init', 'before_init_hook', 0);

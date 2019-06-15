@@ -637,6 +637,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
   /* .select-wrapper .select2-container--open > .select2-dropdown {
     display: none;
   } */
@@ -938,6 +939,7 @@ body {
         );
         return $country;
       };
+
       $(".js-select2").select2({
         placeholder: "Select a country",
         templateResult: formatCountry,
@@ -961,19 +963,21 @@ body {
       //   $('.select-wrapper').css('height', heightMobile);
       // }
       $('body').on('click', function(e) {
-        console.log(e.target);
+        console.log(e);
       });
       var dropdownRegion = $('.select-wrapper .select2-container--open > .select2-dropdown');
       var btnOpen = $('.select-wrapper label.select2-selection__rendered');
       var btnClose = $('.select-wrapper .button-close');
 
-      // btnOpen.on('click', function() {
-      //   dropdownRegion.fadeIn(300);
-      // });
+      btnOpen.on('click', function() {
+        dropdownRegion.fadeIn(300);
+      });
 
-      // btnClose.on('click', function() {
-      //   dropdownRegion.fadeOut(300);
-      // });
+      btnClose.on('click', function() {
+        dropdownRegion.fadeOut(300);
+      });
+
+      $('.select2').select2({}).focus(function () { $(this).select2('open'); });
 
     });
     </script>

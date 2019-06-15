@@ -150,48 +150,31 @@
 
       }
       const $formRegister = $('.woocommerce-form-register');
+      const $formTransfer = $('#mycred-transfer-form-transfer');
       // handle qrcode callback register
       if ($formRegister.length > 0) {
-         $formRegister.parent().prepend('<span id="js-response"></span><a href="javascript:void(0);" class="js-btn-qrcode btn-qrcode"><i class="fa fa-qrcode" aria-hidden="true"></i></a>');
+         $formRegister.parent().prepend('<a href="javascript:showScanQR(\'Register\');" class="js-btn-qrcode btn-qrcode btn-qrcode--register"><i class="fa fa-qrcode" aria-hidden="true"></i></a>');
+       }
 
-         // auto fill
-         const urlParams = new URLSearchParams(window.location.search);
-         let ref = '';
-         if (urlParams.has('username')) {
-           ref = urlParams.get('username');
-         } else if (urlParams.has('ref')) {
-           ref = urlParams.get('ref');
-         }
-
-         if (ref.length) {
-           setTimeout(function () {
-             function select2_search ($el, term) {
-               $el.select2('open');
-               var $search = $el.data('select2').dropdown.$search || $el.data('select2').selection.$search;
-               $search.val(term);
-               $search.trigger('keyup');
-             }
-               var $select = $("#input_referral");
-               select2_search($select, 'glvadmin1');
-           }, 500);
-
-         }
+       if ($formTransfer.length > 0) {
+         $formTransfer.parent().prepend('<a href="javascript:showScanQR(\'Transfer\');" class="js-btn-qrcode btn-qrcode btn-qrcode--transfer"><i class="fa fa-qrcode" aria-hidden="true"></i></a>');
        }
 
        // show qr code
-       $(document).on('click', '.js-btn-qrcode', function () {
-         let json = {"QRCode": "Register"};
-         try {
-           webkit.messageHandlers.callbackHandler.postMessage(json);
-         } catch (err) {
-           console.log('The native context does not exist yet');
-         }
+       function showScanQR(typeScan) {
+           // Register or Transfer
+           let json = {"QRCode": typeScan};
+           try {
+             webkit.messageHandlers.callbackHandler.postMessage(json);
+           } catch (err) {
+             console.log('The native context does not exist yet');
+           }
 
-         try {
-           myOwnJSHandler.receiveMessageFromJS(json);
-         } catch (err) {
-           console.log('The myOwnJSHandler context does not exist yet');
-         }
-       });
+           try {
+             myOwnJSHandler.receiveMessageFromJS(json);
+           } catch (err) {
+             console.log('The myOwnJSHandler context does not exist yet');
+           }
+       }
     });
 })(jQuery);
