@@ -361,6 +361,7 @@ button:focus {
     .alert {
         width: 100%;
         padding: 20px;
+        border-radius: 0;
     }
     .alert a.button{
         padding: 8px;

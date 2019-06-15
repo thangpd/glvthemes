@@ -171,7 +171,7 @@ form input[type=checkbox], form.login input[type=radio] {
 }
 
 form p label input + span:before {
-        display: block;
+        display: none;
         content: '';
         position: absolute;
         border: 2px solid #D5A364;
@@ -187,7 +187,7 @@ form p label input + span:before {
 }
 
 form p label input + span:after {
-    display: block;
+    display: none;
     position: absolute;
     content: '';
     -webkit-border-radius: 100%;
