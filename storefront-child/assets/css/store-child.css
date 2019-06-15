@@ -447,7 +447,7 @@ p img.update_img_ava[src^="https"]{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+.dropdown-content a:hover {background-color: #40597d}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}   
