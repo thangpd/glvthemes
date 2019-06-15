@@ -158,8 +158,34 @@
 
        if ($formTransfer.length > 0) {
          $formTransfer.parent().prepend('<a href="javascript:showScanQR(\'Transfer\');" class="js-btn-qrcode btn-qrcode btn-qrcode--transfer"><i class="fa fa-qrcode" aria-hidden="true"></i></a>');
+
+         // auto fill data
+         let ref = '';
+        let amount = '0.01';
+         if (getQuery().has('username')) {
+            ref = getQuery().get('username');
+         } else if (getQuery().has('ref')) {
+            ref = getQuery().get('ref');
+         }
+         if (ref.length) {
+           let ip = $formTransfer.find('input[name="mycred_new_transfer[recipient_id]"]');
+           if (ip.length) {
+             ip.val(ref);
+           }
+         }
+
+         if (getQuery().has('amount')) {
+           amount = parseInt(getQuery().get('amount'));
+         }
+           let ipAmount = $formTransfer.find('input[name="mycred_new_transfer[amount]"]');
+           if (ipAmount.length) {
+             ipAmount.val(amount);
+           }
        }
 
+       function getQuery() {
+         return  new URLSearchParams(window.location.search);
+       }
        // show qr code
        function showScanQR(typeScan) {
            // Register or Transfer
