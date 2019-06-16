@@ -187,7 +187,7 @@
          return  new URLSearchParams(window.location.search);
        }
        // show qr code
-       function showScanQR(typeScan) {
+       window.showScanQR = function (typeScan) {
            // Register or Transfer
            let json = {"QRCode": typeScan};
            try {
@@ -202,5 +202,45 @@
              console.log('The myOwnJSHandler context does not exist yet');
            }
        }
+
+       window.showCustomAndroidShare = function (link) {
+              console.log(`share link: ${link}`);
+                  let json = {
+                    "ShareNative": link
+                  };
+
+                try {
+                    webkit.messageHandlers.callbackHandler.postMessage(json);
+                } catch (err) {
+                    console.log('The native context does not exist yet');
+                }
+
+                try {
+                    myOwnJSHandler.receiveMessageFromJS(json);
+                } catch (err) {
+                    console.log('The myOwnJSHandler context does not exist yet');
+                }
+            }
+
+            window.showAndroidShare = function() {
+               let json = {
+                    "ShareNative": "<?php  echo $share_link ?>"
+                  };
+               try {
+                    webkit.messageHandlers.callbackHandler.postMessage(json);
+                 } catch (err) {
+                     console.log('The native context does not exist yet');
+                 }
+                 try {
+                    android.showShareNative(json)
+                 } catch (err) {
+                     console.log('The android native context does not exist yet');
+                 }
+                 try {
+                    myOwnJSHandler.receiveMessageFromJS(json);
+                 } catch (err) {
+                     console.log('The myOwnJSHandler context does not exist yet');
+                 }
+            }
     });
 })(jQuery);
