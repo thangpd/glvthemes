@@ -402,6 +402,37 @@ button:focus {
 .btn-share [class^="flaticon-"]:before{
     margin-left: 0;
 }
+
+.storefront-handheld-footer-bar ul .flaticon-transfer,
+.storefront-handheld-footer-bar ul .flaticon-shop,
+.storefront-handheld-footer-bar ul .flaticon-document{
+    position: relative;
+}
+
+.storefront-handheld-footer-bar ul .flaticon-transfer a,
+.storefront-handheld-footer-bar ul .flaticon-shop a,
+.storefront-handheld-footer-bar ul .flaticon-document a{
+    background: transparent !important;
+}
+
+
+.flaticon-transfer:before,
+.flaticon-document:before,
+.flaticon-shop:before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 998;
+    text-align: center;
+    margin-left: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    font-size: 1.618em;
+    color: #ffffff;
+}
+
+
 p img.update_img_ava{
     display: none;
 }
