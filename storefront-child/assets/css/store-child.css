@@ -424,11 +424,11 @@ button:focus {
     left: 50%;
     z-index: 998;
     text-align: center;
-    margin-left: 0;
+    margin-left: 0 !important;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-    font-size: 1.618em;
+    font-size: 1.618em !important;
     color: #ffffff;
 }
 
