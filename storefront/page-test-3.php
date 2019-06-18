@@ -947,14 +947,11 @@ body {
         templateSelection: formatCountry,
         data: isoCountries,
         maximumSelectionSize: 7,
-      }).one('select2-focus', select2Focus).on("select2-blur", function () {
-            $(this).one('select2-focus', select2Focus)
-        });
+      });
 
-      function select2Focus() {
-          $(this).select2('open');
-      }
-
+      $('.select2-selection--single').on('focus', function() {
+        $(".js-select2").data("select2").open();
+      });
     });
     </script>
   </body>
