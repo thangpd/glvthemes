@@ -940,44 +940,20 @@ body {
         return $country;
       };
 
+
       $(".js-select2").select2({
         placeholder: "Select a country",
         templateResult: formatCountry,
         templateSelection: formatCountry,
         data: isoCountries,
         maximumSelectionSize: 7,
-      });
-      $('.section-select .button-close').on('click', function () {
-        $('.js-select2').select2('close');
-      });
+      }).one('select2-focus', select2Focus).on("select2-blur", function () {
+            $(this).one('select2-focus', select2Focus)
+        });
 
-      $('.js-select2').on('select2:open', function() {
-          $('.select2-search input').prop('focus', -1);
-          $("#select option[value='0']").remove();
-          // $('.select2-dropdown').show("fade").delay();
-      });
-
-
-      // if($( window ).width() < 767) {
-      //   var heightMobile = $( window ).height();
-      //   $('.select-wrapper').css('height', heightMobile);
-      // }
-      $('body').on('click', function(e) {
-        console.log(e);
-      });
-      var dropdownRegion = $('.select-wrapper .select2-container--open > .select2-dropdown');
-      var btnOpen = $('.select-wrapper label.select2-selection__rendered');
-      var btnClose = $('.select-wrapper .button-close');
-
-      btnOpen.on('click', function() {
-        dropdownRegion.fadeIn(300);
-      });
-
-      btnClose.on('click', function() {
-        dropdownRegion.fadeOut(300);
-      });
-
-      $('.select2').select2({}).focus(function () { $(this).select2('open'); });
+      function select2Focus() {
+          $(this).select2('open');
+      }
 
     });
     </script>
