@@ -409,6 +409,16 @@ button:focus {
     position: relative;
 }
 
+.page-header .flaticon-error{
+    margin-top: 35px;
+    text-align: center;
+}
+
+.page-header .flaticon-error::before{
+    font-size: 100px;
+    margin-left: 0;
+}
+
 .storefront-handheld-footer-bar ul .flaticon-transfer a,
 .storefront-handheld-footer-bar ul .flaticon-shop a,
 .storefront-handheld-footer-bar ul .flaticon-document a{
