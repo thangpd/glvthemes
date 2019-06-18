@@ -2,7 +2,7 @@
 use Endroid\QrCode\QrCode;
 
 if ($_GET['text']) {
-	$qrCode = new QrCode($text);
+	$qrCode = new QrCode($_GET['text']);
 } else {
 	$data = $_GET;
 	$qrCode = new QrCode(json_encode($data));
