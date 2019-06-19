@@ -940,17 +940,45 @@ body {
         return $country;
       };
 
-
+      var $el = $(".js-select2");
+      let allowClose = false;
+      let allowOpen = true;
       $(".js-select2").select2({
         placeholder: "Select a country",
         templateResult: formatCountry,
         templateSelection: formatCountry,
         data: isoCountries,
         maximumSelectionSize: 7,
-      });
-
-      $('.select2-selection--single').on('focus', function() {
-        $(".js-select2").data("select2").open();
+      }).on('select2:closing', function(e) {
+            console.log(`event close with ${allowClose}`);
+            if (allowClose) {
+                console.log('select2 closing ...');
+                return true;
+            }
+            return false;
+      }).on('change', function(e) {
+            console.log('select2 changed ...');
+            return true;
+      }).on('select2:close', function() {
+            console.log('select2 closed');
+            setTimeout(() => {
+                allowOpen = true;
+                allowClose = false;
+            }, 100);
+            return true;
+      }).on('select2:opening', function() {
+        if (allowOpen) {
+            console.log('openning ...');
+            return true;
+        }
+        return false;
+      }).on('select2:open', function() {
+            console.log('select2 opened');
+            setTimeout(() => {
+                 allowOpen = false;
+                allowClose = true;
+            }, 100);
+            return true;
       });
     });
     </script>
