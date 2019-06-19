@@ -201,14 +201,14 @@
             }
 
             let ipAmount = $formTransfer.find('input[name="mycred_new_transfer[amount]"]');
-            if (ipAmount.length && amount.length) {
+            if (ipAmount.length) {
                 ipAmount.val(amount);
             }
 
             if (isAutoFill) {
                 console.log('scroll autofill');
                 $('html, body').animate({
-                    scrollTop: ($formTransfer.offset().top - 130)
+                    scrollTop: ($('.mycred-transfer-cred-wrapper').offset().top - 50)
                 },500);
             }
         }
