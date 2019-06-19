@@ -980,6 +980,10 @@ body {
             }, 100);
             return true;
       });
+
+      $('.section-select .button-close').on('click', function () {
+         $('.select2').select2('close');
+      });
     });
     </script>
   </body>
