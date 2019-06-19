@@ -208,7 +208,7 @@
             if (isAutoFill) {
                 console.log('scroll autofill');
                 $('html, body').animate({
-                    scrollTop: ($('.mycred-transfer-cred-wrapper').offset().top - 50)
+                    scrollTop: ($formTransfer.offset().top - $('#masthead').outerHeight() - 100)
                 },500);
             }
         }
