@@ -254,34 +254,13 @@
             }
 
             try {
-                android.showShareNative(json)
+                android.showShareNative('link 1')
             } catch (err) {
                 console.log('The android native context does not exist yet');
             }
 
             try {
-                myOwnJSHandler.receiveMessageFromJS(json);
-            } catch (err) {
-                console.log('The myOwnJSHandler context does not exist yet');
-            }
-        }
-
-        window.showAndroidShare = function() {
-            let json = {
-                "ShareNative": "<?php  echo $share_link ?>"
-            };
-            try {
-                webkit.messageHandlers.callbackHandler.postMessage(json);
-            } catch (err) {
-                console.log('The native context does not exist yet');
-            }
-            try {
-                android.showShareNative("link 1")
-            } catch (err) {
-                console.log('The android native context does not exist yet');
-            }
-            try {
-                myOwnJSHandler.receiveMessageFromJS(link);
+                myOwnJSHandler.receiveMessageFromJS('link 2');
             } catch (err) {
                 console.log('The myOwnJSHandler context does not exist yet');
             }
