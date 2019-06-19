@@ -205,26 +205,7 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
 			  </div>
         </div>
         <script type="text/javascript">
-        	showAndroidShare = function() {
-	            let json = {
-	                "ShareNative": "<?php  echo $share_link ?>"
-	            };
-	            try {
-	                webkit.messageHandlers.callbackHandler.postMessage(json);
-	            } catch (err) {
-	                console.log('The native context does not exist yet');
-	            }
-	            try {
-	                android.showShareNative("<?php  echo $share_link ?>")
-	            } catch (err) {
-	                console.log('The android native context does not exist yet');
-	            }
-	            try {
-	                myOwnJSHandler.receiveMessageFromJS("<?php  echo $share_link ?>");
-	            } catch (err) {
-	                console.log('The myOwnJSHandler context does not exist yet');
-	            }
-	        }
+        	window.share_link = "<?php  echo $share_link ?>";
         </script>
             <?php
         endif;

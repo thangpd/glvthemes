@@ -265,5 +265,27 @@
                 console.log('The myOwnJSHandler context does not exist yet');
             }
         }
+
+        window.showAndroidShare = function() {
+            console.log(window.share_link);
+            let json = {
+                "ShareNative": window.share_link
+            };
+            try {
+                webkit.messageHandlers.callbackHandler.postMessage(json);
+            } catch (err) {
+                console.log('The native context does not exist yet');
+            }
+            try {
+                android.showShareNative(json)
+            } catch (err) {
+                console.log('The android native context does not exist yet');
+            }
+            try {
+                myOwnJSHandler.receiveMessageFromJS(window.share_link);
+            } catch (err) {
+                console.log('The myOwnJSHandler context does not exist yet');
+            }
+        }
     });
 })(jQuery);
