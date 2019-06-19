@@ -718,5 +718,16 @@ if (! function_exists('before_init_hook')) {
 				$_GET['ru'] = $_GET['ref'];
 			}	
 		}
+
+		if (preg_match('/\/3dtouch?([a-zA-Z0-9&=]*)/', $requestUrl)) {
+			$location = $_SERVER['name'];
+			if (is_user_logged_in()) {
+				$location = preg_replace('/3dtouch/', 'vi-dien-tu', $_SERVER['REQUEST_URI']);
+			} else {
+				$location = preg_replace('/3dtouch/', 'register', $_SERVER['REQUEST_URI']);
+			}
+			header('Location: ' . $location);
+			exit;
+		}
 	}
 }
