@@ -206,6 +206,7 @@
             }
 
             if (isAutoFill) {
+                console.log('scroll');
                 $('html, body').animate({
                     scrollTop: ($formTransfer.offset().top - 130)
                 },500);
