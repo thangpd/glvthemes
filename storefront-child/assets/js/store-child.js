@@ -200,7 +200,7 @@
                 amount = parseInt(getQuery().get('amount'));
             }
             let ipAmount = $formTransfer.find('input[name="mycred_new_transfer[amount]"]');
-            if (ipAmount.length) {
+            if (ipAmount.length && amount.length) {
                 ipAmount.val(amount);
                 isAutoFill = true;
             }
