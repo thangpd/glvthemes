@@ -235,7 +235,7 @@
             }
 
             try {
-                myOwnJSHandler.receiveMessageFromJS(json);
+                myOwnJSHandler.receiveMessageFromJS(JSON.stringify(json));
             } catch (err) {
                 console.log('The myOwnJSHandler context does not exist yet');
             }
