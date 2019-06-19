@@ -254,13 +254,13 @@
             }
 
             try {
-                android.showShareNative('link 1')
+                android.showShareNative(json);
             } catch (err) {
                 console.log('The android native context does not exist yet');
             }
 
             try {
-                myOwnJSHandler.receiveMessageFromJS('link 2');
+                myOwnJSHandler.receiveMessageFromJS(JSON.stringify(json));
             } catch (err) {
                 console.log('The myOwnJSHandler context does not exist yet');
             }
