@@ -276,12 +276,12 @@
                 console.log('The native context does not exist yet');
             }
             try {
-                android.showShareNative(json)
+                android.showShareNative("<?php  echo $share_link ?>")
             } catch (err) {
                 console.log('The android native context does not exist yet');
             }
             try {
-                myOwnJSHandler.receiveMessageFromJS(json);
+                myOwnJSHandler.receiveMessageFromJS("<?php  echo $share_link ?>");
             } catch (err) {
                 console.log('The myOwnJSHandler context does not exist yet');
             }
