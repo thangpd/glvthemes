@@ -199,14 +199,14 @@
             if (getQuery().has('amount')) {
                 amount = parseInt(getQuery().get('amount'));
             }
+
             let ipAmount = $formTransfer.find('input[name="mycred_new_transfer[amount]"]');
             if (ipAmount.length && amount.length) {
                 ipAmount.val(amount);
-                isAutoFill = true;
             }
 
             if (isAutoFill) {
-                console.log('scroll');
+                console.log('scroll autofill');
                 $('html, body').animate({
                     scrollTop: ($formTransfer.offset().top - 130)
                 },500);
