@@ -166,7 +166,7 @@
                 $('#reg_username-error').hide();
             }
          }
-         $userNameField.attr('max', 15);
+         $userNameField.attr('maxlength', 15);
          $userNameField.keyup(function(e) {
            const check = $userNameField.val().match(/^([a-zA-Z][a-zA-Z0-9]*)$/i);
            showErrorUsername(check, 'Please enter a valid username');
