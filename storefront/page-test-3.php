@@ -942,7 +942,9 @@ body {
 
       var $el = $(".js-select2");
       let allowClose = false;
+      let allowChange = false;
       let allowOpen = true;
+      let selectVal = '';
       $(".js-select2").select2({
         placeholder: "Select a country",
         templateResult: formatCountry,
@@ -958,7 +960,17 @@ body {
             return false;
       }).on('change', function(e) {
             console.log('select2 changed ...');
-            return true;
+            if (allowChange) {
+              allowChange = false;
+              return true;
+            } else {
+              const val = $(this).select2('val');
+              console.log(val, selectVal);
+              if (val != selectVal) {
+                $(this).val(selectVal).trigger('change.select2');
+              }
+            }
+            return false;
       }).on('select2:close', function() {
             console.log('select2 closed');
             setTimeout(() => {
@@ -974,11 +986,17 @@ body {
         return false;
       }).on('select2:open', function() {
             console.log('select2 opened');
+            selectVal = $(this).select2('val');
             setTimeout(() => {
                  allowOpen = false;
+                 allowChange = true;
                 allowClose = true;
             }, 100);
             return true;
+      });
+
+      $('.section-select .button-close').on('click', function () {
+         $('.select2').select2('close');
       });
     });
     </script>

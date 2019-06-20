@@ -204,6 +204,9 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
 			    <a href="javascript:showCustomAndroidShare('<?= $share_link_custom ?>')">Customer share</a>
 			  </div>
         </div>
+        <script type="text/javascript">
+        	window.share_link = "<?php  echo $share_link ?>";
+        </script>
             <?php
         endif;
 
@@ -717,6 +720,17 @@ if (! function_exists('before_init_hook')) {
 			if (!empty($_GET['ref'])) {
 				$_GET['ru'] = $_GET['ref'];
 			}	
+		}
+
+		if (preg_match('/\/3dtouch?([a-zA-Z0-9&=]*)/', $requestUrl)) {
+			$location = $_SERVER['name'];
+			if (is_user_logged_in()) {
+				$location = preg_replace('/3dtouch/', 'vi-dien-tu', $_SERVER['REQUEST_URI']);
+			} else {
+				$location = preg_replace('/3dtouch/', 'register', $_SERVER['REQUEST_URI']);
+			}
+			header('Location: ' . $location);
+			exit;
 		}
 	}
 }
