@@ -606,7 +606,9 @@ body input[type=submit].loading::after{
 .mycred-transfer-cred-wrapper .select-amount-wrapper input[type="number"]{
     color:#43454b;
     border: none;
-    background: #ededed;
+    background: #fffef2;
+    border: 2px solid #fffef2;
+    padding: 13px 20px;
 }
 
 .mycred-transfer-cred-wrapper .select-amount-wrapper input[type="number"]::placeholder{
