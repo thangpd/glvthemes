@@ -602,3 +602,11 @@ body input[type=submit].loading::after{
 
 .btn-qrcode--transfer {
 }
+
+/* Dashboard */
+.mycred-transfer-cred-wrapper .select-amount-wrapper input[type="number"]{
+	color:#43454b;
+}
+.mycred-transfer-cred-wrapper .select-amount-wrapper input[type="number"]::placeholder{
+	color: #616161;
+}

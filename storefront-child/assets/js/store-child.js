@@ -103,8 +103,6 @@
     });
 
 
-
-
     $(document).ready(function() {
         var labelRadio_1 = $('.login-register .form-row label[for="login-with-phone"]');
         var labelRadio_2 = $('.login-register .form-row label[for="login-with-user"]');
@@ -156,23 +154,13 @@
         if ($formRegister.length > 0) {
             $formRegister.parent().prepend('<a href="javascript:showScanQR(\'Register\');" class="js-btn-qrcode btn-qrcode btn-qrcode--register"><i class="fa fa-qrcode" aria-hidden="true"></i></a>');
             let $userNameField = $formRegister.find('#reg_username');
+             $.validator.addMethod("regx", function(value, element, regexpr) {          
+                  return regexpr.test(value);
+              }, "Please enter a valid username.");
 
-            function showErrorUsername(check, text) {
-                if (!check) {
-                    if (!$('#reg_username-error').length) {
-                        $('<label id="reg_username-error" class="error" for="reg_username"></label>').insertAfter($userNameField);
-                    }
-                    $('#reg_username-error').html(text);
-                    $('#reg_username-error').show();
-                } else {
-                    $('#reg_username-error').hide();
-                }
-            }
-            $userNameField.attr('max', 15);
-            $userNameField.keyup(function(e) {
-                const check = $userNameField.val().match(/^([a-zA-Z][a-zA-Z0-9]*)$/i);
-                showErrorUsername(check, 'Please enter a valid username');
-            });
+             setTimeout(() => {
+               $('#reg_username').rules('add', {regx: /^([a-zA-Z][a-zA-Z0-9]*)$/i, minlength: 5, maxlength: 15});
+             }, 100);
         }
 
         if ($formTransfer.length > 0) {
