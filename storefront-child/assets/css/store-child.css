@@ -492,12 +492,12 @@ p img.update_img_ava[src^="https"]{
   text-decoration: none;
   display: block;
 }
-.dropdown-content a::after{
+.dropdown-content a:first-child::after{
     position: absolute;
     content: '';
     bottom: 0;
     left: 0;
-    width: 80%;
+    width: 90%;
     height: 1px;
     background: #e3e3e3;
 }
