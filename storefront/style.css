@@ -1159,6 +1159,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     background-color: #fffef2;
     border: 2px solid #ff9d00;
     outline: none;
+    font-weight: bold;
 }
 
 textarea {
@@ -2546,6 +2547,7 @@ body a:focus{
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] { 
     font-size: 16px; 
     border-radius: 5px;
+    outline: none;
 }
 
 
