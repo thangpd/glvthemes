@@ -341,7 +341,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 .alpha, h1 {
-    font-size: 2.617924em;
+    font-size: 32px;
     line-height: 1.214;
     letter-spacing: -1px
 }
@@ -1590,7 +1590,7 @@ nav button.menu-toggle:focus{
 }
 
 .widget .widget-title, .widget .widgettitle {
-    font-size: 1.41575em;
+    font-size: 24px;
     letter-spacing: 0;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
     padding: 0 0 1em;
@@ -2711,7 +2711,7 @@ body .widget .myCRED-balance,
 body ul.products li.product .woocommerce-loop-product__title, 
 body ul.products li.product h2, 
 body ul.products li.product h3{
-    font-size: 19px;
+    font-size: 16px;
 }
 
 .site-info p,
