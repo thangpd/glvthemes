@@ -501,7 +501,15 @@ p img.update_img_ava[src^="https"]{
     height: 1px;
     background: #e3e3e3;
 }
-
+.dropdown-content a:first-child::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 0;
+    background-image: url(../../images/Group-4453.png);
+}
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #40597d}
 
