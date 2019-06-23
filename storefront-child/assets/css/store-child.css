@@ -510,7 +510,7 @@ p img.update_img_ava[src^="https"]{
     transform: translateY(-50%);
     left: 0;
     background-size: cover;
-    background-image: url(../../images/Group-4399.png);
+    background-image: url(../../images/Group-4453@2x.png);
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #40597d}
