@@ -214,3 +214,7 @@ function dd($data) {
 	print_r($data);
 	echo '</pre>';
 }
+
+function getAssetImage($pathName) {
+	return get_template_directory_uri() . '/assets/images/' . $pathName;
+}
