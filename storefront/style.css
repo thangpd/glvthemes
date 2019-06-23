@@ -2641,7 +2641,8 @@ body button:focus,
 body input[type="button"]:focus, 
 body input[type="reset"]:focus, 
 body input[type="submit"]:focus{
-    outline-color: #F4E27E;
+    outline: none;
+    border: 2px solid #ff9d00;
 }
 
 body table.shop_table_responsive tr td{
