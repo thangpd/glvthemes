@@ -282,7 +282,7 @@
                 console.log('The android native context does not exist yet');
             }
             try {
-                myOwnJSHandler.receiveMessageFromJS(window.share_link);
+                myOwnJSHandler.receiveMessageFromJS(JSON.stringify(json));
             } catch (err) {
                 console.log('The myOwnJSHandler context does not exist yet');
             }
