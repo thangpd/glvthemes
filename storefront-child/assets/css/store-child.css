@@ -614,3 +614,8 @@ body input[type=submit].loading::after{
 .mycred-transfer-cred-wrapper .select-amount-wrapper input[type="number"]::placeholder{
 	color: #616161;
 }
+
+/* --- update design --- */
+.form-row select{
+    height: 35px;
+}
