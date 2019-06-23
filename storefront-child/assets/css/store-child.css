@@ -50,7 +50,6 @@ input#myInput {
 
 input.mycred-autofill.form-control.ui-autocomplete-input {
     width: 100%;
-    border-radius: 0;
 }
 
 input.form-control {
@@ -605,8 +604,11 @@ body input[type=submit].loading::after{
 
 /* Dashboard */
 .mycred-transfer-cred-wrapper .select-amount-wrapper input[type="number"]{
-	color:#43454b;
+    color:#43454b;
+    border: none;
+    background: #ededed;
 }
+
 .mycred-transfer-cred-wrapper .select-amount-wrapper input[type="number"]::placeholder{
 	color: #616161;
 }

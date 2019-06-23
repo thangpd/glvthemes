@@ -2640,7 +2640,8 @@ body .button.alt:focus,
 body button:focus, 
 body input[type="button"]:focus, 
 body input[type="reset"]:focus, 
-body input[type="submit"]:focus{
+body input[type="submit"]:focus,
+.mycred-transfer-cred-wrapper .select-amount-wrapper input[type="number"]:focus{
     outline: none;
     border: 2px solid #ff9d00;
 }
