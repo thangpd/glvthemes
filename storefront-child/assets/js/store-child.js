@@ -281,10 +281,13 @@
 
       
     $(document).ready(function(){
-        $("input").focus(function(){
-          $('.f-label').addClass('f-onfocus');
-          $('.login_countrycode').addClass('f-mb-focus');
-        });
+        $("input").each(function(index){
+            $("input").focus(function(){
+                $('.f-label').addClass('f-onfocus');
+                $('.login_countrycode').addClass('f-mb-focus');
+            });
+        })
+       
       });
 
 
