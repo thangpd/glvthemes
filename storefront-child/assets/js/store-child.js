@@ -283,7 +283,7 @@
     $(document).ready(function(){
         $("input").focus(function(){
           $('.f-label').addClass('f-onfocus');
-          $('.r-mb').addClass('.r-mb-focus');
+          $('.r-mb').addClass('.f-mb-focus');
         });
       });
 

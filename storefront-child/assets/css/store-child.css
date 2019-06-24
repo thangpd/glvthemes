@@ -678,10 +678,6 @@ body input[type=submit].loading::after{
   
 }
 
-.f-onfocus::after{
-    right: 0;
-    left: auto;
-}
 .f-mb-focus{
     position: relative;
     border: none !important;
