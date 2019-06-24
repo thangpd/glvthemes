@@ -666,6 +666,9 @@ body input[type=submit].loading::after{
     border-radius: 5px;
     transition: 0.4s all ease;
 }
+.f-p-focus{
+    position: relative !important;
+}
 .input-number-mobile.r-mb{
     background: transparent !important;
     border: none !important;
