@@ -652,4 +652,11 @@ body input[type=submit].loading::after{
 .input-text.us{
     margin-bottom: 15px;
 } 
+.input-number-mobile .r-mb,
+.input-text.u-user{
+    margin-bottom: 20px;
+}
+.input-text.r-email{
+    margin-bottom: 6px;
+}
 
