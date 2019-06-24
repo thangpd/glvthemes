@@ -679,7 +679,7 @@ body input[type=submit].loading::after{
     position: absolute;
     left: 18px;
     top: 50%;
-    color: #333333;
+    color: #333333 !important;
     transform: translateY(-50%);
     transition: 0.3s all ease;
     z-index: 999;
