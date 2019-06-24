@@ -660,3 +660,13 @@ body input[type=submit].loading::after{
     margin-bottom: 6px;
 } */
 
+.login_countrycode{
+    position: relative;
+}
+.f-label{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #333333;
+    transform: translateY(-50%);
+}
