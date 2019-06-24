@@ -652,7 +652,7 @@ body input[type=submit].loading::after{
 .input-text.us{
     margin-bottom: 15px;
 } 
-.input-number-mobile .r-mb,
+.input-number-mobile.r-mb,
 .input-text.u-user{
     margin-bottom: 20px;
 }
