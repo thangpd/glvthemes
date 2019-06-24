@@ -666,7 +666,8 @@ body input[type=submit].loading::after{
     border-radius: 5px;
 }
 .input-number-mobile.r-mb{
-    background: transparent;
+    background: transparent !important;
+    border: none !important;
 }
 .f-label{
     position: absolute;
