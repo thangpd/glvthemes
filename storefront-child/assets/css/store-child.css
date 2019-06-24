@@ -671,7 +671,17 @@ body input[type=submit].loading::after{
     transform: translateY(-50%);
     transition: 0.5s all ease;
 }
-.f-label::before{
+
+.f-onfocus{
+    top: 0;
+    color: #8d8d8b;
+    background: #fffef2;
+    border-top: 2px solid #ff9d00;
+    border-radius: 5px;
+    padding: 5px;
+}
+.f-onfocus::before,
+.f-onfocus::after{
     position: absolute;
     content: '';
     top: 0;
@@ -680,11 +690,6 @@ body input[type=submit].loading::after{
     height: 50%;
     background: #ff9d00;
 }
-.f-onfocus{
-    top: 0;
-    color: #8d8d8b;
-    background: #fffef2;
-    border-top: 2px solid #ff9d00;
-    border-radius: 5px;
-    padding: 5px;
+.f-onfocus::after{
+    right: 0;
 }
