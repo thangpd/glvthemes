@@ -669,4 +669,13 @@ body input[type=submit].loading::after{
     top: 50%;
     color: #333333;
     transform: translateY(-50%);
+    transition: 0.5s all ease;
+}
+.f-onfocus{
+    top: 0;
+    color: #8d8d8b;
+    background: #fffef2;
+    border-top: 2px solid #ff9d00;
+    border-radius: 5px;
+    padding: 5px;
 }

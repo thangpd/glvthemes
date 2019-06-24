@@ -276,4 +276,12 @@
             }
         }
     });
+
+
+
+    $(document).ready(function(){
+        $("input").focus(function(){
+          $('.f-label').addClass('f-onfocus');
+        });
+      });
 })(jQuery);
