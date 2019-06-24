@@ -649,7 +649,7 @@ body input[type=submit].loading::after{
 .form-row select{
     padding: 5px 20px;
 }
-.input-text.us{
+/* .input-text.us{
     margin-bottom: 15px;
 } 
 .input-number-mobile.r-mb,
@@ -658,5 +658,5 @@ body input[type=submit].loading::after{
 }
 .input-text.r-email{
     margin-bottom: 6px;
-}
+} */
 
