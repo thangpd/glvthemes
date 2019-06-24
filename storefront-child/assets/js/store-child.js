@@ -281,6 +281,7 @@
 
     $(document).ready(function(){
         $("input").focus(function(){
+            alert('test');
           $('.f-label').addClass('f-onfocus');
         });
       });
