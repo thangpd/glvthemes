@@ -673,24 +673,25 @@ body input[type=submit].loading::after{
 }
 
 .f-onfocus{
-    top: 0;
+    top: -7px;
     color: #ff9d00;
   
 }
 
 .f-mb-focus{
     position: relative;
-    border: none !important;
-    border-bottom: 2px solid #ff9d00;
-    border-left: 2px solid #ff9d00;
-    border-right: 2px solid #ff9d00;
+    border-top: none !important;
+    border-bottom: 2px solid #ff9d00 !important;
+    border-left: 2px solid #ff9d00 !important;
+    border-right: 2px solid #ff9d00 !important;
 }
 .f-mb-focus::before,
 .f-mb-focus::after{
-    position: relative;
+    position: absolute;
     content: '';
     top: 0;
     height: 2px;
+    background: #ff9d00;
 }
 .f-mb-focus::before{
     width: 20px;
