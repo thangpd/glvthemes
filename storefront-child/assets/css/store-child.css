@@ -649,4 +649,7 @@ body input[type=submit].loading::after{
 .form-row select{
     padding: 5px 20px;
 }
+.input-text.us{
+    margin-bottom: 15px;
+} 
 
