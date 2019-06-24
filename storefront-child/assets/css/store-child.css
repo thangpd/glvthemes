@@ -671,6 +671,15 @@ body input[type=submit].loading::after{
     transform: translateY(-50%);
     transition: 0.5s all ease;
 }
+.f-label::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 50%;
+    background: #ff9d00;
+}
 .f-onfocus{
     top: 0;
     color: #8d8d8b;
