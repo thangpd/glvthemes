@@ -676,7 +676,7 @@ body input[type=submit].loading::after{
     top: 50%;
     color: #333333;
     transform: translateY(-50%);
-    transition: 0.5s all ease;
+    transition: 0.3s all ease;
     z-index: 999;
 }
 
@@ -689,20 +689,4 @@ body input[type=submit].loading::after{
 
 .f-mb-focus{
     border: 2px solid #ff9d00 !important;
-}
-.f-mb-focus::before,
-.f-mb-focus::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    height: 2px;
-    background: #ff9d00;
-}
-.f-mb-focus::before{
-    width: 20px;
-    left: 0;
-}
-.f-mb-focus::after{
-    width: 100px;
-    right: 0;
 }
