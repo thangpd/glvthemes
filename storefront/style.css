@@ -2640,7 +2640,6 @@ body .storefront-handheld-footer-bar ul li.cart .count{
 body a:focus{
     outline: none;
 } 
-body .button:focus, 
 body .button.alt:focus, 
 body input[type="button"]:focus, 
 body input[type="reset"]:focus, 
@@ -2649,7 +2648,7 @@ body input[type="submit"]:focus,
     outline: none;
     border: 2px solid #ff9d00;
 }
-body button:focus{
+body .button:focus{
     border: 3px solid #ff9d00;
 }
 body table.shop_table_responsive tr td{
