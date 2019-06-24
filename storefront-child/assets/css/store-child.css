@@ -682,7 +682,7 @@ body input[type=submit].loading::after{
 }
 
 .f-onfocus{
-    top: -7px;
+    top: -9px;
     color: #ff9d00;
     border-bottom: 2px solid #fffef2;
     line-height: 17px;
