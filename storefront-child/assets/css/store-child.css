@@ -692,4 +692,5 @@ body input[type=submit].loading::after{
 }
 .f-onfocus::after{
     right: 0;
+    left: auto;
 }
