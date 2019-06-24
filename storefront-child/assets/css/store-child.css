@@ -677,23 +677,14 @@ body input[type=submit].loading::after{
     color: #ff9d00;
   
 }
-.f-onfocus::before,
-.f-onfocus::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 50%;
-    background: #ff9d00;
-}
+
 .f-onfocus::after{
     right: 0;
     left: auto;
 }
 .f-mb-focus{
     position: relative;
-    border: none;
+    border: none !important;
     border-bottom: 2px solid #ff9d00;
     border-left: 2px solid #ff9d00;
     border-right: 2px solid #ff9d00;
