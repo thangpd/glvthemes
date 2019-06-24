@@ -683,19 +683,11 @@ body input[type=submit].loading::after{
 }
 
 .f-onfocus{
-    top: -9px;
-    color: #ff9d00;
-    line-height: 17px;
-}
-.f-onfocus::before{
-    position: absolute;
-    content: '';
-    bottom: 0;
+    top: -18px;
+    color: #ffffff;
     left: 0;
-    width: 100%;
-    height: 50%;
-    background: #fffef2;
 }
+
 
 .f-mb-focus{
     border: 2px solid #ff9d00 !important;
