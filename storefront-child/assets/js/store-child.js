@@ -281,8 +281,8 @@
 
       
     $(document).ready(function(){
-        $("input").each(function(index){
-            $(this).focus(function(){
+        $("input").focus(function(){
+            $(this).each(function(){
                 $('.f-label').addClass('f-onfocus');
                 $('.login_countrycode').addClass('f-mb-focus');
             });
