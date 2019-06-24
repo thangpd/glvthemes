@@ -674,11 +674,8 @@ body input[type=submit].loading::after{
 
 .f-onfocus{
     top: 0;
-    color: #8d8d8b;
-    background: #fffef2;
-    border-top: 2px solid #ff9d00;
-    border-radius: 5px;
-    padding: 5px;
+    color: #ff9d00;
+  
 }
 .f-onfocus::before,
 .f-onfocus::after{
@@ -693,4 +690,26 @@ body input[type=submit].loading::after{
 .f-onfocus::after{
     right: 0;
     left: auto;
+}
+.f-mb-focus{
+    position: relative;
+    border: none;
+    border-bottom: 2px solid #ff9d00;
+    border-left: 2px solid #ff9d00;
+    border-right: 2px solid #ff9d00;
+}
+.f-mb-focus::before,
+.f-mb-focus::after{
+    position: relative;
+    content: '';
+    top: 0;
+    height: 2px;
+}
+.f-mb-focus::before{
+    width: 20px;
+    left: 0;
+}
+.f-mb-focus::after{
+    width: 100px;
+    right: 0;
 }
