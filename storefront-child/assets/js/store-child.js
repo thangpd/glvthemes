@@ -282,12 +282,15 @@
       
     $(document).ready(function(){
         $("input").focus(function(){
-            $(this).each(function(){
                 $('.f-label').addClass('f-onfocus');
                 $('.login_countrycode').addClass('f-mb-focus');
-            });
         });
-       
+        // var elements = [].slice.call(document.getElementsByClassName("input"));
+        // elements.forEach(function(ele, index){
+        //     ele.addEventListener("focus", function(){
+        //         $(this).toggleClass('dr-rotate');
+        //       });
+        // });
       });
 
 
