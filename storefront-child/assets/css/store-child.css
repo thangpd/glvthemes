@@ -619,13 +619,18 @@ body input[type=submit].loading::after{
 }
 
 /*QR CODE BUTTON*/
+#customer_login >div{
+    position: relative;
+}
+
 .btn-qrcode {
     font-size: 35px;
 }
 
 .btn-qrcode--register {
-    top: 40px;
-    float: right;
+   position: absolute;
+   top: 0;
+   right: 0;
 }
 
 .btn-qrcode--transfer {
@@ -645,6 +650,11 @@ body input[type=submit].loading::after{
 }
 
 /* --- update design --- */
+
+body .storefront-breadcrumb{
+    margin: 20px 0 30px;
+    padding: 0;
+}
 .form-row select{
     padding: 5px 20px;
 }

@@ -289,7 +289,7 @@ form p label input + span {
     }
 
     .login-register #customer_login form button {
-        margin-top: 30px;
+        margin: 30px auto 15px;
     }
 
     .login-register form p label input + span:before {
