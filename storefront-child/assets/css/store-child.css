@@ -627,7 +627,7 @@ body input[type=submit].loading::after{
     font-size: 35px;
 }
 
-.btn-qrcode--register {
+.site .btn-qrcode--register {
    position: absolute;
    top: 0;
    right: 0;
