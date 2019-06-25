@@ -109,15 +109,6 @@ form.woocommerce-form-register p.lost_password {
     margin: 0 auto;
 }
 
-form.woocommerce-form-login p.lost_password a {
-    width: 80px;
-    margin: 0 auto;
-}
-
-form.woocommerce-form-login p.lost_password a + a {
-    width: 170px;
-    margin: 0 auto;
-}
 
 .select2-container--classic.select2-container--open .select2-dropdown {
     box-shadow: 0 3px 10px 0 rgba(113, 73, 12, 0.31);

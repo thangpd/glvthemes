@@ -742,3 +742,6 @@ body .storefront-breadcrumb{
     font-weight: bold !important;
     color: #ff9d00 !important;
 }
+.page .hentry .entry-content p.lost_password a:not(.button){
+    color: #ffffff;
+}
