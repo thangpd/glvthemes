@@ -277,7 +277,7 @@ form p label input + span {
     }
 
     .login-register #customer_login h2 {
-        margin-bottom: 40px;
+        margin-bottom: 0;
     }
 
     .login-register #customer_login form p{

@@ -232,6 +232,7 @@
         $("input").focus(function(){
                 $(this).next().addClass('f-onfocus');
                 $(this).parents('.f-bd').addClass('f-bd-focus'); 
+                $(this).parents('.custom-mg').addClass('custom-mg-focus'); 
         });
         // var elements = [].slice.call(document.getElementsByClassName("input"));
         // elements.forEach(function(ele, index){

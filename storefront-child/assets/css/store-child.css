@@ -715,3 +715,6 @@ body input[type=submit].loading::after{
 .f-login-title{
     margin-bottom: 30px;
 }
+.custom-mg-focus{
+    margin-top: 45px !important;
+}
