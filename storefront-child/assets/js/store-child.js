@@ -283,9 +283,8 @@
     $(document).ready(function(){
         $("input").focus(function(){
             $(this).each(function(){
-                // $('.f-label').addClass('f-onfocus');
-                // $('.login_countrycode').addClass('f-mb-focus');
-                alert('test');
+                $('.f-label').addClass('f-onfocus');
+                $('.login_countrycode').addClass('f-mb-focus');
             });
         });
        
