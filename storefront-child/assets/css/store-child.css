@@ -766,6 +766,6 @@ body .storefront-breadcrumb{
     top: auto;
     bottom: -28px;
 }
-.woocommerce-phone-countrycode{
+.form-row .woocommerce-phone-countrycode{
     width: 60px;
 }
