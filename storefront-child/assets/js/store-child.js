@@ -230,7 +230,7 @@
       
     $(document).ready(function(){
         $("input").focus(function(){
-                $(this).find('.f-label').addClass('f-onfocus');
+                $(this).next().addClass('f-onfocus');
                 $('.login_countrycode').addClass('f-mb-focus'); 
         });
         // var elements = [].slice.call(document.getElementsByClassName("input"));
