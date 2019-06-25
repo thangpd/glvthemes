@@ -649,17 +649,15 @@ body input[type=submit].loading::after{
 .form-row select{
     padding: 5px 20px;
 }
-/* .input-text.us{
-    margin-bottom: 15px;
-} 
-.input-number-mobile.r-mb,
-.input-text.u-user{
-    margin-bottom: 20px;
+.mt-40{
+    margin-top: 40px !important;
 }
-.input-text.r-email{
-    margin-bottom: 6px;
-} */
-
+.mt-50{
+    margin-top: 50px !important;
+}
+.mt-20{
+    margin-top: 20px !important;
+}
 .login_countrycode{
     position: relative;
     background: #fffef2;
@@ -693,7 +691,7 @@ body input[type=submit].loading::after{
 }
 
 
-.f-mb-focus{
+.f-bd-focus{
     border: 2px solid #ff9d00 !important;
 }
 .f-login-title{
