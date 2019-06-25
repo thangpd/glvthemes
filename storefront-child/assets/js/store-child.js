@@ -231,7 +231,7 @@
     $(document).ready(function(){
         $("input").focus(function(){
                 $(this).next().addClass('f-onfocus');
-                $('.f-bd').addClass('f-bd-focus'); 
+                $(this).parents('.f-bd').addClass('f-bd-focus'); 
         });
         // var elements = [].slice.call(document.getElementsByClassName("input"));
         // elements.forEach(function(ele, index){
