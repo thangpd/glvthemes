@@ -699,6 +699,7 @@ body input[type=submit].loading::after{
     border: 2px solid #fffef2;
     border-radius: 5px;
     background: #fffef2;
+    transition: 0.3s all ease;
 }
 .f-bd input{
     border-radius: 0 !important;
