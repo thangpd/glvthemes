@@ -1157,7 +1157,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .input-text:focus, input[type=email]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, textarea:focus ,
 .select2-container--classic .select2-search--dropdown .select2-search__field:focus{
     background-color: #fffef2;
-    border: 2px solid #ff9d00;
+    border: ;
     outline: none;
     font-weight: bold;
 }
