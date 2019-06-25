@@ -724,7 +724,6 @@ body .storefront-breadcrumb{
 }
 .f-bd-focus{
     border: 2px solid #ff9d00 !important;
-    margin-top: 35px !important;
 }
 .f-login-title{
     margin-bottom: 30px;
@@ -735,7 +734,7 @@ body .storefront-breadcrumb{
 .login-register #customer_login form p.f-login-title{
     margin-top: 55px;
     text-align: center;
-    color: #ff9d00;
+    color: #ff9d00 !important;
     line-height: 1.25;
     letter-spacing: 0.35px;
 }
