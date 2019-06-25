@@ -693,11 +693,17 @@ body input[type=submit].loading::after{
 }
 
 .f-bd{
-    border: 2px solid #ffffff;
+    border: 2px solid #fffef2;
     border-radius: 5px;
+    background: #fffef2;
 }
 .f-bd input{
     border-radius: 0 !important;
+    position: relative;
+    position: relative;
+    z-index: 1000;
+    background: transparent !important;
+    border: none !important;
 }
 .f-bd-focus{
     border: 2px solid #ff9d00 !important;
