@@ -668,6 +668,7 @@ body input[type=submit].loading::after{
 }
 .f-p-focus{
     position: relative !important;
+    margin-bottom: 50px;
 }
 .input-number-mobile.r-mb{
     background: transparent !important;
@@ -694,4 +695,7 @@ body input[type=submit].loading::after{
 
 .f-mb-focus{
     border: 2px solid #ff9d00 !important;
+}
+.f-login-title{
+    margin-bottom: 30px;
 }

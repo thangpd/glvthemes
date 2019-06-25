@@ -139,10 +139,6 @@ form p label input + span {
     left: 60px;
 }
 
-form label {
-    padding: 5px;
-}
-
 .storefront-breadcrumb,.storefront-breadcrumb span{
     color: white !important;
 }
@@ -281,7 +277,7 @@ form p label input + span {
     }
 
     .login-register #customer_login h2 {
-        margin-bottom: 15px;
+        margin-bottom: 40px;
     }
 
     .login-register #customer_login form p{
