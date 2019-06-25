@@ -744,4 +744,19 @@ body .storefront-breadcrumb{
 }
 .page .hentry .entry-content p.lost_password a:not(.button){
     color: #ffffff;
+    padding: 0;
+    line-height: 16px;
+}
+.page .hentry .entry-content p.lost_password a:not(.button):first-child{
+    border-right: 2px solid #ffffff;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+.f-lost-pass{
+    display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
 }
