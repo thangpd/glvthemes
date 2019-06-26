@@ -924,6 +924,7 @@ body.login-register.home .site-header{
     -o-transition: 0.3s all ease;
     transition: 0.3s all ease;
 }
-.phone_login-fc{
+.phone_login-fc,
+.myaccount-login-page-fc{
     margin-top: 50px;
 }

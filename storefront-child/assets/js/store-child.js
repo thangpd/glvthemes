@@ -234,6 +234,7 @@
                 $(this).parents('.f-bd').addClass('f-bd-focus'); 
                 $(this).parents('.custom-mg').addClass('custom-mg-focus'); 
                 $(this).parents('.phone_login').addClass('phone_login-fc');
+                $(this).parents('.myaccount-login-page').addClass('myaccount-login-page-fc');
                 $(this).parents('form').find('.f-login-title').hide();
                 $(this).parents('form').find('.f-lost-pass').hide();
                 $(this).parents('.site-content').next('footer').hide();
