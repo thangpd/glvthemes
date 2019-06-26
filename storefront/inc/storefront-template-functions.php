@@ -181,6 +181,9 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
 	 */
 	function storefront_site_branding() {
 		?>
+		<button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false">
+			<span><?php echo esc_attr( apply_filters( 'storefront_menu_toggle_text', __( '', 'storefront' ) ) ); ?></span>
+		</button>
         <div class="site-branding">
 			<?php storefront_site_title_or_logo();
 			$user       = \credglv\models\UserModel::getInstance();
@@ -259,9 +262,7 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
         <nav id="site-navigation" class="main-navigation" role="navigation"
              aria-label="<?php esc_html_e( 'Primary Navigation', 'storefront' ); ?>">
             <div class="layer-mask"></div>
-            <button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false">
-                <span><?php echo esc_attr( apply_filters( 'storefront_menu_toggle_text', __( '', 'storefront' ) ) ); ?></span>
-            </button>
+         
 			<?php
 			wp_nav_menu(
 				array(
