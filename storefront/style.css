@@ -2569,7 +2569,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
         height: calc(100vh - 160px);
         overflow: auto;
         left: -100%;
-        background: #0E1621;
+        background: #223652;
     }
     .logged-in .site-header + .storefront-breadcrumb{
         padding-top: 120px;
@@ -2590,15 +2590,16 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     font-size: 14px;
 }
 
-.logged-in .site-header, 
+.storefront-handheld-footer-bar, 
+.logged-in .site-header{
+    background: #223652 !important;
+} 
 .secondary-navigation ul ul, 
 .main-navigation ul.menu > 
 li.menu-item-has-children:after, 
 .secondary-navigation ul.menu ul, 
-.storefront-handheld-footer-bar, 
 .storefront-handheld-footer-bar ul li > a, 
 .storefront-handheld-footer-bar ul li.search .site-search, 
-button.menu-toggle, 
 button.menu-toggle:hover{
     background: #0E1621 !important;
 }
