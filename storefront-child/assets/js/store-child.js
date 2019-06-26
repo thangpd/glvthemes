@@ -233,7 +233,7 @@
                 $(this).next().addClass('f-onfocus');
                 $(this).parents('.f-bd').addClass('f-bd-focus'); 
                 $(this).parents('.custom-mg').addClass('custom-mg-focus'); 
-                $(this).parents('.phone_login').css('margin-top', '50px' );
+                $(this).parents('.phone_login').addClass('.phone_login-fc');
                 $(this).parents('form').find('.f-login-title').hide();
                 $(this).parents('form').find('.f-lost-pass').hide();
                 $(this).parents('.site-content').next('footer').hide();
