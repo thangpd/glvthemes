@@ -2591,6 +2591,8 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 }
 
 .storefront-handheld-footer-bar, 
+.storefront-handheld-footer-bar ul li.search .site-search, 
+button.menu-toggle:hover,
 .storefront-handheld-footer-bar ul li > a, 
 .logged-in .site-header{
     background: #223652 !important;
@@ -2598,9 +2600,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .secondary-navigation ul ul, 
 .main-navigation ul.menu > 
 li.menu-item-has-children:after, 
-.secondary-navigation ul.menu ul, 
-.storefront-handheld-footer-bar ul li.search .site-search, 
-button.menu-toggle:hover{
+.secondary-navigation ul.menu ul{
     background: #0E1621 !important;
 }
 
