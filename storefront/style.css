@@ -1428,9 +1428,9 @@ nav button.menu-toggle:focus{
 }
 
 .handheld-navigation ul.menu .sub-menu {
-    visibility: hidden;
+    /* visibility: hidden;
     opacity: 0;
-    max-height: 0;
+    max-height: 0; */
     -webkit-transition: all, ease, .9s;
     transition: all, ease, .9s
 }
