@@ -2328,6 +2328,9 @@ nav button.menu-toggle:focus{
         position: relative;
         z-index: 1;
     }
+    .logged-in .woocommerce-active .col-full .site-branding{
+        margin: 0 auto;
+    }
     .site-header .custom-logo-link img{
         margin: 0 auto;
         width: 100%;
