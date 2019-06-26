@@ -885,6 +885,7 @@ button.menu-toggle.btn-click span:before{
     width: 5px;
     height: 5px;
     background: #ffffff;
+    border-radius: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
         transform: translateY(-50%);
