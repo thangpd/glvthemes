@@ -235,8 +235,8 @@
                 $(this).parents('.custom-mg').addClass('custom-mg-focus'); 
                 $(this).parents('.phone_login').css('margin-top', '50px' );
                 $(this).parents('form').find('.f-login-title').hide();
-                $(this).find    ('.f-login-title').hide();
-                $(this).find('.f-lost-pass').hide();
+                $(this).parents('form').find('.f-lost-pass').hide();
+                $(this).parents('.site-content').next('footer').hide();
         });
       
         // Main menu toggle
