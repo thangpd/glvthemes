@@ -236,6 +236,7 @@
         });
         
         $('button.menu-toggle').click(function(){
+            $(this).toggleClass('btn-click');
             $('.main-navigation').toggleClass('toggled');
         });
       });

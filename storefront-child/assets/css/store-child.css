@@ -809,3 +809,21 @@ body .storefront-breadcrumb{
 .main-navigation .menu{
     border-right: 1px solid #364a67;
 }
+body button.menu-toggle {
+    cursor: pointer;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 12px 0;
+}
+body button.menu-toggle:focus{
+    outline: none;
+}
+button.menu-toggle.btn-click::after, 
+button.menu-toggle.btn-click::before{
+    width: 50%;
+}
+button.menu-toggle.btn-click span:before{
+    width: 100%;
+}

@@ -1303,18 +1303,7 @@ embed, iframe, object, video {
     display: none
 }
 
-button.menu-toggle {
-    cursor: pointer;
-    text-align: left;
-    float: right;
-    position: relative;
-    border: 2px solid transparent;
-    box-shadow: none;
-    border-radius: 2px;
-    background-image: none;
-    padding: .6180469716em .875em .6180469716em 2.617924em;
-    font-size: .875em
-}
+
 
 button.menu-toggle:hover {
     background-image: none
@@ -2361,10 +2350,9 @@ nav button.menu-toggle:focus{
         position: relative;
     } 
     .btn-share{
-        /* font-size: xx-large; */
         display: block;
         position: absolute;
-        top: 16px;
+        top: 10px;
         right: 0;
         z-index: 9999;
     }
