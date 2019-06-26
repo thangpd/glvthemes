@@ -828,3 +828,9 @@ button.menu-toggle.btn-click::before{
 button.menu-toggle.btn-click span:before{
     width: 100%;
 }
+.storefront-primary-navigation{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
