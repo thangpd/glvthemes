@@ -790,7 +790,7 @@ body .storefront-breadcrumb{
 .main-navigation.toggled .handheld-navigation{
     height: 100%;
     width: 75%;
-    padding-left: 30px;
+    padding-left: 0px;
     left: 0;
     max-height: 9998px;
 }
@@ -800,7 +800,7 @@ body .storefront-breadcrumb{
 .handheld-navigation ul.menu li:first-child{
     padding-top: 35px;
     padding-bottom: 15px;
-    border: navajowhite;
+    border: none;
 }
 .handheld-navigation ul.menu li:first-child a{
     font-size: 24px;
@@ -833,4 +833,20 @@ button.menu-toggle.btn-click span:before{
     top: 0;
     width: 100%;
     z-index: 1;
+}
+.sub-menu-show{
+    visibility: unset;
+    opacity: 1;
+    max-height: initial;
+    margin-left: 0;
+}
+.handheld-navigation ul.menu li ul.sub-menu li{
+    padding: 0;
+}
+.handheld-navigation ul.menu li ul.sub-menu li{
+    border: none;
+}
+.handheld-navigation ul.menu li ul.sub-menu li a{
+    font-size: 18px;
+    color: #ffffff;
 }

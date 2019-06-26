@@ -1461,7 +1461,6 @@ nav button.menu-toggle:focus{
 
 .main-navigation ul ul {
     display: block;
-    margin-left: 1.41575em
 }
 
 .main-navigation ul li a {
@@ -2320,7 +2319,7 @@ nav button.menu-toggle:focus{
         z-index: 1;
     }
     .logged-in.woocommerce-active .col-full .site-branding{
-        position: relative;
+        position: absolute;
         top: 0;
         left: 50%;
         -webkit-transform: translateX(-50%);
@@ -2359,7 +2358,7 @@ nav button.menu-toggle:focus{
         position: absolute;
         top: 10px;
         right: 0;
-        z-index: 9999;
+        z-index: 0;
     }
     .btn-share .fa-share-square{
         font-family: 'Font Awesome 5 Free';
