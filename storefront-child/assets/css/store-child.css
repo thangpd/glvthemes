@@ -895,7 +895,7 @@ button.menu-toggle.btn-click span:before{
         transform: translateY(-50%);
 }
 .layer-mask{
-    width: 100%;
+    width: 1000%;
     height: 100vh;
     position: absolute;
     top: 0;
