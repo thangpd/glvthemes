@@ -789,7 +789,7 @@ body .storefront-breadcrumb{
 }
 .main-navigation.toggled .handheld-navigation{
     height: 100vh;
-    width: 75%;
+    width: 100%;
     padding-left: 0px;
     left: 0;
     max-height: 9998px;
@@ -841,7 +841,7 @@ button.menu-toggle.btn-click span:before{
 .storefront-primary-navigation{
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 75%;
     z-index: 1;
 }
 .sub-menu-show{
