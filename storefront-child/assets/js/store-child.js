@@ -240,7 +240,9 @@
             $(this).toggleClass('btn-click');
             $('.main-navigation').toggleClass('toggled');
         });
-
+        $('.layer-mask').click(function(){
+            $('.main-navigation').removeClass('toggled');
+        });
         // Sub menu toggle
         
       });
