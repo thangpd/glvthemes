@@ -237,7 +237,6 @@
       
         // Main menu toggle
         $('button.menu-toggle').click(function(){
-            $(this).toggleClass('btn-click');
             $('.main-navigation').toggleClass('toggled');
         });
         $('.layer-mask').click(function(){

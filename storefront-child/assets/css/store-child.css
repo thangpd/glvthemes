@@ -783,8 +783,8 @@ body .storefront-breadcrumb{
     left: -100%;
     z-index: 0;
     position: relative;
-    -webkit-transition: all, ease, .4s;
-    transition: all, ease, .4s; 
+    -webkit-transition: all, ease, .3s;
+    transition: all, ease, .3s; 
     max-height: 0;
 }
 .main-navigation.toggled .handheld-navigation{
