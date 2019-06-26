@@ -2341,6 +2341,7 @@ nav button.menu-toggle:focus{
         padding-left: 2.617924em;
         position: relative;
         transition: all, ease, .8s;
+        background: #223652;
        
     }
     .storefront-primary-navigation .col-full{
@@ -2530,6 +2531,7 @@ body a:focus{
         display: block;
         padding-bottom: 10px;
         border: none;
+        height: 70px;   
     }
 }
 
