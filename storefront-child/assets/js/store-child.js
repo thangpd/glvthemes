@@ -234,12 +234,10 @@
                 $(this).parents('.f-bd').addClass('f-bd-focus'); 
                 $(this).parents('.custom-mg').addClass('custom-mg-focus'); 
         });
-        // var elements = [].slice.call(document.getElementsByClassName("input"));
-        // elements.forEach(function(ele, index){
-        //     ele.addEventListener("focus", function(){
-        //         $(this).toggleClass('dr-rotate');
-        //       });
-        // });
+        
+        $('button.menu-toggle').click(function(){
+            $('.main-navigation').toggleClass('toggled');
+        });
       });
 
 
