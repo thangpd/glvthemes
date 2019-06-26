@@ -770,3 +770,48 @@ body .storefront-breadcrumb{
 .form-row .woocommerce-phone-countrycode{
     width: 60px;
 }
+.storefront-primary-navigation{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+}
+.site-header .col-full{
+    height: 100%;
+}
+.main-navigation{
+    height: 100%;
+    padding-left: 0;
+}
+.main-navigation .handheld-navigation{
+    overflow: auto;
+    background: #223652;
+    left: -100%;
+    z-index: 0;
+    position: relative;
+    -webkit-transition: all, ease, .4s;
+    transition: all, ease, .4s; 
+}
+.main-navigation.toggled .handheld-navigation{
+    height: 100%;
+    width: 75%;
+    padding-left: 30px;
+    left: 0;
+    max-height: 9998px;
+}
+.handheld-navigation ul.menu li a{
+    font-size: 18px;
+}
+.handheld-navigation ul.menu li:first-child{
+    padding-top: 35px;
+    padding-bottom: 15px;
+    border: navajowhite;
+}
+.handheld-navigation ul.menu li:first-child a{
+    font-size: 24px;
+    color: #7e8ba0;
+}
+.main-navigation .menu{
+    border-right: 1px solid #364a67;
+}

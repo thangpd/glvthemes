@@ -1408,7 +1408,7 @@ nav button.menu-toggle:focus{
     clear: both
 }
 
-.handheld-navigation, .main-navigation div.menu > ul:not(.nav-menu), .nav-menu {
+ .main-navigation div.menu > ul:not(.nav-menu), .nav-menu {
     -webkit-transition: all, ease, .4s;
     transition: all, ease, .4s;
 }
@@ -1422,7 +1422,9 @@ nav button.menu-toggle:focus{
 }
 
 .handheld-navigation ul.menu li {
-    position: relative
+    position: relative;
+    padding: 10px 30px;
+    border-bottom: 1px solid #364a67;
 }
 
 .handheld-navigation ul.menu li button::after {
@@ -1458,7 +1460,7 @@ nav button.menu-toggle:focus{
     display: block
 }
 
-.main-navigation.toggled .handheld-navigation, .main-navigation.toggled .menu > ul:not(.nav-menu), .main-navigation.toggled ul[aria-expanded=true] {
+.main-navigation.toggled .menu > ul:not(.nav-menu), .main-navigation.toggled ul[aria-expanded=true] {
     max-height: 9999px
 }
 
@@ -2318,9 +2320,7 @@ nav button.menu-toggle:focus{
         padding: 0;
         height: 55px;
     }
-    .main-navigation .menu{
-        margin-top: 20px;
-    }
+ 
     .main-navigation ul li a{
         padding: .3em 0;
     }
@@ -2338,10 +2338,9 @@ nav button.menu-toggle:focus{
         width: 100%;
     }
     .main-navigation{
-        padding-left: 2.617924em;
         position: relative;
         transition: all, ease, .8s;
-        background: #223652;
+        background: rgba(14, 22, 33, 0.9);
        
     }
     .storefront-primary-navigation .col-full{
@@ -2353,18 +2352,8 @@ nav button.menu-toggle:focus{
         z-index: 1;
         top: -37px;
     }
-    .main-navigation .handheld-navigation{
-        max-height: 0;
-        overflow: hidden;
-        left: -80%;
-        z-index: 0;
-        position: relative;
-       
-    }
-    .main-navigation.toggled .handheld-navigation{
-        left: 0;
-        max-height: 9998px;
-    }
+
+  
     .site-header .main-navigation ul.menu li.current-menu-item > a{
         color: #F4E27E;
     }
@@ -2405,9 +2394,6 @@ nav button.menu-toggle:focus{
         margin-left: 1.41575em;
         margin-right: 1.41575em;
         padding: 0
-    }
-    .main-navigation{
-        padding-left: 1.41575em;
     }
 }
 body a:focus{
@@ -2569,12 +2555,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
         width: 100%;
         box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.05);
     }
-    .main-navigation .handheld-navigation{
-        height: calc(100vh - 160px);
-        overflow: auto;
-        left: -100%;
-        background: #223652;
-    }
+
     .logged-in .site-header + .storefront-breadcrumb{
         padding-top: 120px;
     }
