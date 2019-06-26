@@ -866,13 +866,26 @@ button.menu-toggle.btn-click span:before{
 .handheld-navigation ul.menu li ul.sub-menu li{
     position: relative;
     overflow: inherit;
+    padding-left: 10px;
 }
 .handheld-navigation ul.menu li ul.sub-menu li::before{
     position: absolute;
     content: '';
     top: 0;
-    left: -40px;
+    left: -50%;
     width: 200%;
     height: 1px;
     background:#3d4146;
+}
+.handheld-navigation ul.menu li ul.sub-menu li::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    background: #ffffff;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
 }
