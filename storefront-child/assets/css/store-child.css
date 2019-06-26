@@ -794,8 +794,13 @@ body .storefront-breadcrumb{
     left: 0;
     max-height: 9998px;
 }
+.handheld-navigation ul.menu li{
+    overflow: hidden;
+}
 .handheld-navigation ul.menu li a{
     font-size: 18px;
+    line-height: 18px;
+    margin: 8px 0;
 }
 .handheld-navigation ul.menu li:first-child{
     padding-top: 35px;
@@ -852,9 +857,20 @@ button.menu-toggle.btn-click span:before{
     color: #ffffff;
 }
 .handheld-navigation ul.menu li ul.sub-menu li{
-    padding: 10px;
+    padding: 10px 0;
     border-top: 1px solid red;
 }
 .handheld-navigation ul.menu li ul.sub-menu li:first-child{
     margin-top: 10px;
+}
+.handheld-navigation ul.menu li ul.sub-menu li{
+    position: relative;
+}
+.handheld-navigation ul.menu li ul.sub-menu li::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 1px;
+    background: 1px solid #3d4146;
 }
