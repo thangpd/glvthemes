@@ -823,7 +823,7 @@ body button.menu-toggle{
     display: none;
 }
 body.logged-in button.menu-toggle{
-    display: block;
+    display: initial;
 }
 body button.menu-toggle {
     cursor: pointer;
