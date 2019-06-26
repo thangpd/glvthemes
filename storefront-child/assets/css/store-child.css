@@ -797,6 +797,7 @@ body .storefront-breadcrumb{
 .handheld-navigation ul.menu li{
     overflow: hidden;
 }
+
 .handheld-navigation ul.menu li a{
     font-size: 18px;
     line-height: 18px;
@@ -864,13 +865,14 @@ button.menu-toggle.btn-click span:before{
 }
 .handheld-navigation ul.menu li ul.sub-menu li{
     position: relative;
+    overflow: inherit;
 }
 .handheld-navigation ul.menu li ul.sub-menu li::before{
     position: absolute;
     content: '';
     top: 0;
-    left: 0;
-    width: 200px;
+    left: -40px;
+    width: 200%;
     height: 1px;
-    background: 1px solid #3d4146;
+    background:#3d4146;
 }
