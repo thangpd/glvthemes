@@ -858,7 +858,6 @@ button.menu-toggle.btn-click span:before{
 }
 .handheld-navigation ul.menu li ul.sub-menu li{
     padding: 10px 0;
-    border-top: 1px solid red;
 }
 .handheld-navigation ul.menu li ul.sub-menu li:first-child{
     margin-top: 10px;
@@ -868,6 +867,7 @@ button.menu-toggle.btn-click span:before{
 }
 .handheld-navigation ul.menu li ul.sub-menu li::before{
     position: absolute;
+    content: '';
     top: 0;
     left: 0;
     width: 200px;
