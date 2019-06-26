@@ -234,11 +234,15 @@
                 $(this).parents('.f-bd').addClass('f-bd-focus'); 
                 $(this).parents('.custom-mg').addClass('custom-mg-focus'); 
         });
-        
+      
+        // Main menu toggle
         $('button.menu-toggle').click(function(){
             $(this).toggleClass('btn-click');
             $('.main-navigation').toggleClass('toggled');
         });
+
+        // Sub menu toggle
+        
       });
 
 
