@@ -911,3 +911,8 @@ button.menu-toggle.btn-click span:before{
 .toggled .layer-mask{
     left: 0;
 }
+.site-header .custom-logo-link img{
+    width: 224px;
+    max-width: none;
+    margin-right: auto;
+}

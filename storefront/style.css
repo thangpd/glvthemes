@@ -537,7 +537,7 @@ body {
     margin-bottom: 0
 }
 
-.site-header .custom-logo-link img, .site-header .site-logo-anchor img, .site-header .site-logo-link img {
+.logged-in .site-header .custom-logo-link img, .logged-in  .site-header .site-logo-anchor img, .logged-in .site-header .site-logo-link img {
     max-width: 150px;
 }
 
@@ -2326,7 +2326,7 @@ nav button.menu-toggle:focus{
        -ms-transform: translateX(-50%);
            transform: translateX(-50%);
     }
-    .site-header .custom-logo-link img{
+    .logged-in .site-header .custom-logo-link img{
         margin: 0 auto;
         width: 100%;
     }
