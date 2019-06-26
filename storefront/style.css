@@ -1339,16 +1339,20 @@ button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::
     border-radius: 3px
 }
 
+button.menu-toggle span::before{
+    width: 50%;
+}
+
 button.menu-toggle::before {
-    -webkit-transform: translateY(-6px);
-    -ms-transform: translateY(-6px);
-    transform: translateY(-6px)
+    -webkit-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    transform: translateY(-8px)
 }
 
 button.menu-toggle::after {
-    -webkit-transform: translateY(6px);
-    -ms-transform: translateY(6px);
-    transform: translateY(6px)
+    -webkit-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    transform: translateY(8px);
 }
 nav button.menu-toggle{
     padding: 0;
@@ -1368,19 +1372,15 @@ nav button.menu-toggle:focus{
     font-family: 'Font Awesome 5 Free';
 } */
 .toggled button.menu-toggle::after, .toggled button.menu-toggle::before {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg)
+   width: 50%;
 }
 
 .toggled button.menu-toggle::after {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg)
+   width: 50%;
 }
 
 .toggled button.menu-toggle span::before {
-    opacity: 0
+    width: 100%;
 }
 
 .primary-navigation {
@@ -2328,7 +2328,7 @@ nav button.menu-toggle:focus{
         position: relative;
         z-index: 1;
     }
-    .logged-in .woocommerce-active .col-full .site-branding{
+    .logged-in.woocommerce-active .col-full .site-branding{
         margin: 0 auto;
     }
     .site-header .custom-logo-link img{
@@ -2621,7 +2621,7 @@ body .storefront-handheld-footer-bar ul.columns-5 li{
 body .site-footer .storefront-handheld-footer-bar a:not(.button):focus,
 body .storefront-handheld-footer-bar ul.columns-5 li:focus{
     color: #ff9d00;
-}
+}   
 
 body button.menu-toggle:after, 
 body button.menu-toggle:before, 
