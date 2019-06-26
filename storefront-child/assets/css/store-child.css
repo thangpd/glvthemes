@@ -916,3 +916,6 @@ button.menu-toggle.btn-click span:before{
     max-width: none;
     margin-right: auto;
 }
+body.login-register.home .site-header{
+    margin-top: 20px;
+}
