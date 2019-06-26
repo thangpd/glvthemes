@@ -919,7 +919,7 @@ button.menu-toggle.btn-click span:before{
 body.login-register.home .site-header{
     margin-top: 20px;
 }
-.phone_login{
+.phone_login,.myaccount-login-page{
     -webkit-transition: 0.3s all ease;
     -o-transition: 0.3s all ease;
     transition: 0.3s all ease;
