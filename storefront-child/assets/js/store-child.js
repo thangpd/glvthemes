@@ -238,6 +238,12 @@
                 $(this).parents('form').find('.f-lost-pass').hide();
                 $(this).parents('.site-content').next('footer').hide();
         });
+        $("input").focus(function(){
+            $(this).parents('.phone_login').removeClass('phone_login-fc');
+            $(this).parents('form').find('.f-login-title').show();
+            $(this).parents('form').find('.f-lost-pass').show();
+            $(this).parents('.site-content').next('footer').show();
+    });
       
         // Main menu toggle
         $('button.menu-toggle').click(function(){
