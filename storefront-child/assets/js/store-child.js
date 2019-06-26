@@ -238,9 +238,11 @@
         // Main menu toggle
         $('button.menu-toggle').click(function(){
             $('.main-navigation').toggleClass('toggled');
+            $('body').css('overflow', 'hidden');
         });
         $('.layer-mask').click(function(){
             $('.main-navigation').removeClass('toggled');
+            $('body').css('overflow', 'auto');
         });
         // Sub menu toggle
         
