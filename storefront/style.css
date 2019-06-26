@@ -2333,7 +2333,7 @@ nav button.menu-toggle:focus{
     .main-navigation{
         position: relative;
         transition: all, ease, .8s;
-        background: rgba(14, 22, 33, 0.9);
+        
        
     }
     .storefront-primary-navigation .col-full{
