@@ -819,6 +819,12 @@ body .storefront-breadcrumb{
 .main-navigation .menu{
     border-right: 1px solid #364a67;
 }
+body button.menu-toggle{
+    display: none;
+}
+body.logged-in button.menu-toggle{
+    display: block;
+}
 body button.menu-toggle {
     cursor: pointer;
     background: transparent;
