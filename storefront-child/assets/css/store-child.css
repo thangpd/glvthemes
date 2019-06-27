@@ -929,3 +929,15 @@ body.login-register.home .site-header{
 .site-header .custom-logo-link .img-fc{
     width: 150px;
 }
+.col-full >.woocommerce{
+    position: relative;
+    top: 50px;
+    left: 0;
+
+}
+.col-full .woocommerce .alert{
+    border-radius: 4px;
+}
+.col-full .woocommerce .alert.alert-danger{
+    border-left: 8px solid #ff3131;
+}
