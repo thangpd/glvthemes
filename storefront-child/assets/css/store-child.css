@@ -42,6 +42,10 @@ input#myInput {
     margin-bottom: 10px;
 }
 
+.qr_code {
+    width: 140px;
+}
+
 .qr_code img {
     width: 100%;
 }
