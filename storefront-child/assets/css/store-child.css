@@ -945,3 +945,27 @@ body.login-register.home .site-header{
 .col-full .woocommerce .alert.alert-danger{
     border-left: 8px solid #ff3131;
 }
+
+.form-btn-login{
+    text-align: center;
+}
+.login-register #customer_login form button.login-click{
+    font-size: 0;
+    height: 50px;
+    width: 50px !important;
+    border: none;
+}
+
+.login-register #customer_login form button .ld{
+    opacity: 0;
+    z-index: -1;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    right: auto;
+    left: 50%;
+}
+.login-register #customer_login form button.login-click .ld{
+    opacity: 1;
+    z-index: 1;
+}
