@@ -915,6 +915,8 @@ button.menu-toggle.btn-click span:before{
     width: 224px;
     max-width: none;
     margin-right: auto;
+    -webkit-transition: all, ease, .3s;
+    transition: all, ease, .3s; 
 }
 body.login-register.home .site-header{
     margin-top: 20px;
@@ -923,4 +925,7 @@ body.login-register.home .site-header{
 .phone_login-fc,
 .myaccount-login-page-fc{
     margin-top: 50px;
+}
+.img-fc{
+    width: 150px;
 }

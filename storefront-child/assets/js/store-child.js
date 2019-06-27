@@ -231,6 +231,7 @@
     $(document).ready(function(){
         $("input").focus(function(){
                 $(this).next().addClass('f-onfocus');
+                $(this).parents('.site-header').find('f-bd-focus'); 
                 $(this).parents('.f-bd').addClass('f-bd-focus'); 
                 $(this).parents('.custom-mg').addClass('custom-mg-focus'); 
                 $(this).parents('.phone_login').addClass('phone_login-fc');
