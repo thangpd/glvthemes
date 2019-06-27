@@ -11,10 +11,10 @@ $query = '';
 $fullQuery = '';
 
 if ($referral->check_actived_referral($user_id)) {
-	$query = 'ref='.$user_id;
+	$query = 'ref='.$code;
 	$fullQuery = $query;
 } else {
-	$query = 'username='.$user_id;
+	$query = 'username='.$code;
 	$fullQuery = $query . '&amount=20';
 }
 
