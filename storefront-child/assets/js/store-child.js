@@ -248,13 +248,13 @@
             $(this).parents('form').find('.f-login-title').show();
             $(this).parents('form').find('.f-lost-pass').show();
             $(this).parents('.site-content').next('footer').show();
-            $(this).parents('body').css('overflow', 'auto');
+            $(this).parents('.login-register #page').css('overflow', 'auto');
     });
       
         // Main menu toggle
         $('button.menu-toggle').click(function(){
             $('.main-navigation').toggleClass('toggled');
-            $('body').css('overflow', 'hidden');
+            $('.login-register #page').css('overflow', 'hidden');
         });
         $('.layer-mask').click(function(){
             $('.main-navigation').removeClass('toggled');
