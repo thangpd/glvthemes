@@ -254,6 +254,7 @@
                 $(this).next().addClass('f-onfocus');
             }else{
                 $(this).next().removeClass('f-onfocus');
+                $(this).parents('.custom-mg').removeClass('custom-mg-focus'); 
             }
     });
       
