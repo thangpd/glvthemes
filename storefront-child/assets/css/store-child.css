@@ -513,7 +513,7 @@ p img.update_img_ava[src^="https"]{
     transform: translateY(-50%);
     left: 10px;
     background-size: cover;
-    background-image: url(../../images/Group-4453.png);
+    background-image: url(../../images/Group\ 4453.svg);
 }
 .dropdown-content a:last-child::before{
     position: absolute;
