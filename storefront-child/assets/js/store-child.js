@@ -272,7 +272,7 @@
     $(document).ready(function(){
         console.log('tedhsgdsha');
 
-        $('img.svg').each(function(){
+        $('img').each(function(){
             var $img = $(this);
             var imgID = $img.attr('id');
             var imgClass = $img.attr('class');
