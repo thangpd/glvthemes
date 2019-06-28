@@ -268,7 +268,11 @@
         // Sub menu toggle
         
       });
-      jQuery('img.svg').each(function(){
+})(jQuery)
+
+
+$(function(){
+    jQuery('img.svg').each(function(){
         var $img = jQuery(this);
         var imgID = $img.attr('id');
         var imgClass = $img.attr('class');
@@ -301,6 +305,6 @@
         }, 'xml');
     
     });
+});
 
-})(jQuery);
 
