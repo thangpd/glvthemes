@@ -230,7 +230,7 @@
       
     $(document).ready(function(){
         $("input").focus(function(){
-                $(this).next().addClass('f-onfocus');
+                $(this).next('label').addClass('f-onfocus');
                 $(this).parents('.site-content').prev('.site-header').find('.custom-logo').addClass('img-fc'); 
                 $(this).parents('.f-bd').addClass('f-bd-focus'); 
                 $(this).parents('.custom-mg').addClass('custom-mg-focus'); 
@@ -251,7 +251,7 @@
             $(this).parents('.site-content').next('footer').show();
             $(this).parents('.woocommerce-form-login').parents('.login-register').find('#page').css('overflow', 'auto');
             if($(this).val()!=""){
-                $(this).next().addClass('f-onfocus');
+                $(this).next('label').addClass('f-onfocus');
             }else{
                 $(this).next().removeClass('f-onfocus');
                 $(this).parents('.custom-mg').removeClass('custom-mg-focus'); 
