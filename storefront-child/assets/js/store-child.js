@@ -251,6 +251,8 @@
             $(this).parents('.site-content').next('footer').show();
             $(this).parents('.login-register').find('#page').css('overflow', 'auto');
             if($(this).val()!=""){
+                
+            }else{
                 $(this).next().removeClass('f-onfocus');
             }
     });
