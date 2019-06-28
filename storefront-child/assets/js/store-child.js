@@ -239,6 +239,7 @@
                 $(this).parents('form').find('.f-login-title').hide();
                 $(this).parents('form').find('.f-lost-pass').hide();
                 $(this).parents('.site-content').next('footer').hide();
+                $(this).parents('body').css('overflow', 'hidden');
         });
         $("input").focusout(function(){
             $(this).parents('.site-content').prev('.site-header').find('.custom-logo').removeClass('img-fc'); 
@@ -247,6 +248,7 @@
             $(this).parents('form').find('.f-login-title').show();
             $(this).parents('form').find('.f-lost-pass').show();
             $(this).parents('.site-content').next('footer').show();
+            $(this).parents('body').css('overflow', 'auto');
     });
       
         // Main menu toggle
