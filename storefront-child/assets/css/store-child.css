@@ -762,7 +762,8 @@ body .storefront-breadcrumb{
            justify-content: center;
     margin-top: 110px;
 }
-.form-row #reg_phone-error{
+.form-row #reg_phone-error,
+.form-row #reg_phone_register-error{
     position: absolute;
     top: auto;
     bottom: -28px;
