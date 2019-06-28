@@ -1,12 +1,31 @@
 <?php
 use Endroid\QrCode\QrCode;
+use credglv\models\UserModel;
 
-if ($_GET['text']) {
-	$qrCode = new QrCode($_GET['text']);
+$referral       = new UserModel();
+$code = wp_get_current_user();
+$user_id = get_current_user_id();
+$code = $code->data->user_login;
+
+$query = '';
+$fullQuery = '';
+
+if ($referral->check_actived_referral($user_id)) {
+	$query = 'ref='.$code;
+	$fullQuery = $query;
 } else {
-	$data = $_GET;
-	$qrCode = new QrCode(json_encode($data));
+	$query = 'username='.$code;
+	$fullQuery = $query . '&amount=20';
 }
+
+$data = [];
+$data['Share'] = $referral->get_url_share_link();
+$data['Register'] = home_url('register') . '?'.$query;
+$data['Transfer'] = home_url('vi-dien-tu') . '?'.$fullQuery;
+$data['3DTouch'] = home_url('3dtouch'). '?'.$fullQuery;
+
+
+$qrCode = new QrCode(json_encode($data));
 $qrCode->setSize(300);
 
 // Set advanced options
@@ -20,3 +39,4 @@ $qrCode->setLogoWidth(50);
 header('Content-Type: '.$qrCode->getContentType());
 echo $qrCode->writeString();
 ?>
+
