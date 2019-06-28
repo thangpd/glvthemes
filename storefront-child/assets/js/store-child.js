@@ -239,7 +239,7 @@
                 $(this).parents('form').find('.f-login-title').hide();
                 $(this).parents('form').find('.f-lost-pass').hide();
                 $(this).parents('.site-content').next('footer').hide();
-                $(this).parents('.login-register').find('#page').css('overflow', 'hidden');
+                $(this).parents('.woocommerce-form-login').parents('.login-register').find('#page').css('overflow', 'hidden');
          
         });
         $("input").focusout(function(){
@@ -249,7 +249,7 @@
             $(this).parents('form').find('.f-login-title').show();
             $(this).parents('form').find('.f-lost-pass').show();
             $(this).parents('.site-content').next('footer').show();
-            $(this).parents('.login-register').find('#page').css('overflow', 'auto');
+            $(this).parents('.woocommerce-form-login').parents('.login-register').find('#page').css('overflow', 'auto');
             if($(this).val()!=""){
                 $(this).next().addClass('f-onfocus');
             }else{
