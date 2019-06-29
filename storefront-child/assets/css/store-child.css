@@ -966,5 +966,10 @@ body.login-register.home .site-header{
     opacity: 1;
     z-index: 1;
 }
-
+svg.menu-image{
+    position: absolute;
+    top: 0;
+    left: -55px;
+    width: 35px;
+}
 img path {fill: #ffffff!important;}
