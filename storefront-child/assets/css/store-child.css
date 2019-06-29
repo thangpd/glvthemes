@@ -368,6 +368,13 @@ button:focus {
         border: none;
         color: #1d1103;
     }
+    .alert i{
+        color: #ff3131;
+        padding-right: 15px;
+    }
+    .alert strong{
+        display: none;
+    }
     .alert-close{
         position: absolute;
         top: 0;
