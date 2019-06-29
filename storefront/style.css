@@ -1162,6 +1162,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .logged-in input[type=text],
 .logged-in input[type=url], textarea{
     padding: 10px 15px;
+    width: 100%;
 }
 
 .input-text:focus, input[type=email]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, textarea:focus ,
@@ -2622,7 +2623,7 @@ body .main-navigation ul li a:hover,
 body .main-navigation ul li:hover > a, 
 body .site-title a:hover, 
 body .site-header ul.menu li.current-menu-item > a{
-    color: #F4E27E;
+    color: #ff9d00;
 }
 
 .site .js-btn-share{
