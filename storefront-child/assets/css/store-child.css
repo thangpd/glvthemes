@@ -363,6 +363,16 @@ button:focus {
         width: 100%;
         padding: 20px;
         border-radius: 0;
+        background: #fdfdfd;
+        position: relative;
+        border: none;
+    }
+    .alert-close{
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 18px;
+        color: #909090;
     }
     .alert a.button{
         padding: 8px;
@@ -939,8 +949,14 @@ body.login-register.home .site-header{
 .col-full .woocommerce .alert{
     border-radius: 4px;
 }
-.col-full .woocommerce .alert.alert-danger{
-    border-left: 8px solid #ff3131;
+.col-full .woocommerce .alert.alert-danger::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background: #ff3131;
 }
 
 .form-btn-login{
