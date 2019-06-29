@@ -53,7 +53,7 @@
     });
 
     $('alert-close').on('click', function(){
-        $(this).parent('.alert').css('dispay', 'none');
+        $(this).parent('.alert').css('display', 'none');
     });
 
     $(document).ready(function() {
