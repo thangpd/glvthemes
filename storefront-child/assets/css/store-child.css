@@ -807,7 +807,7 @@ body .storefront-breadcrumb{
     max-height: 0;
 }
 .main-navigation.toggled .handheld-navigation{
-    height: 100vh;
+    height: calc(100vh - 115px);
     width: 100%;
     padding-left: 0px;
     left: 0;
