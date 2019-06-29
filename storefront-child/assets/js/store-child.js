@@ -229,8 +229,7 @@
     });
 
     $(document).ready(function(){
-        $('alert-close').on('click', function(){
-            alert('ted');
+        $('.alert-close').on('click', function(){
             $(this).parent('.alert').css('display', 'none');
         });
         $("input").focus(function(){
