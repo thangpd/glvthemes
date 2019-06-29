@@ -25,6 +25,7 @@ if ( ! $messages ) {
 
 ?>
 <ul class="alert alert-danger" role="alert" style="margin: 0;">
+	<i class="fa ion-close"></i>
 	<p class="alert-close">x</p>
 	<?php foreach ( $messages as $message ) : ?>
 		<?php
