@@ -52,9 +52,7 @@
         }, 100);
     });
 
-    $('alert-close').on('click', function(){
-        $(this).parent('.alert').css('display', 'none');
-    });
+  
 
     $(document).ready(function() {
         var labelRadio_1 = $('.login-register .form-row label[for="login-with-phone"]');
@@ -231,6 +229,10 @@
     });
 
     $(document).ready(function(){
+        $('alert-close').on('click', function(){
+            alert('ted');
+            $(this).parent('.alert').css('display', 'none');
+        });
         $("input").focus(function(){
                 $(this).next('label').addClass('f-onfocus');
                 $(this).parents('.site-content').prev('.site-header').find('.custom-logo').addClass('img-fc'); 
