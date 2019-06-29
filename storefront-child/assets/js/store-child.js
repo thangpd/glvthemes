@@ -52,6 +52,10 @@
         }, 100);
     });
 
+    $('alert-close').on('click', function(){
+        $(this).parent('.alert').css('dispay', 'none');
+    });
+
     $(document).ready(function() {
         var labelRadio_1 = $('.login-register .form-row label[for="login-with-phone"]');
         var labelRadio_2 = $('.login-register .form-row label[for="login-with-user"]');
@@ -269,6 +273,8 @@
         
       });
 
+
+    //   Fill image svg
     $(document).ready(function(){
         console.log('tedhsgdsha');
 
