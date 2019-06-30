@@ -470,22 +470,25 @@ p img.update_img_ava[src^="https"]{
 .myCRED-balance.mycred-balance-mycred_default, .widget .myCRED-balance{
     position: relative;
     padding-left: 65px;
-    padding-top: 15px;
 }
 .myCRED-balance.mycred-balance-mycred_default::before, 
 .widget .myCRED-balance::before{
     position: absolute;
     content: '';
-    background-image: url(../../images/gold.png);
+    background-image: url(../../images/Group-4476.svg);
     background-size: cover;
-    top: 0;
+    top: 50%;
     left: 0;
-    width: 50px;
-    height: 50px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    width: 32px;
+    height: 17px;
 }
 .myCRED-balance.mycred-balance-mycred_point::before{
-    background-image: url(../../images/wallet.png);
-
+    background-image: url(../../images/Group-4516.svg);
+    width: 28px;
+    height: 22px;
 }
 
 .dropdown {
@@ -584,6 +587,10 @@ p img.update_img_ava[src^="https"]{
 form a{
     padding: 3px 0;
 }
+.login-type{
+    position: relative;
+}
+
 .effect-onclick::before{
     position: absolute;
     content: '';
@@ -998,4 +1005,35 @@ svg.menu-image{
     left: -55px;
     width: 35px;
 }
-img path {fill: #ffffff!important;}
+.widget-my-wallet .gamma.widget-title{
+    position: relative;
+    padding-bottom: 0;
+    padding-left: 65px;
+    margin-bottom: 0;
+}
+.widget-my-wallet .gamma.widget-title::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 28px;
+    background-size: cover;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    background-image: url(../../images/Group-4482.svg);
+}
+body .widget .myCRED-balance{
+    margin: 0;
+    padding: 24px 0 24px 65px;
+}
+body .widget .myCRED-balance::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: -100%;
+    width: 300%;
+    height: 1px;
+    background: #364a67;
+}
