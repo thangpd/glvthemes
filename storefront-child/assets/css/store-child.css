@@ -938,7 +938,7 @@ button.menu-toggle.btn-click span:before{
     left: 0;
 }
 .site-header .custom-logo-link img{
-    width: 224px;
+    width: 100%;
     max-width: none;
     margin-right: auto;
     -webkit-transition: all, ease, .3s;
@@ -1036,4 +1036,7 @@ body .widget .myCRED-balance::after{
     width: 300%;
     height: 1px;
     background: #364a67;
+}
+.site-header .site-branding a{
+    width: 224px;
 }
