@@ -296,7 +296,7 @@
     $(document).ready(function(){
         console.log('tedhsgdsha');
 
-        $('img').each(function(){
+        $('a img').each(function(){
             var $img = $(this);
             var imgID = $img.attr('id');
             var imgClass = $img.attr('class');
