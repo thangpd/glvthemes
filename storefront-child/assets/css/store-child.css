@@ -915,10 +915,10 @@ button.menu-toggle.btn-click span:before{
     height: 1px;
     background:#3d4146;
 }
-.handheld-navigation ul.menu li ul.sub-menu li::after{
+.handheld-navigation ul.menu li ul.sub-menu a::after{
     position: absolute;
     content: '';
-    left: 0;
+    left: -10px;
     top: 50%;
     width: 5px;
     height: 5px;
