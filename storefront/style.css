@@ -2364,7 +2364,10 @@ nav button.menu-toggle:focus{
 
     .site-header .main-navigation ul.menu li.current-menu-item > a svg g path,
     .site-header .main-navigation ul.menu li.current-menu-item > a svg g line,
-    .site-header .main-navigation ul.menu li.current-menu-item > a svg g rect{
+    .site-header .main-navigation ul.menu li.current-menu-item > a svg g rect,
+    body .main-navigation ul li a:hover svg g path,
+    body .main-navigation ul li a:hover svg g line,
+    body .main-navigation ul li a:hover svg g rect{
         stroke: #ff9d00;
     }
     .site-header .col-full{
