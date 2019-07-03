@@ -48,7 +48,6 @@
         $(this).addClass('effect-onclick');
         setTimeout(function() {
             $('form a').removeClass('effect-onclick');
-            console.log('test');
         }, 100);
     });
 
@@ -233,8 +232,19 @@
         $('.alert-close').on('click', function(){
             $(this).parent('.alert').css('display', 'none');
         });
+        $(window).on('load', function () {
+            
+            if($("input").val()!=""){
+                console.log('tedt');
+                $("input").next('.f-label').addClass('f-onfocus');
+                
+            }
+         });
+      
         $("input").focus(function(){
-                $(this).next('label').addClass('f-onfocus');
+                $(this).next('.f-label').addClass('f-onfocus');
+                $(this).parents('.site-content').find('.col-full >.woocommerce').addClass('woocommerce-fc');
+                $(this).parents('.f-bd').find('.f-label').addClass('f-onfocus');
                 $(this).parents('.site-content').prev('.site-header').find('.custom-logo').addClass('img-fc'); 
                 $(this).parents('.f-bd').addClass('f-bd-focus'); 
                 $(this).parents('.custom-mg').addClass('custom-mg-focus'); 
@@ -244,9 +254,14 @@
                 $(this).parents('form').find('.f-lost-pass').hide();
                 $(this).parents('.site-content').next('footer').hide();
                 $(this).parents('.woocommerce-form-login').parents('.login-register').find('#page').css('overflow', 'hidden');
+                if($(this).hasClass('width80')){
+                    console.log('hdg');
+                    $(this).next('.f-label').addClass('f-onfocus');
+                }
          
         });
         $("input").focusout(function(){
+            $(this).parents('.site-content').find('.col-full >.woocommerce').removeClass('woocommerce-fc');
             $(this).parents('.site-content').prev('.site-header').find('.custom-logo').removeClass('img-fc'); 
             $(this).parents('.phone_login').removeClass('phone_login-fc');
             $(this).parents('.myaccount-login-page').removeClass('myaccount-login-page-fc');
@@ -255,9 +270,9 @@
             $(this).parents('.site-content').next('footer').show();
             $(this).parents('.woocommerce-form-login').parents('.login-register').find('#page').css('overflow', 'auto');
             if($(this).val()!=""){
-                $(this).next('label').addClass('f-onfocus');
+                $(this).next('.f-label').addClass('f-onfocus');
             }else{
-                $(this).next().removeClass('f-onfocus');
+                $(this).next('.f-label').removeClass('f-onfocus');
                 $(this).parents('.custom-mg').removeClass('custom-mg-focus'); 
             }
     });
@@ -271,7 +286,8 @@
             $('.main-navigation').removeClass('toggled');
             $('body').css('overflow', 'auto');
         });
-        // Sub menu toggle
+        
+
         
       });
 

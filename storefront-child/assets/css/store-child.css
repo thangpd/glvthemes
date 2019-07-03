@@ -788,7 +788,9 @@ body .storefront-breadcrumb{
     margin-top: 110px;
 }
 .form-row #reg_phone-error,
-.form-row #reg_phone_register-error{
+.form-row #reg_phone_register-error,
+.form-row #reg_username-error,
+.form-row #reg_email-error{
     position: absolute;
     top: auto;
     bottom: -28px;
@@ -960,6 +962,9 @@ body.login-register.home .site-header{
     top: 50px;
     left: 0;
 
+}
+.col-full >.woocommerce.woocommerce-fc{
+    top: 0;
 }
 .col-full .woocommerce .alert{
     border-radius: 4px;
