@@ -202,6 +202,7 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
         	?>
         <div class="btn-share dropdown">
             <a href="javascript:void(0)" class="js-btn-share"><i class="flaticon-share"></i></a>
+			<a href="javascript:void(0)" class="js-btn-share"><img src="../assets/images/logo-qrcode.png" ></a>
              <div id="myDropdown" class="dropdown-content">
 			    <a href="javascript:showCustomAndroidShare('<?= $share_link ?>')">Member share</a>
 			    <a href="javascript:showCustomAndroidShare('<?= $share_link_custom ?>')">Customer share</a>

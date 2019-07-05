@@ -640,7 +640,7 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
 				'my-account'        => array(
 					'priority' => 10,
 					'callback' => 'storefront_handheld_footer_bar_account_link',
-					'content'  => '<img src="Group-4399.svg" />',
+					'content'  => '<img src="blog-gird-42-2.jpg" />',
 				),
 				'flaticon-transfer' => array(
 					'priority' => 20,
@@ -675,6 +675,7 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
 					<?php foreach ( $links as $key => $link ) : ?>
                         <li class="<?php echo esc_attr( $key ); ?>">
 							<?php echo $link['content'] ?>
+							
 							<?php
 							if ( $link['callback'] ) {
 								call_user_func( $link['callback'], $key, $link );
