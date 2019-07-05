@@ -232,14 +232,7 @@
         $('.alert-close').on('click', function(){
             $(this).parent('.alert').css('display', 'none');
         });
-        $(window).on('load', function () {
-            
-            if($("input").val()!=""){
-                console.log('tedt');
-                $("input").next('.f-label').addClass('f-onfocus');
-                
-            }
-         });
+      
       
         $("input").focus(function(){
                 $(this).next('.f-label').addClass('f-onfocus');
@@ -255,7 +248,6 @@
                 $(this).parents('.site-content').next('footer').hide();
                 $(this).parents('.woocommerce-form-login').parents('.login-register').find('#page').css('overflow', 'hidden');
                 if($(this).hasClass('width80')){
-                    console.log('hdg');
                     $(this).next('.f-label').addClass('f-onfocus');
                 }
          
@@ -294,14 +286,12 @@
 
     //   Fill image svg
     $(document).ready(function(){
-        console.log('tedhsgdsha');
 
         $('a img').each(function(){
             var $img = $(this);
             var imgID = $img.attr('id');
             var imgClass = $img.attr('class');
             var imgURL = $img.attr('src');
-            console.log('tedhsgdsha');
             jQuery.get(imgURL, function(data) {
                 // Get the SVG tag, ignore the rest
                 var $svg = jQuery(data).find('svg');
@@ -331,7 +321,13 @@
         
         });
     });
-     
+    $(window).on('load', function () {
+        if($("input.input-number-mobile").val()!=""){
+            console.log("input");
+            $("input").next('.f-label').addClass('f-onfocus');
+            
+        }
+     });
 })(jQuery)
 
 
