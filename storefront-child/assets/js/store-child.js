@@ -323,7 +323,6 @@
     });
     $(window).on('load', function () {
         if($("input.input-number-mobile").val()!=""){
-            console.log("input");
             $("input").next('.f-label').addClass('f-onfocus');
             
         }
