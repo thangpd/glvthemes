@@ -1423,7 +1423,7 @@ nav button.menu-toggle:focus{
 
 .handheld-navigation ul.menu li {
     position: relative;
-    padding: 10px 30px 10px 90px;
+    padding: 10px 0 10px 90px;
     border-bottom: 1px solid #364a67;
 }
 
