@@ -712,6 +712,7 @@ body .storefront-breadcrumb{
 .f-p-focus{
     position: relative !important;
     margin-bottom: 50px;
+    color: #43454b;
 }
 .input-number-mobile.r-mb{
     background: transparent !important;
@@ -1103,6 +1104,70 @@ body .storefront-handheld-footer-bar ul.columns-5{
 .svg-click line,
 .svg-click circle{
     stroke: #ff9d00 !important;
+}
+.list_countrycode .digit_cs-list [data-country]{
+    padding: 12px 10px;
+}
+.list_countrycode .digit_cs-list [data-country]::before{
+        content: '';
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 15px;
+        margin-right: 7px;
+        height: 13px;
+        vertical-align: middle;
+}
+.list_countrycode .digit_cs-list [data-country="vietnam"]::before{
+    background-image: url('../../images/vietnam.png');
+    
+}
+.list_countrycode .digit_cs-list [data-value="+60"]::before{
+    background-image: url('../../images/003-malaysia.png');
+    
+}
+.list_countrycode .digit_cs-list [data-value="+65"]::before{
+    background-image: url('../../images/001-singapore.png');
+    
+}
+.list_countrycode .digit_cs-list [data-value="+852"]::before{
+    background-image: url('../../images/002-hong-kong.png');
+    
+}
+.list_countrycode .woocommerce-phone-countrycode{
+    padding: 24px 10px 24px 30px;
+
+}
+
+.list_countrycode .flag{
+    content: '';
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 19px;
+    margin-right: 5px;
+    height: 15px;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+
+}
+
+.list_countrycode > input[placeholder="+84"] + .flag,
+.list_countrycode > input[value="+84"] + .flag{
+    background-image: url('../../images/vietnam.png');
+}
+.list_countrycode > input[placeholder="+60"] + .flag,
+.list_countrycode > input[value="+60"] + .flag{
+    background-image: url('../../images/003-malaysia.png');
+}
+.list_countrycode > input[placeholder="+65"] + .flag,
+.list_countrycode > input[value="+65"] + .flag{
+    background-image: url('../../images/001-singapore.png');
+}
+.list_countrycode > input[placeholder="+852"] + .flag,
+.list_countrycode > input[value="+852"] + .flag{
+    background-image: url('../../images/002-hong-kong.png');
 }
 .widget-area .widget.widget-my-cred-transfer .gamma.widget-title {
     position: relative;
