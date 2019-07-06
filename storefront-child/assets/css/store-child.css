@@ -810,6 +810,12 @@ form.lost_reset_password{
 .logged-in input.rc:focus{
     border: 2px solid #ff9d00;
 }
+form.mycred-transfer-form{
+    margin-top: 40px;
+}
+.pin{
+    margin-bottom: 0;
+}
 .site-header .col-full{
     height: 100%;
 }
