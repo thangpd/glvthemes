@@ -1161,7 +1161,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .logged-in input[type=tel],
 .logged-in input[type=text],
 .logged-in input[type=url], textarea{
-    padding: 10px 15px;
+    padding: 13px 20px;
     width: 100%;
 }
 

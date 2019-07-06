@@ -804,6 +804,12 @@ body .storefront-breadcrumb{
 form.lost_reset_password{
     margin-top: 40px;
 }
+.logged-in input.rc{
+    font-weight: normal;
+}
+.logged-in input.rc:focus{
+    border: 2px solid #ff9d00;
+}
 .site-header .col-full{
     height: 100%;
 }
