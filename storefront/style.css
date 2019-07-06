@@ -2311,6 +2311,7 @@ nav button.menu-toggle:focus{
     .site-header .site-branding a{
         padding: 10px 5px;
         margin: 0 auto;
+        width: 100%;
     }
     .site-header.fixed {
         top:0;
