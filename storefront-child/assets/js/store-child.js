@@ -241,7 +241,7 @@
             }
             else{
                 $(this).next('.f-label').removeClass('f-onfocus');
-                $(this).closest('.row').css('margin-top', -15);
+                $(this).closest('.row').css('margin-top', -20);
             }
             $(this).focus(function(){
                 var content = $(this).val();
@@ -254,7 +254,7 @@
                 var content = $(this).val();
                 if(content==''){
                     $(this).next('.f-label').removeClass('f-onfocus');
-                    $(this).closest('.row').css('margin-top', -15);
+                    $(this).closest('.row').css('margin-top', -20);
                 }
                 else{
                     $(this).closest('.row').css('margin-top', 0);
