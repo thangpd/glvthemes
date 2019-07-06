@@ -292,11 +292,9 @@
         // Onclick menu bottom
         $('.columns-5 li a').click(function(){
             $(this).parent('li').find('svg').addClass('svg-click');
-            console.log('test');
         });
         $('.btn-share a').click(function(){
-            $(this).find('svg').addClass('svg-click');
-            console.log('test');
+            $(this).find('svg').toggleClass('svg-click');
         });
         
       });
