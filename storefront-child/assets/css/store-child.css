@@ -715,7 +715,7 @@ body .storefront-breadcrumb{
 }
 .f-p-focus{
     position: relative !important;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     color: #43454b;
 }
 .input-number-mobile.r-mb{
@@ -731,7 +731,7 @@ body .storefront-breadcrumb{
     color: #333333 !important;
     transform: translateY(-50%);
     transition: 0.3s all ease;
-    z-index: 999;
+    z-index: 100;
 }
 
 .f-onfocus{
