@@ -1076,3 +1076,17 @@ body .widget .myCRED-balance::after{
 .site .js-btn-share.btn-and svg line{
     stroke: #7e8b9f;
 }
+body .storefront-handheld-footer-bar ul.columns-5{
+    display: flex;
+}
+.logged-in .storefront-handheld-footer-bar ul li > a{
+    background: transparent;
+}
+.storefront-handheld-footer-bar ul li svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 998;
+    display: block;
+    transform: translate(-50%, -50%);
+}

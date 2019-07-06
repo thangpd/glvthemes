@@ -637,24 +637,24 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
 		if ( is_user_logged_in() ) {
 
 			$links = array(
-				'my-account'        => array(
+				'column-my-account'        => array(
 					'priority' => 10,
 					'callback' => 'storefront_handheld_footer_bar_account_link',
-					'content'  => '<img src="<?php get_stylesheet_directory_uri(); ?>/blog-gird-42-2.jpg" />',
+					'content'  => '<img src="'. get_stylesheet_directory_uri() .'/images/user.svg" />',
 				),
-				'flaticon-transfer' => array(
+				'column-transfer' => array(
 					'priority' => 20,
 					'callback' => 'storefront_handheld_footer_bar_transfer',
 				),
-				'flaticon-document' => array(
+				'column-document' => array(
 					'priority' => 30,
 					'callback' => 'storefront_handheld_footer_bar_document',
 				),
-				'flaticon-shop'     => array(
+				'column-shop'     => array(
 					'priority' => 40,
 					'callback' => 'storefront_handheld_footer_bar_shop_link',
 				),
-				'cart'              => array(
+				'column-cart'              => array(
 					'priority' => 50,
 					'callback' => 'storefront_handheld_footer_bar_cart_link',
 				),
@@ -674,11 +674,12 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
                 <ul class="columns-<?php echo count( $links ); ?>">
 					<?php foreach ( $links as $key => $link ) : ?>
                         <li class="<?php echo esc_attr( $key ); ?>">
-							<?php echo $link['content'] ?>
+							
 							
 							<?php
 							if ( $link['callback'] ) {
-								call_user_func( $link['callback'], $key, $link );
+								call_user_func( $link['callback'] );
+								echo $link['content'];
 							}
 							?>
                         </li>

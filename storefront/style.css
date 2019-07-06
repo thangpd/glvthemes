@@ -2601,7 +2601,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .storefront-handheld-footer-bar, 
 .storefront-handheld-footer-bar ul li.search .site-search, 
 button.menu-toggle:hover,
-.storefront-handheld-footer-bar ul li > a, 
 .logged-in .site-header{
     background: #223652 !important;
 } 
@@ -2625,6 +2624,8 @@ body .handheld-navigation .dropdown-toggle{
 
 body .storefront-handheld-footer-bar ul.columns-5 li{
     color: #ffffff;
+    float: none;
+    position: relative;
 }
 
 body .site-footer .storefront-handheld-footer-bar a:not(.button):focus,
