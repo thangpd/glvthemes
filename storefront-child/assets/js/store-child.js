@@ -233,15 +233,45 @@
             }
         }
     });
+    function emptyInputTest (){
+        $('input').each(function(){
+            var content = $(this).val();
+            if(content!=''){
+                $(this).next('.f-label').addClass('f-onfocus');
+            }
+            else{
+                $(this).next('.f-label').removeClass('f-onfocus');
+                // $(this).closest('.row').css('margin-top', -15);
+            }
+            $(this).focus(function(){
+                var content = $(this).val();
+                if(content==''){
+                    // $(this).closest('.row').css('margin-top', 0);
+                    $(this).next('.f-label').addClass('f-onfocus');
+                }
+            })
+            $(this).focusout(function(){
+                var content = $(this).val();
+                if(content==''){
+                    $(this).next('.f-label').removeClass('f-onfocus');
+                    // $(this).closest('.row').css('margin-top', -15);
+                }
+                else{
+                    // $(this).closest('.row').css('margin-top', 0);
+                    $(this).next('.f-label').addClass('f-onfocus');
 
+                }
+            })
+        })
+    }
     $(document).ready(function(){
         $('.alert-close').on('click', function(){
             $(this).parent('.alert').css('display', 'none');
         });
-      
+        
       
         $("input").focus(function(){
-                $(this).next('.f-label').addClass('f-onfocus');
+                // $(this).next('.f-label').addClass('f-onfocus');
                 $(this).parents('.site-content').find('.col-full >.woocommerce').addClass('woocommerce-fc');
                 $(this).parents('.f-bd').find('.f-label').addClass('f-onfocus');
                 $(this).parents('.site-content').prev('.site-header').find('.custom-logo').addClass('img-fc'); 
@@ -269,14 +299,14 @@
             $(this).parents('.woocommerce-form-login').parents('.login-register').find('#page').css('overflow', 'auto');
             // $(this).next('.error').parent('.rg').css('margin-top', '40px');
             if($(this).val()!=""){
-                $(this).next('.f-label').addClass('f-onfocus');
+                // $(this).next('.f-label').addClass('f-onfocus');
             }else{
-                $(this).next('.f-label').removeClass('f-onfocus');
+                // $(this).next('.f-label').removeClass('f-onfocus');
                 $(this).parents('.custom-mg').removeClass('custom-mg-focus'); 
             }
-            if($(this).val() == ""){
-                $(this).next('label').next('.f-label').removeClass('f-onfocus');
-            }
+            // if($(this).val() == ""){
+            //     $(this).next('label').next('.f-label').removeClass('f-onfocus');
+            // }
     });
       
         // Main menu toggle
@@ -310,7 +340,7 @@
                 if(typeof imgID !== 'undefined') {
                     $svg = $svg.attr('id', imgID);
                 }
-                console.log('shbbduyg');
+                // console.log('shbbduyg');
                 // Add replaced image's classes to the new SVG
                 if(typeof imgClass !== 'undefined') {
                     $svg = $svg.attr('class', imgClass+' replaced-svg');
@@ -344,7 +374,7 @@
                 if(typeof imgID !== 'undefined') {
                     $svg = $svg.attr('id', imgID);
                 }
-                console.log('shbbduyg');
+                // console.log('shbbduyg');
                 // Add replaced image's classes to the new SVG
                 if(typeof imgClass !== 'undefined') {
                     $svg = $svg.attr('class', imgClass+' replaced-svg');
@@ -377,13 +407,15 @@
         } else {
             $('.btn-ios').css('display', 'none');
         };
+        emptyInputTest();
+
         });
-    $(window).on('load', function () {
-        if($("input.input-number-mobile").val()!=""){
-            $("input").next('.f-label').addClass('f-onfocus');
+    // $(window).on('load', function () {
+    //     if($("input.input-number-mobile").val()!=""){
+    //         $("input").next('.f-label').addClass('f-onfocus');
             
-        }
-     });
+    //     }
+    //  });
 })(jQuery)
 
 
