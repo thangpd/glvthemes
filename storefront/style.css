@@ -62,7 +62,7 @@ body {
   }
 
 body.login-register {
-    background-image: url('assets/images/common/background.jpg');
+    background-image: url('assets/images/common/BG.jpg');
     background-size: cover;
     height: 100%;
 }
