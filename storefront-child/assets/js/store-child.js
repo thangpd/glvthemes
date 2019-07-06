@@ -241,12 +241,12 @@
             }
             else{
                 $(this).next('.f-label').removeClass('f-onfocus');
-                // $(this).closest('.row').css('margin-top', -15);
+                $(this).closest('.row').css('margin-top', -15);
             }
             $(this).focus(function(){
                 var content = $(this).val();
                 if(content==''){
-                    // $(this).closest('.row').css('margin-top', 0);
+                    $(this).closest('.row').css('margin-top', 0);
                     $(this).next('.f-label').addClass('f-onfocus');
                 }
             })
@@ -254,10 +254,10 @@
                 var content = $(this).val();
                 if(content==''){
                     $(this).next('.f-label').removeClass('f-onfocus');
-                    // $(this).closest('.row').css('margin-top', -15);
+                    $(this).closest('.row').css('margin-top', -15);
                 }
                 else{
-                    // $(this).closest('.row').css('margin-top', 0);
+                    $(this).closest('.row').css('margin-top', 0);
                     $(this).next('.f-label').addClass('f-onfocus');
 
                 }
