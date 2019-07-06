@@ -851,7 +851,8 @@ form.mycred-transfer-form{
 .main-navigation.toggled .handheld-navigation ul.menu{
     max-height: 9999px;
     overflow: auto;
-    height: calc(100vh - 115px);
+    height: 100px;
+    padding-bottom: 150px;
 }
 .handheld-navigation ul.menu li a{
     font-size: 18px;
