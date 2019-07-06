@@ -814,6 +814,9 @@ form.lost_reset_password{
 form.mycred-transfer-form{
     margin-top: 40px;
 }
+form.mycred-transfer-form > .row{
+    transition: 0.3s all ease-in-out;
+}
 .pin{
     margin-bottom: 0;
 }
