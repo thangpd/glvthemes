@@ -25,7 +25,11 @@ h1.entry-title {
 .myaccount-login-page .form-row-wide:first-child {
     margin-bottom: 0;
 }
-.phone_login,
+.phone_login{
+    padding-bottom: 0;
+    height: auto;
+    margin-top: 20vh;
+}
 .myaccount-login-page {
     padding-bottom: 0;
     height: 170px;
@@ -801,7 +805,7 @@ body .storefront-breadcrumb{
     margin: 40px 0 30px;
 }
 .form-row .woocommerce-phone-countrycode{
-    width: 70px;
+    width: 80px;
 }
 form.lost_reset_password{
     margin-top: 40px;
