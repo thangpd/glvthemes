@@ -652,6 +652,7 @@ body {
     <div class="section section-select">
         <div class="wrapper">
             <div class="select">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Group-255.png">
                 <h1 class="title-select">Select<br/> Your Region</h1>
                     <select class="js-select2" id="type">
                         <!-- <option>Select A</option>
