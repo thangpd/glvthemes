@@ -1090,3 +1090,6 @@ body .storefront-handheld-footer-bar ul.columns-5{
     display: block;
     transform: translate(-50%, -50%);
 }
+.storefront-handheld-footer-bar ul li.column-cart>a {
+    text-indent: unset;
+}

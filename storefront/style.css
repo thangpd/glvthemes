@@ -2654,11 +2654,19 @@ body .site-header ul.menu li.current-menu-item > a{
     color:#ff9d00;
 }
 
-body .storefront-handheld-footer-bar ul li.cart .count{
+body .storefront-handheld-footer-bar ul li.column-cart .count{
     background-color: #ffffff;
-    color: #000;
-    border-color: #ffffff;
-    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    border-radius: 50%;
+    line-height: 18px;
+    color: #ff9d00;
+    font-weight: 800;
 }
 
 body a:focus{

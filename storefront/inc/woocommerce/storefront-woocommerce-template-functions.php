@@ -645,18 +645,22 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
 				'column-transfer' => array(
 					'priority' => 20,
 					'callback' => 'storefront_handheld_footer_bar_transfer',
+					'content'  => '<img src="'. get_stylesheet_directory_uri() .'/images/transfer.svg" />',
 				),
 				'column-document' => array(
 					'priority' => 30,
 					'callback' => 'storefront_handheld_footer_bar_document',
+					'content'  => '<img src="'. get_stylesheet_directory_uri() .'/images/mail.svg" />',
 				),
 				'column-shop'     => array(
 					'priority' => 40,
 					'callback' => 'storefront_handheld_footer_bar_shop_link',
+					'content'  => '<img src="'. get_stylesheet_directory_uri() .'/images/house.svg" />',
 				),
 				'column-cart'              => array(
 					'priority' => 50,
 					'callback' => 'storefront_handheld_footer_bar_cart_link',
+					'content'  => '<img src="'. get_stylesheet_directory_uri() .'/images/cart.svg" />',
 				),
 			);
 
