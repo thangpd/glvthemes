@@ -58,7 +58,7 @@ body {
     position: relative;
     /* position: fixed; */
     width: 100%;
-    background-image: url('assets/images/common/background.jpg');
+    background-image: url('assets/images/common/BG.jpg');
   }
 
 body.login-register {
@@ -1423,7 +1423,7 @@ nav button.menu-toggle:focus{
 
 .handheld-navigation ul.menu li {
     position: relative;
-    padding: 10px 30px 10px 90px;
+    padding: 10px 0 10px 90px;
     border-bottom: 1px solid #364a67;
 }
 
@@ -2601,7 +2601,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .storefront-handheld-footer-bar, 
 .storefront-handheld-footer-bar ul li.search .site-search, 
 button.menu-toggle:hover,
-.storefront-handheld-footer-bar ul li > a, 
 .logged-in .site-header{
     background: #223652 !important;
 } 
@@ -2625,6 +2624,8 @@ body .handheld-navigation .dropdown-toggle{
 
 body .storefront-handheld-footer-bar ul.columns-5 li{
     color: #ffffff;
+    float: none;
+    position: relative;
 }
 
 body .site-footer .storefront-handheld-footer-bar a:not(.button):focus,
@@ -2653,11 +2654,19 @@ body .site-header ul.menu li.current-menu-item > a{
     color:#ff9d00;
 }
 
-body .storefront-handheld-footer-bar ul li.cart .count{
+body .storefront-handheld-footer-bar ul li.column-cart .count{
     background-color: #ffffff;
-    color: #000;
-    border-color: #ffffff;
-    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    border-radius: 50%;
+    line-height: 18px;
+    color: #ff9d00;
+    font-weight: 800;
 }
 
 body a:focus{

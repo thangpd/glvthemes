@@ -852,7 +852,8 @@ form.mycred-transfer-form{
 .main-navigation.toggled .handheld-navigation ul.menu{
     max-height: 9999px;
     overflow: auto;
-    height: calc(100vh - 60px);
+    height: 100vh;
+    padding-bottom: 150px;
 }
 .handheld-navigation ul.menu li a{
     font-size: 18px;
@@ -932,7 +933,6 @@ button.menu-toggle.btn-click span:before{
 .handheld-navigation ul.menu li ul.sub-menu li{
     position: relative;
     overflow: inherit;
-    padding-left: 10px;
 }
 .handheld-navigation ul.menu li ul.sub-menu li::before{
     position: absolute;
@@ -1072,4 +1072,25 @@ body .widget .myCRED-balance::after{
 }
 .site-header .site-branding a{
     width: 224px;
+}
+.site .js-btn-share.btn-and svg path,
+.site .js-btn-share.btn-and svg line{
+    stroke: #7e8b9f;
+}
+body .storefront-handheld-footer-bar ul.columns-5{
+    display: flex;
+}
+.logged-in .storefront-handheld-footer-bar ul li > a{
+    background: transparent;
+}
+.storefront-handheld-footer-bar ul li svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 998;
+    display: block;
+    transform: translate(-50%, -50%);
+}
+.storefront-handheld-footer-bar ul li.column-cart>a {
+    text-indent: unset;
 }
