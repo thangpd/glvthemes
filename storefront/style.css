@@ -2324,7 +2324,7 @@ nav button.menu-toggle:focus{
     }
  
     .main-navigation ul li a{
-        padding: .3em 0;
+        padding: 5px 0;
     }
      .woocommerce-active .col-full .site-branding{
         float: none;
