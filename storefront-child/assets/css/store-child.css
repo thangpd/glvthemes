@@ -1169,3 +1169,69 @@ body .storefront-handheld-footer-bar ul.columns-5{
 .list_countrycode > input[value="+852"] + .flag{
     background-image: url('../../images/002-hong-kong.png');
 }
+.widget-area .widget.widget-my-cred-transfer .gamma.widget-title {
+    position: relative;
+    padding-bottom: 0;
+    padding-left: 65px;
+}
+.widget-area .widget.widget-my-cred-transfer .gamma.widget-title::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 33px;
+    height: 23px;
+    background-image: url(../../images/transfer-gold.png);
+
+}
+.custom-logo-link{
+    position: relative;
+    height: 100%;
+}
+.site-header .site-branding .custom-logo-link-scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-logo-link-scroll img{
+    display: none;
+}
+.custom-logo-link h6{
+    display: none;
+}
+.custom-logo-link-scroll h6{
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.35px;
+    text-align: left;
+    color: #7e8b9f;
+    margin-bottom: 0;
+    padding-left: 5px;
+}
+.site-header .site-branding .custom-logo-link>a{
+    display: none;
+}
+.site-header .site-branding .custom-logo-link-scroll>a{
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    padding-right: 5px;
+}
+.site-header .site-branding .custom-logo-link-scroll>a::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url(../../images/Group-255.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}

@@ -36,12 +36,24 @@
         });
     }
 
+    // Scroll header
+    var title_main = "<h6></h6>";
+    var logo_scroll = "<a></a>";
+    $('.site-header').find('.custom-logo-link').append(logo_scroll);
+    $('.site-header').find('.custom-logo-link').append(title_main);
+    var htmlString = $( 'h1' ).html();
+    $('h6').text( htmlString );
     $(window).scroll(function() {
         if ($(this).scrollTop() >= 80) {
             $('.site-header').addClass('fixed');
+            $('.site-header').find('.custom-logo-link').addClass('custom-logo-link-scroll');
+           
+            
         } else {
             $('.site-header').removeClass('fixed');
+            $('.site-header').find('.custom-logo-link').removeClass('custom-logo-link-scroll');
         }
+
     });
 
     $('form a:not(.login-type)').on('click', function() {
@@ -57,7 +69,6 @@
             $('.form-row .login-type> span.login-type').removeClass('effect-onclick');
         }, 200);
     });
-
   
 
     $(document).ready(function() {
@@ -322,11 +333,9 @@
         // Onclick menu bottom
         $('.columns-5 li a').click(function(){
             $(this).parent('li').find('svg').addClass('svg-click');
-            console.log('test');
         });
         $('.btn-share a').click(function(){
-            $(this).find('svg').addClass('svg-click');
-            console.log('test');
+            $(this).find('svg').toggleClass('svg-click');
         });
         
       });

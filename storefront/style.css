@@ -2310,6 +2310,7 @@ nav button.menu-toggle:focus{
 @media (max-width: 767px){
     .site-header .site-branding a{
         padding: 10px 5px;
+        margin: 0 auto;
     }
     .site-header.fixed {
         top:0;
@@ -2338,6 +2339,7 @@ nav button.menu-toggle:focus{
         -webkit-transform: translateX(-50%);
        -ms-transform: translateX(-50%);
            transform: translateX(-50%);
+        height: 100%;
     }
     .logged-in .site-header .custom-logo-link img{
         margin: 0 auto;
