@@ -44,13 +44,19 @@
         }
     });
 
-    $('form a').on('click', function() {
+    $('form a:not(.login-type)').on('click', function() {
         $(this).addClass('effect-onclick');
         setTimeout(function() {
             $('form a').removeClass('effect-onclick');
         }, 100);
     });
-
+    $('.form-row .login-type> span.login-type-1, .form-row .login-type> span.login-type').on('click', function(){
+        $(this).addClass('effect-onclick');
+        setTimeout(function() {
+            $('.form-row .login-type> span.login-type-1').removeClass('effect-onclick');
+            $('.form-row .login-type> span.login-type').removeClass('effect-onclick');
+        }, 200);
+    });
 
   
 
@@ -243,7 +249,7 @@
                 $(this).parents('.custom-mg').addClass('custom-mg-focus'); 
                 $(this).parents('.phone_login').addClass('phone_login-fc');
                 $(this).parents('.myaccount-login-page').addClass('myaccount-login-page-fc');
-                $(this).parents('form').find('.f-login-title').hide();
+                // $(this).parents('form').find('.f-login-title').hide();
                 $(this).parents('form').find('.f-lost-pass').hide();
                 $(this).parents('.site-content').next('footer').hide();
                 $(this).parents('.woocommerce-form-login').parents('.login-register').find('#page').css('overflow', 'hidden');
@@ -257,7 +263,7 @@
             $(this).parents('.site-content').prev('.site-header').find('.custom-logo').removeClass('img-fc'); 
             $(this).parents('.phone_login').removeClass('phone_login-fc');
             $(this).parents('.myaccount-login-page').removeClass('myaccount-login-page-fc');
-            $(this).parents('form').find('.f-login-title').show();
+            // $(this).parents('form').find('.f-login-title').show();
             $(this).parents('form').find('.f-lost-pass').show();
             $(this).parents('.site-content').next('footer').show();
             $(this).parents('.woocommerce-form-login').parents('.login-register').find('#page').css('overflow', 'auto');
