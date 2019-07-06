@@ -475,6 +475,17 @@ p img.update_img_ava[src^="https"]{
     position: relative;
     padding-left: 65px;
 }
+.myCRED-balance,
+.myCRED-balance > span{
+    color: #7e8b9f;
+}
+.myCRED-balance > span + span{
+    font-weight: bold;
+    color: #ffffff;
+}
+.myCRED-balance > span + span a{
+    display: inline-block;
+}
 .myCRED-balance.mycred-balance-mycred_default::before, 
 .widget .myCRED-balance::before{
     position: absolute;
@@ -1238,4 +1249,7 @@ body .storefront-handheld-footer-bar ul.columns-5{
     width: 40px;
     height: 40px;
     background-size: cover;
+}
+.woocommerce .wc-proceed-to-checkout .button.checkout-button{
+    font-size: 16px;
 }
