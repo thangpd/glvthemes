@@ -1097,3 +1097,10 @@ body .storefront-handheld-footer-bar ul.columns-5{
 .storefront-handheld-footer-bar ul li.column-cart>a {
     text-indent: unset;
 }
+.svg-click path,
+.svg-click ellipse,
+.svg-click rect,
+.svg-click line,
+.svg-click circle{
+    stroke: #ff9d00 !important;
+}

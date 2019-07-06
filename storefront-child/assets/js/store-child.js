@@ -319,13 +319,21 @@
             $('body').css('overflow', 'auto');
         });
         
-
+        // Onclick menu bottom
+        $('.columns-5 li a').click(function(){
+            $(this).parent('li').find('svg').addClass('svg-click');
+            console.log('test');
+        });
+        $('.btn-share a').click(function(){
+            $(this).find('svg').addClass('svg-click');
+            console.log('test');
+        });
         
       });
 
 
-    //   Fill image svg
-    $(document).ready(function(){
+        //   Fill image svg
+        $(document).ready(function(){
 
         $('a img').each(function(){
             var $img = $(this);
@@ -394,10 +402,11 @@
             }, 'xml');
         
         });
+
+        // Show icon share in android/ios
         var userAgent = window.navigator.userAgent.toLowerCase(),
         safari = /safari/.test( userAgent ),
         ios = /iphone|ipod|ipad/.test( userAgent );
-        
         if( ios ) {
             if ( safari ) {
                 $('.btn-and').css('display', 'none');
