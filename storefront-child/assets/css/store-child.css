@@ -589,6 +589,7 @@ form a{
 }
 .login-type{
     position: relative;
+    display: inline;
 }
 
 .effect-onclick::before{
