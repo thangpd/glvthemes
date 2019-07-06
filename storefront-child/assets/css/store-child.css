@@ -932,7 +932,6 @@ button.menu-toggle.btn-click span:before{
 .handheld-navigation ul.menu li ul.sub-menu li{
     position: relative;
     overflow: inherit;
-    padding-left: 10px;
 }
 .handheld-navigation ul.menu li ul.sub-menu li::before{
     position: absolute;

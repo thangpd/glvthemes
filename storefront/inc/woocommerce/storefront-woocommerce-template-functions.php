@@ -640,7 +640,7 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
 				'my-account'        => array(
 					'priority' => 10,
 					'callback' => 'storefront_handheld_footer_bar_account_link',
-					'content'  => '<img src="blog-gird-42-2.jpg" />',
+					'content'  => '<img src="<?php get_stylesheet_directory_uri(); ?>/blog-gird-42-2.jpg" />',
 				),
 				'flaticon-transfer' => array(
 					'priority' => 20,
