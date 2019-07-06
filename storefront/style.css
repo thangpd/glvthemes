@@ -62,7 +62,7 @@ body {
   }
 
 body.login-register {
-    background-image: url('assets/images/common/background.jpg');
+    background-image: url('assets/images/common/BG.jpg');
     background-size: cover;
     height: 100%;
 }
@@ -2311,6 +2311,7 @@ nav button.menu-toggle:focus{
     .site-header .site-branding a{
         padding: 10px 5px;
         margin: 0 auto;
+        width: 100%;
     }
     .site-header.fixed {
         top:0;
@@ -2324,7 +2325,7 @@ nav button.menu-toggle:focus{
     }
  
     .main-navigation ul li a{
-        padding: .3em 0;
+        padding: 5px 0;
     }
      .woocommerce-active .col-full .site-branding{
         float: none;
