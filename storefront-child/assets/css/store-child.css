@@ -801,6 +801,9 @@ body .storefront-breadcrumb{
 .form-row .woocommerce-phone-countrycode{
     width: 70px;
 }
+form.lost_reset_password{
+    margin-top: 40px;
+}
 .site-header .col-full{
     height: 100%;
 }
