@@ -671,7 +671,7 @@ body input[type=submit].loading::after{
     border: none;
     background: #fffef2;
     border: 2px solid #fffef2;
-    padding: 13px 20px;
+    padding: 13px 18px;
 }
 
 .mycred-transfer-cred-wrapper .select-amount-wrapper input[type="number"]::placeholder{
@@ -815,6 +815,9 @@ form.mycred-transfer-form{
 }
 .pin{
     margin-bottom: 0;
+}
+.mycred-transfer-cred-wrapper label{
+    padding-bottom: 0;
 }
 .site-header .col-full{
     height: 100%;
