@@ -324,7 +324,20 @@
             }, 'xml');
         
         });
-    });
+        var userAgent = window.navigator.userAgent.toLowerCase(),
+        safari = /safari/.test( userAgent ),
+        ios = /iphone|ipod|ipad/.test( userAgent );
+        
+        if( ios ) {
+            if ( safari ) {
+                $('.btn-and').css('display', 'none');
+            } else if ( !safari ) {
+                $('.btn-and').css('display', 'none');
+            };
+        } else {
+            $('.btn-ios').css('display', 'none');
+        };
+        });
     $(window).on('load', function () {
         if($("input.input-number-mobile").val()!=""){
             $("input").next('.f-label').addClass('f-onfocus');

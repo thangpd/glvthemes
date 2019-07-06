@@ -211,7 +211,7 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
         </div>
         <script type="text/javascript">
 			window.share_link = "<?php  echo $share_link ?>";
-			
+		
         </script>
             <?php
         endif;

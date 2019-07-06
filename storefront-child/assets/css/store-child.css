@@ -1072,3 +1072,7 @@ body .widget .myCRED-balance::after{
 .site-header .site-branding a{
     width: 224px;
 }
+.site .js-btn-share.btn-and svg path,
+.site .js-btn-share.btn-and svg line{
+    stroke: #7e8b9f;
+}
