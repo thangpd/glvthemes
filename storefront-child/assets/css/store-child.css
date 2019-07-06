@@ -795,6 +795,9 @@ body .storefront-breadcrumb{
     top: auto;
     bottom: -28px;
 }
+.l-pw{
+    margin: 40px 0 30px;
+}
 .form-row .woocommerce-phone-countrycode{
     width: 70px;
 }

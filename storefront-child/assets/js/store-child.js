@@ -261,11 +261,15 @@
             $(this).parents('form').find('.f-lost-pass').show();
             $(this).parents('.site-content').next('footer').show();
             $(this).parents('.woocommerce-form-login').parents('.login-register').find('#page').css('overflow', 'auto');
+            // $(this).next('.error').parent('.rg').css('margin-top', '40px');
             if($(this).val()!=""){
                 $(this).next('.f-label').addClass('f-onfocus');
             }else{
                 $(this).next('.f-label').removeClass('f-onfocus');
                 $(this).parents('.custom-mg').removeClass('custom-mg-focus'); 
+            }
+            if($(this).val() == ""){
+                $(this).next('label').next('.f-label').removeClass('f-onfocus');
             }
     });
       
@@ -321,12 +325,12 @@
         
         });
     });
-    $(window).on('load', function () {
-        if($("input.input-number-mobile").val()!=""){
-            $("input").next('.f-label').addClass('f-onfocus');
+    // $(window).on('load', function () {
+    //     if($("input.input-number-mobile").val()!=""){
+    //         $("input").next('.f-label').addClass('f-onfocus');
             
-        }
-     });
+    //     }
+    //  });
 })(jQuery)
 
 

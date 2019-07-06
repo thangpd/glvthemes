@@ -2590,7 +2590,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 .lost_reset_password >p{
     color: #fff;
-    margin-bottom: 12px;
 }
 
 .footer_link a{
