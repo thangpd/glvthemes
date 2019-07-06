@@ -304,6 +304,8 @@
             $(this).parents('.site-content').find('.col-full >.woocommerce').removeClass('woocommerce-fc');
             $(this).parents('.site-content').prev('.site-header').find('.custom-logo').removeClass('img-fc'); 
             $(this).parents('.myaccount-login-page').removeClass('myaccount-login-page-fc');
+            // $(this).parents('.phone_login').removeClass('phone_login-fc');
+
             // $(this).parents('form').find('.f-login-title').show();
             $(this).parents('form').find('.f-lost-pass').show();
             $(this).parents('.site-content').next('footer').show();
@@ -320,14 +322,9 @@
             // }
     });
     $("input.input-number-mobile").focusout(function(){
-        // if($(this).val()!=""){
-        //     // $(this).parents('.phone_login').addClass('phone_login-fc');
-        //     $(this).parents('.site-content').prev('.site-header').find('.custom-logo').addClass('img-fc'); 
-
-        // }else{
-        // }
         $(this).parents('.site-content').prev('.site-header').find('.custom-logo').removeClass('img-fc'); 
         $(this).parents('.phone_login').removeClass('phone_login-fc');
+        $(this).parents('form').find('.f-lost-pass').show();
     });
         // Main menu toggle
         $('button.menu-toggle').click(function(){
