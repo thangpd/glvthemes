@@ -325,12 +325,12 @@
         
         });
     });
-    // $(window).on('load', function () {
-    //     if($("input.input-number-mobile").val()!=""){
-    //         $("input").next('.f-label').addClass('f-onfocus');
+    $(window).on('load', function () {
+        if($("input.input-number-mobile").val()!=""){
+            $("input").next('.f-label').addClass('f-onfocus');
             
-    //     }
-    //  });
+        }
+     });
 })(jQuery)
 
 
