@@ -58,11 +58,11 @@ body {
     position: relative;
     /* position: fixed; */
     width: 100%;
-    background-image: url('assets/images/common/BG.jpg');
+    background-image: url('assets/images/common/bg1.png');
   }
 
 body.login-register {
-    background-image: url('assets/images/common/BG.jpg');
+    background-image: url('assets/images/common/bg1.png');
     background-size: cover;
     height: 100%;
 }
