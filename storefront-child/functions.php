@@ -336,7 +336,7 @@ if( ! class_exists( 'myCRED_Custom_Widget_Wallet' ) ) {
 					}
 
 					$layout     = $instance['row'];
-					//$layout 	= str_replace('%cred_f%', '<span style="float:right">%cred_f%<a href="'.$link.'" style="margin-left:10px"><img src="'. get_stylesheet_directory_uri() .'/images/arrow-left.png"></a></span>', $layout);
+					$layout 	= str_replace('%cred_f%', '<span style="float:right">%cred_f%<a href="'.$link.'" style="margin-left:10px"><img src="'. get_stylesheet_directory_uri() .'/images/arrow-left.png"></a></span>', $layout);
 					$layout     = $point_type->template_tags_amount( $layout, $balance->current );
 					$layout     = $point_type->template_tags_user( $layout, false, $current_user );
 					$layout     = str_replace( '%label%', '<span>'.$balance->point_type->plural.'</span>', $layout );
