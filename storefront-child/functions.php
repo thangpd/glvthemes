@@ -267,6 +267,7 @@ if ( class_exists( 'WC_Payment_Gateway' ) ) {
 	}
 }
 
+use credglv\models\OrderModel;
 if( ! class_exists( 'myCRED_Custom_Widget_Wallet' ) ) {
 	class myCRED_Custom_Widget_Wallet extends WP_Widget {
 
@@ -328,8 +329,11 @@ if( ! class_exists( 'myCRED_Custom_Widget_Wallet' ) ) {
 						$link = 'mycred_default';
 					elseif ($balance->point_type->cred_id == 'mycred_point') 
 						$link = 'mycred_point';
-					else
+					else {
 						$link = 'mycred_cash';
+						$order              = new OrderModel();
+						$balance->current = '0';
+					}
 
 					$layout     = $instance['row'];
 					$layout 	= str_replace('%cred_f%', '<span style="float:right">%cred_f%<a href="'.$link.'" style="margin-left:10px"><img src="'. get_stylesheet_directory_uri() .'/images/arrow-left.png"></a></span>', $layout);
