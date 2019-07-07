@@ -332,7 +332,7 @@ if( ! class_exists( 'myCRED_Custom_Widget_Wallet' ) ) {
 					else {
 						$link = 'mycred_cash';
 						$order              = new OrderModel();
-						//$balance->current = $order->getTotalUserCash($current_user->ID) ? $order->getTotalUserCash($current_user->ID) : '0';
+						$balance->current = '0';
 					}
 
 					$layout     = $instance['row'];
