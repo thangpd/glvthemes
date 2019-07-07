@@ -1033,13 +1033,17 @@ body.login-register.home .site-header{
 }
 .login-register #customer_login form button .btn-label{
     color: #333 !important;
+    transition: opacity 0.3s ease-in-out;
 }
 .login-register #customer_login form button.login-click .btn-label{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    color: transparent;
+    font-size: 0;
+    z-index: -3;
+    position: relative;
 }
 .login-register #customer_login form button.login-click{
-    /* font-size: 0; */
-    color: transparent;
     height: 50px;
     width: 50px !important;
     border: none;
