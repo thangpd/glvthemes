@@ -761,7 +761,7 @@ body .storefront-breadcrumb{
     border-radius: 0 !important;
     position: relative;
     position: relative;
-    z-index: 1000;
+    z-index: 500;
     background: transparent !important;
     border: none !important;
 }
