@@ -281,12 +281,12 @@
         });
         
       
-        $("input").focus(function(){
+        $("input:not([type=\"submit\"])").focus(function(){
                 // $(this).next('.f-label').addClass('f-onfocus');
                 $(this).parents('.site-content').find('.col-full >.woocommerce').addClass('woocommerce-fc');
                 $(this).parents('.f-bd').find('.f-label').addClass('f-onfocus');
                 $(this).parents('.site-content').prev('.site-header').find('.custom-logo').addClass('img-fc'); 
-            $(this).parents('.phone_login').addClass('phone_login-fc');
+                $(this).parents('.phone_login').addClass('phone_login-fc');
 
                 $(this).parents('.f-bd').addClass('f-bd-focus');
                 $(this).parents('.custom-mg').addClass('custom-mg-focus'); 
