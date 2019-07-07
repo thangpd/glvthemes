@@ -802,7 +802,7 @@ body .storefront-breadcrumb{
    -webkit-box-pack: center;
        -ms-flex-pack: center;
            justify-content: center;
-    margin-top: 90px;
+    margin-top: 110px;
 }
 
 .form-row #reg_phone-error,
@@ -1034,7 +1034,7 @@ body.login-register.home .site-header{
 }
 .login-register #customer_login form button .btn-label{
     color: #333 !important;
-    transition: opacity 0.5s ease-in-out, font-size 0.15s;
+    transition: opacity 0.5s ease-in-out, font-size 0.15s, width 0.3s ease-in-out;
 }
 .login-register #customer_login form button.login-click .btn-label{
     transition: opacity 0.5s ease-in-out;

@@ -281,12 +281,12 @@ form p label input + span {
     }
 
     .login-register #customer_login form button {
-        margin: 100px auto 15px;
+        margin: 35px auto 15px;
         transition: margin 0s;
     }
     .phone_login-fc ~ .form-btn-login button,
     .myaccount-login-page-fc ~ .form-btn-login button{
-        margin-top: 160px !important;
+        margin-top: 95px !important;
     }
 
     .login-register form p label input + span:before {
