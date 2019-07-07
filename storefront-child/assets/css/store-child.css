@@ -1031,8 +1031,11 @@ body.login-register.home .site-header{
 .form-btn-login{
     text-align: center;
 }
-.login-register #customer_login form button{
-    transition:  width 0.3s ease-in-out, max-width 0.3s ease-in-out, color 0s linear;
+.login-register #customer_login form button .btn-label{
+    color: #333 !important;
+}
+.login-register #customer_login form button.login-click .btn-label{
+    display: none;
 }
 .login-register #customer_login form button.login-click{
     /* font-size: 0; */
