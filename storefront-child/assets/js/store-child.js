@@ -286,9 +286,10 @@
                 $(this).parents('.site-content').find('.col-full >.woocommerce').addClass('woocommerce-fc');
                 $(this).parents('.f-bd').find('.f-label').addClass('f-onfocus');
                 $(this).parents('.site-content').prev('.site-header').find('.custom-logo').addClass('img-fc'); 
+            $(this).parents('.phone_login').addClass('phone_login-fc');
+
                 $(this).parents('.f-bd').addClass('f-bd-focus');
                 $(this).parents('.custom-mg').addClass('custom-mg-focus'); 
-                $(this).parents('.phone_login').addClass('phone_login-fc');
                 $(this).parents('.myaccount-login-page').addClass('myaccount-login-page-fc');
                 // $(this).parents('form').find('.f-login-title').hide();
                 $(this).parents('form').find('.f-lost-pass').hide();
@@ -299,11 +300,12 @@
                 }
          
         });
-        $("input").focusout(function(){
+        $("input:not(.input-number-mobile )").focusout(function(){
             $(this).parents('.site-content').find('.col-full >.woocommerce').removeClass('woocommerce-fc');
             $(this).parents('.site-content').prev('.site-header').find('.custom-logo').removeClass('img-fc'); 
-            $(this).parents('.phone_login').removeClass('phone_login-fc');
             $(this).parents('.myaccount-login-page').removeClass('myaccount-login-page-fc');
+            // $(this).parents('.phone_login').removeClass('phone_login-fc');
+            $(this).parents('.f-bd').removeClass('f-bd-focus');
             // $(this).parents('form').find('.f-login-title').show();
             $(this).parents('form').find('.f-lost-pass').show();
             $(this).parents('.site-content').next('footer').show();
@@ -319,7 +321,21 @@
             //     $(this).next('label').next('.f-label').removeClass('f-onfocus');
             // }
     });
-      
+    $("input.input-number-mobile").focusout(function(){
+        if(!$(this).parents('.woocommerce-form-register ').length){
+            $(this).parents('.site-content').prev('.site-header').find('.custom-logo').removeClass('img-fc'); 
+            $(this).parents('.phone_login').removeClass('phone_login-fc');
+            $(this).parents('form').find('.f-lost-pass').show();
+
+        }
+        else{
+            if($(this).val()==""){
+                $(this).parents('.custom-mg').removeClass('custom-mg-focus'); 
+            }
+        }
+        $(this).parents('.f-bd').removeClass('f-bd-focus');
+
+    });
         // Main menu toggle
         $('button.menu-toggle').click(function(){
             $('.main-navigation').toggleClass('toggled');
