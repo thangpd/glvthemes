@@ -498,7 +498,7 @@ p img.update_img_ava[src^="https"]{
     -ms-transform: translateY(-50%);
         transform: translateY(-50%);
     width: 32px;
-    height: 17px;
+    height: 18px;
 }
 .myCRED-balance.mycred-balance-mycred_point::before{
     background-image: url(../../images/Group-4516.svg);
@@ -507,6 +507,8 @@ p img.update_img_ava[src^="https"]{
 }
 .myCRED-balance.mycred-balance-mycred_cash_wallet::before{
     background-image: url(../../images/cash.svg);
+    width: 30px;
+    height: 21px;
 }
 .dropdown {
   position: relative;
