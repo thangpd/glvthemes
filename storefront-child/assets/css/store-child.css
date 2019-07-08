@@ -27,8 +27,8 @@ h1.entry-title {
 }
 .phone_login{
     padding-bottom: 0;
-    height: auto;
-    margin-top: 20vh;
+    height: 170px;
+    margin-top: 100px;
 }
 .myaccount-login-page {
     padding-bottom: 0;
@@ -804,8 +804,9 @@ body .storefront-breadcrumb{
    -webkit-box-pack: center;
        -ms-flex-pack: center;
            justify-content: center;
-    margin-top: 20vh;
+    margin-top: 110px;
 }
+
 .form-row #reg_phone-error,
 .form-row #reg_phone_register-error,
 .form-row #reg_username-error,
@@ -1033,8 +1034,20 @@ body.login-register.home .site-header{
 .form-btn-login{
     text-align: center;
 }
-.login-register #customer_login form button.login-click{
+.login-register #customer_login form button .btn-label{
+    color: #333 !important;
+    transition: opacity 0.5s ease-in-out, font-size 0.15s, width 0.3s ease-in-out;
+}
+.login-register #customer_login form button.login-click .btn-label{
+    transition: opacity 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    color: transparent;
     font-size: 0;
+    z-index: -3;
+    position: relative;
+}
+.login-register #customer_login form button.login-click{
     height: 50px;
     width: 50px !important;
     border: none;
