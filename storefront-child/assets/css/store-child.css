@@ -505,7 +505,9 @@ p img.update_img_ava[src^="https"]{
     width: 28px;
     height: 22px;
 }
-
+.myCRED-balance.mycred-balance-mycred_cash_wallet::before{
+    background-image: url(../../images/cash.svg);
+}
 .dropdown {
   position: relative;
   display: inline-block;
