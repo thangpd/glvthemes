@@ -1270,3 +1270,10 @@ body .storefront-handheld-footer-bar ul.columns-5{
 .woocommerce .wc-proceed-to-checkout .button.checkout-button{
     font-size: 16px;
 }
+.alert.error-minimum{
+    background: #2f4058;
+    color: #ffffff;
+}
+.alert.error-minimum p{
+    margin-bottom: 0;
+}
