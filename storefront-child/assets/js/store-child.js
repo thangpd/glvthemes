@@ -43,7 +43,8 @@
     $('.site-header').find('.custom-logo-link').append(title_main);
     var htmlString = $( 'h1' ).html();
 
-    $('h6').text( htmlString.replace(/&amp;/g, "&") ); 
+    // console.log('aaa', htmlString.toString());
+    $('h6').text( htmlString ); 
     $(window).scroll(function() {
         if ($(this).scrollTop() >= 80) {
             $('.site-header').addClass('fixed');
