@@ -2,7 +2,10 @@
 Fong: Đây là file tạm, không phải giải pháp lâu dài. TOM sẽ review lại file này & ghép vào hệ thống sau
 */
 
-
+@font-face{
+    font-family: "title-font";
+    src: url(../fonts/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.ttf);
+  }
 button.woocommerce-Button.button[name="login"] {
     margin-top: 10px;
 }
@@ -1243,6 +1246,7 @@ body .storefront-handheld-footer-bar ul.columns-5{
     color: #7e8b9f;
     margin-bottom: 0;
     padding-left: 10px;
+    font-family: "title-font";
 }
 .site-header .site-branding .custom-logo-link>a{
     display: none;
