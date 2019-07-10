@@ -1277,3 +1277,12 @@ body .storefront-handheld-footer-bar ul.columns-5{
 .alert.error-minimum p{
     margin-bottom: 0;
 }
+.btn-ios svg{
+    width: 30px;
+}
+.site .js-btn-share.btn-ios svg path{
+    fill: #7e8b9f;
+}
+.site .js-btn-share.btn-ios svg.svg-click path{
+    fill: #ff9d00;
+} 
