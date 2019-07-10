@@ -1235,7 +1235,7 @@ body .storefront-handheld-footer-bar ul.columns-5{
 }
 .custom-logo-link-scroll h6{
     display: block;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.35px;
@@ -1264,7 +1264,7 @@ body .storefront-handheld-footer-bar ul.columns-5{
     transform: translateY(-50%);
     background-image: url(../../images/Group-255.png);
     width: 35px;
-    height: 35px;
+    height: 30px;
     background-size: cover;
 }
 .woocommerce .wc-proceed-to-checkout .button.checkout-button{
