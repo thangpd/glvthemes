@@ -201,7 +201,7 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
         	$share_link_custom = site_url('investment-opportunity') . $query;
         	?>
         <div class="btn-share dropdown">
-			<a href="javascript:void(0)" class="js-btn-share btn-ios"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/share-ios.svg"></i></a>
+			<!-- <a href="javascript:void(0)" class="js-btn-share btn-ios"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ios.png"></i></a> -->
 			<a href="javascript:void(0)" class="js-btn-share btn-and"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Group-4507.svg"></a>
 			
              <div id="myDropdown" class="dropdown-content">
