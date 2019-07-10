@@ -43,7 +43,6 @@
     $('.site-header').find('.custom-logo-link').append(title_main);
     var htmlString = $( 'h1' ).html();
 
-    console.log('aaa', htmlString.toString());
     $('h6').text( htmlString.replace(/&amp;/g, "&") ); 
     $(window).scroll(function() {
         if ($(this).scrollTop() >= 80) {
