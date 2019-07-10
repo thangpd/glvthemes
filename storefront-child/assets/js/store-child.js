@@ -37,14 +37,18 @@
     }
 
     // Scroll header
-    var title_main = "<h6></h6>";
-    var logo_scroll = "<a></a>";
-    $('.site-header').find('.custom-logo-link').append(logo_scroll);
-    $('.site-header').find('.custom-logo-link').append(title_main);
-    var htmlString = $( 'h1' ).html();
+    $(document).ready(function(){
+        var title_main = "<h6></h6>";
+        var logo_scroll = "<a></a>";
+        $('.site-header').find('.custom-logo-link').append(logo_scroll);
+        $('.site-header').find('.custom-logo-link').append(title_main);
+        var htmlString = $( 'h1.entry-title' ).text();
+    
+        console.log('aaa', htmlString);
+        $('h6').text( htmlString.replace('&amp;', '&') ); 
 
-    // console.log('aaa', htmlString.toString());
-    $('h6').text( htmlString ); 
+    });
+
     $(window).scroll(function() {
         if ($(this).scrollTop() >= 80) {
             $('.site-header').addClass('fixed');
