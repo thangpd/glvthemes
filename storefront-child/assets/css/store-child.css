@@ -1121,6 +1121,10 @@ body .storefront-handheld-footer-bar ul.columns-5{
 }
 body .storefront-handheld-footer-bar ul.columns-6{
     display: flex;
+    justify-content: space-around;
+}
+.storefront-handheld-footer-bar ul.columns-6 li{
+    position: relative;
 }
 .logged-in .storefront-handheld-footer-bar ul li > a{
     background: transparent;
@@ -1242,11 +1246,11 @@ body .storefront-handheld-footer-bar ul.columns-6{
 .custom-logo-link-scroll h6{
     display: block;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 21px;
     line-height: 1;
     letter-spacing: 0.35px;
     text-align: left;
-    color: #7e8b9f;
+    color: #ffffff;
     margin-bottom: 0;
     padding-left: 5px;
     font-family: "title-font";
