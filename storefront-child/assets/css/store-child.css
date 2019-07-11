@@ -1119,6 +1119,9 @@ body .widget .myCRED-balance::after{
 body .storefront-handheld-footer-bar ul.columns-5{
     display: flex;
 }
+body .storefront-handheld-footer-bar ul.columns-6{
+    display: flex;
+}
 .logged-in .storefront-handheld-footer-bar ul li > a{
     background: transparent;
 }
