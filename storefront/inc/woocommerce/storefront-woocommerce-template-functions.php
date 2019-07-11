@@ -662,6 +662,11 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
 					'callback' => 'storefront_handheld_footer_bar_cart_link',
 					'content'  => '<img src="'. get_stylesheet_directory_uri() .'/images/cart.svg" />',
 				),
+				// 'column-notify'              => array(
+				// 	'priority' => 60,
+				// 	'callback' => 'storefront_handheld_footer_bar_cart_link',
+				// 	'content'  => '<img src="'. get_stylesheet_directory_uri() .'/images/cart.svg" />',
+				// ),
 			);
 
 			if ( wc_get_page_id( 'myaccount' ) === - 1 ) {
