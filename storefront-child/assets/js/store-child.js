@@ -1,6 +1,17 @@
 "use strict";
 (function($) {
-
+    var userAgent = window.navigator.userAgent.toLowerCase(),
+    safari = /safari/.test( userAgent ),
+    ios = /iphone|ipod|ipad/.test( userAgent );
+    if( ios ) {
+        if ( safari ) {
+            $('.btn-and').css('display', 'none');
+        } else if ( !safari ) {
+            $('.btn-and').css('display', 'none');
+        };
+    } else {
+        $('.btn-ios').css('display', 'none');
+    };
     if ($('.woocommerce-form-login').length) {
         $('.woocommerce-form-login #password').parent().append(`<span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>`);
         $(".toggle-password").click(function() {
@@ -42,7 +53,7 @@
         var logo_scroll = "<a></a>";
         $('.site-header').find('.custom-logo-link').append(logo_scroll);
         $('.site-header').find('.custom-logo-link').append(title_main);
-        var htmlString = $( 'h1.entry-title' ).text();
+        var htmlString = $( 'header h1' ).text();
     
         console.log('aaa', htmlString);
         $('h6').text( htmlString.replace('&amp;', '&') ); 
@@ -435,18 +446,7 @@
         });
 
         // Show icon share in android/ios
-        var userAgent = window.navigator.userAgent.toLowerCase(),
-        safari = /safari/.test( userAgent ),
-        ios = /iphone|ipod|ipad/.test( userAgent );
-        if( ios ) {
-            if ( safari ) {
-                $('.btn-and').css('display', 'none');
-            } else if ( !safari ) {
-                $('.btn-and').css('display', 'none');
-            };
-        } else {
-            $('.btn-ios').css('display', 'none');
-        };
+        
         emptyInputTest();
 
         });

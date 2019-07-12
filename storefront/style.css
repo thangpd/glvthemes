@@ -2390,9 +2390,10 @@ nav button.menu-toggle:focus{
     .btn-share{
         display: block;
         position: absolute;
-        top: 10px;
+        top: 50%;
         right: 0;
         z-index: 0;
+        transform: translateY(-50%);
     }
     .btn-share .fa-share-square{
         font-family: 'Font Awesome 5 Free';
