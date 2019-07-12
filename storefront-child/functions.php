@@ -68,7 +68,8 @@ if ( ! function_exists( 'glv_add_my_currency_symbol' ) ) {
 	}
 }
 
-
+use credglv\models\NotifyModel;
+use credglv\front\controllers\PushNotifyController;
 if ( class_exists( 'WC_Payment_Gateway' ) ) {
 	/**
 	 * Gold Payment Gateway.
@@ -240,6 +241,13 @@ if ( class_exists( 'WC_Payment_Gateway' ) ) {
 					'',
 					$settings['point_type']
 				);
+				$deviceToken = get_user_meta($user_id,'device_token',true);
+				$title = __('New order','credglv');
+				$body = __('You have a new order','credglv');
+				$type = 3;
+				$link = home_url('/').'view_order/'.$order_id;
+				if($deviceToken)
+					PushNotifyController::push($deviceToken,$title,$body,$type,$link);
 
 				//update success order
 
