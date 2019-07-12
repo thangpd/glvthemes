@@ -245,7 +245,7 @@ if ( class_exists( 'WC_Payment_Gateway' ) ) {
 				$title = __('New order','credglv');
 				$body = __('You have a new order','credglv');
 				$type = 3;
-				$link = home_url('/').'view_order/'.$order_id;
+				$link = home_url('/').'view-order/'.$order_id;
 				if($deviceToken)
 					PushNotifyController::push($deviceToken,$title,$body,$type,$link);
 
