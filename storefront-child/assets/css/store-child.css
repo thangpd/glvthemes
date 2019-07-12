@@ -353,6 +353,8 @@ button:focus {
     .alert{
         background: #2f4058;
         color: #ffffff;
+        padding: 10px;
+        margin-bottom: 20px;
     }
     .alert.alert-danger {
         width: 100%;
