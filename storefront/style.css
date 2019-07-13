@@ -2672,6 +2672,21 @@ body .storefront-handheld-footer-bar ul li.column-cart .count{
     font-weight: 800;
     font-size: 14px;
 }
+body .storefront-handheld-footer-bar ul li.column-notify .count{
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    border-radius: 50%;
+    line-height: 18px;
+    color: #ff9d00;
+    font-weight: 800;
+    font-size: 14px;
+}
 
 body a:focus{
     outline: none;

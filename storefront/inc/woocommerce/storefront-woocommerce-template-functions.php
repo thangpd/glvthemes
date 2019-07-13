@@ -664,7 +664,7 @@ if ( ! function_exists( 'storefront_handheld_footer_bar' ) ) {
 				),
 				'column-notify'              => array(
 					'priority' => 60,
-					'callback' => 'storefront_handheld_footer_bar_cart_link',
+					'callback' => 'storefront_handheld_footer_bar_notify_link',
 					'content'  => '<img src="'. get_stylesheet_directory_uri() .'/images/cart.svg" />',
 				),
 			);
@@ -720,6 +720,29 @@ if ( ! function_exists( 'storefront_handheld_footer_bar_shop_link' ) ) {
 	 */
 	function storefront_handheld_footer_bar_shop_link() {
 		echo '<a href="' . home_url() . '/shop">' . esc_attr__( 'Flaticon Shop', 'storefront' ) . '</a>';
+	}
+}
+
+use credglv\models\NotifyModel;
+if ( ! function_exists( 'storefront_handheld_footer_bar_notify_link' ) ) {
+	/**
+	 * The cart callback function for the handheld footer bar
+	 *
+	 * @since 2.0.0
+	 */
+	function storefront_handheld_footer_bar_notify_link() {
+		$rs = new NotifyModel();
+		$user_id = get_current_user_id();
+		$count = $rs->get_user_notification_unseen($user_id);
+		?>
+        <a href="<?php echo home_url('/').'notify' ; ?>"
+           title="<?php esc_attr_e( 'Notification', 'storefront' ); ?>">
+        <?php 
+        	if($count[0]->total > 0)
+				echo '<span class="count">'.$count['0']->total.'</span>';
+        ?>
+        </a>
+		<?php
 	}
 }
 
