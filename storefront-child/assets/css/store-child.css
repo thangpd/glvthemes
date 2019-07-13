@@ -1243,7 +1243,7 @@ body .storefront-handheld-footer-bar ul.columns-6{
     color: #ffffff;
     margin-bottom: 0;
     font-family: "title-font";
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 .site-header .site-branding .custom-logo-link>a{
     display: none;
