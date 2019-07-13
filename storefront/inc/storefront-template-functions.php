@@ -738,3 +738,10 @@ if (! function_exists('before_init_hook')) {
 		}
 	}
 }
+
+if(! function_exists('delete_device_token')) {
+	function delete_device_token() {
+		$user_id = get_current_user_id();
+		delete_user_meta($user_id,'device_token');
+	}
+}

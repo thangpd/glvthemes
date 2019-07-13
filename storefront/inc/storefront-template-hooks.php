@@ -92,3 +92,4 @@ add_action( 'storefront_homepage', 'storefront_page_content', 20 );
 
 
 add_action( 'init', 'before_init_hook', 0);
+add_action( 'wp_logout', 'delete_device_token');
